@@ -1,0 +1,176 @@
+// Genesis Layouts
+.content-sidebar-wrap {
+	@extend %clearfix;
+}
+.content-sidebar-sidebar .content-sidebar-wrap,
+.sidebar-content-sidebar .content-sidebar-wrap,
+.sidebar-sidebar-content .content-sidebar-wrap {
+	width: 100%;
+}
+
+.content-sidebar-sidebar .content-sidebar-wrap {
+	float: left;
+}
+
+.sidebar-content-sidebar .content-sidebar-wrap,
+.sidebar-sidebar-content .content-sidebar-wrap {
+	float: right;
+}
+
+/* Content */
+
+.content {
+	float: right;
+	@extend .two-thirds;
+	@extend .first;
+	// padding-right: 20px;
+	@include breakpoint(small) {
+		width: 100%;
+		float: none;
+	}
+}
+
+.content-sidebar .content,
+.content-sidebar-sidebar .content,
+.sidebar-content-sidebar .content {
+	float: left;
+}
+
+.content-sidebar-sidebar .content,
+.sidebar-content-sidebar .content,
+.sidebar-sidebar-content .content {
+	width: 50%;
+}
+
+.full-width-content .content {
+	width: 100%;
+}
+
+/* Primary Sidebar */
+
+.sidebar-primary {
+	float: right;
+	@extend .one-third;
+	// padding-right: 20px;
+	// padding-left: $pad*5;
+	max-width: 330px;
+	@include breakpoint(small) {
+		max-width: 100%;
+		width: 100%;
+		float: none;
+		padding-left: 0;
+	}
+}
+
+.content-sidebar-sidebar .sidebar-primary,
+.sidebar-content-sidebar .sidebar-primary,
+.sidebar-sidebar-content .sidebar-primary {
+	width: 25%; // TODO: Check to make sure this is working for the layouts
+}
+
+.sidebar-content .sidebar-primary,
+.sidebar-sidebar-content .sidebar-primary {
+	float: left;
+	padding-left: 0;
+	padding-right: $pad*6+1;
+}
+
+/* Secondary Sidebar */
+
+.sidebar-secondary {
+	float: left;
+	width: 25%;
+}
+
+.content-sidebar-sidebar .sidebar-secondary {
+	float: right;
+}
+// END Genesis Layouts
+
+.site-container {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.site-inner {
+	margin: 0 auto 32px;
+	margin: 0 auto 2rem;
+	width: 90%;
+	padding: $pad*2;
+	@include breakpoint(small) {
+		width: 95%;
+	}
+}
+
+.header-slider-wrap {
+	position: relative;
+
+	.underscores_slider {
+		.slide-content {
+			p {
+				margin: 0;
+				img {
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	@include breakpoint(small) {
+		// padding-top: 100px;
+	}
+}
+
+.site-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+
+	@include breakpoint(small) {
+		position: static;
+	}
+
+	.title-area {
+		float: left;
+		width: 153px;
+		min-height: 76px;
+		margin-left: $pad*2;
+		.header-logo {
+			display: block;
+			padding-top: 5px;
+		}
+		.title {
+			margin: 0;
+		}
+		@include breakpoint(nav-middle) {
+			float: none;
+			margin: 0 auto;
+		}
+		@include breakpoint(nav-small) {
+			min-height: 100px;
+		}
+	}
+}
+
+// *************************** WIDGETS
+.widget {
+	border-bottom: 4px solid $brandGreen;
+	@include rem(margin-bottom, 1);
+	@include rem(padding-bottom, 0.5);
+	img {
+		margin-bottom: 0;
+	}
+}
+
+.widget_sp_image {
+	img {
+		clear: both;
+		display: block;
+	}
+}
+
+#world-nomads {
+	margin-right: 20px;
+}

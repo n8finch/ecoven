@@ -1,0 +1,20 @@
+#acf-_eco_book_cats table.acf_input tbody tr td.label {
+	width: 10%;
+}
+
+#acf-_eco_dolphin_deck_images .acf-radio-list.radio.horizontal,
+#acf-_eco_booby_deck_images .acf-radio-list.radio.horizontal,
+#acf-_eco_iguana_deck_images .acf-radio-list.radio.horizontal {
+	-webkit-column-count: 3;
+	-webkit-column-gap:   20px;
+	-moz-column-count:    3;
+	-moz-column-gap:      20px;
+	column-count:         3;
+	column-gap:           20px;
+}
+
+#acf-_eco_dolphin_deck_images .acf-radio-list.radio.horizontal li,
+#acf-_eco_booby_deck_images .acf-radio-list.radio.horizontal li,
+#acf-_eco_iguana_deck_images .acf-radio-list.radio.horizontal li {
+	padding-left: 3px;
+}

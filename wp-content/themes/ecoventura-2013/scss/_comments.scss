@@ -1,0 +1,115 @@
+/*
+09 Comments
+---------------------------------------------------------------------------------------------------- */
+.comment-respond,
+.entry-comments,
+.entry-pings {
+	background-color: #fff;
+	margin-bottom: 20px;
+	margin-bottom: 2rem;
+
+}
+.comment,
+.comment-form
+ {
+	@include rem(font-size, 0.875);
+}
+
+
+.entry-comments {
+	padding: 20px 0;
+	padding: 2rem 0;
+
+	@include breakpoint(small) {
+		padding: 0;
+	}
+}
+
+.comment-respond,
+.entry-pings {
+	padding: 20px 20px 16px;
+	padding: 2rem 2rem 1.6rem;
+
+	@include breakpoint(small) {
+		padding: 0;
+	}
+}
+
+.comment-respond a,
+.entry-comments a {
+	border-bottom: 1px solid #ddd;
+}
+
+.comment-content {
+	clear: both;
+}
+
+.entry-comments .comment-author {
+	margin-bottom: 0;
+}
+
+.entry-comments .comment-author {
+	.says {
+		display: none;
+	}
+}
+
+.comment-respond input[type="email"],
+.comment-respond input[type="text"],
+.comment-respond input[type="url"],
+.comment-respond textarea {
+	width: 50%;
+
+	@include breakpoint(middle) {
+		width: 80%;
+	}
+
+	@include breakpoint(small) {
+		width: 100%;
+	}
+}
+
+.comment-respond label {
+	display: block;
+	margin-right: 12px;
+	margin-right: 1.2rem;
+}
+
+.comment-list {
+	padding: 0;
+}
+
+.comment-list li,
+.ping-list li {
+	list-style-type: none;
+}
+
+.comment-list li {
+	margin-top: 24px;
+	margin-top: 2.4rem;
+	padding: 32px;
+	padding: 3.2rem;
+}
+
+.comment-list li li {
+	margin-right: -32px;
+	margin-right: -3.2rem;
+}
+
+li.comment {
+	background-color: #f5f5f5;
+	border: 2px solid #fff;
+	border-right: none;
+}
+
+.comment .avatar {
+	margin: 0 16px 24px 0;
+	margin: 0 1.6rem 2.4rem 0;
+}
+
+.entry-pings .reply {
+	display: none;
+}
+
+.bypostauthor {
+}

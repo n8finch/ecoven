@@ -1,0 +1,404 @@
+/*
+05 Menus
+---------------------------------------------------------------------------------------------------- */
+.title-area {
+	.menu-toggle {
+		display: none;
+		width: 153px;
+		margin: 10px auto 0;
+		padding-left: 52px;
+		a {
+			span {
+				@include rem(font-size, 0.875);
+			}
+		}
+		&.menu-icon {
+			&.expanded {
+				span {
+					-webkit-box-shadow: 0 6px 0 1px #888,
+										0 12px 0 1px #888,
+										0 18px 0 1px #888;
+					box-shadow: 0 6px  0 1px #888,
+								0 12px  0 1px #888,
+								0 18px 0 1px #888;
+				}
+			}
+			a {
+				position: relative;
+				text-indent: -78px;
+				width: 70px;
+				height: 36px;
+				display: block;
+				span {
+					color: white;
+					position: absolute;
+					right: 0;
+					display: block;
+					width: 16px;
+					height: 0;
+					-webkit-box-shadow: 0 6px 0 1px white,
+										0 12px 0 1px white,
+										0 18px 0 1px white;
+					box-shadow: 0 6px  0 1px white,
+								0 12px  0 1px white,
+								0 18px 0 1px white;
+				}
+			}
+		}
+		@include breakpoint(nav-small) {
+			display: block;
+		}
+	}
+}
+
+// Primary nav container
+.nav-primary {
+	float: left;
+	padding: 0 $pad;
+	display: block;
+
+	@include breakpoint(nav-middle) {
+		width: 100%;
+	}
+	@include breakpoint(nav-small) {
+		display: none;
+	}
+	// Class added via JS
+	&.expanded {
+		display: block;
+	}
+
+	// Only the primary nav
+	.menu-primary {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+
+		// Applies to all menu items
+		.menu-item {
+			position: relative;
+			display: inline-block;
+			text-align: left;
+
+			@include breakpoint(nav-small) {
+				display: block;
+				float: left;
+				width: 50%;
+			}
+
+			&.current-menu-item,
+			&.current-menu-parent {
+				> a {
+					color: #b6c627;
+				}
+			}
+		}
+		// Applies to first level menu items
+		> .menu-item {
+			height: 76px;
+
+			@include breakpoint(nav-middle) {
+				height: 56px;
+			}
+			@include breakpoint(nav-small) {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+
+			&::after {
+				content: '';
+				display: inline;
+				position: absolute;
+				right: 0;
+				top: 35%;
+				width: 1px;
+				height: 24px;
+				border-right: 1px solid #0070af;
+
+				@include breakpoint(nav-middle) {
+					top: 30%
+				}
+				@include breakpoint(nav-small) {
+					display: none;
+				}
+			}
+			&:last-child {
+				&::after {
+					border-right: none;
+				}
+			}
+			a {
+				padding: 29px 15px;
+				line-height: 76px;
+				width: 100%;
+				&:hover, &:focus {
+					color: #b6c627;
+				}
+				.menu-sub-title {
+					@include rem(font-size, cr(11px));
+					color: #b6c627;
+					position: absolute;
+					bottom: 15px;
+					left: 0;
+					width: 100%;
+					text-align: center;
+					line-height: 10px;
+					@include breakpoint(nav-middle) {
+						bottom: 8px;
+					}
+					@include breakpoint(nav-small) {
+						position: static;
+					}
+				}
+
+				@include breakpoint(nav-middle) {
+					padding: 19px 10px;
+					line-height: 56px;
+				}
+				@include breakpoint(nav-small) {
+					padding: 5px 5px;
+					line-height: 36px;
+					&.expanded {
+						color: #b6c627;
+					}
+				}
+			}
+
+			// Show drop-downs on hover (only when large screens)
+			@include breakpoint(reverse-nav-small) {
+				&:hover {
+					> .sub-menu {
+						left: auto;
+						opacity: 1;
+					}
+				}
+			}
+
+			// child drop-downs
+			> .sub-menu {
+				// display: none;
+				left: -9999px;
+				opacity: 0;
+				position: absolute;
+				width: 230px;
+				z-index: 10;
+				background-color: #000;
+				background-color: rgba(black, 0.9);
+				list-style-type: none;
+				padding: 0 10px;
+				border-top: 4px solid #0070af;
+				overflow: hidden;
+				margin-left: -40px;
+
+				// left: auto;
+				// opacity: 1;
+				@include transition(opacity .4s ease-in-out);
+
+				@include breakpoint(nav-small) {
+					display: block;
+					margin-left: 0;
+					width: 100%;
+					@include transition(none);
+					background-color: rgba(black, 0.4);
+					&.hover {
+						position: static;
+						left: auto;
+						opacity: 1;
+						border-bottom: 4px solid #0070af;
+					}
+				}
+
+				.menu-item {
+					width: 100%;
+					text-align: center;
+					border-bottom: 1px solid #0070af;
+
+					@include breakpoint(nav-small) {
+						text-align: left;
+						padding-left: 20px;
+					}
+
+					&:last-of-type {
+						border-bottom: none;
+					}
+					a {
+						display: inline-block;
+						line-height: 1em;
+						padding: 8px 0;
+
+						@include breakpoint(nav-small) {
+							text-align: left;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Secondary nav in top bar
+.nav-secondary {
+	float: right;
+	padding: 0 $pad;
+	display: block;
+
+	// Only the secondary nav
+	.menu-secondary {
+		margin: 0;
+		padding: 0;
+
+		// Applies to all menu items
+		.menu-item {
+			position: relative;
+			display: inline-block;
+		}
+	}
+}
+
+// Buttons displayed on homepage
+.main-button-nav {
+	list-style-type: none;
+	margin: 0 0 20px 0;
+	padding: 0;
+	li {
+		display: inline-block;
+		// margin: 0;
+		// padding: 0;
+		a.main-button {
+			display: inline-block;
+			position: relative;
+			text-decoration: none;
+			color: #fff;
+			background-color: #454545;
+			width: 100%;
+			padding: 3px 5px;
+			@include rem(font-size, cr(12px));
+			text-align: center;
+			text-transform: lowercase;
+			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTZCMjdEMjZGNTZGMTFFMkI4MEZFREM3Rjk1OTA4NkQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTZCMjdEMjdGNTZGMTFFMkI4MEZFREM3Rjk1OTA4NkQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxNkIyN0QyNEY1NkYxMUUyQjgwRkVEQzdGOTU5MDg2RCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxNkIyN0QyNUY1NkYxMUUyQjgwRkVEQzdGOTU5MDg2RCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PjDOe78AAAAPSURBVHjaYjh6MSgHIMAABpwCVXOuxsIAAAAASUVORK5CYII=);
+			background-position: 0 50%;
+			background-repeat: repeat-x;
+			@include box-shadow(rgba(black, 0.7) 0px 2px 5px);
+
+			@include breakpoint(small) {
+				padding: 3px 2px;
+			}
+
+			&.active,
+			&:hover, &:focus {
+				color: #b6c627;
+			}
+
+			&:before, &:after {
+				content: '';
+				position: absolute;
+				display: inline-block;
+				top: 0;
+				bottom: 0;
+				width: 5px;
+				background-color: #454545;
+			}
+			&:before {
+				left: 0;
+			}
+			&:after {
+				right: 0;
+			}
+			span {
+				background-color: #454545;
+				display: inline-block;
+				padding: 0 5px;
+			}
+		}
+		@include breakpoint(middle) {
+			@include rem(margin-bottom, 0.5);
+			width: 48.717948717948715%;
+			&:nth-of-type(2n+1) {
+				margin-left: 0;
+			}
+		}
+		@include breakpoint(small) {
+			float: left;
+			width: 48.717948717948715%;
+			margin-left: 2.564102564102564%;
+			&:nth-of-type(2n+1) {
+				margin-left: 0;
+			}
+		}
+		@include breakpoint(very-small) {
+			float: none;
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+}
+
+// Social Media Menu
+
+.menu-social-media-items {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	float: right;
+	@include breakpoint(small) {
+		float: none;
+		text-align: center;
+	}
+}
+
+.menu-social-media li {
+	display:     inline-block;
+	a {
+		width:       36px;
+		height:      36px;
+		display:     inline-block;
+		text-indent: -99999em;
+		background:  url(images/social-media-sprite.png);
+	}
+}
+
+
+.menu-social-media li a[href*="facebook.com"] {
+	background-position: 0 0;
+	&:hover, &:focus {
+		background-position: 0 -36px;
+	}
+}
+
+.menu-social-media li a[href*="twitter.com"] {
+	background-position: -36px 0;
+	&:hover, &:focus {
+		background-position: -36px -36px;
+	}
+}
+
+.menu-social-media li a[href*="plus.google.com"] {
+	background-position: -72px 0;
+	&:hover, &:focus {
+		background-position: -72px -36px;
+	}
+}
+
+.menu-social-media li a[href*="youtube.com"] {
+	background-position: -108px 0;
+	&:hover, &:focus {
+		background-position: -108px -36px;
+	}
+}
+
+.menu-social-media li a[href*="pinterest.com"] {
+	background-position: -144px 0;
+	&:hover, &:focus {
+		background-position: -144px -36px;
+	}
+}
+
+.menu-social-media li a[href*="instagram.com"] {
+	background-position: -180px 0;
+	&:hover, &:focus {
+		background-position: -180px -36px;
+	}
+}

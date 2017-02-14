@@ -1,0 +1,1010 @@
+/*!
+  Theme Name: Ecoventura 2013
+  Description: Genesis child theme for Ecoventura
+  Author: Josh Eaton
+  Author URI: http://www.josheaton.org/
+
+  Version: 1.0.0
+  Template: genesis
+  Template Version: 2.0
+
+  License: GPL-2.0+
+  License URI: http://www.opensource.org/licenses/gpl-license.php
+*/
+
+@import "compass/css3";
+@import "bits";
+@import "defaults";
+@import "toolbox";
+@import "grid";
+@import "fonts";
+@import "typography";
+@import "layout";
+@import "nav";
+@import "media";
+@import "comments";
+@import "forms";
+@import "footer";
+@import "slider";
+@import "world-nomads";
+@import "responsive-tables";
+
+body {
+	background-color: $bgGreen;
+}
+
+.site-container {
+	background-color: $bgColor;
+}
+
+.top-bar {
+	background-color: #fff;
+	min-height: 52px;
+	position: relative;
+	width: 100%;
+	@extend %clearfix;
+	@include box-shadow(rgba(black, 0.7) 0px 2px 5px);
+
+	a {
+		text-transform: uppercase;
+		text-decoration: none;
+		@include rem(font-size, 0.625);
+		display: inline-block;
+		line-height: 48px;
+		padding-top: 5px;
+		font-weight: bold;
+		float: right;
+		margin-right: $pad;
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
+	}
+	.weather-widget {
+		float: right;
+		padding-top: 14px;
+		margin-right: $pad;
+		font-size: 13px;
+	}
+}
+
+.site-header {
+	background-color: #000;
+	background-color: rgba(black, 0.73);
+	@include breakpoint(small) {
+		background-color: #000;
+	}
+}
+
+.page-banner {
+	img {
+		display: block;
+	}
+}
+
+.site-inner {
+	background-color: #fff;
+	@include box-shadow(rgba(black, 0.2) 1px 1px 5px);
+}
+
+hr.divider {
+	background-color: $brandGreen;
+	height: 4px;
+	border: 0;
+	clear: both;
+}
+
+// ****************************************************************** HOME CONTENT
+
+// In the media
+.front-in-the-media {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	.home-media-item {
+		overflow: hidden;
+		@include rem(padding-bottom, 1);
+		img {
+			width: 22px;
+			margin-right: 10px;
+			float: left;
+		}
+		p {
+			margin: 0;
+			width: 89%;
+			float: left;
+			@include rem(font-size, 0.75);
+			.press-tagline {
+				display: block;
+				@include rem(font-size, 0.625);
+			}
+		}
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+// Guest Reviews
+.guest-review {
+	.guest-review-more {
+		display: inline-block;
+		float: right;
+	}
+}
+
+// ****************************************************************** WIDGETS
+.widget_recent_entries ul {
+	list-style-type: none;
+	padding: 0;
+	li {
+		background: url(images/arrow-bullet.png) no-repeat 0 0;
+		padding-left: 25px;
+		@include rem(font-size, 0.75);
+		@include rem(line-height, 1.1);
+
+		a {
+			text-decoration: none;
+		}
+	}
+}
+.latest-news-more {
+	@include rem(font-size, 0.75);
+}
+
+.weather-widget {
+	.wu-icon {
+		float: left;
+		max-width: 50px;
+		margin-right: 10px;
+	}
+
+	.wu-forecast-wrapper .wu-simple-forecast-day { 
+		margin-bottom: 0;
+		.wu-cond-highlow {
+			.wu-cond-high {
+				padding-right: 3px;
+			}
+			.wu-cond-split {
+				position: static;
+				padding-right: 5px;
+			}
+		}
+	} 
+}
+
+
+// ****************************************************************** IN THE MEDIA
+.in-the-media {
+	.press {
+		width: 50%;
+		float: left;
+		@include rem(margin-bottom, 1);
+		@include rem(min-height, 4.7);
+
+		.entry-content {
+			padding-right: 10px;
+		}
+
+		@include breakpoint(small) {
+			width: 100%;
+			float: none;
+		}
+	}
+
+	.press-thumb {
+		float: left;
+		vertical-align: middle;
+		margin-right: $pad;
+	}
+	.press-content {
+		.press-link {
+			text-decoration: none;
+		}
+		.press-title {
+			font-weight: bold;
+		}
+		.press-tagline {
+			display: block;
+			font-style: italic;
+		}
+		.press-download {
+			@include rem(font-size, 0.75);
+			img.attachment-thumbnail {
+				width: 13px;
+				height: auto;
+				position: relative;
+				top: 6px;
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+.archive-pagination.pagination {
+	clear: both;
+}
+
+// ****************************************************************** GUEST REVIEWS
+
+// @import url(http://fonts.googleapis.com/css?family=The+Girl+Next+Door|Shadows+Into+Light|Indie+Flower);
+// @import url(http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco|Sacramento|Handlee);
+.guest-reviews {
+	.guest-review {
+		// width: 50%;
+		// float: left;
+		// @include rem(padding-right, 1.5);
+		@include rem(margin-bottom, 2);
+
+		&.last {
+			// padding-right: 0;
+		}
+		// @include breakpoint(small) {
+		// 	width: 100%;
+		// 	float: none;
+		// }
+	}
+
+	.review-content {
+		// font-size: 1.4rem;
+		// line-height: 1.5rem;
+		// font-family: 'The Girl Next Door', cursive;
+		// font-family: 'Indie Flower', cursive;
+		// font-family: 'Sue Ellen Francisco', cursive;
+		// font-family: 'Sacramento', cursive;
+		// font-family: 'Handlee', cursive;
+		.review-name {
+			display: block;
+			font-weight: bold;
+			text-align: right;
+		}
+		.review-trip {
+			display: block;
+			font-style: italic;
+			text-align: right;
+		}
+	}
+}
+
+// ****************************************************************** 10 REASONS
+.eco-reason {
+
+	.reason-image {
+	}
+
+	h2 {
+		@include rem(margin, 1, 0);
+		border-bottom: none;
+		display: block;
+		span {
+			@include rem(font-size, 2);
+			color: $headerBlue;
+		}
+	}
+
+}
+
+// ****************************************************************** ITINERARIES
+body.itineraries {
+
+	.entry-title {
+		display: inline-block;
+		border-bottom: 1px solid $brandGreen;
+		color: $brandGreen;
+	}
+}
+
+.itineraries-content {
+	h2 {
+		// border-bottom: none;
+		display: inline-block;
+		text-transform: none;
+	}
+	h2:first-of-type {
+		float: left;
+		@include rem(margin-bottom, 1);
+		&+p {
+			float: right;
+			@include rem(margin-bottom, 3);
+			// @include rem(font-size, 1.1);
+		}
+	}
+	h3 {
+		color: #0772b4;
+	}
+	h6 {
+		float: left;
+		clear: both;
+		width: 20%;
+		@include font-stack-body-normal;
+		font-weight: bold;
+		color: black;
+
+		@include breakpoint(small) {
+			@include rem(font-size, 0.75);
+		}
+
+		&+p {
+			margin-left: 20%;
+			clear: right;
+			min-height: 55px;
+			@include rem(margin-bottom, 0.5);
+		}
+	}
+
+	table {
+		@extend %dates_table;
+		@include rem(margin-bottom, 1);
+	}
+
+	.section-title {
+		@include rem(line-height, 1.75);
+	}
+}
+
+.itinerary-map {
+	position: relative;
+	max-width: 520px;
+	@include rem(margin-bottom, 1);
+
+	a {
+		display: block;
+		position: relative;
+	}
+
+	.map-letter {
+		width: 51px;
+		height: 86px;
+		background: transparent url(images/a-b-sprite.png) no-repeat 0 0;
+		overflow: hidden;
+
+		position: absolute;
+		top: 10px;
+		right: 10px;
+
+		.itinerary-b & {
+			background-position: 0 -86px;
+		}
+	}
+	.magnifying-glass {
+		width: 13px;
+		height: 13px;
+		position: absolute;
+		bottom: 10px;
+		right: 5px;
+	}
+}
+
+.underscores_slider.itinerary-slider {
+	margin-bottom: 30px;
+}
+
+// ****************************************************************** EXPANDABLE SECTIONS
+.section-title {
+	cursor: pointer;
+	border-bottom: none;
+	display: block;
+
+	&:hover, &:focus {
+		color: $linkBlue;
+	}
+
+	&:before {
+		background: url(images/arrow-sprite.png) no-repeat 0 0;
+		content: "";
+		height: 19px;
+		width: 19px;
+		display: inline-block;
+		margin-right: 5px;
+		position: relative;
+		top: 2px;
+	}
+	&.expanded:before {
+		background-position: 0 -19px;
+	}
+}
+.section-content {
+	display: none;
+	border: 1px solid transparent; // helps with jumpy slide animation
+	@include rem(margin-bottom, 1);
+}
+
+
+// ****************************************************************** BLOG
+
+.blog,
+.single-post,
+.category,
+.tag {
+	.entry-header {
+		text-align: left;
+	}
+	.entry-title {
+		text-transform: none;
+		@include rem(margin-bottom, 0.5);
+		border-bottom: none;
+
+		a {
+			color: $brandGreen;
+
+			&:hover, &:focus {
+				color: $linkBlue;
+			}
+		}
+	}
+
+	.entry-meta {
+		@include rem(font-size, 0.75);
+		@include rem(margin-bottom, 1);
+	}
+
+	.entry-comments-link {
+		display: inline-block;
+		background-color: #eee;
+		padding: 0 3px;
+	}
+
+	.entry-author,
+	.entry-comments-link {
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+.archive-description {
+	text-align: center;
+
+	.archive-title {
+		@include rem(margin-bottom, 1.5);
+	}
+}
+
+// ****************************************************************** GALLERIES
+.gallery-archive-container {
+	.entry-title {
+		@include rem(font-size, 1);
+		@include rem(line-height, 1.5);
+		@include rem(min-height, 2.4);
+		@include font-stack-body-normal;
+		letter-spacing: normal;
+		text-transform: none;
+		border-bottom: 0;
+		margin-top: 0;
+	}
+
+	img {
+		opacity: 0.8;
+
+		@include breakpoint(small) {
+			opacity: 1;
+		}
+	}
+
+	&:hover, &:focus {
+		img {
+			opacity: 1;
+		}
+	}
+}
+
+.videos-header {
+	text-align: center;
+	clear: left;
+
+	h1.videos-title {
+		border-bottom: 1px solid $brandGreen;
+		display: inline-block;
+	}
+}
+
+// ****************************************************************** FAQs
+.faq-list {
+	ul {
+		padding: 0;
+
+		li {
+			list-style-type: none;
+
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+
+// ****************************************************************** CREW & OUR TEAM
+.crew,
+.our-team {
+	h2 {
+		@include rem(margin-bottom, 1.5);
+		// text-align: center;
+		display: block;
+	}
+}
+
+.captain,
+.guide {
+	.crew-headshot {
+		display: block;
+		padding: 5px 5px 15px;
+		@include rem(margin, 0, 0, 1.5);
+
+		@include box-sizing(content-box);
+
+		@include box-shadow(1px 1px 3px 0px rgba(black, 0.6));
+	}
+
+	h3 {
+		color: $headerBlue;
+		margin-bottom: 0;
+	}
+
+	h4 {
+		@include font-stack-body-normal;
+		letter-spacing: normal;
+		font-weight: bold;
+		color: #000;
+		@include rem(font-size, 1);
+	}
+}
+
+// ****************************************************************** SUGGESTED READING
+.suggested-reading {
+
+	.entry-content h3.section-title {
+		clear: left;
+		color: $headerBlue;
+		&:hover, &:focus {
+			color: $brandGreen;
+		}
+	}
+}
+
+.book {
+	@include rem(margin-bottom, 1);
+
+	.book-title {
+		color: #000;
+		@include font-stack-body-normal;
+		letter-spacing: normal;
+		a {
+			text-decoration: none;
+		}
+	}
+
+	.book-author {
+		font-style: italic;
+		@include rem(margin-bottom, 1);
+	}
+}
+
+// ****************************************************************** OUR CUISINE
+.cuisine-tabs {
+	margin: 0;
+	padding: 0;
+	list-style: 0;
+	@include rem(margin-bottom, 1);
+
+	li {
+		display: inline-block;
+		text-align: center;
+		@include rem(margin-bottom, 1);
+
+		a {
+			width: (100%/7);
+			text-decoration: none;
+			@include rem(padding, 0.2, 1);
+			@include rem(margin-right, cr(15px));
+
+			background-color: #047c3f;
+			@include background-image(linear-gradient(#04ba3d 0%, #047c3f 100%));
+
+			color: white;
+			font-weight: bold;
+
+			&.active,
+			&:hover, &:focus {
+				background-color: #0070af;
+				@include background-image(linear-gradient(#00a7ce 0%, #0070af 100%));
+			}
+
+			// @include breakpoint(small) {
+			// }
+		}
+
+		&:last-child {
+			// float: right;
+
+			a {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.our-cuisine {
+	.tab-content {
+		strong {
+			color: $linkBlue;
+		}
+	}
+}
+
+.menu-banner {
+	position: relative;
+
+	img {
+		width: 100%;
+		height: 100%;
+		@include rem(margin-bottom, 0.8);
+	}
+
+	h3 {
+		position: absolute;
+		display: block;
+		width: 100%;
+		top: 50%;
+		left: 0;
+		@include rem(margin, -1.5, 0, 0);
+		border-bottom: 0;
+		text-align: center;
+		text-transform: lowercase;
+
+		span {
+			color: white;
+			display: inline-block;
+			background-color: #000;
+			background-color: rgba(black, 0.47);
+			@include rem(padding, 0.3);
+		}
+
+	}
+}
+
+.cuisine-menu-nav {
+	@include rem(margin-bottom, 1);
+
+	.cuisine-menu-nav-header {
+		text-align: center;
+
+		h3 {
+			color: $headerBlue;
+			text-transform: lowercase;
+		}
+	}
+
+	.divider {
+		clear: both;
+	}
+}
+
+%bottom-slide-caption {
+	width: 100%;
+	padding: 2%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.47);
+	color: #fff;
+	// text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+	@include rem(font-size, cr(15));
+	@include rem(line-height, cr(18));
+}
+
+.cuisine-slider.underscores_slider {
+	@include rem(margin-bottom, 2);
+
+	.slide-caption {
+		@extend %bottom-slide-caption;
+	}
+}
+
+// ****************************************************************** RATES & DEPARTURES
+$table-border: 1px solid white;
+$table-border-radius: 10px;
+
+%yellow-table {
+	@include rem(margin-bottom, 1.5);
+	width: 100%;
+
+	th, td {
+		padding: 4px 10px;
+		text-align: center;
+	}
+	td:first-child {
+		text-align: left;
+	}
+	th {
+		border-collapse: separate;
+		border-left: $table-border;
+		border-right: $table-border;
+		border-radius: $table-border-radius $table-border-radius 0 0;
+		@include background-image(linear-gradient(#f3f73b, #f3ce35));
+	}
+	thead {
+
+	}
+	tbody {
+		font-weight: bold;
+		td {
+			border: 1px solid #9d9fa2;
+		}
+		tr:nth-child(odd) {
+			background-color: #e6e7e8;
+		}
+	}
+}
+
+.rates-departures {
+	.rates-content {
+		h3 {
+			color: $headerBlue;
+			text-transform: lowercase;
+
+			&.section-title {
+				@include rem(font-size, 1.2);
+			}
+		}
+		h4 {
+			color: black;
+		}
+
+		table {
+			@extend %yellow-table;
+		}
+	}
+}
+
+.table-checkmark {
+	display: inline-block;
+	position: relative;
+	top: 2px;
+}
+
+// ****************************************************************** YACHTS
+.yachts {
+	.yachts-content {
+		h3 {
+			color: $headerBlue;
+			text-transform: lowercase;
+			clear: none;
+		}
+		h4 {
+			color: black;
+			clear: none;
+		}
+	}
+	.tab-content {
+		position: relative;
+	}
+}
+
+.yacht-slider.underscores_slider {
+	@include rem(margin-bottom, 1);
+	.slides li {
+		position: relative;
+		min-height: 200px;
+	}
+	.slide-caption {
+		@extend %bottom-slide-caption;
+	}
+}
+
+$cabins: booby-deck-b-cabin, booby-deck-b-cabin-bathrooms, booby-deck-bar, booby-deck-conference-room, booby-deck-dining-room, booby-deck-galley, dolphin-deck-bridge, dolphin-deck-d1, dolphin-deck-d2, dolphin-deck-d3, dolphin-deck-d4, dolphin-deck-observation-deck, dolphin-deck-observation-deck-2, iguana-deck-cabin-17-18, iguana-deck-cabin-19-20;
+
+.deck-overlay {
+	position: absolute;
+	bottom: 20px;
+	right: 40px;
+	min-height: 300px;
+	min-width: 81px;
+	text-align: center;
+	width: auto !important;
+	background-repeat: no-repeat;
+	background-position: center top;
+
+	// Add background images for each cabin class
+	@each $cabin in $cabins {
+		&.#{$cabin} {
+			background-image: url(images/deck-images/#{$cabin}.png);
+		}
+	}
+
+	.deck-photo-title {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		display: inline-block;
+		min-height: 36px;
+
+		color: white;
+		font-weight: bold;
+	}
+}
+
+#dolphin-deck-slider-nav,
+#booby-deck-slider-nav,
+#iguana-deck-slider-nav {
+	border: 4px solid white;
+	border-radius: 4px;
+	box-shadow: 0 1px 4px rgba(0,0,0,.4);
+	.slides li {
+		min-height: 50px;
+		margin-right: 5px;
+		cursor: pointer;
+
+		opacity: 0.7;
+
+		&.underscores_slider-active-slide,
+		&:hover, &:focus {
+			opacity: 1;
+		}
+	}
+}
+
+// ****************************************************************** AFFILIATIONS
+.affiliation {
+	@include rem(margin-bottom, 1);
+	@extend %clearfix;
+}
+
+.affiliation-logo {
+	@include rem(margin-bottom, 1);
+}
+
+.affiliation-title {
+	a {
+		text-decoration: none;
+	}
+}
+
+// ****************************************************************** ASSOCIATIONS
+.association {
+	@include rem(margin-bottom, 1);
+}
+
+.association-logo {
+	@include rem(margin-bottom, 1);
+}
+
+.association-title {
+	a {
+		text-decoration: none;
+	}
+}
+
+.associations-wrap,
+.trade-shows-wrap,
+.representations-wrap {
+	@include rem(margin-bottom, 2);
+}
+
+// ****************************************************************** DOWNLOADS
+.download {
+	@include rem(margin-bottom, 1);
+}
+
+.download-image {
+	@include rem(margin-bottom, 1);
+}
+
+.download-title {
+	a {
+		text-decoration: none;
+	}
+}
+
+// ****************************************************************** AWARDS
+.award {
+	@extend %clearfix;
+	@include rem(margin-bottom, 1);
+}
+.award-logo {
+	@include rem(margin-bottom, 1);
+}
+
+.award-title {
+	a {
+		text-decoration: none;
+	}
+}
+
+// ****************************************************************** FLIGHTS
+.flights,
+.weather,
+.family-departures {
+	table {
+		@extend %yellow-table;
+	}
+}
+
+.eco-table {
+	@extend %yellow-table;
+}
+
+// ****************************************************************** CUZCO
+.cuzco-content {
+	h6 {
+		float: left;
+		clear: both;
+		width: 20%;
+		@include font-stack-body-normal;
+		font-weight: bold;
+		color: black;
+
+		@include breakpoint(small) {
+			@include rem(font-size, 0.75);
+		}
+
+		&+p {
+			margin-left: 20%;
+			clear: right;
+		}
+	}
+}
+
+// ****************************************************************** SITEMAP
+.sitemap-list {
+	h2, h3 {
+		margin-bottom: 0;
+	}
+	li {
+		margin-bottom: 5px;
+		line-height: 1.5;
+	}
+}
+
+// ****************************************************************** WWF NEWSLETTERS
+.wwf-newsletters {
+	ul {
+		list-style: none;
+
+		img {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 10px;
+		}
+	}
+}
+
+// ****************************************************************** MailChimp Subscribe
+/* MailChimp Form Embed Code - Slim - 08/17/2011 */
+#mc_embed_signup form {display:block; position:relative; text-align:right; padding:10px 0 10px 3%}
+#mc_embed_signup h2 {font-weight:bold; padding:0; margin:15px 0; font-size:1.4em;}
+#mc_embed_signup input {border:1px solid #999; -webkit-appearance:none;}
+#mc_embed_signup input[type=checkbox]{-webkit-appearance:checkbox;}
+#mc_embed_signup input[type=radio]{-webkit-appearance:radio;}
+#mc_embed_signup input:focus {border-color:#333;}
+#mc_embed_signup .button {clear:both; background-color: #ABBA26; border: 0 none; border-radius:4px; color: #FFFFFF; cursor: pointer; display: inline-block; font-size:15px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding:0; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
+#mc_embed_signup .button:hover {background-color:#0070AF;}
+#mc_embed_signup .small-meta {font-size: 11px;}
+#mc_embed_signup .nowrap {white-space:nowrap;}
+#mc_embed_signup .clear {clear:none; display:inline;}
+
+#mc_embed_signup label {display:block; font-size:16px; padding-bottom:10px; font-weight:bold;}
+#mc_embed_signup input.email {display:inline; padding:8px 0; margin:0 0 10px 4%; text-indent:5px; width:58%; min-width:130px;}
+#mc_embed_signup input.button {display:inline; width:35%; margin:0 0 10px 0; min-width:90px;}
+
+#mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
+#mc_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
+#mc_embed_signup #mce-error-response {display:none;}
+#mc_embed_signup #mce-success-response {color:#529214; display:none;}
+#mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
+
+#mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; }
+
+@include breakpoint(small) {
+	#mc_embed_signup {
+		form {
+			text-align: center;
+		}
+		input.email,
+		input.button {
+			display: block;
+			margin: 0.5rem auto;
+			margin: 8px auto;
+		}
+	}
+}
