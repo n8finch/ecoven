@@ -23,6 +23,9 @@ remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
 // Remove featured image, we are doing it ourselves
 remove_action( 'genesis_entry_content', 'genesis_do_post_image', 8 );
 
+// Remove post navigation
+remove_action( 'genesis_after_endwhile', 'genesis_posts_nav' );
+
 /**
  * Gallery Archive Body Class
  *

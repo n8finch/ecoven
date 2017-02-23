@@ -594,7 +594,7 @@ a {
 
 /* Content */
 .content {
-  float: right; }
+  float: left; }
   @media (max-width: 750px) {
     .content {
       width: 100%;

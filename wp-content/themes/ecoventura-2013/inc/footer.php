@@ -14,21 +14,31 @@ $front = get_option( 'page_on_front' );
 		</div>
 		<div class="one-third footer-center">
 			<div class="footer-logos">
-				<?php
+			
+<!--
+<?php
 				if ( get_field( '_eco_footer_logos', $front ) ) :
-					while ( has_sub_field( '_eco_footer_logos', $front ) ) {
+					while ( has_sub_field( 
+
+'_eco_footer_logos', $front ) ) {
 						$image = get_sub_field( 'image' );
 						$link  = get_sub_field( 'link' );
 
-						$img = wp_get_attachment_image( $image, 'footer-logo', false, array( 'class' => 'footer-logo') );
+						$img = wp_get_attachment_image( 
+
+$image, 'footer-logo', false, array( 'class' => 'footer-logo') );
 
 						if ( $link )
-							$img = '<a href="'.esc_url($link).'">' . $img . '</a>';
+							$img = '<a 
+
+href="'.esc_url($link).'">' . $img . '</a>';
 						echo $img;
 					}
 				endif;
 				?>
-			</div>
+                -->
+
+		</div>
 			<?php $center = get_field( '_eco_footer_center_content', $front ); ?>
 			<p class="footer-links"><?php echo $center; ?><br><a href="http://www.josheaton.org/" target="_blank">designed by Josh Eaton</a> &amp; <a href="http://www.briallendesign.com/" target="_blank">Bri Allen</a></p>
 		</div>
