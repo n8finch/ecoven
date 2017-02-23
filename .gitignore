@@ -4,7 +4,6 @@
 !.gitignore
 !.htaccess
 !wp-content/
-!wp-config.php
 !phploy.ini
 !.gitlab-ci.yml
 !README.md
