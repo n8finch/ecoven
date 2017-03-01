@@ -35,4 +35,3 @@ deploy_to_staging:
     - PHPLOY_USER="$STAGING_USER" PHPLOY_PASS="$STAGING_PASS" php phploy -s staging
   only:
     - develop
-  when: manual
