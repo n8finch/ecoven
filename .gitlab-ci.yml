@@ -1,0 +1,38 @@
+stages:
+- deploy
+
+deploy_to_production:
+  image: php:5.6-cli
+  stage: deploy
+  environment:
+    name: production
+    url: http://www.ecoventura.com
+  before_script:
+    - apt-get update -yqq
+    - apt-get install git zip unzip curl wget openssh-client -yqq
+    - wget --quiet https://github.com/banago/PHPloy/archive/master.zip
+    - unzip -qq master.zip
+    - mv ./PHPloy-master/dist/phploy.phar phploy
+  script:
+    - PHPLOY_USER="$PROD_USER" PHPLOY_PASS="$PROD_PASS" php phploy -s production
+  only:
+    - master
+  when: manual
+
+deploy_to_staging:
+  image: php:5.6-cli
+  stage: deploy
+  environment:
+    name: staging
+    url: https://ecoventura-staging.mystagingwebsite.com
+  before_script:
+    - apt-get update -yqq
+    - apt-get install git zip unzip curl wget openssh-client -yqq
+    - wget --quiet https://github.com/banago/PHPloy/archive/master.zip
+    - unzip -qq master.zip
+    - mv ./PHPloy-master/dist/phploy.phar phploy
+  script:
+    - PHPLOY_USER="$STAGING_USER" PHPLOY_PASS="$STAGING_PASS" php phploy -s staging
+  only:
+    - develop
+  when: manual
