@@ -1,0 +1,87 @@
+{
+    "ID": 0,
+    "key": "group_acf_page-banner",
+    "title": "Page Banner",
+    "fields": [
+        {
+            "ID": 0,
+            "key": "field_52197d7bb4278",
+            "label": "Page Banner",
+            "name": "_eco_page_banner",
+            "prefix": "acf",
+            "type": "image",
+            "value": null,
+            "menu_order": 0,
+            "instructions": "Upload an image to be used as the banner at the top of the page. Ideal size: 1280px by 250px (optional)",
+            "required": 0,
+            "id": "",
+            "class": "",
+            "conditional_logic": 0,
+            "parent": "group_acf_page-banner",
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "_name": "_eco_page_banner",
+            "_prepare": 0,
+            "_valid": 1,
+            "preview_size": "thumbnail",
+            "library": "all",
+            "return_format": "array",
+            "min_width": 0,
+            "min_height": 0,
+            "min_size": 0,
+            "max_width": 0,
+            "max_height": 0,
+            "max_size": 0,
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post",
+                "order_no": 0,
+                "group_no": 0
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page",
+                "order_no": 0,
+                "group_no": 1
+            },
+            {
+                "param": "page_type",
+                "operator": "!=",
+                "value": "front_page",
+                "order_no": 1,
+                "group_no": 1
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "gallery",
+                "order_no": 0,
+                "group_no": 2
+            }
+        ]
+    ],
+    "menu_order": 3,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [],
+    "active": 1,
+    "description": "",
+    "id": "acf_page-banner",
+    "local": "json"
+}
