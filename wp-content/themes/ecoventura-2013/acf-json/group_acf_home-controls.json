@@ -1,0 +1,90 @@
+{
+    "ID": 0,
+    "key": "group_acf_home-controls",
+    "title": "Home Controls",
+    "fields": [
+        {
+            "ID": 0,
+            "key": "field_525c0a3f1746d",
+            "label": "Number of In The Media Items to show",
+            "name": "_eco_media_items_count",
+            "prefix": "acf",
+            "type": "number",
+            "value": null,
+            "menu_order": 0,
+            "instructions": "Sets the maximum number of media items to show on the homepage.",
+            "required": 0,
+            "id": "",
+            "class": "",
+            "conditional_logic": 0,
+            "parent": "group_acf_home-controls",
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "_name": "_eco_media_items_count",
+            "_prepare": 0,
+            "_valid": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "ID": 0,
+            "key": "field_525c0a681746e",
+            "label": "Number of Guest Reviews to show",
+            "name": "_eco_guest_reviews_count",
+            "prefix": "acf",
+            "type": "number",
+            "value": null,
+            "menu_order": 1,
+            "instructions": "Sets the maximum number of guest reviews to show on the homepage.",
+            "required": 0,
+            "id": "",
+            "class": "",
+            "conditional_logic": 0,
+            "parent": "group_acf_home-controls",
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "_name": "_eco_guest_reviews_count",
+            "_prepare": 0,
+            "_valid": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page",
+                "order_no": 0,
+                "group_no": 0
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [],
+    "active": 1,
+    "description": "",
+    "id": "acf_home-controls",
+    "local": "json"
+}
