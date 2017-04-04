@@ -34,9 +34,6 @@ function child_theme_setup() {
 	define( 'CHILD_THEME_VERSION', filemtime( get_stylesheet_directory() . '/style.css' ) );
 
 	// Includes
-	if ( ! defined( 'WP_LOCAL_DEV' ) || ! WP_LOCAL_DEV ) {
-		require_once( CHILD_DIR . '/inc/eco-meta.php' );
-	}
 	require_once( CHILD_DIR . '/inc/eco-functions.php' );
 	require_once( CHILD_DIR . '/inc/eco-types.php' );
 	require_once( CHILD_DIR . '/inc/eco-builds.php' );
