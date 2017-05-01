@@ -40,8 +40,8 @@ function eco_cuzco_layout() {
 			<h3>Itineraries</h3>
 		</div>
 		<ul class="main-button-nav tabs group">
-			<li class="one-half first"><a class="main-button" href="#6-night-premium-first-class"><span>6 Nights</span></a></li>
-			<li class="one-half"><a class="main-button" href="#7-night-luxury-collection"><span>7 Nights</span></a></li>
+			<li class="one-half first"><a class="main-button" href="#6-night-premium-first-class"><span>First Class</span></a></li>
+			<li class="one-half"><a class="main-button" href="#7-night-luxury-collection"><span>Luxury Class</span></a></li>
 		</ul>
 		<hr class="divider">
 	</div>
