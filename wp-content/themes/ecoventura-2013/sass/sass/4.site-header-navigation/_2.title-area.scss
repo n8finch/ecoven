@@ -29,8 +29,9 @@
 
   .title-area {
     margin: 0 auto;
-    max-width: 300px;
+    // max-width: 300px;
     padding: 0;
+	width: 100%;
   }
 
   .site-title > a {
@@ -58,5 +59,3 @@
 .site-title {
   margin-bottom: 0;
 }
-
-

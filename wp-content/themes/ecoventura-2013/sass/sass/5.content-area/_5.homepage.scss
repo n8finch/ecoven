@@ -1,0 +1,83 @@
+.page-template-template-eco-homepage {
+
+	// Above the Fold
+	.site-inner {
+		max-width: 100%;
+		padding-top: 0;
+	}
+
+	@media only screen and (max-width: 860px) {
+		.site-inner {
+		    padding: 0;
+		}
+	}
+
+	.homepage-title-div {
+		background-color: #B9C8BE;
+		color: white;
+		padding-bottom: 40px;
+		padding-top: 20px;
+		text-align: center;
+	}
+
+	.plan-your-trip-box {
+		top: -15px;
+	    position: relative;
+	    text-align: center;
+
+		span {
+			background-color: white;
+			border: 1px solid #999999;
+			padding: 20px;
+		}
+	}
+
+
+	// Page Image Boxes
+	.homepage-page-image-boxes {
+
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	    margin: 0 auto;
+		max-width: 900px;
+		padding-top: 50px;
+
+		a {
+			color: black;
+			text-decoration: none;
+		}
+
+		.homepage-page-image-box {
+			display: flex;
+    		flex-direction: column;
+			margin-bottom: 40px;
+			width: 400px;
+
+			img {
+				border: 1px solid #999999;
+				border-bottom: 0;
+			}
+
+			div {
+				background-color: white;
+				border: 1px solid #999999;
+				padding: 15px;
+				text-align: center;
+			}
+
+		}
+	}
+
+	// Homepage Video
+	.homepage-video {
+		background-color: white;
+		padding: 60px 0 60px;
+
+		div {
+			margin: 0 auto;
+			max-width: 900px;
+		}
+	}
+
+}

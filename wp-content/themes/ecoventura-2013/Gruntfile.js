@@ -9,7 +9,7 @@ module.exports = function (grunt) {
           style: 'expanded'
         },
         files: {                         // Dictionary of files
-          'style.css': 'assets/sass/style.scss'       // 'destination': 'source'
+          'style.css': 'sass/sass/style.scss'       // 'destination': 'source'
         }
       }
     },
@@ -21,7 +21,7 @@ module.exports = function (grunt) {
 		processors: [
         require('pixrem')(), // add fallbacks for rem units
         require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
-        require('cssnano')() // minify the result 
+        require('cssnano')() // minify the result
       ]
       },
       dist: {
@@ -30,7 +30,7 @@ module.exports = function (grunt) {
     },
 
     watch: {
-      files: ['assets/css/*.css', 'assets/js/*.js', 'assets/sass/**/*.scss'],
+      files: ['sass/css/*.css', 'sass/js/*.js', 'sass/sass/**/*.scss'],
       tasks: ['sass']
     }
   });

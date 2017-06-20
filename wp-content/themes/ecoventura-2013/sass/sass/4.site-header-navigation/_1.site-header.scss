@@ -8,3 +8,17 @@
 .site-header > .wrap {
   padding: 20px 0;
 }
+
+.top-bar {
+	display: inline-flex;
+	justify-content: space-around;
+	width: 100%;
+
+	section {
+		margin: 0 10px;
+	}
+
+	.widget_search .widget-wrap {
+		display: inline-flex;
+	}
+}

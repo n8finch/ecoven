@@ -73,8 +73,8 @@ function child_theme_setup() {
 	// Add menus
 	add_action( 'init', 'eco_register_menus' );
 	// Move secondary menu to header
-	// remove_action( 'genesis_after_header', 'genesis_do_subnav' );
-	// add_action( 'eco_top_bar', 'genesis_do_subnav' );
+	remove_action( 'genesis_after_header', 'genesis_do_subnav' );
+	add_action( 'eco_top_bar', 'eco_do_top_bar' );
 
 	// Reposition the secondary navigation menu.
 	// remove_action( 'genesis_after_header', 'genesis_do_subnav' );
@@ -154,7 +154,7 @@ function child_theme_setup() {
 	// Add support for custom header.
 	add_theme_support( 'custom-header', array(
 		'width'           => 600,
-		'height'          => 160,
+		'height'          => 245,
 		'header-selector' => '.site-title a',
 		'header-text'     => false,
 		'flex-height'     => true,
@@ -167,10 +167,10 @@ function child_theme_setup() {
 	add_action( 'genesis_meta', 'eco_google_fonts', 5 );
 
 	// Add support for 3-column footer widgets
-	// add_theme_support( 'genesis-footer-widgets', 3 );
+	add_theme_support( 'genesis-footer-widgets', 3 );
 
 	// Add top bar
-	add_action( 'genesis_before_header', 'eco_top_bar', 3 );
+	add_action( 'genesis_before_header', 'eco_do_top_bar', 3 );
 
 	// Add logo to the header
 	// add_filter( 'genesis_seo_title', 'eco_custom_header_logo', 10, 3 );
@@ -191,12 +191,18 @@ function child_theme_setup() {
 	add_action( 'genesis_before_header', 'eco_slider_wrap_begin', 5 );
 	add_action( 'genesis_header', 'genesis_do_nav' );
 	add_action( 'genesis_after_header', 'eco_add_page_banner' );
-	add_action( 'genesis_after_header', 'eco_add_waves_shape', 15 );
+	// add_action( 'genesis_after_header', 'eco_add_waves_shape', 15 );
 	add_action( 'genesis_after_header', 'eco_slider_wrap_end', 50 );
 
 	// * Sidebars *
 	unregister_sidebar( 'header-right' );
 	unregister_sidebar( 'sidebar-alt' );
+
+	genesis_register_sidebar( array(
+	  'id'			=> 'top-bar-widget-area',
+	  'name'			=> __( 'Top Bar Widget Area', 'CHILD_THEME_NAME' ),
+	  'description'	=> __( 'This is the Top Bar Widget Area.', 'CHILD_THEME_NAME' ),
+  	) );
 
 	//* Customize search form input box text
 	add_filter( 'genesis_search_text', 'eco_search_text' );
@@ -205,7 +211,7 @@ function child_theme_setup() {
 	remove_action( 'genesis_footer', 'genesis_do_footer' );
 	remove_action( 'genesis_footer', 'genesis_footer_markup_open', 5 );
 	remove_action( 'genesis_footer', 'genesis_footer_markup_close', 15 );
-	add_action( 'wp_footer', 'eco_do_footer', 5 );
+	// add_action( 'wp_footer', 'eco_do_footer', 5 );
 
 	// * Customize widget titles
 	add_filter( 'widget_title', 'eco_add_widget_title_spans' );
@@ -302,12 +308,17 @@ function eco_favicons() {
 	<?php
 }
 
-function eco_top_bar() { ?>
+function eco_do_top_bar() { ?>
 	<div class="top-bar">
-		<div class="weather-widget">
-			<?php echo do_shortcode( '[wunderground caption="" location="GPS" layout="simple" showdata="icon,highlow" todaylabel=""]' ); ?>
-		</div>
-		<?php do_action( 'eco_top_bar' ); ?>
+		<?php
+		//TODO: add widget area in widgets for top bar
+		//TODO: add search, two text widgets and social-media widgets
+		//TODO: add styles for desktop and mobile
+		genesis_widget_area( 'top-bar-widget-area', array(
+				'before' => '',
+				'after' => '',
+			) );
+		?>
 	</div>
 	<?php
 }
@@ -325,7 +336,7 @@ function eco_custom_header_logo( $title, $inside, $wrap ) {
 	$inside = sprintf( '<a href="/" title="%s" class="header-logo">
 		%s
 	</a>', esc_attr( get_bloginfo( 'name' ) ),
-	'<img src="' . get_stylesheet_directory_uri() . '/images/logo.png" width="153" height="60">' );
+	'<img src="' . get_stylesheet_directory_uri() . '/images/ecoventura-logo-new.png" width="153" height="60">' );
 
 	$title = sprintf( '<%s class="title">%s
 		</%s>
