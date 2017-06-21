@@ -116,7 +116,8 @@ function child_theme_setup() {
 	genesis_unregister_layout( 'sidebar-sidebar-content' );
 
 	//* Force full-width-content layout setting
-	add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
+	add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
+
 
 	// Image sizes
 	add_image_size( 'media-thumb',            52             );
@@ -230,6 +231,12 @@ function eco_scripts() {
 	// * style.css
 	wp_enqueue_style( 'colorbox', get_stylesheet_directory_uri() . '/lib/js/colorbox/colorbox.css', array(), filemtime(get_stylesheet_directory() . '/lib/js/colorbox/colorbox.css'), 'all' );
 
+
+	// wp_enqueue_style( 'flexslider-icon-eot', get_stylesheet_directory_uri() . '/fonts/flexslider-icon.eot' );
+	// wp_enqueue_style( 'flexslider-icon-svg', get_stylesheet_directory_uri() . '/fonts/flexslider-icon.svg' );
+	// wp_enqueue_style( 'flexslider-icon-ttf', get_stylesheet_directory_uri() . '/fonts/flexslider-icon.ttf' );
+	// wp_enqueue_style( 'flexslider-icon-woff', get_stylesheet_directory_uri() . '/fonts/flexslider-icon.woff' );
+
 	// * fitvids
 	// * ios orientationchange fix
 	// * colorbox
@@ -238,7 +245,9 @@ function eco_scripts() {
 	wp_enqueue_script( 'ios-bug', get_stylesheet_directory_uri() . '/lib/js/ios-bug.js', array(), filemtime(get_stylesheet_directory() . '/lib/js/ios-bug.js') );
 	wp_enqueue_script( 'colorbox', get_stylesheet_directory_uri() . '/lib/js/colorbox/jquery.colorbox.min.js', array('jquery'), filemtime(get_stylesheet_directory() . '/lib/js/colorbox/jquery.colorbox.min.js'), true );
 	wp_enqueue_script( 'resp-tables-js', get_stylesheet_directory_uri() . '/lib/js/responsive-tables/responsive-tables.js', array('jquery'), filemtime(get_stylesheet_directory() . '/lib/js/responsive-tables/responsive-tables.js'), true );
+	wp_enqueue_script( 'eco-flexslider', get_stylesheet_directory_uri() . '/js/jquery.flexslider.js', array('jquery'), filemtime(get_stylesheet_directory() . '/js/jquery.flexslider.js'), true );
 	wp_enqueue_script( 'eco-global', get_stylesheet_directory_uri() . '/js/global.min.js', array('jquery','colorbox'), filemtime(get_stylesheet_directory() . '/js/global.min.js'), true );
+	wp_enqueue_script( 'eco-main', get_stylesheet_directory_uri() . '/js/eco-main.js', array('jquery'), filemtime(get_stylesheet_directory() . '/js/eco-main.js'), true );
 
 
 
@@ -591,3 +600,35 @@ src="https://www.facebook.com/tr?id=370688379967829&ev=PageView&noscript=1"
 <!-- End Facebook Pixel Code -->
 <?php
 } );
+
+
+function eco_footer_testimonials() {
+	global $post;
+	$guestreviews = get_posts( array(
+		'posts_per_page' => 1,
+		'post_type'        => 'guest-review',
+	) );
+
+	if ( $guestreviews ) {
+		?>
+		<section class="footer-testimonials">
+			<h4>GUEST REVIEWS</h4>
+		<?php
+		    foreach ( $guestreviews as $post ) :
+
+				$post_content = substr( $post->post_content, 0, 200);
+				$post_meta = get_post_meta($post->ID)[_eco_guests_trip][0];
+
+				echo "<p>{$post_content}...</p>";
+				echo "<p><em>{$post_meta}</em></p>";
+				echo "<a href='/guest-reviews/'><button>MORE REVIEWS</button></a>";
+
+		    endforeach;
+		    wp_reset_postdata();
+		?>
+		</section>
+
+	<?php }//end if
+}
+
+add_shortcode( 'eco_footer_testimonial' , 'eco_footer_testimonials' );
