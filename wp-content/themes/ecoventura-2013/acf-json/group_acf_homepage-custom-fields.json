@@ -465,7 +465,7 @@
                 "label": "Media Logo 1 Link",
                 "name": "media_logo_1_link",
                 "type": "url",
-                "instructions": "",
+                "instructions": "Format: https:\/\/google.com",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -521,7 +521,7 @@
                 "label": "Media Logo 2 Link",
                 "name": "media_logo_2_link",
                 "type": "url",
-                "instructions": "",
+                "instructions": "Format: https:\/\/google.com",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -577,7 +577,7 @@
                 "label": "Media Logo 3 Link",
                 "name": "media_logo_3_link",
                 "type": "url",
-                "instructions": "",
+                "instructions": "Format: https:\/\/google.com",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -633,7 +633,7 @@
                 "label": "Media Logo 4 Link",
                 "name": "media_logo_4_link",
                 "type": "url",
-                "instructions": "",
+                "instructions": "Format: https:\/\/google.com",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -689,7 +689,7 @@
                 "label": "Media Logo 5 Link",
                 "name": "media_logo_5_link",
                 "type": "url",
-                "instructions": "",
+                "instructions": "Format: https:\/\/google.com",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -745,7 +745,7 @@
                 "label": "Media Logo 6 Link",
                 "name": "media_logo_6_link",
                 "type": "url",
-                "instructions": "",
+                "instructions": "Format: https:\/\/google.com",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {

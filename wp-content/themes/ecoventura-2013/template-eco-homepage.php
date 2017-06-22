@@ -12,27 +12,29 @@ add_action( 'genesis_loop', 'eco_homepage_content' );
 
 function eco_homepage_content() {
 
+	global $post;
+	$acf_fields = get_fields($post->ID);
+
 	//* Add in the sections
-	eco_homepage_above_fold();
-	eco_homepage_page_image_boxes();
-	eco_homepage_video();
+	eco_homepage_above_fold($acf_fields);
+	eco_homepage_page_image_boxes($acf_fields);
+	eco_homepage_video($acf_fields);
 	eco_homepage_recent_blog_posts();
-	eco_homepage_page_as_seen_in_the_media();
-	eco_homepage_subscribe();
+	eco_homepage_page_as_seen_in_the_media($acf_fields);
+	eco_homepage_subscribe($acf_fields);
 }
 
-function eco_homepage_above_fold() {
-	//TODO get the slider ID
+function eco_homepage_above_fold($acf_fields) {
 	//* Add Slider
 	?>
 	<section class="homepage-above-fold">
-		<?php if ( function_exists( 'soliloquy' ) ) { soliloquy( '9619' ); } ?>
+		<?php if ( function_exists( 'soliloquy' ) ) { soliloquy( $acf_fields["homepage_slider"] ); } ?>
 
 
 		<!-- Add title div -->
 
 		<div class="homepage-title-div">
-			<h2>EXPEDITION CRUISING IN THE GALLAPAGOS ISLANDS</h2>
+			<h2><?php echo $acf_fields["above_the_fold_heading"]; ?></h2>
 		</div>
 
 		<!-- Add Plan Your Trip box -->
@@ -42,52 +44,54 @@ function eco_homepage_above_fold() {
 	<?php
 }
 
-function eco_homepage_page_image_boxes() {
-
-	//TODO: replace image links
-
+function eco_homepage_page_image_boxes($acf_fields) {
 	?>
 	<section class="homepage-page-image-boxes">
 
-		<a href="#">
+		<a href="<?php echo $acf_fields['image_box_1_link'];?>">
 			<div class="homepage-page-image-box">
-				<img src="http://via.placeholder.com/400x300" />
-				<div>Rates & Terms</div>
+				<img src="<?php echo $acf_fields['image_box_1_image'];?>" />
+				<div><?php echo $acf_fields['image_box_1_title'];?></div>
 			</div>
 		</a>
 
-		<a href="#">
+
+		<a href="<?php echo $acf_fields['image_box_2_link'];?>">
 			<div class="homepage-page-image-box">
-				<img src="http://via.placeholder.com/400x300" />
-				<div>Rates & Terms</div>
+				<img src="<?php echo $acf_fields['image_box_2_image'];?>" />
+				<div><?php echo $acf_fields['image_box_2_title'];?></div>
 			</div>
 		</a>
 
-		<a href="#">
+
+		<a href="<?php echo $acf_fields['image_box_3_link'];?>">
 			<div class="homepage-page-image-box">
-				<img src="http://via.placeholder.com/400x300" />
-				<div>Rates & Terms</div>
+				<img src="<?php echo $acf_fields['image_box_3_image'];?>" />
+				<div><?php echo $acf_fields['image_box_3_title'];?></div>
 			</div>
 		</a>
 
-		<a href="#">
+
+		<a href="<?php echo $acf_fields['image_box_4_link'];?>">
 			<div class="homepage-page-image-box">
-				<img src="http://via.placeholder.com/400x300" />
-				<div>Rates & Terms</div>
+				<img src="<?php echo $acf_fields['image_box_4_image'];?>" />
+				<div><?php echo $acf_fields['image_box_4_title'];?></div>
 			</div>
 		</a>
+
+
 
 	</section>
 	<?php
 }
 
-function eco_homepage_video() {
+function eco_homepage_video($acf_fields) {
 	//* Add homepage video
 	//TODO replace witht the content embed
 	?>
 	<section class="homepage-video">
 		<div>
-			<iframe width="900" height="480" src="https://www.youtube.com/embed/j_7f3iisldM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+			<?php echo $acf_fields['video_embed']; ?>
 		</div>
 	</section>
 	<?php
@@ -133,37 +137,40 @@ function eco_filter_excerpt_read_more( $more ) {
 
 
 
-function eco_homepage_page_as_seen_in_the_media() {
-
-	//TODO: replace image links
-
+function eco_homepage_page_as_seen_in_the_media($acf_fields) {
 	?>
 	<section class="homepage-page-as-seen">
 		<div class="as-seen-layer-container ">
 			<div class="as-seen-logo-container">
 				<h2>AS SEEN IN THE MEDIA</h2>
 
-				<a href="#">
-					<img src="http://via.placeholder.com/300x80" />
+				<a href="<?php echo $acf_fields['media_logo_1_link']; ?>">
+					<img src="<?php echo $acf_fields['media_logo_1_image']; ?>" />
 				</a>
-				<a href="#">
-					<img src="http://via.placeholder.com/300x80" />
+
+				<a href="<?php echo $acf_fields['media_logo_2_link']; ?>">
+					<img src="<?php echo $acf_fields['media_logo_2_image']; ?>" />
 				</a>
-				<a href="#">
-					<img src="http://via.placeholder.com/300x80" />
+
+				<a href="<?php echo $acf_fields['media_logo_3_link']; ?>">
+					<img src="<?php echo $acf_fields['media_logo_3_image']; ?>" />
 				</a>
-				<a href="#">
-					<img src="http://via.placeholder.com/300x80" />
+
+				<a href="<?php echo $acf_fields['media_logo_4_link']; ?>">
+					<img src="<?php echo $acf_fields['media_logo_4_image']; ?>" />
 				</a>
-				<a href="#">
-					<img src="http://via.placeholder.com/300x80" />
+
+				<a href="<?php echo $acf_fields['media_logo_5_link']; ?>">
+					<img src="<?php echo $acf_fields['media_logo_5_image']; ?>" />
 				</a>
-				<a href="#">
-					<img src="http://via.placeholder.com/300x80" />
+
+				<a href="<?php echo $acf_fields['media_logo_6_link']; ?>">
+					<img src="<?php echo $acf_fields['media_logo_6_image']; ?>" />
 				</a>
+
 			</div>
 
-			<button>READ ARTICLES</button>
+			<a href="/blog"><button>READ ARTICLES</button></a>
 
 		</div>
 
