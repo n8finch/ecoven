@@ -18,10 +18,11 @@
 }
 
 .genesis-nav-menu a {
-  color: #333;
+  color: #999999;
+  font-family: 'Playfair Display SC', serif;
   text-decoration: none;
   display: block;
-  padding: 32px 20px;
+  padding: 32px 10px;
 }
 
 .genesis-nav-menu a:hover,
@@ -29,8 +30,8 @@
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus  {
-  color: #c3251d;
-  text-decoration: underline;
+  color: #333333;
+  text-decoration: none;
 }
 
 .genesis-nav-menu .sub-menu {

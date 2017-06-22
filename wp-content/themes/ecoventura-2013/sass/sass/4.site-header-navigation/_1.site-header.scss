@@ -10,15 +10,53 @@
 }
 
 .top-bar {
-	display: inline-flex;
+	color: #999999;
+	display: flex;
+	font-family: 'Playfair Display SC', serif;
 	justify-content: space-around;
+	padding: 20px 0;
 	width: 100%;
 
 	section {
+		flex-grow: 1;
 		margin: 0 10px;
+	}
+
+	.widget_search {
+		flex-grow: 10;
 	}
 
 	.widget_search .widget-wrap {
 		display: inline-flex;
+
+
+		h3 {
+			margin: 10px;
+		}
+
+		input {
+			background-color: transparent;
+			border: none;
+			border-bottom: 1px solid #999999;
+			color: #999999;
+			padding: 0;
+		}
 	}
+
+	.widget_text .widget-wrap {
+
+		p {
+			margin-top: 5px;
+		}
+
+		a {
+			color: #999999;
+			text-decoration: none;
+		}
+	}
+
+	.widget.simple-social-icons ul li {
+	    margin: 0 0 12px !important;
+	}
+
 }

@@ -108,8 +108,11 @@ function eco_homepage_recent_blog_posts() {
 
 	if ( $latestposts ) {
 		?>
+		<!-- Add Recent Blog Posts box -->
+		<div class="recent-blog-posts-box"><span>RECENT BLOG POSTS</span></div>
+
 		<section class="homepage-recent-blog-posts">
-			<h2>RECENT BLOG POSTS</h2>
+
 		<?php
 		    foreach ( $latestposts as $post ) :
 		        setup_postdata( $post ); ?>

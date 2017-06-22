@@ -226,16 +226,17 @@ function child_theme_setup() {
 
 
 function eco_scripts() {
+
+	wp_enqueue_style( 'google-font-lato', '//fonts.googleapis.com/css?family=Playfair+Display+SC|Raleway', array(), CHILD_THEME_VERSION );
+
+	//fonts.googleapis.com/css?family=Playfair+Display+SC|Raleway
+
+
+
 	// Styles
 	// * colorbox
 	// * style.css
 	wp_enqueue_style( 'colorbox', get_stylesheet_directory_uri() . '/lib/js/colorbox/colorbox.css', array(), filemtime(get_stylesheet_directory() . '/lib/js/colorbox/colorbox.css'), 'all' );
-
-
-	// wp_enqueue_style( 'flexslider-icon-eot', get_stylesheet_directory_uri() . '/fonts/flexslider-icon.eot' );
-	// wp_enqueue_style( 'flexslider-icon-svg', get_stylesheet_directory_uri() . '/fonts/flexslider-icon.svg' );
-	// wp_enqueue_style( 'flexslider-icon-ttf', get_stylesheet_directory_uri() . '/fonts/flexslider-icon.ttf' );
-	// wp_enqueue_style( 'flexslider-icon-woff', get_stylesheet_directory_uri() . '/fonts/flexslider-icon.woff' );
 
 	// * fitvids
 	// * ios orientationchange fix
@@ -320,9 +321,6 @@ function eco_favicons() {
 function eco_do_top_bar() { ?>
 	<div class="top-bar">
 		<?php
-		//TODO: add widget area in widgets for top bar
-		//TODO: add search, two text widgets and social-media widgets
-		//TODO: add styles for desktop and mobile
 		genesis_widget_area( 'top-bar-widget-area', array(
 				'before' => '',
 				'after' => '',
@@ -390,7 +388,7 @@ function eco_add_widget_title_spans( $title ) {
  * @since 1.0.0
  */
 function eco_search_text( $text ) {
-	return esc_attr( 'Search...' );
+	return esc_attr( '' );
 }
 
 /**

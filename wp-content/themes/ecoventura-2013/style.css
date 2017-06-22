@@ -104,7 +104,7 @@ body > div {
 body {
   background-color: #eee;
   color: #333;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 20px;
   font-size: 2rem;
   -webkit-font-smoothing: antialiased;
@@ -198,7 +198,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Playfair Display SC', serif;
   font-weight: 600;
   line-height: 1.2;
   margin: 0 0 10px;
@@ -614,6 +614,7 @@ input[type="submit"],
   border: 0;
   color: #fff;
   cursor: pointer;
+  font-family: 'Raleway', sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
   font-weight: 700;
@@ -1515,15 +1516,42 @@ img.alignright,
 }
 
 .top-bar {
-  display: inline-flex;
+  color: #999999;
+  display: flex;
+  font-family: 'Playfair Display SC', serif;
   justify-content: space-around;
+  padding: 20px 0;
   width: 100%;
 }
 .top-bar section {
+  flex-grow: 1;
   margin: 0 10px;
+}
+.top-bar .widget_search {
+  flex-grow: 10;
 }
 .top-bar .widget_search .widget-wrap {
   display: inline-flex;
+}
+.top-bar .widget_search .widget-wrap h3 {
+  margin: 10px;
+}
+.top-bar .widget_search .widget-wrap input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #999999;
+  color: #999999;
+  padding: 0;
+}
+.top-bar .widget_text .widget-wrap p {
+  margin-top: 5px;
+}
+.top-bar .widget_text .widget-wrap a {
+  color: #999999;
+  text-decoration: none;
+}
+.top-bar .widget.simple-social-icons ul li {
+  margin: 0 0 12px !important;
 }
 
 /* ## Title Area
@@ -1607,10 +1635,11 @@ img.alignright,
 }
 
 .genesis-nav-menu a {
-  color: #333;
+  color: #999999;
+  font-family: 'Playfair Display SC', serif;
   text-decoration: none;
   display: block;
-  padding: 32px 20px;
+  padding: 32px 10px;
 }
 
 .genesis-nav-menu a:hover,
@@ -1618,8 +1647,8 @@ img.alignright,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus {
-  color: #c3251d;
-  text-decoration: underline;
+  color: #333333;
+  text-decoration: none;
 }
 
 .genesis-nav-menu .sub-menu {
@@ -1881,12 +1910,14 @@ p.entry-meta {
   padding-top: 20px;
   text-align: center;
 }
-.page-template-template-eco-homepage .plan-your-trip-box {
+.page-template-template-eco-homepage .plan-your-trip-box,
+.page-template-template-eco-homepage .recent-blog-posts-box {
   top: -15px;
   position: relative;
   text-align: center;
 }
-.page-template-template-eco-homepage .plan-your-trip-box span {
+.page-template-template-eco-homepage .plan-your-trip-box span,
+.page-template-template-eco-homepage .recent-blog-posts-box span {
   background-color: white;
   border: 1px solid #999999;
   padding: 20px;
@@ -1928,7 +1959,7 @@ p.entry-meta {
   max-width: 900px;
 }
 .page-template-template-eco-homepage .homepage-recent-blog-posts {
-  padding: 60px;
+  padding: 20px;
   text-align: center;
 }
 .page-template-template-eco-homepage .homepage-recent-blog-posts h2 {

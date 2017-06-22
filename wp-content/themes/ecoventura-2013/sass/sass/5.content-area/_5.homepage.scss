@@ -13,21 +13,22 @@
 	}
 
 	.homepage-title-div {
-		background-color: #B9C8BE;
+		background-color: $eco_green;
 		color: white;
 		padding-bottom: 40px;
 		padding-top: 20px;
 		text-align: center;
 	}
 
-	.plan-your-trip-box {
+	.plan-your-trip-box,
+	.recent-blog-posts-box {
 		top: -15px;
 	    position: relative;
 	    text-align: center;
 
 		span {
 			background-color: white;
-			border: 1px solid #999999;
+			border: 1px solid $border__color;
 			padding: 20px;
 		}
 	}
@@ -55,13 +56,13 @@
 			width: 400px;
 
 			img {
-				border: 1px solid #999999;
+				border: 1px solid $border__color;
 				border-bottom: 0;
 			}
 
 			div {
 				background-color: white;
-				border: 1px solid #999999;
+				border: 1px solid $border__color;
 				padding: 15px;
 				text-align: center;
 			}
@@ -82,7 +83,7 @@
 
 	//Homepage Recent Blog Posts
 	.homepage-recent-blog-posts {
-		padding: 60px;
+		padding: 20px;
 		text-align: center;
 
 		h2 {
@@ -97,7 +98,7 @@
 		}
 
 		img {
-			border: 1px solid #999999;
+			border: 1px solid $border__color;
 			float: left;
 			margin-right: 10px;
 		}
@@ -106,7 +107,7 @@
 
 	//As Seen Section
 	.homepage-page-as-seen {
-		background-color: #B9C8BE;
+		background-color: $eco_green;
 		text-align: center;
 
 		h2 {
