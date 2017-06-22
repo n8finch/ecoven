@@ -610,9 +610,9 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button {
-  background-color: #333;
-  border: 0;
-  color: #fff;
+  background-color: transparent;
+  border: 1px solid #333333;
+  color: #333333;
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
@@ -634,7 +634,7 @@ input:focus[type="button"],
 input:focus[type="reset"],
 input:focus[type="submit"],
 .button:focus {
-  background-color: #c3251d;
+  background-color: #333333;
   color: #fff;
 }
 
@@ -1924,7 +1924,9 @@ p.entry-meta {
 }
 .page-template-template-eco-homepage .homepage-page-image-boxes {
   display: flex;
+  color: #999999;
   flex-wrap: wrap;
+  font-family: 'Playfair Display SC', serif;
   justify-content: space-around;
   margin: 0 auto;
   max-width: 900px;
@@ -1998,6 +2000,10 @@ p.entry-meta {
   background-color: #152838;
   padding: 20px;
 }
+.page-template-template-eco-homepage .homepage-subscribe #mc_embed_signup {
+  max-width: 1100px;
+  margin: auto;
+}
 .page-template-template-eco-homepage .homepage-subscribe #mc_embed_signup_scroll {
   display: flex;
   justify-content: space-around;
@@ -2006,10 +2012,12 @@ p.entry-meta {
   color: white;
   font-size: 1.5em;
   min-width: 50%;
+  padding-top: 5px;
 }
 .page-template-template-eco-homepage .homepage-subscribe #mc_embed_signup_scroll input#mce-EMAIL {
   height: 20px;
   margin-top: 5px;
+  width: 400px;
 }
 .page-template-template-eco-homepage .homepage-subscribe #mc_embed_signup_scroll input[type="submit"] {
   background-color: #152838;
@@ -2037,7 +2045,8 @@ p.entry-meta {
 /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
 .footer-widgets {
-  background-color: #fff;
+  background-color: #eeeeee;
+  color: #999999;
   font-size: 18px;
   font-size: 1.8rem;
   clear: both;
@@ -2066,7 +2075,7 @@ p.entry-meta {
 /* # Site Footer
 ---------------------------------------------------------------------------------------------------- */
 .site-footer {
-  background-color: #fff;
+  background-color: #eeeeee;
   border-top: 1px solid #eee;
   font-size: 16px;
   font-size: 1.6rem;
