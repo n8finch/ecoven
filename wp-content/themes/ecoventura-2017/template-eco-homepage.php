@@ -173,7 +173,7 @@ function eco_homepage_page_as_seen_in_the_media($acf_fields) {
 
 			</div>
 
-			<a href="/blog"><button>READ ARTICLES</button></a>
+			<a href="/in-the-media/"><button>READ ARTICLES</button></a>
 
 		</div>
 
