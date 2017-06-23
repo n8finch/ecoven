@@ -155,9 +155,6 @@ function child_theme_setup() {
 	// Enqueue scripts and styles
 	add_action( 'wp_enqueue_scripts', 'eco_scripts' );
 
-	// Add Google Fonts
-	add_action( 'genesis_meta', 'eco_google_fonts', 5 );
-
 	// Add support for 3-column footer widgets
 	add_theme_support( 'genesis-footer-widgets', 3 );
 
@@ -180,11 +177,7 @@ function child_theme_setup() {
 	// * Header *
 	remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
 	remove_action( 'genesis_after_header', 'genesis_do_nav' );
-	add_action( 'genesis_before_header', 'eco_slider_wrap_begin', 5 );
 	add_action( 'genesis_header', 'genesis_do_nav' );
-	add_action( 'genesis_after_header', 'eco_add_page_banner' );
-	// add_action( 'genesis_after_header', 'eco_add_waves_shape', 15 );
-	add_action( 'genesis_after_header', 'eco_slider_wrap_end', 50 );
 
 	// * Sidebars *
 	unregister_sidebar( 'header-right' );
@@ -237,9 +230,6 @@ function eco_scripts() {
 	wp_enqueue_script( 'ios-bug', get_stylesheet_directory_uri() . '/lib/js/ios-bug.js', array(), filemtime(get_stylesheet_directory() . '/lib/js/ios-bug.js') );
 	wp_enqueue_script( 'colorbox', get_stylesheet_directory_uri() . '/lib/js/colorbox/jquery.colorbox.min.js', array('jquery'), filemtime(get_stylesheet_directory() . '/lib/js/colorbox/jquery.colorbox.min.js'), true );
 	wp_enqueue_script( 'resp-tables-js', get_stylesheet_directory_uri() . '/lib/js/responsive-tables/responsive-tables.js', array('jquery'), filemtime(get_stylesheet_directory() . '/lib/js/responsive-tables/responsive-tables.js'), true );
-	wp_enqueue_script( 'eco-flexslider', get_stylesheet_directory_uri() . '/js/jquery.flexslider.js', array('jquery'), filemtime(get_stylesheet_directory() . '/js/jquery.flexslider.js'), true );
-	wp_enqueue_script( 'eco-global', get_stylesheet_directory_uri() . '/js/global.min.js', array('jquery','colorbox'), filemtime(get_stylesheet_directory() . '/js/global.min.js'), true );
-	wp_enqueue_script( 'eco-main', get_stylesheet_directory_uri() . '/js/eco-main.js', array('jquery'), filemtime(get_stylesheet_directory() . '/js/eco-main.js'), true );
 
 
 
@@ -271,24 +261,6 @@ function genesis_sample_responsive_menu_settings() {
 
 	return $settings;
 
-}
-
-function eco_google_fonts() {
-	?>
-<script type="text/javascript">
-	WebFontConfig = {
-		google: { families: [ 'Anton::latin' ] }
-	};
-	(function() {
-		var wf = document.createElement('script');
-		wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-			'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-		wf.type = 'text/javascript';
-		wf.async = 'true';
-		var s = document.getElementsByTagName('script')[0];
-		s.parentNode.insertBefore(wf, s);
-	})(); </script>
-	<?php
 }
 
 function eco_favicons() {
@@ -352,10 +324,6 @@ function eco_slider_wrap_begin() {
 
 function eco_slider_wrap_end() {
 	echo '</div>';
-}
-
-function eco_add_waves_shape() {
-	echo '<img src="' . get_stylesheet_directory_uri() . '/images/waves.png" width="1280" height="60" class="waves-shape">';
 }
 
 function eco_do_footer() {
@@ -469,34 +437,6 @@ function eco_hide_singular_cpts() {
 }
 
 /**
- * Add page banner to header
- */
-function eco_add_page_banner() {
-	// Bail if we're on the front page (slider)
-	if ( is_front_page() )
-		return;
-	global $post;
-
-	if (have_posts()) : the_post();
-		$page_banner	= get_field( '_eco_page_banner', $post->ID );
-		$banner_url		= !empty($page_banner) ? $page_banner['url'] : get_stylesheet_directory_uri().'/images/galapagos-eric-leon-dormido.jpg';
-		?>
-		<div class="page-banner">
-			<img src="<?php echo $banner_url; ?>" width="1280" height="250" alt="<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>">
-		</div>
-		<?php
-		rewind_posts(); // Reset the query
-	else:
-		$banner_url		= get_stylesheet_directory_uri().'/images/galapagos-eric-leon-dormido.jpg';
-		?>
-		<div class="page-banner">
-			<img src="<?php echo $banner_url; ?>" width="1280" height="250" alt="<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>">
-		</div>
-		<?php
-	endif;
-}
-
-/**
  * Modify oEmbed sizes since $content_width is set so large for the Jetpack tiled galleries
  *
  * @param  [type] $embed_size [description]
@@ -562,12 +502,6 @@ function remove_acf_menu() {
 
 add_action( 'admin_menu', 'remove_acf_menu', 9999 );
 
-add_filter( 'wunderground_template_data_simple', 'eco_filter_high_low' );
-function eco_filter_high_low( $data ) {
-	$data['strings']['high'] = __( '%d&deg;', 'wunderground' );
-	$data['strings']['low'] = __( '%d&deg;', 'wunderground' );
-	return $data;
-}
 
 // Add Facebook Retargeting pixel.
 add_action( 'wp_head', function() {
