@@ -227,11 +227,14 @@ function eco_scripts() {
 	// * colorbox
 	// * global.js
 	wp_enqueue_script( 'fitvids', get_stylesheet_directory_uri() . '/lib/js/_jquery.fitvids.js', array(), filemtime(get_stylesheet_directory() . '/lib/js/_jquery.fitvids.js') );
+
 	wp_enqueue_script( 'ios-bug', get_stylesheet_directory_uri() . '/lib/js/ios-bug.js', array(), filemtime(get_stylesheet_directory() . '/lib/js/ios-bug.js') );
+
 	wp_enqueue_script( 'colorbox', get_stylesheet_directory_uri() . '/lib/js/colorbox/jquery.colorbox.min.js', array('jquery'), filemtime(get_stylesheet_directory() . '/lib/js/colorbox/jquery.colorbox.min.js'), true );
+
 	wp_enqueue_script( 'resp-tables-js', get_stylesheet_directory_uri() . '/lib/js/responsive-tables/responsive-tables.js', array('jquery'), filemtime(get_stylesheet_directory() . '/lib/js/responsive-tables/responsive-tables.js'), true );
 
-
+	wp_enqueue_script( 'hoverIntent' );
 
 	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
 	wp_enqueue_script( 'genesis-sample-responsive-menu', get_stylesheet_directory_uri() . "/js/responsive-menus{$suffix}.js", array( 'jquery' ), CHILD_THEME_VERSION, true );

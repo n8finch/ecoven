@@ -1517,7 +1517,7 @@ img.alignright,
 }
 
 .site-header > .wrap {
-  padding: 20px 0;
+  padding: 20px 0 0;
 }
 
 .top-bar {
@@ -1720,11 +1720,11 @@ img.alignright,
   float: right;
 }
 
-.nav-primary.genesis-responsive-menu {
-  display: none;
-}
-
 @media only screen and (max-width: 1023px) {
+  .nav-primary.genesis-responsive-menu {
+    display: none;
+  }
+
   .site-header .menu-toggle {
     color: #999999;
   }
@@ -1732,6 +1732,10 @@ img.alignright,
   .site-header .menu-toggle:hover {
     color: #999999;
     background-color: white;
+  }
+
+  .genesis-nav-menu a {
+    width: 85%;
   }
 }
 /* ## Accessible Menu
@@ -2263,6 +2267,7 @@ p.entry-meta {
   .site-header .search-form {
     float: none;
     width: 100%;
+    position: relative;
   }
 
   .genesis-nav-menu,
