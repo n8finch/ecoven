@@ -1913,12 +1913,18 @@ p.entry-meta {
     padding: 0;
   }
 }
+.page-template-template-eco-homepage .soliloquy-controls-direction {
+  display: none;
+}
 .page-template-template-eco-homepage .homepage-title-div {
   background-color: #B9C8BE;
   color: white;
-  padding-bottom: 40px;
-  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-top: 30px;
   text-align: center;
+}
+.page-template-template-eco-homepage .homepage-title-div h2 {
+  font-size: 3.5rem;
 }
 .page-template-template-eco-homepage .plan-your-trip-box,
 .page-template-template-eco-homepage .recent-blog-posts-box {
@@ -1939,7 +1945,7 @@ p.entry-meta {
   font-family: 'Playfair Display', serif;
   justify-content: space-around;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1050px;
   padding-top: 50px;
 }
 .page-template-template-eco-homepage .homepage-page-image-boxes a {
@@ -1951,6 +1957,11 @@ p.entry-meta {
   flex-direction: column;
   margin-bottom: 40px;
   width: 400px;
+}
+@media screen and (min-width: 1023px) {
+  .page-template-template-eco-homepage .homepage-page-image-boxes .homepage-page-image-box {
+    width: 460px;
+  }
 }
 .page-template-template-eco-homepage .homepage-page-image-boxes .homepage-page-image-box img {
   border: 1px solid #999999;

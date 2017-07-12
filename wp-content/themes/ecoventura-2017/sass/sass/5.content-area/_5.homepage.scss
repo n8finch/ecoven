@@ -12,12 +12,20 @@
 		}
 	}
 
+	.soliloquy-controls-direction {
+	    display: none;
+	}
+
 	.homepage-title-div {
 		background-color: $eco_green;
 		color: white;
-		padding-bottom: 40px;
-		padding-top: 20px;
+		padding-bottom: 50px;
+		padding-top: 30px;
 		text-align: center;
+
+		h2 {
+			font-size: 3.5rem;
+		}
 	}
 
 	.plan-your-trip-box,
@@ -43,7 +51,7 @@
 		font-family: 'Playfair Display', serif;
 		justify-content: space-around;
 	    margin: 0 auto;
-		max-width: 900px;
+		max-width: 1050px;
 		padding-top: 50px;
 
 		a {
@@ -56,6 +64,11 @@
     		flex-direction: column;
 			margin-bottom: 40px;
 			width: 400px;
+
+			@media screen and (min-width: 1023px) {
+				width: 460px;
+			}
+
 
 			img {
 				border: 1px solid $border__color;
