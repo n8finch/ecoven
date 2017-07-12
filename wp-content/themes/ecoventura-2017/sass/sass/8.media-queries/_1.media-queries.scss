@@ -105,8 +105,8 @@
   }
 
   .site-header .wrap {
-    padding-left: 5%;
-    padding-right: 5%;
+    // padding-left: 5%;
+    // padding-right: 5%;
   }
 
   .genesis-nav-menu li,
@@ -114,6 +114,7 @@
   .site-header ul.genesis-nav-menu,
   .site-header .search-form {
     float: none;
+	width: 100%;
   }
 
   .genesis-nav-menu,
