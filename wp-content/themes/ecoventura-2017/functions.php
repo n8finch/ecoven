@@ -2,7 +2,7 @@
 /**
  * Functions
  *
- * @package      ecoventura-2013
+ * @package      ecoventura-2017
  * @since        1.0.0
  * @author       Josh Eaton <josh@josheaton.org>
  * @copyright    Copyright (c) 2013, Josh Eaton
@@ -211,7 +211,7 @@ function child_theme_setup() {
 
 function eco_scripts() {
 
-	wp_enqueue_style( 'google-font-lato', '//fonts.googleapis.com/css?family=Playfair+Display+SC|Raleway', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'google-font-lato', '//fonts.googleapis.com/css?family=Playfair+Display|Raleway', array(), CHILD_THEME_VERSION );
 
 	//fonts.googleapis.com/css?family=Playfair+Display+SC|Raleway
 

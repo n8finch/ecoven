@@ -3,6 +3,10 @@
 
 .site-header {
   background-color: #fff;
+
+  @media screen and (min-width: 1023px) {
+	  margin-top: 68px;
+  }
 }
 
 .site-header > .wrap {
@@ -10,11 +14,18 @@
 }
 
 .top-bar {
+
+	@media screen and (min-width: 1023px) {
+		position: fixed;
+	  	background-color: #eeeeee;
+	  	z-index: 999;
+    }
+
 	color: #999999;
 	display: flex;
-	font-family: 'Playfair Display SC', serif;
+	font-family: 'Playfair Display', serif;
 	justify-content: space-around;
-	padding: 20px 0;
+	padding: 10px 0;
 	width: 100%;
 
 	section {
@@ -44,10 +55,6 @@
 	}
 
 	.widget_text .widget-wrap {
-
-		p {
-			margin-top: 5px;
-		}
 
 		a {
 			color: #999999;
