@@ -85,3 +85,20 @@
 .genesis-nav-menu > .right {
   float: right;
 }
+
+
+.nav-primary.genesis-responsive-menu {
+	display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+
+	.site-header .menu-toggle {
+		color: #999999;
+	}
+
+	.site-header .menu-toggle:hover {
+		color: #999999;
+		background-color: white;
+	}
+}
