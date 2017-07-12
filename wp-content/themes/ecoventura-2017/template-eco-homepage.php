@@ -98,7 +98,7 @@ function eco_homepage_video($acf_fields) {
 }
 
 function eco_homepage_recent_blog_posts() {
-	add_filter( 'excerpt_more', 'eco_filter_excerpt_read_more' );
+	add_filter( 'get_the_excerpt', 'eco_filter_excerpt_length' );
 
 	global $post;
 	$latestposts = get_posts( array(
@@ -134,8 +134,28 @@ function eco_homepage_recent_blog_posts() {
 	}
 }
 
-function eco_filter_excerpt_read_more( $more ) {
-    return '... <a href="'.get_the_permalink().'" rel="nofollow">Read More</a>';
+function eco_filter_excerpt_length( $excerpt ) {
+	//Limit excerpt to 250 characters
+	$excerpt = substr( $excerpt, 0, 250 );
+	$punc_period = stripos( $excerpt, '.' );
+	$punc_exclaim = stripos( $excerpt, '!' );
+	$punc_question = stripos( $excerpt, '?' );
+
+	if ( $punc_period ) {
+		return substr( $excerpt, 0, $punc_period + 1 );
+	}
+
+	if ( $punc_exclaim ) {
+		return substr( $excerpt, 0, $punc_exclaim +1 );
+	}
+
+	if ( $punc_question ) {
+		return substr( $excerpt, 0, $punc_question + 1 );
+	}
+
+	// if none of the above were used, just add ...
+	return $excerpt . '...';
+
 }
 
 

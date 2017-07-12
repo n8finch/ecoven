@@ -1530,8 +1530,9 @@ img.alignright,
 }
 @media screen and (min-width: 1023px) {
   .top-bar {
-    position: fixed;
     background-color: #eeeeee;
+    border-bottom: 1px solid #dddddd;
+    position: fixed;
     z-index: 999;
   }
 }
@@ -1936,7 +1937,7 @@ p.entry-meta {
 .page-template-template-eco-homepage .recent-blog-posts-box span {
   background-color: white;
   border: 1px solid #999999;
-  padding: 20px;
+  padding: 30px 50px;
 }
 .page-template-template-eco-homepage .homepage-page-image-boxes {
   display: flex;
@@ -1987,17 +1988,33 @@ p.entry-meta {
 }
 .page-template-template-eco-homepage .homepage-recent-blog-posts h2 {
   margin-bottom: 40px;
+  font-size: 2.5rem;
 }
 .page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box {
   clear: both;
   margin: 20px auto;
   max-width: 900px;
+  min-height: 250px;
   text-align: left;
+}
+@media screen and (max-width: 900px) {
+  .page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box {
+    text-align: center;
+  }
 }
 .page-template-template-eco-homepage .homepage-recent-blog-posts img {
   border: 1px solid #999999;
   float: left;
   margin-right: 10px;
+}
+@media screen and (max-width: 900px) {
+  .page-template-template-eco-homepage .homepage-recent-blog-posts img {
+    float: none;
+  }
+}
+.page-template-template-eco-homepage .homepage-recent-blog-posts a {
+  color: #999999;
+  text-decoration: none;
 }
 .page-template-template-eco-homepage .homepage-page-as-seen {
   background-color: #B9C8BE;
@@ -2013,6 +2030,10 @@ p.entry-meta {
 .page-template-template-eco-homepage .homepage-page-as-seen .as-seen-logo-container {
   margin: 20px auto;
   max-width: 1100px;
+}
+.page-template-template-eco-homepage .homepage-page-as-seen .as-seen-logo-container img {
+  margin: 20px 40px;
+  width: 230px;
 }
 .page-template-template-eco-homepage .homepage-page-as-seen a {
   text-decoration: none;

@@ -37,7 +37,7 @@
 		span {
 			background-color: white;
 			border: 1px solid $border__color;
-			padding: 20px;
+			padding: 30px 50px;
 		}
 	}
 
@@ -103,19 +103,34 @@
 
 		h2 {
 			margin-bottom: 40px;
+			font-size: 2.5rem;
 		}
 
 		.recent-post-box {
     		clear: both;
 			margin: 20px auto;
 			max-width: 900px;
+			min-height: 250px;
 			text-align: left;
+
+			@media screen and (max-width: 900px) {
+				text-align: center;
+			}
 		}
 
 		img {
 			border: 1px solid $border__color;
 			float: left;
 			margin-right: 10px;
+
+			@media screen and (max-width: 900px) {
+				float: none;
+			}
+		}
+
+		a {
+			color: #999999;
+			text-decoration: none;
 		}
 	}
 
@@ -138,6 +153,11 @@
 		.as-seen-logo-container {
 			margin: 20px auto;
 			max-width: 1100px;
+
+			img {
+				margin: 20px 40px;
+				width: 230px;
+			}
 		}
 
 		a {
