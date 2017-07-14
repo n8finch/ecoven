@@ -168,6 +168,7 @@ function eco_filter_excerpt_length( $excerpt ) {
 
 
 function eco_homepage_page_as_seen_in_the_media($acf_fields) {
+
 	?>
 	<section class="homepage-page-as-seen">
 		<div class="as-seen-layer-container ">
