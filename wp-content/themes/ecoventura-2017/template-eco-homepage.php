@@ -91,7 +91,11 @@ function eco_homepage_video($acf_fields) {
 	?>
 	<section class="homepage-video">
 		<div>
-			<?php echo $acf_fields['video_embed']; ?>
+			<video width="960" autoplay controls muted>
+			  <source src="<?php echo $acf_fields['video_embed']; ?>" type="video/mp4">
+			  <source src="<?php echo $acf_fields['video_embed']; ?>" type="video/ogg">
+			Your browser does not support the video tag.
+			</video>
 		</div>
 	</section>
 	<?php
@@ -109,25 +113,28 @@ function eco_homepage_recent_blog_posts() {
 	if ( $latestposts ) {
 		?>
 		<!-- Add Recent Blog Posts box -->
-		<div class="recent-blog-posts-box"><span>RECENT BLOG POSTS</span></div>
 
 		<section class="homepage-recent-blog-posts">
+			<h2>RECENT BLOG POSTS</h2>
 
-		<?php
-		    foreach ( $latestposts as $post ) :
-		        setup_postdata( $post ); ?>
-				<div class="recent-post-box">
-					<a href="<?php the_permalink(); ?>">
-						<img class="" src="<?php echo the_post_thumbnail_url('reason'); ?>"/>
-					</a>
-					<h2><?php the_title(); ?></h2>
-			        <?php the_excerpt(); ?>
-				</div>
+			<div class="recent-post-box-container">
+				<?php
+			    foreach ( $latestposts as $post ) :
+			        setup_postdata( $post ); ?>
+					<div class="recent-post-box">
+						<a href="<?php the_permalink(); ?>">
+							<img class="" src="<?php echo the_post_thumbnail_url('reason'); ?>"/>
+						</a>
+						<h3><?php the_title(); ?></h3>
+				        <?php the_excerpt(); ?>
+						<a href="<?php the_permalink(); ?>"><button>READ MORE</button></a>
+					</div>
 
-		    <?php
-		    endforeach;
-		    wp_reset_postdata();
-			?>
+			    <?php
+			    endforeach;
+			    wp_reset_postdata();
+				?>
+			</div><!-- end Recent Post Box Container -->
 			<a href="/blog"><button>READ MORE ARTICLES</button></a>
 		</section>
 		<?php

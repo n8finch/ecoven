@@ -1996,18 +1996,21 @@ p.entry-meta {
   max-width: 900px;
 }
 .page-template-template-eco-homepage .homepage-recent-blog-posts {
-  padding: 20px;
+  padding: 40px;
   text-align: center;
 }
 .page-template-template-eco-homepage .homepage-recent-blog-posts h2 {
-  margin-bottom: 40px;
-  font-size: 2.5rem;
+  margin: 20px auto 40px;
+  font-size: 3rem;
+}
+.page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box-container {
+  padding-bottom: 20px;
 }
 .page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box {
   clear: both;
   margin: 20px auto;
   max-width: 900px;
-  min-height: 250px;
+  min-height: 350px;
   text-align: left;
 }
 @media screen and (max-width: 900px) {
@@ -2015,14 +2018,29 @@ p.entry-meta {
     text-align: center;
   }
 }
+.page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box p {
+  margin: 0 0 15px;
+}
+.page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box button {
+  background-color: #CFAA42;
+  border: 1px solid #333;
+  color: white;
+}
+.page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box button:hover {
+  background-color: transparent;
+  border: 1px solid #333;
+  color: #333;
+}
 .page-template-template-eco-homepage .homepage-recent-blog-posts img {
   border: 1px solid #999999;
   float: left;
   margin-right: 10px;
+  width: 425px;
 }
 @media screen and (max-width: 900px) {
   .page-template-template-eco-homepage .homepage-recent-blog-posts img {
     float: none;
+    width: 325px;
   }
 }
 .page-template-template-eco-homepage .homepage-recent-blog-posts a {

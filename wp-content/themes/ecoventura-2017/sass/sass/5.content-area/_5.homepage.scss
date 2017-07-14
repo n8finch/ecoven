@@ -98,23 +98,43 @@
 
 	//Homepage Recent Blog Posts
 	.homepage-recent-blog-posts {
-		padding: 20px;
+		padding: 40px;
 		text-align: center;
 
 		h2 {
-			margin-bottom: 40px;
-			font-size: 2.5rem;
+			margin: 20px auto 40px;
+			font-size: 3rem;
+		}
+
+		.recent-post-box-container {
+		    padding-bottom: 20px;
 		}
 
 		.recent-post-box {
     		clear: both;
 			margin: 20px auto;
 			max-width: 900px;
-			min-height: 250px;
+			min-height: 350px;
 			text-align: left;
 
 			@media screen and (max-width: 900px) {
 				text-align: center;
+			}
+
+			p {
+			    margin: 0 0 15px;
+			}
+
+			button {
+				background-color: #CFAA42;
+				border: 1px solid #333;
+				color: white;
+			}
+
+			button:hover {
+				background-color: transparent;
+				border: 1px solid #333;
+				color: #333;
 			}
 		}
 
@@ -122,9 +142,11 @@
 			border: 1px solid $border__color;
 			float: left;
 			margin-right: 10px;
+			width: 425px;
 
 			@media screen and (max-width: 900px) {
 				float: none;
+				width: 325px;
 			}
 		}
 
