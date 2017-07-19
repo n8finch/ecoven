@@ -91,7 +91,7 @@ function eco_homepage_video($acf_fields) {
 	?>
 	<section class="homepage-video">
 		<div>
-			<video width="960" autoplay controls muted>
+			<video width="100%" autoplay muted>
 			  <source src="<?php echo $acf_fields['video_embed']; ?>" type="video/mp4">
 			  <source src="<?php echo $acf_fields['video_embed']; ?>" type="video/ogg">
 			Your browser does not support the video tag.
@@ -168,6 +168,7 @@ function eco_filter_excerpt_length( $excerpt ) {
 
 
 function eco_homepage_page_as_seen_in_the_media($acf_fields) {
+
 	?>
 	<section class="homepage-page-as-seen">
 		<div class="as-seen-layer-container ">
