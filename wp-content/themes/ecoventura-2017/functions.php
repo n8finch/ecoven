@@ -288,8 +288,8 @@ function eco_do_top_bar() { ?>
 	<div class="top-bar">
 		<?php
 		genesis_widget_area( 'top-bar-widget-area', array(
-				'before' => '',
-				'after' => '',
+				'before' => '<div class="top-bar-flex">',
+				'after' => '</div>',
 			) );
 		?>
 	</div>
