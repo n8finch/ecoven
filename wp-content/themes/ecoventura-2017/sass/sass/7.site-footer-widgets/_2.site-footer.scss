@@ -18,3 +18,9 @@
 .footer-testimonials-layer {
 	text-align: left;
 }
+
+@media screen and (max-width: 860px) {
+	div.footer-widget-area section {
+	    text-align: center;
+	}
+}
