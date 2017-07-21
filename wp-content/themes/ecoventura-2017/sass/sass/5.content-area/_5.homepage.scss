@@ -60,6 +60,12 @@
 		}
 
 		.homepage-page-image-box {
+
+			@media screen and (max-width: 860px) {
+				max-width: 400px;
+				width: 100%;
+			}
+
 			display: flex;
     		flex-direction: column;
 			margin-bottom: 40px;
@@ -111,43 +117,63 @@
 		}
 
 		.recent-post-box {
-    		clear: both;
-			margin: 20px auto;
-			max-width: 900px;
-			min-height: 350px;
-			text-align: left;
 
 			@media screen and (max-width: 900px) {
 				text-align: center;
 			}
 
-			p {
-			    margin: 0 0 15px;
-			}
+    		clear: both;
+			margin: 40px auto;
+			max-width: 900px;
+			min-height: 284px;
+			text-align: left;
 
-			button {
-				background-color: #CFAA42;
-				border: 1px solid #333;
-				color: white;
-			}
+			.recent-post-box-content {
+			    height: 100%;
+			    min-height: 284px;
+				position: relative;
 
-			button:hover {
-				background-color: transparent;
-				border: 1px solid #333;
-				color: #333;
+				h3 {
+					color: #152838;
+				}
+
+				p {
+				    margin: 0 0 15px;
+				}
+
+				button {
+
+					@media screen and (max-width: 860px) {
+						position: relative;
+					}
+
+					background-color: #CFAA42;
+					bottom: 0;
+					border: 1px solid #333;
+					color: white;
+					position: absolute;
+				}
+
+				button:hover {
+					background-color: transparent;
+					border: 1px solid #333;
+					color: #333;
+				}
 			}
 		}
 
 		img {
-			border: 1px solid $border__color;
-			float: left;
-			margin-right: 10px;
-			width: 425px;
 
-			@media screen and (max-width: 900px) {
+			@media screen and (max-width: 860px) {
 				float: none;
+				margin-right: 0;
 				width: 325px;
 			}
+
+			border: 1px solid $border__color;
+			float: left;
+			margin-right: 30px;
+			width: 425px;
 		}
 
 		a {
@@ -189,6 +215,11 @@
 
 	//Homepage Subscribe section
 	.homepage-subscribe {
+
+		@media screen and (max-width: 860px) {
+			padding: 20px 20px;
+		}
+
 		background-color: #152838;
 		padding: 20px 40px;
 
@@ -210,19 +241,37 @@
 			}
 
 			input#mce-EMAIL {
+
+				@media screen and (max-width: 860px) {
+					width: 60%;
+				}
+
 			    height: 20px;
 				margin-top: 5px;
-				width: 400px;
+				width: 35%;
+			}
+
+			.clear {
+				@media screen and (max-width: 860px) {
+					width: 40%;
+				}
+
+				width: 15%;
 			}
 
 			input[type="submit"] {
+
+				@media screen and (max-width: 860px) {
+					width: 100%;
+				}
+
 				background-color: #152838;
 				border: 3px solid white;
 				color: white;
 				height: 34px;
 				margin-top: 5px;
 				padding: 0;
-				width: 150px;
+				width: 100%;
 			}
 
 		}

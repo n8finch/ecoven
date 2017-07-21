@@ -125,9 +125,11 @@ function eco_homepage_recent_blog_posts() {
 						<a href="<?php the_permalink(); ?>">
 							<img class="" src="<?php echo the_post_thumbnail_url('reason'); ?>"/>
 						</a>
-						<h3><?php the_title(); ?></h3>
-				        <?php the_excerpt(); ?>
-						<a href="<?php the_permalink(); ?>"><button>READ MORE</button></a>
+						<div class="recent-post-box-content">
+							<h3><?php the_title(); ?></h3>
+					        <?php the_excerpt(); ?>
+							<a href="<?php the_permalink(); ?>"><button>READ MORE</button></a>
+						</div>
 					</div>
 
 			    <?php
