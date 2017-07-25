@@ -2047,8 +2047,14 @@ p.entry-meta {
   min-height: 284px;
   text-align: left;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 860px) {
   .page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box {
+    min-height: 310px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box {
+    min-height: 284px;
     text-align: center;
   }
 }
@@ -2056,6 +2062,18 @@ p.entry-meta {
   height: 100%;
   min-height: 284px;
   position: relative;
+}
+@media screen and (max-width: 860px) {
+  .page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box .recent-post-box-content {
+    float: right;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box .recent-post-box-content {
+    float: none;
+    width: 100%;
+  }
 }
 .page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box .recent-post-box-content h3 {
   color: #152838;
@@ -2087,6 +2105,11 @@ p.entry-meta {
   width: 425px;
 }
 @media screen and (max-width: 860px) {
+  .page-template-template-eco-homepage .homepage-recent-blog-posts img {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 700px) {
   .page-template-template-eco-homepage .homepage-recent-blog-posts img {
     float: none;
     margin-right: 0;
