@@ -28,16 +28,13 @@
 		}
 	}
 
-	.plan-your-trip-box,
-	.recent-blog-posts-box {
-		top: -15px;
+	.plan-your-trip-box {
+		top: -30px;
 	    position: relative;
 	    text-align: center;
 
-		span {
-			background-color: white;
-			border: 1px solid $border__color;
-			padding: 30px 50px;
+		button:hover {
+			background-color: #eeeeee;
 		}
 	}
 
@@ -229,70 +226,6 @@
 
 		a {
 			text-decoration: none;
-		}
-	}
-
-	//Homepage Subscribe section
-	.homepage-subscribe {
-
-		@media screen and (max-width: 860px) {
-			padding: 20px 20px;
-		}
-
-		background-color: #152838;
-		padding: 20px 40px;
-
-		#mc_embed_signup {
-			max-width: 1100px;
-		    margin: auto;
-		}
-
-		#mc_embed_signup_scroll {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-around;
-
-			label {
-				color: white;
-				font-size: 1.5em;
-				min-width: 50%;
-				padding-top: 5px;
-			}
-
-			input#mce-EMAIL {
-
-				@media screen and (max-width: 860px) {
-					width: 60%;
-				}
-
-			    height: 20px;
-				margin-top: 5px;
-				width: 35%;
-			}
-
-			.clear {
-				@media screen and (max-width: 860px) {
-					width: 40%;
-				}
-
-				width: 15%;
-			}
-
-			input[type="submit"] {
-
-				@media screen and (max-width: 860px) {
-					width: 100%;
-				}
-
-				background-color: #152838;
-				border: 3px solid white;
-				color: white;
-				height: 34px;
-				margin-top: 5px;
-				padding: 0;
-				width: 100%;
-			}
-
 		}
 	}
 

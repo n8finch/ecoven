@@ -1,0 +1,32 @@
+.page-template-template-eco-departures {
+
+	.site-inner {
+		max-width: 100%;
+		padding-top: 0;
+	}
+
+	.departure-title-div {
+		background-color: $eco_green;
+		color: white;
+		padding-bottom: 50px;
+		padding-top: 30px;
+		text-align: center;
+
+		h2 {
+			font-size: 3.5rem;
+		}
+	}
+
+	.book-now-box {
+		top: -30px;
+	    position: relative;
+	    text-align: center;
+
+		button:hover {
+			background-color: #eeeeee;
+		}
+	}
+
+
+
+}

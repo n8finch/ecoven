@@ -528,6 +528,10 @@ src="https://www.facebook.com/tr?id=370688379967829&ev=PageView&noscript=1"
 } );
 
 
+
+//* Testimonials in Footer Shortcode
+add_shortcode( 'eco_footer_testimonial' , 'eco_footer_testimonials' );
+
 function eco_footer_testimonials() {
 	global $post;
 	$guestreviews = get_posts( array(
@@ -557,4 +561,24 @@ function eco_footer_testimonials() {
 	<?php }//end if
 }
 
-add_shortcode( 'eco_footer_testimonial' , 'eco_footer_testimonials' );
+
+//* Subscribe to our newsleter before footer
+add_action( 'genesis_before_footer', 'eco_homepage_subscribe', 1 );
+function eco_homepage_subscribe() {
+	?>
+	<section class="footer-subscribe">
+		<div id="mc_embed_signup">
+			<form action="//ecoventura.us7.list-manage.com/subscribe/post?u=ee26e36a40b22d13beee2602f&amp;id=0dc4307284" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+			    <div id="mc_embed_signup_scroll">
+				<label for="mce-EMAIL"><h3>SUBSCRIBE TO OUR NEWSLETTER</h3></label>
+				<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Address" required="">
+			    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+			    <div style="position: absolute; left: -5000px;"><input type="text" name="b_ee26e36a40b22d13beee2602f_0dc4307284" tabindex="-1" value=""></div>
+			    <div class="clear"><input type="submit" value="SIGN UP" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+			    </div>
+			</form>
+		</div>
+	</section>
+
+	<?php
+}
