@@ -29,31 +29,93 @@ function eco_departures_dates( $acf_fields ) {
 			<h2>2017 Departure Dates</h2>
 		</div>
 		<div class="departure-dates-table-wrap">
-			<table class="rwd-table">
+			<table class="departures-table">
 			  <tr>
-			    <th>Movie Title</th>
-			    <th>Genre</th>
-			    <th>Year</th>
-			    <th>Gross</th>
+			    <th>CRUISE DATES</th>
+			    <th>SEASONAL</th>
+			    <th>PEAK</th>
+			    <th>HOLIDAY</th>
+			    <th>ITENERARY A</th>
+			    <th>ITENERARY B</th>
+			    <th>FAMILY</th>
+			    <th>STATUS</th>
+			    <th colspan="2">PROMOTION</th>
 			  </tr>
 			  <tr>
-			    <td data-th="Movie Title">Star Wars</td>
-			    <td data-th="Genre">Adventure, Sci-fi</td>
-			    <td data-th="Year">1977</td>
-			    <td data-th="Gross">$460,935,665</td>
+			    <td data-th="CRUISE DATES">Star Wars</td>
+			    <td class="td-dot" data-th="SEASONAL">·</td>
+			    <td class="td-dot" data-th="PEAK"></td>
+			    <td class="td-dot" data-th="HOLIDAY">·</td>
+			    <td class="td-dot" data-th="ITENERARY A"></td>
+			    <td class="td-dot" data-th="ITENERARY B">·</td>
+			    <td class="td-dot" data-th="FAMILY">·</td>
+			    <td data-th="STATUS">AVAILABLE</td>
+			    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+			    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
 			  </tr>
 			  <tr>
-			    <td data-th="Movie Title">Howard The Duck</td>
-			    <td data-th="Genre">"Comedy"</td>
-			    <td data-th="Year">1986</td>
-			    <td data-th="Gross">$16,295,774</td>
+			    <td data-th="CRUISE DATES">Star Wars</td>
+			    <td class="td-dot" data-th="SEASONAL">·</td>
+			    <td class="td-dot" data-th="PEAK"></td>
+			    <td class="td-dot" data-th="HOLIDAY">·</td>
+			    <td class="td-dot" data-th="ITENERARY A"></td>
+			    <td class="td-dot" data-th="ITENERARY B">·</td>
+			    <td class="td-dot" data-th="FAMILY">·</td>
+			    <td data-th="STATUS">AVAILABLE</td>
+			    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+			    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
 			  </tr>
 			  <tr>
-			    <td data-th="Movie Title">American Graffiti</td>
-			    <td data-th="Genre">Comedy, Drama</td>
-			    <td data-th="Year">1973</td>
-			    <td data-th="Gross">$115,000,000</td>
+			    <td data-th="CRUISE DATES">Star Wars</td>
+			    <td class="td-dot" data-th="SEASONAL">·</td>
+			    <td class="td-dot" data-th="PEAK"></td>
+			    <td class="td-dot" data-th="HOLIDAY">·</td>
+			    <td class="td-dot" data-th="ITENERARY A"></td>
+			    <td class="td-dot" data-th="ITENERARY B">·</td>
+			    <td class="td-dot" data-th="FAMILY">·</td>
+			    <td data-th="STATUS">AVAILABLE</td>
+			    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+			    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
 			  </tr>
+			  <tr>
+			    <td data-th="CRUISE DATES">Star Wars</td>
+			    <td class="td-dot" data-th="SEASONAL">·</td>
+			    <td class="td-dot" data-th="PEAK"></td>
+			    <td class="td-dot" data-th="HOLIDAY">·</td>
+			    <td class="td-dot" data-th="ITENERARY A"></td>
+			    <td class="td-dot" data-th="ITENERARY B">·</td>
+			    <td class="td-dot" data-th="FAMILY">·</td>
+			    <td data-th="STATUS">AVAILABLE</td>
+			    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+			    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+			  </tr>
+			  <tr>
+			    <td data-th="CRUISE DATES">Star Wars</td>
+			    <td class="td-dot" data-th="SEASONAL">·</td>
+			    <td class="td-dot" data-th="PEAK"></td>
+			    <td class="td-dot" data-th="HOLIDAY">·</td>
+			    <td class="td-dot" data-th="ITENERARY A"></td>
+			    <td class="td-dot" data-th="ITENERARY B">·</td>
+			    <td class="td-dot" data-th="FAMILY">·</td>
+			    <td data-th="STATUS">AVAILABLE</td>
+			    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+			    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+			  </tr>
+			  <tr>
+			    <td data-th="CRUISE DATES">Star Wars</td>
+			    <td class="td-dot" data-th="SEASONAL">·</td>
+			    <td class="td-dot" data-th="PEAK"></td>
+			    <td class="td-dot" data-th="HOLIDAY">·</td>
+			    <td class="td-dot" data-th="ITENERARY A"></td>
+			    <td class="td-dot" data-th="ITENERARY B">·</td>
+			    <td class="td-dot" data-th="FAMILY">·</td>
+			    <td data-th="STATUS">AVAILABLE</td>
+			    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+			    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+			  </tr>
+
+
+
 			</table>
 		</div>
 
@@ -104,8 +166,7 @@ function eco_departures_expedition( $acf_fields ) {
 function eco_departures_faqs_terms_conditions( $acf_fields ) {
 	?>
 	<section class="departures-faqs-terms-conditions">
-		<div>
-			<img src="http://ecoven.dev/wp-content/uploads/2017/07/Kicker-Rock-Sunset.jpg" />
+		<div class="departure-faq-image" style="background-image: url(http://ecoven.dev/wp-content/uploads/2017/07/Kicker-Rock-Sunset.jpg);" />
 		</div>
 
 		<div class="departure-faqs">

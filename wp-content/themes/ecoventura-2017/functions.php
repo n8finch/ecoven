@@ -236,6 +236,8 @@ function eco_scripts() {
 
 	wp_enqueue_script( 'hoverIntent' );
 
+	wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/js/custom.js', array('jquery'), filemtime(get_stylesheet_directory() . '/js/custom.js'), true );
+
 	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
 	wp_enqueue_script( 'genesis-sample-responsive-menu', get_stylesheet_directory_uri() . "/js/responsive-menus{$suffix}.js", array( 'jquery' ), CHILD_THEME_VERSION, true );
 	wp_localize_script(

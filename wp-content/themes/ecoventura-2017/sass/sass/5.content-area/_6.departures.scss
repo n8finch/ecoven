@@ -26,6 +26,43 @@
 		.departure-dates-table-wrap {
 			margin: 30px auto;
 			max-width: 1100px;
+
+			table.departures-table {
+				font-size: 12px;
+				font-size: 1.2rem;
+
+				th, td {
+					border: 1px solid #333333;
+					text-align: center;
+
+				}
+
+				th {
+					background-color: $eco_green;
+					color: white;
+					padding: 10px;
+				}
+
+				.td-dot {
+					font-size: 100px;
+					font-size: 10rem;
+    				line-height: 0.2;
+				}
+
+				.td-promotion {
+					border-right: none;
+				}
+
+				.td-inquire {
+					border-left: none;
+				}
+
+			button {
+				font-size: 12px;
+				font-size: 1.2rem;
+				padding: 3px 15px;
+			}
+			}
 		}
 
 		.departure-view-iteneraries {
@@ -62,6 +99,7 @@
 
 			#iten-b {
 				background-color: $color__light_blue_gray;
+			    width: 100%;
 			}
 
 
@@ -123,6 +161,51 @@
 			font-family: 'Roboto', sans-serif;
 			font-weight: normal;
 			letter-spacing: 1px;
+		}
+
+	}
+
+	.departures-faqs-terms-conditions {
+
+		.departure-faq-image {
+			background-size: cover;
+    		background-position-y: -250px;
+			min-height: 550px;
+		}
+
+		.departure-faqs,
+		.departure-terms-conditions {
+			margin: 60px auto;
+			max-width: 1100px;
+		}
+
+		h3 {
+			font-size: 35px;
+			font-size: 3.5rem;
+			font-weight: normal;
+		}
+
+		h5 {
+			font-family: 'Roboto', sans-serif;
+			font-weight: normal;
+			letter-spacing: 1px;
+		}
+
+		.departure-term-condition {
+
+			border-top: 1px solid #333333;
+    		margin-top: -1px;
+
+			h5 {
+				border-bottom: 1px solid #333333;
+				margin-bottom: 0;
+				padding: 30px 60px;
+			}
+
+			p{
+				display: none;
+				padding: 30px 60px;
+			}
 		}
 
 	}
