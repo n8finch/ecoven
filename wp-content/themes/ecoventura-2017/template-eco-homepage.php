@@ -21,7 +21,6 @@ function eco_homepage_content() {
 	eco_homepage_video($acf_fields);
 	eco_homepage_recent_blog_posts();
 	eco_homepage_page_as_seen_in_the_media($acf_fields);
-	eco_homepage_subscribe($acf_fields);
 }
 
 function eco_homepage_above_fold($acf_fields) {
@@ -38,7 +37,7 @@ function eco_homepage_above_fold($acf_fields) {
 		</div>
 
 		<!-- Add Plan Your Trip box -->
-		<div class="plan-your-trip-box"><span>PLAN YOUR TRIP</span></div>
+		<div class="plan-your-trip-box"><a href="#"><button>PLAN YOUR TRIP</button></a></div>
 
 	</section>
 	<?php
@@ -208,25 +207,6 @@ function eco_homepage_page_as_seen_in_the_media($acf_fields) {
 		</div>
 
 	</section>
-	<?php
-}
-
-function eco_homepage_subscribe() {
-	?>
-	<section class="homepage-subscribe">
-		<div id="mc_embed_signup">
-			<form action="//ecoventura.us7.list-manage.com/subscribe/post?u=ee26e36a40b22d13beee2602f&amp;id=0dc4307284" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
-			    <div id="mc_embed_signup_scroll">
-				<label for="mce-EMAIL"><h3>SUBSCRIBE TO OUR NEWSLETTER</h3></label>
-				<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Address" required="">
-			    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-			    <div style="position: absolute; left: -5000px;"><input type="text" name="b_ee26e36a40b22d13beee2602f_0dc4307284" tabindex="-1" value=""></div>
-			    <div class="clear"><input type="submit" value="SIGN UP" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-			    </div>
-			</form>
-		</div>
-	</section>
-
 	<?php
 }
 
