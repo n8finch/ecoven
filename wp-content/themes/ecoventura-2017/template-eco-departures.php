@@ -29,7 +29,46 @@ function eco_departures_dates( $acf_fields ) {
 			<h2>2017 Departure Dates</h2>
 		</div>
 		<div class="departure-dates-table-wrap">
-			table
+			<table class="rwd-table">
+			  <tr>
+			    <th>Movie Title</th>
+			    <th>Genre</th>
+			    <th>Year</th>
+			    <th>Gross</th>
+			  </tr>
+			  <tr>
+			    <td data-th="Movie Title">Star Wars</td>
+			    <td data-th="Genre">Adventure, Sci-fi</td>
+			    <td data-th="Year">1977</td>
+			    <td data-th="Gross">$460,935,665</td>
+			  </tr>
+			  <tr>
+			    <td data-th="Movie Title">Howard The Duck</td>
+			    <td data-th="Genre">"Comedy"</td>
+			    <td data-th="Year">1986</td>
+			    <td data-th="Gross">$16,295,774</td>
+			  </tr>
+			  <tr>
+			    <td data-th="Movie Title">American Graffiti</td>
+			    <td data-th="Genre">Comedy, Drama</td>
+			    <td data-th="Year">1973</td>
+			    <td data-th="Gross">$115,000,000</td>
+			  </tr>
+			</table>
+		</div>
+
+		<div class="departure-view-iteneraries">
+			<a href="">
+				<div id="view-itens">VIEW ITENERARIES</div>
+				<div id="arrow-right"></div>
+			</a>
+			<a href="">
+				<div id="arrow-from-right"></div>
+				<div id="iten-a">ITENERARY A</div>
+			</a>
+			<a href="">
+				<div id="iten-b">ITENERARY B</div>
+			</a>
 		</div>
 	</section>
 	<?php
