@@ -29,94 +29,112 @@ function eco_departures_dates( $acf_fields ) {
 			<h2>2017 Departure Dates</h2>
 		</div>
 		<div class="departure-dates-table-wrap">
-			<table class="departures-table">
-			  <tr>
-			    <th>CRUISE DATES</th>
-			    <th>SEASONAL</th>
-			    <th>PEAK</th>
-			    <th>HOLIDAY</th>
-			    <th>ITENERARY A</th>
-			    <th>ITENERARY B</th>
-			    <th>FAMILY</th>
-			    <th>STATUS</th>
-			    <th colspan="2">PROMOTION</th>
-			  </tr>
-			  <tr>
-			    <td data-th="CRUISE DATES">Star Wars</td>
-			    <td class="td-dot" data-th="SEASONAL">·</td>
-			    <td class="td-dot" data-th="PEAK"></td>
-			    <td class="td-dot" data-th="HOLIDAY">·</td>
-			    <td class="td-dot" data-th="ITENERARY A"></td>
-			    <td class="td-dot" data-th="ITENERARY B">·</td>
-			    <td class="td-dot" data-th="FAMILY">·</td>
-			    <td data-th="STATUS">AVAILABLE</td>
-			    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
-			    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
-			  </tr>
-			  <tr>
-			    <td data-th="CRUISE DATES">Star Wars</td>
-			    <td class="td-dot" data-th="SEASONAL">·</td>
-			    <td class="td-dot" data-th="PEAK"></td>
-			    <td class="td-dot" data-th="HOLIDAY">·</td>
-			    <td class="td-dot" data-th="ITENERARY A"></td>
-			    <td class="td-dot" data-th="ITENERARY B">·</td>
-			    <td class="td-dot" data-th="FAMILY">·</td>
-			    <td data-th="STATUS">AVAILABLE</td>
-			    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
-			    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
-			  </tr>
-			  <tr>
-			    <td data-th="CRUISE DATES">Star Wars</td>
-			    <td class="td-dot" data-th="SEASONAL">·</td>
-			    <td class="td-dot" data-th="PEAK"></td>
-			    <td class="td-dot" data-th="HOLIDAY">·</td>
-			    <td class="td-dot" data-th="ITENERARY A"></td>
-			    <td class="td-dot" data-th="ITENERARY B">·</td>
-			    <td class="td-dot" data-th="FAMILY">·</td>
-			    <td data-th="STATUS">AVAILABLE</td>
-			    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
-			    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
-			  </tr>
-			  <tr>
-			    <td data-th="CRUISE DATES">Star Wars</td>
-			    <td class="td-dot" data-th="SEASONAL">·</td>
-			    <td class="td-dot" data-th="PEAK"></td>
-			    <td class="td-dot" data-th="HOLIDAY">·</td>
-			    <td class="td-dot" data-th="ITENERARY A"></td>
-			    <td class="td-dot" data-th="ITENERARY B">·</td>
-			    <td class="td-dot" data-th="FAMILY">·</td>
-			    <td data-th="STATUS">AVAILABLE</td>
-			    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
-			    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
-			  </tr>
-			  <tr>
-			    <td data-th="CRUISE DATES">Star Wars</td>
-			    <td class="td-dot" data-th="SEASONAL">·</td>
-			    <td class="td-dot" data-th="PEAK"></td>
-			    <td class="td-dot" data-th="HOLIDAY">·</td>
-			    <td class="td-dot" data-th="ITENERARY A"></td>
-			    <td class="td-dot" data-th="ITENERARY B">·</td>
-			    <td class="td-dot" data-th="FAMILY">·</td>
-			    <td data-th="STATUS">AVAILABLE</td>
-			    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
-			    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
-			  </tr>
-			  <tr>
-			    <td data-th="CRUISE DATES">Star Wars</td>
-			    <td class="td-dot" data-th="SEASONAL">·</td>
-			    <td class="td-dot" data-th="PEAK"></td>
-			    <td class="td-dot" data-th="HOLIDAY">·</td>
-			    <td class="td-dot" data-th="ITENERARY A"></td>
-			    <td class="td-dot" data-th="ITENERARY B">·</td>
-			    <td class="td-dot" data-th="FAMILY">·</td>
-			    <td data-th="STATUS">AVAILABLE</td>
-			    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
-			    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
-			  </tr>
+			<div class="pinned">
+				<table class="departures-table">
+					<tr>
+						<th>CRUISE DATES</th>
+					</tr>
+					<tr>
+					    <td data-th="CRUISE DATES">April 02-09</td>
+					</tr>
+					<tr>
+					    <td data-th="CRUISE DATES">April 02-09</td>
+					</tr>
+					<tr>
+					    <td data-th="CRUISE DATES">April 02-09</td>
+					</tr>
+					<tr>
+					    <td data-th="CRUISE DATES">April 02-09</td>
+					</tr>
+					<tr>
+					    <td data-th="CRUISE DATES">April 02-09</td>
+					</tr>
+					<tr>
+					    <td data-th="CRUISE DATES">April 02-09</td>
+					</tr>
+				</table>
+			</div>
 
-
-
-			</table>
+			<div class="scroll">
+				<table class="departures-table scroll">
+				  <tr>
+				    <th>SEASONAL</th>
+				    <th>PEAK</th>
+				    <th>HOLIDAY</th>
+				    <th>ITENERARY A</th>
+				    <th>ITENERARY B</th>
+				    <th>FAMILY</th>
+				    <th>STATUS</th>
+				    <th colspan="2">PROMOTION</th>
+				  </tr>
+				  <tr>
+				    <td class="td-dot" data-th="SEASONAL">·</td>
+				    <td class="td-dot" data-th="PEAK"></td>
+				    <td class="td-dot" data-th="HOLIDAY">·</td>
+				    <td class="td-dot" data-th="ITENERARY A"></td>
+				    <td class="td-dot" data-th="ITENERARY B">·</td>
+				    <td class="td-dot" data-th="FAMILY">·</td>
+				    <td data-th="STATUS">AVAILABLE</td>
+				    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+				    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+				  </tr>
+				  <tr>
+				    <td class="td-dot" data-th="SEASONAL">·</td>
+				    <td class="td-dot" data-th="PEAK"></td>
+				    <td class="td-dot" data-th="HOLIDAY">·</td>
+				    <td class="td-dot" data-th="ITENERARY A"></td>
+				    <td class="td-dot" data-th="ITENERARY B">·</td>
+				    <td class="td-dot" data-th="FAMILY">·</td>
+				    <td data-th="STATUS">AVAILABLE</td>
+				    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+				    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+				  </tr>
+				  <tr>
+				    <td class="td-dot" data-th="SEASONAL">·</td>
+				    <td class="td-dot" data-th="PEAK"></td>
+				    <td class="td-dot" data-th="HOLIDAY">·</td>
+				    <td class="td-dot" data-th="ITENERARY A"></td>
+				    <td class="td-dot" data-th="ITENERARY B">·</td>
+				    <td class="td-dot" data-th="FAMILY">·</td>
+				    <td data-th="STATUS">AVAILABLE</td>
+				    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+				    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+				  </tr>
+				  <tr>
+				    <td class="td-dot" data-th="SEASONAL">·</td>
+				    <td class="td-dot" data-th="PEAK"></td>
+				    <td class="td-dot" data-th="HOLIDAY">·</td>
+				    <td class="td-dot" data-th="ITENERARY A"></td>
+				    <td class="td-dot" data-th="ITENERARY B">·</td>
+				    <td class="td-dot" data-th="FAMILY">·</td>
+				    <td data-th="STATUS">AVAILABLE</td>
+				    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+				    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+				  </tr>
+				  <tr>
+				    <td class="td-dot" data-th="SEASONAL">·</td>
+				    <td class="td-dot" data-th="PEAK"></td>
+				    <td class="td-dot" data-th="HOLIDAY">·</td>
+				    <td class="td-dot" data-th="ITENERARY A"></td>
+				    <td class="td-dot" data-th="ITENERARY B">·</td>
+				    <td class="td-dot" data-th="FAMILY">·</td>
+				    <td data-th="STATUS">AVAILABLE</td>
+				    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+				    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+				  </tr>
+				  <tr>
+				    <td class="td-dot" data-th="SEASONAL">·</td>
+				    <td class="td-dot" data-th="PEAK"></td>
+				    <td class="td-dot" data-th="HOLIDAY">·</td>
+				    <td class="td-dot" data-th="ITENERARY A"></td>
+				    <td class="td-dot" data-th="ITENERARY B">·</td>
+				    <td class="td-dot" data-th="FAMILY">·</td>
+				    <td data-th="STATUS">AVAILABLE</td>
+				    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+				    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+				  </tr>
+				</table>
+			</div>
 		</div>
 
 		<div class="departure-view-iteneraries">
