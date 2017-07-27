@@ -2077,6 +2077,13 @@ p.entry-meta {
 .page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box .recent-post-box-content p {
   margin: 0 0 15px;
 }
+@media screen and (min-width: 860px) {
+  .page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box .recent-post-box-content p {
+    max-height: 108px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
 .page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box .recent-post-box-content button {
   background-color: #CFAA42;
   bottom: 0;
@@ -2286,7 +2293,7 @@ p.entry-meta {
   text-align: left;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1023px) {
   div.footer-widget-area section {
     text-align: center;
   }
