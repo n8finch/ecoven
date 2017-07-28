@@ -3,9 +3,8 @@
 	$(document).ready(function() {
 
 		//*Departure tabs
-		$( function() {
-		   $( "#tabs" ).tabs();
-		 } );
+		$('#tabs').tabs();
+
 
 		//*Hide and toggle Terms and Conditions on Departure pages
 		var do_departure_toggles = function() {

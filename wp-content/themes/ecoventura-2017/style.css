@@ -2160,15 +2160,50 @@ p.entry-meta {
   margin: auto;
   max-width: 1100px;
 }
+.page-template-template-eco-departures .departures-dates .ui-tabs .ui-tabs-nav li {
+  list-style: none;
+  float: left;
+  position: relative;
+  top: 0;
+  border-bottom-width: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+.page-template-template-eco-departures .departures-dates .ui-state-active, .page-template-template-eco-departures .departures-dates .ui-widget-content .ui-state-active, .page-template-template-eco-departures .departures-dates .ui-widget-header .ui-state-active, .page-template-template-eco-departures .departures-dates a.ui-button:active, .page-template-template-eco-departures .departures-dates .ui-button:active, .page-template-template-eco-departures .departures-dates .ui-button.ui-state-active:hover {
+  border: 1px solid #003eff;
+}
 .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap {
   margin: 30px auto;
   max-width: 1100px;
   overflow: hidden;
   position: relative;
 }
+.page-template-template-eco-departures .departures-dates .departure-dates-table-wrap li.departure-table-tabs {
+  background-color: #eeeeee;
+  border: 1px solid;
+  border-color: #152838;
+  border-bottom: none;
+  border-right: none;
+  color: #152838;
+  padding: 16px;
+  margin: 0;
+  text-align: center;
+  width: 170px;
+}
+.page-template-template-eco-departures .departures-dates .departure-dates-table-wrap li.departure-table-tabs a {
+  color: #152838;
+  text-decoration: none;
+}
+.page-template-template-eco-departures .departures-dates .departure-dates-table-wrap li.departure-table-tabs:first-child {
+  width: 169px;
+}
+.page-template-template-eco-departures .departures-dates .departure-dates-table-wrap li.departure-table-tabs:last-child {
+  border-right: 1px solid;
+  width: 170px;
+}
 .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap table.departures-table {
-  font-size: 12px;
-  font-size: 1.2rem;
+  font-size: 11px;
+  font-size: 1.1rem;
 }
 .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap table.departures-table th, .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap table.departures-table td {
   border: 1px solid #333333;
@@ -2177,7 +2212,13 @@ p.entry-meta {
 .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap table.departures-table th {
   background-color: #B9C8BE;
   color: white;
-  padding: 10px;
+  padding: 7px 0;
+}
+.page-template-template-eco-departures .departures-dates .departure-dates-table-wrap table.departures-table .th-dates {
+  width: 170px;
+}
+.page-template-template-eco-departures .departures-dates .departure-dates-table-wrap table.departures-table .th-dots {
+  width: 85px;
 }
 .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap table.departures-table .td-dot {
   font-size: 100px;
@@ -2198,10 +2239,11 @@ p.entry-meta {
 .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap div.pinned {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 60px;
+  width: 170px;
 }
 .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap div.pinned table {
-  width: 150px;
+  width: 170px;
 }
 .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap div.pinned td {
   line-height: 32px;
@@ -2210,8 +2252,8 @@ p.entry-meta {
 .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap div.scroll {
   position: relative;
   left: 0;
-  margin-left: 149px;
-  max-width: 951px;
+  margin-left: 169px;
+  max-width: 925px;
   top: 0;
 }
 @media screen and (max-width: 1115px) {
