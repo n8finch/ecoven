@@ -31,11 +31,11 @@ function eco_departures_dates( $acf_fields ) {
 		<div class="departure-dates-table-wrap">
 			<div id="tabs">
 				<ul>
-					<li class="departure-table-tabs"><a href="#tabs-1">M/Y ERIC</a></li>
-					<li class="departure-table-tabs"><a href="#tabs-2">LETTY</a></li>
+					<li class="departure-table-tabs" data-tab="#tabs-1">M/Y ERIC</li>
+					<li class="departure-table-tabs" data-tab="#tabs-2">LETTY</li>
 				</ul>
 
-		 		<div id="tabs-1">
+		 		<div class="departure-table-tab-content tab-open" id="tabs-1">
 					<div class="pinned">
 						<table class="departures-table">
 							<tr>
@@ -60,7 +60,7 @@ function eco_departures_dates( $acf_fields ) {
 							    <td data-th="CRUISE DATES">April 02-09</td>
 							</tr>
 						</table>
-					</div>
+					</div> <!--end pinned class div -->
 
 					<div class="scroll">
 						<table class="departures-table scroll">
@@ -81,7 +81,7 @@ function eco_departures_dates( $acf_fields ) {
 						    <td class="td-dot" data-th="ITENERARY A"></td>
 						    <td class="td-dot" data-th="ITENERARY B">·</td>
 						    <td class="td-dot" data-th="FAMILY">·</td>
-						    <td data-th="STATUS">AVAILABLE</td>
+						    <td data-th="STATUS">UNAVAILABLE</td>
 						    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
 						    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
 						  </tr>
@@ -141,11 +141,116 @@ function eco_departures_dates( $acf_fields ) {
 						    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
 						  </tr>
 						</table>
-					</div>
-				</div>
-				<div id="tabs-2">
-					<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metu.</p>
-				</div>
+					</div> <!--end scroll class div -->
+				</div> <!--end tab div -->
+				<div class="departure-table-tab-content" id="tabs-2">
+					<div class="pinned">
+						<table class="departures-table">
+							<tr>
+								<th class="th-dates">CRUISE DATES</th>
+							</tr>
+							<tr>
+							    <td data-th="CRUISE DATES">April 02-09</td>
+							</tr>
+							<tr>
+							    <td data-th="CRUISE DATES">April 02-09</td>
+							</tr>
+							<tr>
+							    <td data-th="CRUISE DATES">April 02-09</td>
+							</tr>
+							<tr>
+							    <td data-th="CRUISE DATES">April 02-09</td>
+							</tr>
+							<tr>
+							    <td data-th="CRUISE DATES">April 02-09</td>
+							</tr>
+							<tr>
+							    <td data-th="CRUISE DATES">April 02-09</td>
+							</tr>
+						</table>
+					</div> <!--end pinned class div -->
+
+					<div class="scroll">
+						<table class="departures-table scroll">
+						  <tr>
+						    <th class="th-dots">SEASONAL</th>
+						    <th class="th-dots">PEAK</th>
+						    <th class="th-dots">HOLIDAY</th>
+						    <th class="th-dots">ITENERARY A</th>
+						    <th class="th-dots">ITENERARY B</th>
+						    <th class="th-dots">FAMILY</th>
+						    <th>STATUS</th>
+						    <th colspan="2">PROMOTION</th>
+						  </tr>
+						  <tr>
+						    <td class="td-dot" data-th="SEASONAL">·</td>
+						    <td class="td-dot" data-th="PEAK"></td>
+						    <td class="td-dot" data-th="HOLIDAY">·</td>
+						    <td class="td-dot" data-th="ITENERARY A"></td>
+						    <td class="td-dot" data-th="ITENERARY B">·</td>
+						    <td class="td-dot" data-th="FAMILY">·</td>
+						    <td data-th="STATUS">UNAVAILABLE</td>
+						    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+						    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+						  </tr>
+						  <tr>
+						    <td class="td-dot" data-th="SEASONAL">·</td>
+						    <td class="td-dot" data-th="PEAK"></td>
+						    <td class="td-dot" data-th="HOLIDAY">·</td>
+						    <td class="td-dot" data-th="ITENERARY A"></td>
+						    <td class="td-dot" data-th="ITENERARY B">·</td>
+						    <td class="td-dot" data-th="FAMILY">·</td>
+						    <td data-th="STATUS">UNAVAILABLE</td>
+						    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+						    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+						  </tr>
+						  <tr>
+						    <td class="td-dot" data-th="SEASONAL">·</td>
+						    <td class="td-dot" data-th="PEAK"></td>
+						    <td class="td-dot" data-th="HOLIDAY">·</td>
+						    <td class="td-dot" data-th="ITENERARY A"></td>
+						    <td class="td-dot" data-th="ITENERARY B">·</td>
+						    <td class="td-dot" data-th="FAMILY">·</td>
+						    <td data-th="STATUS">UNAVAILABLE</td>
+						    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+						    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+						  </tr>
+						  <tr>
+						    <td class="td-dot" data-th="SEASONAL">·</td>
+						    <td class="td-dot" data-th="PEAK"></td>
+						    <td class="td-dot" data-th="HOLIDAY">·</td>
+						    <td class="td-dot" data-th="ITENERARY A"></td>
+						    <td class="td-dot" data-th="ITENERARY B">·</td>
+						    <td class="td-dot" data-th="FAMILY">·</td>
+						    <td data-th="STATUS">UNAVAILABLE</td>
+						    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+						    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+						  </tr>
+						  <tr>
+						    <td class="td-dot" data-th="SEASONAL">·</td>
+						    <td class="td-dot" data-th="PEAK"></td>
+						    <td class="td-dot" data-th="HOLIDAY">·</td>
+						    <td class="td-dot" data-th="ITENERARY A"></td>
+						    <td class="td-dot" data-th="ITENERARY B">·</td>
+						    <td class="td-dot" data-th="FAMILY">·</td>
+						    <td data-th="STATUS">UNAVAILABLE</td>
+						    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+						    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+						  </tr>
+						  <tr>
+						    <td class="td-dot" data-th="SEASONAL">·</td>
+						    <td class="td-dot" data-th="PEAK"></td>
+						    <td class="td-dot" data-th="HOLIDAY">·</td>
+						    <td class="td-dot" data-th="ITENERARY A"></td>
+						    <td class="td-dot" data-th="ITENERARY B">·</td>
+						    <td class="td-dot" data-th="FAMILY">·</td>
+						    <td data-th="STATUS">UNAVAILABLE</td>
+						    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+						    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+						  </tr>
+						</table>
+					</div> <!--end scroll class div -->
+				</div> <!--end tab div -->
 
 
 		</div> <!-- end table wrap -->

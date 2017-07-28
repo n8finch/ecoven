@@ -23,41 +23,36 @@
 			}
 		}
 
-		.ui-tabs .ui-tabs-nav li {
-			list-style: none;
-			float: left;
-			position: relative;
-			top: 0;
-			border-bottom-width: 0;
-			padding: 0;
-			white-space: nowrap;
-		}
-
-		.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
-			border: 1px solid #003eff;
-		}
-
-		.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
-
-		}
-
 		.departure-dates-table-wrap {
 			margin: 30px auto;
 			max-width: 1100px;
 			overflow: hidden;
 			position: relative;
 
+			ul {
+				position: relative;
+			}
+
 			li.departure-table-tabs {
 				background-color: #eeeeee;
 				border: 1px solid;
+				border-bottom-width: 0;
 				border-color: $color__dark_navy;
 				border-bottom: none;
 				border-right: none;
 				color: $color__dark_navy;
+				cursor: pointer;
+				float: left;
+				list-style: none;
 				padding: 16px;
+				position: relative;
 				margin: 0;
 				text-align: center;
-				width: 170px;
+				top: 0;
+				white-space: nowrap;
+				width: 171px;
+
+
 
 				a {
 					color: $color__dark_navy;
@@ -70,8 +65,18 @@
 			}
 			li.departure-table-tabs:last-child {
 				border-right: 1px solid;
-				width: 170px;
+				// width: 171px;
 			}
+
+			div.departure-table-tab-content {
+				clear: both;
+				display: none;
+			}
+
+			div.departure-table-tab-content.tab-open {
+				display: block;
+			}
+
 
 			table.departures-table {
 				font-size: 11px;
@@ -139,6 +144,11 @@
 	    			overflow-y: hidden;
 				}
 
+
+				@media screen and (max-width: 860px) {
+					top: -2px;
+				}
+
 				position: relative;
 			    left: 0;
 				margin-left: 169px;
@@ -154,6 +164,7 @@
 		}
 
 		.departure-view-iteneraries {
+			clear: both;
 		    display: flex;
 		    max-width: 1100px;
 		    margin: auto;
