@@ -2436,19 +2436,24 @@ p.entry-meta {
   border-top: 1px solid #333333;
   margin-top: -1px;
 }
-@media only screen and (max-width: 860px) {
-  .page-template-template-eco-departures .departures-faqs-terms-conditions .departure-term-condition {
-    padding: 5% 5% 0;
-  }
-}
 .page-template-template-eco-departures .departures-faqs-terms-conditions .departure-term-condition h5 {
   border-bottom: 1px solid #333333;
   margin-bottom: 0;
   padding: 30px 60px;
 }
+@media only screen and (max-width: 860px) {
+  .page-template-template-eco-departures .departures-faqs-terms-conditions .departure-term-condition h5 {
+    padding: 30px 0;
+  }
+}
 .page-template-template-eco-departures .departures-faqs-terms-conditions .departure-term-condition p {
   display: none;
   padding: 30px 60px;
+}
+@media only screen and (max-width: 860px) {
+  .page-template-template-eco-departures .departures-faqs-terms-conditions .departure-term-condition p {
+    padding: 30px 0;
+  }
 }
 
 /* # Sidebars

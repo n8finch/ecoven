@@ -29,7 +29,7 @@ function eco_departures_dates( $acf_fields , $depart_year) {
 	?>
 	<section class="departures-dates">
 		<div class="departure-dates-header">
-			<h2>2017 Departure Dates</h2>
+			<h2><?php echo $depart_year; ?> Departure Dates</h2>
 		</div>
 		<div class="departure-dates-table-wrap">
 			<div id="tabs">
