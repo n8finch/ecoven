@@ -1,8 +1,270 @@
 .page-template-template-eco-departures {
 
+	$color__dark_navy: #152838;
+	$color__medium_blue_gray: #44596e;
+	$color__light_blue_gray: #647a8c;
+
 	.site-inner {
+
+		@media only screen and (max-width: 860px) {
+		    padding: 0;
+		}
+
 		max-width: 100%;
 		padding-top: 0;
+	}
+
+	.departures-dates {
+
+		.departure-dates-header {
+			background-color: $color__medium_blue_gray;
+			color: white;
+			padding: 30px;
+			width: 100%;
+
+			h2 {
+				margin: auto;
+				max-width: 1100px;
+			}
+		}
+
+		.departure-dates-table-wrap {
+			margin: 30px auto;
+			max-width: 1100px;
+			overflow: hidden;
+			position: relative;
+
+			ul {
+				position: relative;
+			}
+
+			li.departure-table-tabs {
+				background-color: #eeeeee;
+				border: 1px solid;
+				border-bottom-width: 0;
+				border-color: $color__dark_navy;
+				border-bottom: none;
+				border-right: none;
+				color: $color__dark_navy;
+				cursor: pointer;
+				float: left;
+				list-style: none;
+				padding: 16px;
+				position: relative;
+				margin: 0;
+				text-align: center;
+				top: 0;
+				white-space: nowrap;
+				width: 171px;
+
+
+
+				a {
+					color: $color__dark_navy;
+					text-decoration: none;
+				}
+			}
+
+			li.departure-table-tabs:first-child {
+				width: 166px;
+			}
+			li.departure-table-tabs:last-child {
+				border-right: 1px solid;
+				// width: 171px;
+			}
+
+			div.departure-table-tab-content {
+				clear: both;
+				display: none;
+			}
+
+			div.departure-table-tab-content.tab-open {
+				display: block;
+			}
+
+
+			table.departures-table {
+				font-size: 11px;
+				font-size: 1.1rem;
+
+				th, td {
+					border: 1px solid #333333;
+					text-align: center;
+
+				}
+
+				th {
+					background-color: $eco_green;
+					color: white;
+					padding: 7px 0;
+				}
+
+				.th-dates {
+					width: 166px;
+				}
+				.th-dots {
+					width: 85px;
+				}
+
+				.td-dot {
+					font-size: 100px;
+					font-size: 10rem;
+    				line-height: 0.2;
+				}
+
+				.td-promotion {
+					border-right: none;
+				}
+
+				.td-inquire {
+					border-left: none;
+				}
+
+				button {
+					font-size: 12px;
+					font-size: 1.2rem;
+					padding: 3px 15px;
+				}
+			}
+
+			div.pinned {
+				position: absolute;
+			    left: 0;
+			    top: 60px;
+				width: 166px;
+
+				table {
+					width: 166px;
+				}
+
+				td {
+					line-height: 32px;
+					line-height: 3.2rem;
+				}
+			}
+
+			div.scroll {
+				@media screen and (max-width: 1115px) {
+					overflow: scroll;
+	    			overflow-y: hidden;
+				}
+
+
+				@media screen and (max-width: 860px) {
+					top: -2px;
+				}
+
+				position: relative;
+			    left: 0;
+				margin-left: 165px;
+    			max-width: 935px;
+			    top: 0;
+
+				table {
+					@media screen and (max-width: 1115px) {
+						width: 951px;
+					}
+				}
+			}
+		}
+
+		.departure-view-iteneraries {
+
+			@media screen and (max-width: 920px) {
+				flex-direction: column;
+				padding: 5% 5% 0;
+			}
+
+			clear: both;
+		    display: flex;
+		    max-width: 1100px;
+		    margin: auto;
+			margin-bottom: 60px;
+		    justify-content: space-around;
+
+			a {
+				width: 100%;
+	    		text-align: center;
+				text-decoration: none;
+			}
+
+			div {
+				color: white;
+				font-size: 22px;
+				font-size: 2.2rem;
+				margin-bottom: 20px;
+				padding: 11px 10px;
+			}
+
+			#view-itens {
+
+				@media screen and (max-width: 920px) {
+				    margin-bottom: 0;
+					width: 100%;
+				}
+
+				background-color: $color__dark_navy;
+				float: left;
+				width: 90%
+			}
+
+			#iten-a {
+
+				@media screen and (max-width: 920px) {
+					width: 100%;
+				}
+
+				background-color: $color__medium_blue_gray;
+				float: left;
+				width: 90%
+			}
+
+			#iten-b {
+
+				@media screen and (max-width: 920px) {
+					width: 100%;
+				}
+
+				background-color: $color__light_blue_gray;
+			    width: 100%;
+			}
+
+
+			#arrow-right {
+
+				@media screen and (max-width: 920px) {
+					border-left: 45vw solid transparent;
+				    border-right: 45vw solid transparent;
+				    border-top: 30px solid #152838;
+					margin-bottom: 0;
+				    margin-top: -1px;
+				}
+
+				border-top: 28px solid transparent;
+			    border-bottom: 29px solid transparent;
+			    border-left: 30px solid $color__dark_navy;
+				float: left;
+			    height: 0;
+			    margin-left: 0px;
+			    padding: 0;
+			    width: 0;
+			}
+
+			#arrow-from-right {
+
+				@media screen and (max-width: 920px) {
+					display: none;
+				}
+
+				border-top: 28px solid $color__medium_blue_gray;
+			    border-bottom: 29px solid $color__medium_blue_gray;
+				border-left: 29px solid transparent;
+				float: left;
+				height: 0;
+			    padding: 0;
+			    width: 0;
+			}
+		}
 	}
 
 	.departure-title-div {
@@ -25,6 +287,82 @@
 		button:hover {
 			background-color: #eeeeee;
 		}
+	}
+
+	.departure-expedition-content-wrap {
+
+		@media only screen and (max-width: 860px) {
+		    padding: 5% 5% 0;
+		}
+
+		margin: auto;
+		max-width: 1100px;
+
+		h3 {
+			font-size: 35px;
+			font-size: 3.5rem;
+		}
+
+		h5 {
+			font-family: 'Roboto', sans-serif;
+			font-weight: normal;
+			letter-spacing: 1px;
+		}
+
+	}
+
+	.departures-faqs-terms-conditions {
+
+		.departure-faq-image {
+			background-size: cover;
+			background-position-y: 50vw;
+    		min-height: 40vw;
+		}
+
+		.departure-faqs,
+		.departure-terms-conditions {
+
+			@media only screen and (max-width: 860px) {
+			    padding: 5% 5% 0;
+			}
+
+			margin: 60px auto;
+			max-width: 1100px;
+		}
+
+		h3 {
+			font-size: 35px;
+			font-size: 3.5rem;
+			font-weight: normal;
+		}
+
+		h5 {
+			font-family: 'Roboto', sans-serif;
+			font-weight: normal;
+			letter-spacing: 1px;
+		}
+
+		.departure-term-condition {
+
+			@media only screen and (max-width: 860px) {
+			    padding: 5% 5% 0;
+			}
+
+			border-top: 1px solid #333333;
+    		margin-top: -1px;
+
+			h5 {
+				border-bottom: 1px solid #333333;
+				margin-bottom: 0;
+				padding: 30px 60px;
+			}
+
+			p{
+				display: none;
+				padding: 30px 60px;
+			}
+		}
+
 	}
 
 
