@@ -15,14 +15,17 @@ function eco_homepage_content() {
 	global $post;
 	$acf_fields = get_fields($post->ID);
 
+	// TODO: replace this with ACF field
+	$depart_year = substr( $post->post_title, 0, 4);
+
 	//* Add in the sections
-	eco_departures_dates( $acf_fields );
+	eco_departures_dates( $acf_fields, $depart_year );
 	eco_departures_expedition( $acf_fields );
 	eco_departures_faqs_terms_conditions( $acf_fields );
 
 }
 
-function eco_departures_dates( $acf_fields ) {
+function eco_departures_dates( $acf_fields , $depart_year) {
 	?>
 	<section class="departures-dates">
 		<div class="departure-dates-header">
@@ -31,8 +34,8 @@ function eco_departures_dates( $acf_fields ) {
 		<div class="departure-dates-table-wrap">
 			<div id="tabs">
 				<ul>
-					<li class="departure-table-tabs" data-tab="#tabs-1">M/Y ERIC</li>
-					<li class="departure-table-tabs" data-tab="#tabs-2">LETTY</li>
+					<li class="departure-table-tabs" data-tab="#tabs-1"><?php echo $depart_year; ?></li>
+					<!-- <li class="departure-table-tabs" data-tab="#tabs-2">LETTY</li> -->
 				</ul>
 
 		 		<div class="departure-table-tab-content tab-open" id="tabs-1">
@@ -64,82 +67,82 @@ function eco_departures_dates( $acf_fields ) {
 
 					<div class="scroll">
 						<table class="departures-table scroll">
-						  <tr>
-						    <th class="th-dots">SEASONAL</th>
-						    <th class="th-dots">PEAK</th>
-						    <th class="th-dots">HOLIDAY</th>
-						    <th class="th-dots">ITENERARY A</th>
-						    <th class="th-dots">ITENERARY B</th>
-						    <th class="th-dots">FAMILY</th>
-						    <th>STATUS</th>
-						    <th colspan="2">PROMOTION</th>
-						  </tr>
-						  <tr>
-						    <td class="td-dot" data-th="SEASONAL">·</td>
-						    <td class="td-dot" data-th="PEAK"></td>
-						    <td class="td-dot" data-th="HOLIDAY">·</td>
-						    <td class="td-dot" data-th="ITENERARY A"></td>
-						    <td class="td-dot" data-th="ITENERARY B">·</td>
-						    <td class="td-dot" data-th="FAMILY">·</td>
-						    <td data-th="STATUS">UNAVAILABLE</td>
-						    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
-						    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
-						  </tr>
-						  <tr>
-						    <td class="td-dot" data-th="SEASONAL">·</td>
-						    <td class="td-dot" data-th="PEAK"></td>
-						    <td class="td-dot" data-th="HOLIDAY">·</td>
-						    <td class="td-dot" data-th="ITENERARY A"></td>
-						    <td class="td-dot" data-th="ITENERARY B">·</td>
-						    <td class="td-dot" data-th="FAMILY">·</td>
-						    <td data-th="STATUS">AVAILABLE</td>
-						    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
-						    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
-						  </tr>
-						  <tr>
-						    <td class="td-dot" data-th="SEASONAL">·</td>
-						    <td class="td-dot" data-th="PEAK"></td>
-						    <td class="td-dot" data-th="HOLIDAY">·</td>
-						    <td class="td-dot" data-th="ITENERARY A"></td>
-						    <td class="td-dot" data-th="ITENERARY B">·</td>
-						    <td class="td-dot" data-th="FAMILY">·</td>
-						    <td data-th="STATUS">AVAILABLE</td>
-						    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
-						    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
-						  </tr>
-						  <tr>
-						    <td class="td-dot" data-th="SEASONAL">·</td>
-						    <td class="td-dot" data-th="PEAK"></td>
-						    <td class="td-dot" data-th="HOLIDAY">·</td>
-						    <td class="td-dot" data-th="ITENERARY A"></td>
-						    <td class="td-dot" data-th="ITENERARY B">·</td>
-						    <td class="td-dot" data-th="FAMILY">·</td>
-						    <td data-th="STATUS">AVAILABLE</td>
-						    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
-						    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
-						  </tr>
-						  <tr>
-						    <td class="td-dot" data-th="SEASONAL">·</td>
-						    <td class="td-dot" data-th="PEAK"></td>
-						    <td class="td-dot" data-th="HOLIDAY">·</td>
-						    <td class="td-dot" data-th="ITENERARY A"></td>
-						    <td class="td-dot" data-th="ITENERARY B">·</td>
-						    <td class="td-dot" data-th="FAMILY">·</td>
-						    <td data-th="STATUS">AVAILABLE</td>
-						    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
-						    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
-						  </tr>
-						  <tr>
-						    <td class="td-dot" data-th="SEASONAL">·</td>
-						    <td class="td-dot" data-th="PEAK"></td>
-						    <td class="td-dot" data-th="HOLIDAY">·</td>
-						    <td class="td-dot" data-th="ITENERARY A"></td>
-						    <td class="td-dot" data-th="ITENERARY B">·</td>
-						    <td class="td-dot" data-th="FAMILY">·</td>
-						    <td data-th="STATUS">AVAILABLE</td>
-						    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
-						    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
-						  </tr>
+							<tr>
+								<th class="th-dots">ITENERARY A</th>
+								<th class="th-dots">ITENERARY B</th>
+								<th class="th-dots">SEASONAL</th>
+								<th class="th-dots">PEAK</th>
+								<th class="th-dots">HOLIDAY</th>
+								<th class="th-dots">FAMILY</th>
+								<th>STATUS</th>
+								<th colspan="2">PROMOTION</th>
+							</tr>
+							<tr>
+								<td class="td-dot" data-th="ITENERARY A"></td>
+								<td class="td-dot" data-th="ITENERARY B">·</td>
+								<td class="td-dot" data-th="SEASONAL">·</td>
+								<td class="td-dot" data-th="PEAK"></td>
+								<td class="td-dot" data-th="HOLIDAY">·</td>
+								<td class="td-dot" data-th="FAMILY">·</td>
+								<td data-th="STATUS">UNAVAILABLE</td>
+								<td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+								<td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+							</tr>
+							<tr>
+								<td class="td-dot" data-th="ITENERARY A"></td>
+								<td class="td-dot" data-th="ITENERARY B">·</td>
+								<td class="td-dot" data-th="SEASONAL">·</td>
+								<td class="td-dot" data-th="PEAK"></td>
+								<td class="td-dot" data-th="HOLIDAY">·</td>
+								<td class="td-dot" data-th="FAMILY">·</td>
+								<td data-th="STATUS">UNAVAILABLE</td>
+								<td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+								<td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+							</tr>
+							<tr>
+								<td class="td-dot" data-th="ITENERARY A"></td>
+								<td class="td-dot" data-th="ITENERARY B">·</td>
+								<td class="td-dot" data-th="SEASONAL">·</td>
+								<td class="td-dot" data-th="PEAK"></td>
+								<td class="td-dot" data-th="HOLIDAY">·</td>
+								<td class="td-dot" data-th="FAMILY">·</td>
+								<td data-th="STATUS">UNAVAILABLE</td>
+								<td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+								<td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+							</tr>
+							<tr>
+								<td class="td-dot" data-th="ITENERARY A"></td>
+								<td class="td-dot" data-th="ITENERARY B">·</td>
+								<td class="td-dot" data-th="SEASONAL">·</td>
+								<td class="td-dot" data-th="PEAK"></td>
+								<td class="td-dot" data-th="HOLIDAY">·</td>
+								<td class="td-dot" data-th="FAMILY">·</td>
+								<td data-th="STATUS">UNAVAILABLE</td>
+								<td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+								<td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+							</tr>
+							<tr>
+								<td class="td-dot" data-th="ITENERARY A"></td>
+								<td class="td-dot" data-th="ITENERARY B">·</td>
+								<td class="td-dot" data-th="SEASONAL">·</td>
+								<td class="td-dot" data-th="PEAK"></td>
+								<td class="td-dot" data-th="HOLIDAY">·</td>
+								<td class="td-dot" data-th="FAMILY">·</td>
+								<td data-th="STATUS">UNAVAILABLE</td>
+								<td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+								<td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+							</tr>
+							<tr>
+								<td class="td-dot" data-th="ITENERARY A"></td>
+								<td class="td-dot" data-th="ITENERARY B">·</td>
+								<td class="td-dot" data-th="SEASONAL">·</td>
+								<td class="td-dot" data-th="PEAK"></td>
+								<td class="td-dot" data-th="HOLIDAY">·</td>
+								<td class="td-dot" data-th="FAMILY">·</td>
+								<td data-th="STATUS">UNAVAILABLE</td>
+								<td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+								<td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+							</tr>
 						</table>
 					</div> <!--end scroll class div -->
 				</div> <!--end tab div -->
@@ -172,82 +175,82 @@ function eco_departures_dates( $acf_fields ) {
 
 					<div class="scroll">
 						<table class="departures-table scroll">
-						  <tr>
-						    <th class="th-dots">SEASONAL</th>
-						    <th class="th-dots">PEAK</th>
-						    <th class="th-dots">HOLIDAY</th>
-						    <th class="th-dots">ITENERARY A</th>
-						    <th class="th-dots">ITENERARY B</th>
-						    <th class="th-dots">FAMILY</th>
-						    <th>STATUS</th>
-						    <th colspan="2">PROMOTION</th>
-						  </tr>
-						  <tr>
-						    <td class="td-dot" data-th="SEASONAL">·</td>
-						    <td class="td-dot" data-th="PEAK"></td>
-						    <td class="td-dot" data-th="HOLIDAY">·</td>
-						    <td class="td-dot" data-th="ITENERARY A"></td>
-						    <td class="td-dot" data-th="ITENERARY B">·</td>
-						    <td class="td-dot" data-th="FAMILY">·</td>
-						    <td data-th="STATUS">UNAVAILABLE</td>
-						    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
-						    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
-						  </tr>
-						  <tr>
-						    <td class="td-dot" data-th="SEASONAL">·</td>
-						    <td class="td-dot" data-th="PEAK"></td>
-						    <td class="td-dot" data-th="HOLIDAY">·</td>
-						    <td class="td-dot" data-th="ITENERARY A"></td>
-						    <td class="td-dot" data-th="ITENERARY B">·</td>
-						    <td class="td-dot" data-th="FAMILY">·</td>
-						    <td data-th="STATUS">UNAVAILABLE</td>
-						    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
-						    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
-						  </tr>
-						  <tr>
-						    <td class="td-dot" data-th="SEASONAL">·</td>
-						    <td class="td-dot" data-th="PEAK"></td>
-						    <td class="td-dot" data-th="HOLIDAY">·</td>
-						    <td class="td-dot" data-th="ITENERARY A"></td>
-						    <td class="td-dot" data-th="ITENERARY B">·</td>
-						    <td class="td-dot" data-th="FAMILY">·</td>
-						    <td data-th="STATUS">UNAVAILABLE</td>
-						    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
-						    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
-						  </tr>
-						  <tr>
-						    <td class="td-dot" data-th="SEASONAL">·</td>
-						    <td class="td-dot" data-th="PEAK"></td>
-						    <td class="td-dot" data-th="HOLIDAY">·</td>
-						    <td class="td-dot" data-th="ITENERARY A"></td>
-						    <td class="td-dot" data-th="ITENERARY B">·</td>
-						    <td class="td-dot" data-th="FAMILY">·</td>
-						    <td data-th="STATUS">UNAVAILABLE</td>
-						    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
-						    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
-						  </tr>
-						  <tr>
-						    <td class="td-dot" data-th="SEASONAL">·</td>
-						    <td class="td-dot" data-th="PEAK"></td>
-						    <td class="td-dot" data-th="HOLIDAY">·</td>
-						    <td class="td-dot" data-th="ITENERARY A"></td>
-						    <td class="td-dot" data-th="ITENERARY B">·</td>
-						    <td class="td-dot" data-th="FAMILY">·</td>
-						    <td data-th="STATUS">UNAVAILABLE</td>
-						    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
-						    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
-						  </tr>
-						  <tr>
-						    <td class="td-dot" data-th="SEASONAL">·</td>
-						    <td class="td-dot" data-th="PEAK"></td>
-						    <td class="td-dot" data-th="HOLIDAY">·</td>
-						    <td class="td-dot" data-th="ITENERARY A"></td>
-						    <td class="td-dot" data-th="ITENERARY B">·</td>
-						    <td class="td-dot" data-th="FAMILY">·</td>
-						    <td data-th="STATUS">UNAVAILABLE</td>
-						    <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
-						    <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
-						  </tr>
+							<tr>
+  							  <th class="th-dots">ITENERARY A</th>
+  							  <th class="th-dots">ITENERARY B</th>
+  							  <th class="th-dots">SEASONAL</th>
+  							  <th class="th-dots">PEAK</th>
+  							  <th class="th-dots">HOLIDAY</th>
+  							  <th class="th-dots">FAMILY</th>
+  							  <th>STATUS</th>
+  							  <th colspan="2">PROMOTION</th>
+  						  </tr>
+  						  <tr>
+  							  <td class="td-dot" data-th="ITENERARY A"></td>
+  							  <td class="td-dot" data-th="ITENERARY B">·</td>
+  							  <td class="td-dot" data-th="SEASONAL">·</td>
+  							  <td class="td-dot" data-th="PEAK"></td>
+  							  <td class="td-dot" data-th="HOLIDAY">·</td>
+  							  <td class="td-dot" data-th="FAMILY">·</td>
+  							  <td data-th="STATUS">AVAILABLE</td>
+  							  <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+  							  <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+  						  </tr>
+  						  <tr>
+  							  <td class="td-dot" data-th="ITENERARY A"></td>
+  							  <td class="td-dot" data-th="ITENERARY B">·</td>
+  							  <td class="td-dot" data-th="SEASONAL">·</td>
+  							  <td class="td-dot" data-th="PEAK"></td>
+  							  <td class="td-dot" data-th="HOLIDAY">·</td>
+  							  <td class="td-dot" data-th="FAMILY">·</td>
+  							  <td data-th="STATUS">AVAILABLE</td>
+  							  <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+  							  <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+  						  </tr>
+  						  <tr>
+  							  <td class="td-dot" data-th="ITENERARY A"></td>
+  							  <td class="td-dot" data-th="ITENERARY B">·</td>
+  							  <td class="td-dot" data-th="SEASONAL">·</td>
+  							  <td class="td-dot" data-th="PEAK"></td>
+  							  <td class="td-dot" data-th="HOLIDAY">·</td>
+  							  <td class="td-dot" data-th="FAMILY">·</td>
+  							  <td data-th="STATUS">AVAILABLE</td>
+  							  <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+  							  <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+  						  </tr>
+  						  <tr>
+  							  <td class="td-dot" data-th="ITENERARY A"></td>
+  							  <td class="td-dot" data-th="ITENERARY B">·</td>
+  							  <td class="td-dot" data-th="SEASONAL">·</td>
+  							  <td class="td-dot" data-th="PEAK"></td>
+  							  <td class="td-dot" data-th="HOLIDAY">·</td>
+  							  <td class="td-dot" data-th="FAMILY">·</td>
+  							  <td data-th="STATUS">AVAILABLE</td>
+  							  <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+  							  <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+  						  </tr>
+  						  <tr>
+  							  <td class="td-dot" data-th="ITENERARY A"></td>
+  							  <td class="td-dot" data-th="ITENERARY B">·</td>
+  							  <td class="td-dot" data-th="SEASONAL">·</td>
+  							  <td class="td-dot" data-th="PEAK"></td>
+  							  <td class="td-dot" data-th="HOLIDAY">·</td>
+  							  <td class="td-dot" data-th="FAMILY">·</td>
+  							  <td data-th="STATUS">AVAILABLE</td>
+  							  <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+  							  <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+  						  </tr>
+  						  <tr>
+  							  <td class="td-dot" data-th="ITENERARY A"></td>
+  							  <td class="td-dot" data-th="ITENERARY B">·</td>
+  							  <td class="td-dot" data-th="SEASONAL">·</td>
+  							  <td class="td-dot" data-th="PEAK"></td>
+  							  <td class="td-dot" data-th="HOLIDAY">·</td>
+  							  <td class="td-dot" data-th="FAMILY">·</td>
+  							  <td data-th="STATUS">UNAVAILABLE</td>
+  							  <td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+  							  <td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+  						  </tr>
 						</table>
 					</div> <!--end scroll class div -->
 				</div> <!--end tab div -->
@@ -256,15 +259,15 @@ function eco_departures_dates( $acf_fields ) {
 		</div> <!-- end table wrap -->
 
 		<div class="departure-view-iteneraries">
-			<a href="">
+			<a href="#">
 				<div id="view-itens">VIEW ITENERARIES</div>
 				<div id="arrow-right"></div>
 			</a>
-			<a href="">
+			<a href="#">
 				<div id="arrow-from-right"></div>
 				<div id="iten-a">ITENERARY A</div>
 			</a>
-			<a href="">
+			<a href="#">
 				<div id="iten-b">ITENERARY B</div>
 			</a>
 		</div>
@@ -305,29 +308,21 @@ function eco_departures_faqs_terms_conditions( $acf_fields ) {
 		<div class="departure-faq-image" style="background-image: url(http://ecoven.dev/wp-content/uploads/2017/07/Kicker-Rock-Sunset.jpg);" />
 		</div>
 
-		<div class="departure-faqs">
-			<div class="departure-faq">
-				<h3>TWO WEEK ITENERARY BACK TO BACK ON ERIC & LETTY</h3>
-				<p>Curabitur nec risus laoreet, suscipit augue non, suscipit metus. Maecenas pellentesque convallis est, at accumsan dui pretium sit amet. Quisque ultricies sapien a laoreet commodo.</p>
-			</div>
-			<div class="departure-faq">
-				<h3>TWO WEEK COMBINATION ERIC & LETTY WITH GALAPAGOS SKY</h3>
-				<p>Curabitur nec risus laoreet, suscipit augue non, suscipit metus. Maecenas pellentesque convallis est, at accumsan dui pretium sit amet. Quisque ultricies sapien a laoreet commodo.</p>
-			</div>
-		</div>
-
 		<div class="departure-terms-conditions">
 			<div class="departure-term-condition">
-				<h5>TWO WEEK COMBINATION ERIC & LETTY WITH GALAPAGOS SKY</h5>
-				<p>Curabitur nec risus laoreet, suscipit augue non, suscipit metus. Maecenas pellentesque convallis est, at accumsan dui pretium sit amet. Quisque ultricies sapien a laoreet commodo. Curabitur eu tellus ut est porttitor varius ut eu tellus. Integer non eros non lorem laoreet tincidunt. Nam ac aliquet eros. Etiam ornare nisi erat, quis mollis elit pretium convallis. Cras gravida ante in eleifend efficitur. Vestibulum a rutrum arcu. Vivamus sodales ornare purus sed luctus.</p>
+				<h5>TERMS AND CONDITIONS</h5>
+				<p><b>METHOD OF PAYMENT</b><br/>
+					Curabitur nec risus laoreet, suscipit augue non, suscipit metus. Maecenas pellentesque convallis est, at accumsan dui pretium sit amet. Quisque ultricies sapien a laoreet commodo. Curabitur eu tellus ut est porttitor varius ut eu tellus. Integer non eros non lorem laoreet tincidunt. Nam ac aliquet eros. Etiam ornare nisi erat, quis mollis elit pretium convallis. Cras gravida ante in eleifend efficitur. Vestibulum a rutrum arcu. Vivamus sodales ornare purus sed luctus.</p>
 			</div>
 			<div class="departure-term-condition">
-				<h5>TWO WEEK COMBINATION ERIC & LETTY WITH GALAPAGOS SKY</h5>
-				<p>Curabitur nec risus laoreet, suscipit augue non, suscipit metus. Maecenas pellentesque convallis est, at accumsan dui pretium sit amet. Quisque ultricies sapien a laoreet commodo. Curabitur eu tellus ut est porttitor varius ut eu tellus. Integer non eros non lorem laoreet tincidunt. Nam ac aliquet eros. Etiam ornare nisi erat, quis mollis elit pretium convallis. Cras gravida ante in eleifend efficitur. Vestibulum a rutrum arcu. Vivamus sodales ornare purus sed luctus.</p>
+				<h5>INDIVIDUAL BOOKINGS (1 - 5 PASSENGERS)</h5>
+				<p><b>METHOD OF PAYMENT</b><br/>
+					Curabitur nec risus laoreet, suscipit augue non, suscipit metus. Maecenas pellentesque convallis est, at accumsan dui pretium sit amet. Quisque ultricies sapien a laoreet commodo. Curabitur eu tellus ut est porttitor varius ut eu tellus. Integer non eros non lorem laoreet tincidunt. Nam ac aliquet eros. Etiam ornare nisi erat, quis mollis elit pretium convallis. Cras gravida ante in eleifend efficitur. Vestibulum a rutrum arcu. Vivamus sodales ornare purus sed luctus.</p>
 			</div>
 			<div class="departure-term-condition">
-				<h5>TWO WEEK COMBINATION ERIC & LETTY WITH GALAPAGOS SKY</h5>
-				<p>Curabitur nec risus laoreet, suscipit augue non, suscipit metus. Maecenas pellentesque convallis est, at accumsan dui pretium sit amet. Quisque ultricies sapien a laoreet commodo. Curabitur eu tellus ut est porttitor varius ut eu tellus. Integer non eros non lorem laoreet tincidunt. Nam ac aliquet eros. Etiam ornare nisi erat, quis mollis elit pretium convallis. Cras gravida ante in eleifend efficitur. Vestibulum a rutrum arcu. Vivamus sodales ornare purus sed luctus.</p>
+				<h5>SMALL GROUP BOOKINGS (3 OR MORE EXCLUDING CHARTERS)</h5>
+				<p><b>METHOD OF PAYMENT</b><br/>
+					Curabitur nec risus laoreet, suscipit augue non, suscipit metus. Maecenas pellentesque convallis est, at accumsan dui pretium sit amet. Quisque ultricies sapien a laoreet commodo. Curabitur eu tellus ut est porttitor varius ut eu tellus. Integer non eros non lorem laoreet tincidunt. Nam ac aliquet eros. Etiam ornare nisi erat, quis mollis elit pretium convallis. Cras gravida ante in eleifend efficitur. Vestibulum a rutrum arcu. Vivamus sodales ornare purus sed luctus.</p>
 			</div>
 
 		</div>
