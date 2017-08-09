@@ -68,18 +68,28 @@ function eco_departures_dates( $acf_fields , $depart_year) {
 					<div class="scroll">
 						<table class="departures-table scroll">
 							<tr>
-								<th class="th-dots">ITENERARY A</th>
-								<th class="th-dots">ITENERARY B</th>
+								<th class="th-dots">ITENERARY</th>
 								<th class="th-dots">SEASONAL</th>
 								<th class="th-dots">PEAK</th>
 								<th class="th-dots">HOLIDAY</th>
 								<th class="th-dots">FAMILY</th>
 								<th>STATUS</th>
 								<th colspan="2">PROMOTION</th>
+								<th>NOTES</th>
 							</tr>
 							<tr>
-								<td class="td-dot" data-th="ITENERARY A"></td>
-								<td class="td-dot" data-th="ITENERARY B">·</td>
+								<td class="" data-th="ITENERARY">A</td>
+								<td class="td-dot" data-th="SEASONAL">·</td>
+								<td class="td-dot" data-th="PEAK"></td>
+								<td class="td-dot" data-th="HOLIDAY">·</td>
+								<td class="td-dot" data-th="FAMILY">·</td>
+								<td data-th="STATUS">UNAVAILABLE</td>
+								<td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
+								<td class="td-inquire" data-th="PROMOTION"><a href="https://www.origingalapagos.com/" target="_blank"><button>INQUIRE FOR ORIGIN</button></a></td>
+								<td class="" data-th="NOTES">Lorum ipsum...</td>
+							</tr>
+							<tr>
+								<td class="" data-th="ITENERARY">B</td>
 								<td class="td-dot" data-th="SEASONAL">·</td>
 								<td class="td-dot" data-th="PEAK"></td>
 								<td class="td-dot" data-th="HOLIDAY">·</td>
@@ -87,10 +97,10 @@ function eco_departures_dates( $acf_fields , $depart_year) {
 								<td data-th="STATUS">UNAVAILABLE</td>
 								<td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
 								<td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+								<td class="" data-th="NOTES">Lorum ipsum...</td>
 							</tr>
 							<tr>
-								<td class="td-dot" data-th="ITENERARY A"></td>
-								<td class="td-dot" data-th="ITENERARY B">·</td>
+								<td class="" data-th="ITENERARY">B</td>
 								<td class="td-dot" data-th="SEASONAL">·</td>
 								<td class="td-dot" data-th="PEAK"></td>
 								<td class="td-dot" data-th="HOLIDAY">·</td>
@@ -98,10 +108,10 @@ function eco_departures_dates( $acf_fields , $depart_year) {
 								<td data-th="STATUS">UNAVAILABLE</td>
 								<td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
 								<td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+								<td class="" data-th="NOTES">Lorum ipsum...</td>
 							</tr>
 							<tr>
-								<td class="td-dot" data-th="ITENERARY A"></td>
-								<td class="td-dot" data-th="ITENERARY B">·</td>
+								<td class="" data-th="ITENERARY">A</td>
 								<td class="td-dot" data-th="SEASONAL">·</td>
 								<td class="td-dot" data-th="PEAK"></td>
 								<td class="td-dot" data-th="HOLIDAY">·</td>
@@ -109,10 +119,10 @@ function eco_departures_dates( $acf_fields , $depart_year) {
 								<td data-th="STATUS">UNAVAILABLE</td>
 								<td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
 								<td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+								<td class="" data-th="NOTES">Lorum ipsum...</td>
 							</tr>
 							<tr>
-								<td class="td-dot" data-th="ITENERARY A"></td>
-								<td class="td-dot" data-th="ITENERARY B">·</td>
+								<td class="" data-th="ITENERARY">B</td>
 								<td class="td-dot" data-th="SEASONAL">·</td>
 								<td class="td-dot" data-th="PEAK"></td>
 								<td class="td-dot" data-th="HOLIDAY">·</td>
@@ -120,10 +130,10 @@ function eco_departures_dates( $acf_fields , $depart_year) {
 								<td data-th="STATUS">UNAVAILABLE</td>
 								<td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
 								<td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+								<td class="" data-th="NOTES">Lorum ipsum...</td>
 							</tr>
 							<tr>
-								<td class="td-dot" data-th="ITENERARY A"></td>
-								<td class="td-dot" data-th="ITENERARY B">·</td>
+								<td class="" data-th="ITENERARY">A</td>
 								<td class="td-dot" data-th="SEASONAL">·</td>
 								<td class="td-dot" data-th="PEAK"></td>
 								<td class="td-dot" data-th="HOLIDAY">·</td>
@@ -131,17 +141,7 @@ function eco_departures_dates( $acf_fields , $depart_year) {
 								<td data-th="STATUS">UNAVAILABLE</td>
 								<td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
 								<td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
-							</tr>
-							<tr>
-								<td class="td-dot" data-th="ITENERARY A"></td>
-								<td class="td-dot" data-th="ITENERARY B">·</td>
-								<td class="td-dot" data-th="SEASONAL">·</td>
-								<td class="td-dot" data-th="PEAK"></td>
-								<td class="td-dot" data-th="HOLIDAY">·</td>
-								<td class="td-dot" data-th="FAMILY">·</td>
-								<td data-th="STATUS">UNAVAILABLE</td>
-								<td class="td-promotion"data-th="PROMOTION">$1,000 off</td>
-								<td class="td-inquire" data-th="PROMOTION"><button>INQUIRE</button></td>
+								<td class="" data-th="NOTES">Lorum ipsum...</td>
 							</tr>
 						</table>
 					</div> <!--end scroll class div -->
@@ -290,11 +290,6 @@ function eco_departures_expedition( $acf_fields ) {
 			<div class="departure-expedition-content">
 				<h3>FAMILY DEPARTURES</h3>
 				<h5></h5>
-				<p>Curabitur nec risus laoreet, suscipit augue non, suscipit metus. Maecenas pellentesque convallis est, at accumsan dui pretium sit amet. Quisque ultricies sapien a laoreet commodo. Curabitur eu tellus ut est porttitor varius ut eu tellus. Integer non eros non lorem laoreet tincidunt. Nam ac aliquet eros. Etiam ornare nisi erat, quis mollis elit pretium convallis. Cras gravida ante in eleifend efficitur. Vestibulum a rutrum arcu. Vivamus sodales ornare purus sed luctus.</p>
-			</div>
-			<div class="departure-expedition-content">
-				<h3>7 DAY / 6 NIGHT CRUISE OPTION</h3>
-				<h5>SUNDAY TO SATURDAY</h5>
 				<p>Curabitur nec risus laoreet, suscipit augue non, suscipit metus. Maecenas pellentesque convallis est, at accumsan dui pretium sit amet. Quisque ultricies sapien a laoreet commodo. Curabitur eu tellus ut est porttitor varius ut eu tellus. Integer non eros non lorem laoreet tincidunt. Nam ac aliquet eros. Etiam ornare nisi erat, quis mollis elit pretium convallis. Cras gravida ante in eleifend efficitur. Vestibulum a rutrum arcu. Vivamus sodales ornare purus sed luctus.</p>
 			</div>
 		</div>
