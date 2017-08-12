@@ -1954,37 +1954,37 @@ p.entry-meta {
   color: #fff;
 }
 
-.page-template-template-eco-homepage .site-inner {
+.home.page .site-inner {
   max-width: 100%;
   padding-top: 0;
 }
 @media only screen and (max-width: 860px) {
-  .page-template-template-eco-homepage .site-inner {
+  .home.page .site-inner {
     padding: 0;
   }
 }
-.page-template-template-eco-homepage .soliloquy-controls-direction {
+.home.page .soliloquy-controls-direction {
   display: none;
 }
-.page-template-template-eco-homepage .homepage-title-div {
+.home.page .homepage-title-div {
   background-color: #B9C8BE;
   color: white;
   padding-bottom: 50px;
   padding-top: 30px;
   text-align: center;
 }
-.page-template-template-eco-homepage .homepage-title-div h2 {
+.home.page .homepage-title-div h2 {
   font-size: 3.5rem;
 }
-.page-template-template-eco-homepage .plan-your-trip-box {
+.home.page .plan-your-trip-box {
   top: -30px;
   position: relative;
   text-align: center;
 }
-.page-template-template-eco-homepage .plan-your-trip-box button:hover {
+.home.page .plan-your-trip-box button:hover {
   background-color: #eeeeee;
 }
-.page-template-template-eco-homepage .homepage-page-image-boxes {
+.home.page .homepage-page-image-boxes {
   display: flex;
   color: #999999;
   flex-wrap: wrap;
@@ -1994,49 +1994,49 @@ p.entry-meta {
   max-width: 1050px;
   padding-top: 50px;
 }
-.page-template-template-eco-homepage .homepage-page-image-boxes a {
+.home.page .homepage-page-image-boxes a {
   color: black;
   text-decoration: none;
 }
-.page-template-template-eco-homepage .homepage-page-image-boxes .homepage-page-image-box {
+.home.page .homepage-page-image-boxes .homepage-page-image-box {
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
   width: 400px;
 }
 @media screen and (max-width: 860px) {
-  .page-template-template-eco-homepage .homepage-page-image-boxes .homepage-page-image-box {
+  .home.page .homepage-page-image-boxes .homepage-page-image-box {
     max-width: 400px;
     width: 100%;
   }
 }
 @media screen and (min-width: 1023px) {
-  .page-template-template-eco-homepage .homepage-page-image-boxes .homepage-page-image-box {
+  .home.page .homepage-page-image-boxes .homepage-page-image-box {
     width: 460px;
   }
 }
-.page-template-template-eco-homepage .homepage-page-image-boxes .homepage-page-image-box img {
+.home.page .homepage-page-image-boxes .homepage-page-image-box img {
   border: 1px solid #999999;
   border-bottom: 0;
 }
-.page-template-template-eco-homepage .homepage-page-image-boxes .homepage-page-image-box div {
+.home.page .homepage-page-image-boxes .homepage-page-image-box div {
   background-color: white;
   border: 1px solid #999999;
   padding: 15px;
   text-align: center;
 }
-.page-template-template-eco-homepage .homepage-recent-blog-posts {
+.home.page .homepage-recent-blog-posts {
   padding: 40px;
   text-align: center;
 }
-.page-template-template-eco-homepage .homepage-recent-blog-posts h2 {
+.home.page .homepage-recent-blog-posts h2 {
   margin: 20px auto 40px;
   font-size: 3rem;
 }
-.page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box-container {
+.home.page .homepage-recent-blog-posts .recent-post-box-container {
   padding-bottom: 20px;
 }
-.page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box {
+.home.page .homepage-recent-blog-posts .recent-post-box {
   clear: both;
   margin: 40px auto;
   max-width: 900px;
@@ -2044,47 +2044,47 @@ p.entry-meta {
   text-align: left;
 }
 @media screen and (max-width: 860px) {
-  .page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box {
+  .home.page .homepage-recent-blog-posts .recent-post-box {
     min-height: 310px;
   }
 }
 @media screen and (max-width: 700px) {
-  .page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box {
+  .home.page .homepage-recent-blog-posts .recent-post-box {
     min-height: 284px;
     text-align: center;
   }
 }
-.page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box .recent-post-box-content {
+.home.page .homepage-recent-blog-posts .recent-post-box .recent-post-box-content {
   height: 100%;
   min-height: 284px;
   position: relative;
 }
 @media screen and (max-width: 860px) {
-  .page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box .recent-post-box-content {
+  .home.page .homepage-recent-blog-posts .recent-post-box .recent-post-box-content {
     float: right;
     width: 50%;
   }
 }
 @media screen and (max-width: 700px) {
-  .page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box .recent-post-box-content {
+  .home.page .homepage-recent-blog-posts .recent-post-box .recent-post-box-content {
     float: none;
     width: 100%;
   }
 }
-.page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box .recent-post-box-content h3 {
+.home.page .homepage-recent-blog-posts .recent-post-box .recent-post-box-content h3 {
   color: #152838;
 }
-.page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box .recent-post-box-content p {
+.home.page .homepage-recent-blog-posts .recent-post-box .recent-post-box-content p {
   margin: 0 0 15px;
 }
 @media screen and (min-width: 860px) {
-  .page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box .recent-post-box-content p {
+  .home.page .homepage-recent-blog-posts .recent-post-box .recent-post-box-content p {
     max-height: 108px;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 }
-.page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box .recent-post-box-content button {
+.home.page .homepage-recent-blog-posts .recent-post-box .recent-post-box-content button {
   background-color: #CFAA42;
   bottom: 0;
   border: 1px solid #333;
@@ -2092,57 +2092,57 @@ p.entry-meta {
   position: absolute;
 }
 @media screen and (max-width: 860px) {
-  .page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box .recent-post-box-content button {
+  .home.page .homepage-recent-blog-posts .recent-post-box .recent-post-box-content button {
     position: relative;
   }
 }
-.page-template-template-eco-homepage .homepage-recent-blog-posts .recent-post-box .recent-post-box-content button:hover {
+.home.page .homepage-recent-blog-posts .recent-post-box .recent-post-box-content button:hover {
   background-color: transparent;
   border: 1px solid #333;
   color: #333;
 }
-.page-template-template-eco-homepage .homepage-recent-blog-posts img {
+.home.page .homepage-recent-blog-posts img {
   border: 1px solid #999999;
   float: left;
   margin-right: 30px;
   width: 425px;
 }
 @media screen and (max-width: 860px) {
-  .page-template-template-eco-homepage .homepage-recent-blog-posts img {
+  .home.page .homepage-recent-blog-posts img {
     width: 45%;
   }
 }
 @media screen and (max-width: 700px) {
-  .page-template-template-eco-homepage .homepage-recent-blog-posts img {
+  .home.page .homepage-recent-blog-posts img {
     float: none;
     margin-right: 0;
     width: 325px;
   }
 }
-.page-template-template-eco-homepage .homepage-recent-blog-posts a {
+.home.page .homepage-recent-blog-posts a {
   color: #999999;
   text-decoration: none;
 }
-.page-template-template-eco-homepage .homepage-page-as-seen {
+.home.page .homepage-page-as-seen {
   background-color: #B9C8BE;
   text-align: center;
 }
-.page-template-template-eco-homepage .homepage-page-as-seen h2 {
+.home.page .homepage-page-as-seen h2 {
   margin: 20px 0;
 }
-.page-template-template-eco-homepage .homepage-page-as-seen .as-seen-layer-container {
+.home.page .homepage-page-as-seen .as-seen-layer-container {
   background-color: rgba(185, 200, 190, 0.7);
   padding: 30px 0;
 }
-.page-template-template-eco-homepage .homepage-page-as-seen .as-seen-logo-container {
+.home.page .homepage-page-as-seen .as-seen-logo-container {
   margin: 20px auto;
   max-width: 1100px;
 }
-.page-template-template-eco-homepage .homepage-page-as-seen .as-seen-logo-container img {
+.home.page .homepage-page-as-seen .as-seen-logo-container img {
   margin: 20px 40px;
   width: 230px;
 }
-.page-template-template-eco-homepage .homepage-page-as-seen a {
+.home.page .homepage-page-as-seen a {
   text-decoration: none;
 }
 

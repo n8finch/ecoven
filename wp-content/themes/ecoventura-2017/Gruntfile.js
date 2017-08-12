@@ -29,6 +29,22 @@ module.exports = function (grunt) {
       }
     },
 
+	browserSync: {
+		dev: {
+				bsFiles: {
+					src : [
+						'style.css',
+						'*.php',
+						'*/*.php'
+					]
+				},
+				options: {
+					watchTask: true,
+					proxy: 'ecoven.dev'
+				}
+		}
+	},
+
     watch: {
       files: ['sass/css/*.css', 'sass/js/*.js', 'sass/sass/**/*.scss'],
       tasks: ['sass']
@@ -43,8 +59,9 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-postcss');
+  grunt.loadNpmTasks('grunt-browser-sync');
 
-  grunt.registerTask('default', ['sass', 'watch']);
+  grunt.registerTask('default', ['sass', 'browserSync', 'watch']);
   grunt.registerTask('post', 'postcss');
 
 };

@@ -759,9 +759,9 @@
     "location": [
         [
             {
-                "param": "page_template",
+                "param": "page",
                 "operator": "==",
-                "value": "template-eco-homepage.php"
+                "value": "20"
             }
         ]
     ],
@@ -780,5 +780,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1500002319
+    "modified": 1502580555
 }
