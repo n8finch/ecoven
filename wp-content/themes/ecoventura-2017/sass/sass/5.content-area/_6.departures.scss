@@ -16,6 +16,8 @@
 
 	.departures-dates {
 
+		background-color: white;
+
 		.departure-dates-header {
 			background-color: $color__medium_blue_gray;
 			color: white;
@@ -29,7 +31,7 @@
 		}
 
 		.departure-dates-table-wrap {
-			margin: 30px auto;
+			margin: 30px auto 0;
 			max-width: 1100px;
 			overflow: hidden;
 			position: relative;
@@ -39,7 +41,7 @@
 			}
 
 			li.departure-table-tabs {
-				background-color: #eeeeee;
+				background-color: white;
 				border: 1px solid;
 				border-bottom-width: 0;
 				border-color: $color__dark_navy;
@@ -106,6 +108,22 @@
 					width: 85px;
 				}
 
+				.th-notes {
+					width: 130px;
+				}
+
+				tr.departure-table-row-0 {
+					background-color: white;
+				}
+
+				tr.departure-table-row-1 {
+					background-color: #eeeeee;
+				}
+
+				.td-departure-dates {
+					height: 50px;
+				}
+
 				.td-dot {
 					font-size: 100px;
 					font-size: 10rem;
@@ -120,10 +138,17 @@
 					border-left: none;
 				}
 
+				.td-notes {
+					height: 50px;
+					padding: 0;
+					width: 130px;
+				}
+
 				button {
 					font-size: 12px;
 					font-size: 1.2rem;
-					padding: 3px 15px;
+					padding: 3px 5px;
+					width: 140px;
 				}
 			}
 

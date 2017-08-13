@@ -127,8 +127,8 @@
                         "id": ""
                     },
                     "choices": {
-                        "a": "A",
-                        "b": "B"
+                        "A": "A",
+                        "B": "B"
                     },
                     "allow_null": 0,
                     "other_choice": 0,
@@ -227,8 +227,8 @@
                         "id": ""
                     },
                     "choices": {
-                        "available": "Available",
-                        "soldout": "Sold Out"
+                        "Available": "Available",
+                        "Sold Out": "Sold Out"
                     },
                     "allow_null": 0,
                     "other_choice": 0,
@@ -273,7 +273,7 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": ""
+                    "maxlength": 45
                 }
             ]
         },
@@ -438,5 +438,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1502582765
+    "modified": 1502589238
 }
