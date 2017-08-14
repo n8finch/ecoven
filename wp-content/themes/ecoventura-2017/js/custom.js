@@ -25,11 +25,11 @@
 
 			$('.departure-term-condition h5').on('click', function(e) {
 
-				if( $(this).next().hasClass('tc-open') ) {
+				if( $(this).siblings('p').hasClass('tc-open') ) {
 					$('.tc-open').removeClass('tc-open').toggle('slow');
 				} else {
 					$('.tc-open').removeClass('tc-open').toggle('slow');
-					$(this).next().toggle('slow').addClass('tc-open');
+					$(this).siblings('p').toggle('slow').addClass('tc-open');
 				}
 
 			});
