@@ -389,7 +389,7 @@
                     "key": "field_598f967acac09",
                     "label": "Content",
                     "name": "content",
-                    "type": "wysiwyg",
+                    "type": "textarea",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -399,10 +399,10 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "tabs": "visual",
-                    "toolbar": "basic",
-                    "media_upload": 1,
-                    "delay": 0
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": "wpautop"
                 }
             ]
         }
@@ -438,5 +438,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1502589238
+    "modified": 1502675956
 }

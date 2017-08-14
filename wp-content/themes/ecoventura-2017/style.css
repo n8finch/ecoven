@@ -2469,7 +2469,8 @@ p.entry-meta {
 }
 .page-template-template-eco-departures .departures-faqs-terms-conditions .departure-term-condition p {
   display: none;
-  padding: 30px 60px;
+  padding: 30px 60px 0;
+  margin-bottom: 0;
 }
 @media only screen and (max-width: 860px) {
   .page-template-template-eco-departures .departures-faqs-terms-conditions .departure-term-condition p {
