@@ -45,13 +45,13 @@ function eco_departures_dates( $acf_fields, $depart_year ) {
 							<?php
 							$rows = $acf_fields['departure_table_values'];
 							if ( $rows ) {
-								$counter = 1;
+								$counter = 0;
 								foreach ( $rows as $row ) {
-									$row_color_var = $couter % 2;
+									$row_color_var = $counter % 2;
 									echo '<tr class="departure-table-row-' . esc_html( $row_color_var ) . '">';
 									echo '<td class="td-departure-dates" data-th="CRUISE DATES">' . esc_html( $row['cruise_dates'] ) . '</td>';
 									echo '</tr>';
-									$couter ++;
+									$counter ++;
 								}
 							}
 							?>
@@ -90,10 +90,10 @@ function eco_departures_dates( $acf_fields, $depart_year ) {
 
 							$rows = $acf_fields['departure_table_values'];
 							if ( $rows ) {
-								$counter = 1;
+								$counter = 0;
 								foreach ( $rows as $row ) {
 									$row_color_var = $couter % 2;
-									echo '<tr>';
+									echo '<tr class="departure-table-row-' . esc_html( $row_color_var ) . '">';
 									echo '<td data-th="ITINERARY">' . esc_html( $row['itinerary'] ) . '</td>';
 									echo '<td class="td-dot" data-th="SEASONAL">' . esc_html( eco_get_dot_if_true( $row['seasonal'] ) ) . '</td>';
 									echo '<td class="td-dot" data-th="PEAK">' . esc_html( eco_get_dot_if_true( $row['peak'] ) ) . '</td>';
