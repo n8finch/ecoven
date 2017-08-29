@@ -20,6 +20,7 @@ function eco_rates_content() {
 	eco_rates_expedition( $acf_fields );
 	eco_rates_sub_content( $acf_fields );
 	eco_rates_charter_rates( $acf_fields );
+	eco_rates_popup( $acf_fields );
 
 }
 
@@ -50,7 +51,7 @@ function eco_rates_dates( $acf_fields, $depart_year ) {
 								foreach ( $rows as $row ) {
 									$row_color_var = $counter % 2;
 									echo '<tr class="rate-table-row-' . esc_html( $row_color_var ) . '">';
-									echo '<td class="td-rate-decks" data-th="CRUISE DATES">' . esc_html( $row['deck'] ) . '</td>';
+									echo '<td id="' . esc_html( $row['deck'] ) . '" class="td-rate-decks" data-th="DECK">' . esc_html( $row['deck'] ) . '</td>';
 									echo '</tr>';
 									$counter ++;
 								}
@@ -203,6 +204,27 @@ function eco_rates_charter_rates( $acf_fields ) {
 	</section>
 
 	<?php
+}
+
+function eco_rates_popup( $acf_fields ) {
+	?>
+
+	<?php
+
+	$rows = $acf_fields['rates_table_values'];
+	if ( $rows ) {
+		foreach ( $rows as $row ) {
+
+			$deck_id = strtolower( str_replace( ' ', '-', $row['deck'] ) );
+			?>
+			<div id="<?php echo esc_html( $deck_id ); ?>" visibility="hidden" class="rates-popup">
+				<img src="<?php echo esc_html( $row['deck_image'] );?>" />
+				<p><?php echo esc_html( $row['deck_bullet_description'] ); ?></p>
+			</div>
+			<?php
+		}
+	}
+
 }
 //* Run the Genesis loop
 genesis();

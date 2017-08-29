@@ -72,7 +72,7 @@
             "collapsed": "",
             "min": 0,
             "max": 0,
-            "layout": "table",
+            "layout": "row",
             "button_label": "",
             "sub_fields": [
                 {
@@ -136,6 +136,49 @@
                     "key": "field_59a4cce0ca252",
                     "label": "Single",
                     "name": "single",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_59a4f8c108428",
+                    "label": "Deck Image",
+                    "name": "deck_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_59a4f92dc12a1",
+                    "label": "Deck Bullet Description",
+                    "name": "deck_bullet_description",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -411,5 +454,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1503983134
+    "modified": 1503983987
 }

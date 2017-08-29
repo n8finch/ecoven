@@ -2974,6 +2974,36 @@ p.entry-meta {
   font-weight: normal;
   letter-spacing: 1px;
 }
+.page-template-template-eco-rates .rates-popup {
+  display: none;
+}
+.page-template-template-eco-rates .ui-dialog {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  width: 50% !important;
+  z-index: 5;
+}
+.page-template-template-eco-rates .ui-dialog button {
+  background-color: white;
+  color: black;
+  float: right;
+  height: 20px;
+  padding: 10px 20px;
+  line-height: 0;
+}
+.page-template-template-eco-rates .ui-dialog .no-close .ui-dialog-titlebar-close {
+  display: none;
+}
+.page-template-template-eco-rates .ui-widget-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
 
 /* # Sidebars
 ---------------------------------------------------------------------------------------------------- */

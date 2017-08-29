@@ -37,6 +37,27 @@
 		}
 		do_departure_toggles();
 
+
+
+
+		// Rates Page PopUp
+
+		$( function() {
+
+			$( ".td-rate-decks" ).on('click', function(e) {
+
+				var deckID = '#' + e.target.id.replace(' ', '-').toLowerCase();
+
+				$( deckID ).dialog({
+      				modal: true,
+					closeOnEscape: true,
+					height: 'auto',
+					width: 400,
+				});
+			});
+		});
+
+
 	});
 
 })(jQuery);
