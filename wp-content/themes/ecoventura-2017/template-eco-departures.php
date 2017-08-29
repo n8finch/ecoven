@@ -118,11 +118,11 @@ function eco_departures_dates( $acf_fields, $depart_year ) {
 					<div id="view-itens">VIEW ITENERARIES</div>
 					<div id="arrow-right"></div>
 				</a>
-				<a href="<?php echo esc_html( $acf_fields[ itinerary_a_link ] ); ?>">
+				<a href="<?php echo esc_url( $acf_fields[ itinerary_a_link ] ); ?>">
 					<div id="arrow-from-right"></div>
 					<div id="iten-a">ITENERARY A</div>
 				</a>
-				<a href="<?php echo esc_html( $acf_fields[ itinerary_b_link ] ); ?>">
+				<a href="<?php echo esc_url( $acf_fields[ itinerary_b_link ] ); ?>">
 					<div id="iten-b">ITENERARY B</div>
 				</a>
 			</div>
@@ -139,15 +139,14 @@ function eco_departures_expedition( $acf_fields ) {
 
 		<!-- Add Plan Your Trip box -->
 		<div class="book-now-box">
-			<a href="<?php echo esc_html( $acf_fields[ 'book_now_link' ] );?>">
+			<a href="<?php echo esc_url( $acf_fields[ 'book_now_link' ] );?>">
 				<button>PLAN YOUR TRIP</button>
 			</a>
 		</div>
 
 		<div class="departure-expedition-content-wrap">
 			<div class="departure-expedition-content">
-				<!--TODO: how to escape?-->
-				<?php echo $acf_fields['editor']; ?>
+				<?php echo wp_kses_post( $acf_fields['editor'] ); ?>
 			</div>
 		</div>
 	</section>
@@ -172,7 +171,7 @@ function eco_departures_faqs_terms_conditions( $acf_fields ) {
 						<p class="departure-term-condition-subhead">
 							<b><?php echo esc_html( $row['subheader'] );?></b>
 							<br/>
-							<?php echo $row['content']; ?>
+							<?php echo wp_kses_post ( $row['content'] ); ?>
 						</p>
 
 					</div>	<?php
