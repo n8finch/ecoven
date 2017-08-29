@@ -1,28 +1,9 @@
 {
-    "key": "group_598f8a839982c",
-    "title": "Departure Fields",
+    "key": "group_59a4cce0c3b14",
+    "title": "Rates",
     "fields": [
         {
-            "key": "field_598f90a047757",
-            "label": "Date Field",
-            "name": "date_field",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": 4
-        },
-        {
-            "key": "field_59a4f664c8719",
+            "key": "field_59a4cf7ee3050",
             "label": "Book Now Link",
             "name": "book_now_link",
             "type": "text",
@@ -41,9 +22,9 @@
             "maxlength": 4
         },
         {
-            "key": "field_598f92db47758",
-            "label": "Itinerary A Link",
-            "name": "itinerary_a_link",
+            "key": "field_59a4cce0c65a6",
+            "label": "Date Field",
+            "name": "date_field",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -57,29 +38,10 @@
             "placeholder": "",
             "prepend": "",
             "append": "",
-            "maxlength": ""
+            "maxlength": 4
         },
         {
-            "key": "field_598f92f347759",
-            "label": "Itinerary B Link",
-            "name": "itinerary_b_link",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_598f93024775a",
+            "key": "field_59a4cce0c674e",
             "label": "Departures Table",
             "name": "",
             "type": "tab",
@@ -95,9 +57,9 @@
             "endpoint": 0
         },
         {
-            "key": "field_598f931a4775b",
-            "label": "Departure Table Values",
-            "name": "departure_table_values",
+            "key": "field_59a4cce0c67e5",
+            "label": "Rates Table Values",
+            "name": "rates_table_values",
             "type": "repeater",
             "instructions": "To add a row to the table, click the \"Add Row\" button. Table rows can be collapsed with the button on the right, and rearranged by clicking and dragging the row number, or using the arrows to move them up and down.",
             "required": 0,
@@ -107,16 +69,16 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "field_598f93474775c",
+            "collapsed": "",
             "min": 0,
             "max": 0,
-            "layout": "row",
+            "layout": "table",
             "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_598f93474775c",
-                    "label": "Cruise Dates",
-                    "name": "cruise_dates",
+                    "key": "field_59a4cce0ca095",
+                    "label": "Deck",
+                    "name": "deck",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -133,133 +95,9 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_598f93724775d",
-                    "label": "Itinerary",
-                    "name": "itinerary",
-                    "type": "radio",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "A": "A",
-                        "B": "B"
-                    },
-                    "allow_null": 0,
-                    "other_choice": 0,
-                    "save_other_choice": 0,
-                    "default_value": "",
-                    "layout": "vertical",
-                    "return_format": "value"
-                },
-                {
-                    "key": "field_598f93944775e",
-                    "label": "Seasonal",
-                    "name": "seasonal",
-                    "type": "true_false",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "message": "",
-                    "default_value": 0,
-                    "ui": 0,
-                    "ui_on_text": "",
-                    "ui_off_text": ""
-                },
-                {
-                    "key": "field_598f9444599f4",
-                    "label": "Peak",
-                    "name": "peak",
-                    "type": "true_false",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "message": "",
-                    "default_value": 0,
-                    "ui": 0,
-                    "ui_on_text": "",
-                    "ui_off_text": ""
-                },
-                {
-                    "key": "field_598f948a19650",
-                    "label": "Holiday",
-                    "name": "holiday",
-                    "type": "true_false",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "message": "",
-                    "default_value": 0,
-                    "ui": 0,
-                    "ui_on_text": "",
-                    "ui_off_text": ""
-                },
-                {
-                    "key": "field_598f949d19651",
-                    "label": "Family",
-                    "name": "family",
-                    "type": "true_false",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "message": "",
-                    "default_value": 0,
-                    "ui": 0,
-                    "ui_on_text": "",
-                    "ui_off_text": ""
-                },
-                {
-                    "key": "field_598f94a919652",
-                    "label": "Status",
-                    "name": "status",
-                    "type": "radio",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "Available": "Available",
-                        "Sold Out": "Sold Out"
-                    },
-                    "allow_null": 0,
-                    "other_choice": 0,
-                    "save_other_choice": 0,
-                    "default_value": "",
-                    "layout": "vertical",
-                    "return_format": "value"
-                },
-                {
-                    "key": "field_598f94db19653",
-                    "label": "Promotion",
-                    "name": "promotion",
+                    "key": "field_59a4cce0ca12e",
+                    "label": "Double",
+                    "name": "double",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -276,9 +114,9 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_598f94e719654",
-                    "label": "Notes",
-                    "name": "notes",
+                    "key": "field_59a4cce0ca1be",
+                    "label": "Triple",
+                    "name": "triple",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -292,13 +130,32 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": 45
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_59a4cce0ca252",
+                    "label": "Single",
+                    "name": "single",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
         },
         {
-            "key": "field_598f9602cac03",
-            "label": "Departures Content",
+            "key": "field_59a4cce0c6864",
+            "label": "Rates Main Content",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -313,9 +170,9 @@
             "endpoint": 1
         },
         {
-            "key": "field_598f961bcac04",
+            "key": "field_59a4cce0c68fc",
             "label": "Editor",
-            "name": "editor",
+            "name": "rates_main_content",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -332,8 +189,32 @@
             "delay": 0
         },
         {
-            "key": "field_598f9634cac05",
-            "label": "Terms & Conditions",
+            "key": "field_59a4db06f7f8a",
+            "label": "Rates Main Image",
+            "name": "rates_main_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_59a4ce95e304d",
+            "label": "Rates Sub Content",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -348,9 +229,44 @@
             "endpoint": 1
         },
         {
-            "key": "field_598f9649cac06",
-            "label": "Terms & Conditions Boxes",
-            "name": "terms_and_conditions_boxes",
+            "key": "field_59a4cea5e304e",
+            "label": "Editor",
+            "name": "rates_sub_content",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_59a4ceb2e304f",
+            "label": "Charter Rates",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 1
+        },
+        {
+            "key": "field_59a4cfb7e53eb",
+            "label": "Charter Rates Table",
+            "name": "charter_rates_table",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -363,13 +279,13 @@
             "collapsed": "",
             "min": 0,
             "max": 0,
-            "layout": "row",
+            "layout": "table",
             "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_598f966acac07",
-                    "label": "Header",
-                    "name": "header",
+                    "key": "field_59a4d17fada43",
+                    "label": "Season",
+                    "name": "season",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -386,9 +302,9 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_598f9672cac08",
-                    "label": "Subheader",
-                    "name": "subheader",
+                    "key": "field_59a4d18aada44",
+                    "label": "2017 Rate",
+                    "name": "2017_rate",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -405,10 +321,10 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_598f967acac09",
-                    "label": "Content",
-                    "name": "content",
-                    "type": "textarea",
+                    "key": "field_59a4d194ada45",
+                    "label": "2018 Rate",
+                    "name": "2018_rate",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -419,11 +335,49 @@
                     },
                     "default_value": "",
                     "placeholder": "",
-                    "maxlength": "",
-                    "rows": "",
-                    "new_lines": "wpautop"
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
+        },
+        {
+            "key": "field_59a4d25e44327",
+            "label": "Charter Below Table Text",
+            "name": "charter_below_table_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59a4d1b4f982a",
+            "label": "Charter Terms",
+            "name": "charter_terms",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
@@ -431,7 +385,7 @@
             {
                 "param": "post_template",
                 "operator": "==",
-                "value": "template-eco-departures.php"
+                "value": "template-eco-rates.php"
             }
         ]
     ],
@@ -457,5 +411,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1503983216
+    "modified": 1503983134
 }

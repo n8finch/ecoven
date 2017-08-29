@@ -2478,6 +2478,503 @@ p.entry-meta {
   }
 }
 
+.page-template-template-eco-rates .site-inner {
+  background-color: white;
+  max-width: 100%;
+  padding-top: 0;
+}
+@media only screen and (max-width: 860px) {
+  .page-template-template-eco-rates .site-inner {
+    padding: 0;
+  }
+}
+.page-template-template-eco-rates .rates-dates {
+  background-color: white;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-header {
+  background-color: #44596e;
+  color: white;
+  padding: 30px;
+  width: 100%;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-header h2 {
+  margin: auto;
+  max-width: 1100px;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap {
+  margin: 30px auto 0;
+  max-width: 1100px;
+  overflow: hidden;
+  position: relative;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap ul {
+  position: relative;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap li.rate-table-tabs {
+  background-color: white;
+  border: 1px solid;
+  border-bottom-width: 0;
+  border-color: #152838;
+  border-bottom: none;
+  border-right: none;
+  color: #152838;
+  cursor: pointer;
+  float: left;
+  list-style: none;
+  padding: 16px;
+  position: relative;
+  margin: 0;
+  text-align: center;
+  top: 0;
+  white-space: nowrap;
+  width: 171px;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap li.rate-table-tabs a {
+  color: #152838;
+  text-decoration: none;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap li.rate-table-tabs:first-child {
+  min-width: 215px;
+  width: 25%;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap li.rate-table-tabs:last-child {
+  border-right: 1px solid;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.rate-table-tab-content {
+  clear: both;
+  display: none;
+  position: relative;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.rate-table-tab-content.tab-open {
+  display: block;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap table.rates-table {
+  font-size: 11px;
+  font-size: 1.1rem;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap table.rates-table th, .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap table.rates-table td {
+  border: 1px solid #333333;
+  text-align: center;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap table.rates-table th {
+  background-color: #B9C8BE;
+  color: white;
+  padding: 7px 0;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap table.rates-table .th-dates {
+  width: 166px;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap table.rates-table .th-dots {
+  width: 85px;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap table.rates-table .th-notes {
+  width: 130px;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap table.rates-table tr.rate-table-row-0 {
+  background-color: white;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap table.rates-table tr.rate-table-row-1 {
+  background-color: #eeeeee;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap table.rates-table .td-rate-decks {
+  height: 45px;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap table.rates-table .td-dot {
+  font-size: 100px;
+  font-size: 10rem;
+  line-height: 0.2;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap table.rates-table .td-promotion {
+  border-right: none;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap table.rates-table .td-inquire {
+  border-left: none;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap table.rates-table .td-notes {
+  height: 50px;
+  padding: 0;
+  width: 130px;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap table.rates-table button {
+  font-size: 12px;
+  font-size: 1.2rem;
+  padding: 3px 5px;
+  width: 140px;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.pinned {
+  position: absolute;
+  left: 0;
+  min-width: 150px;
+  width: 25%;
+}
+@media screen and (max-width: 860px) {
+  .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.pinned {
+    left: auto;
+    top: -2px;
+    width: 150px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.pinned th {
+    min-width: 150px;
+  }
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.pinned td {
+  line-height: 32px;
+  line-height: 3.2rem;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.scroll {
+  position: relative;
+  left: -1px;
+  margin-left: 25%;
+  max-width: calc( 100% - 25% );
+  top: 0;
+  width: 100%;
+}
+@media screen and (max-width: 1115px) {
+  .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.scroll {
+    overflow: scroll;
+    overflow-y: hidden;
+  }
+}
+@media screen and (max-width: 860px) {
+  .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.scroll {
+    margin-left: 150px;
+    top: -2px;
+  }
+}
+@media screen and (max-width: 615px) {
+  .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.scroll {
+    margin-left: 150px;
+  }
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.scroll table {
+  min-width: 600px;
+}
+@media screen and (max-width: 1115px) {
+  .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.scroll table {
+    width: 75%;
+  }
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.scroll tr {
+  min-width: 600px;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.scroll th {
+  width: 150px;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.scroll td {
+  line-height: 32px;
+  line-height: 3.2rem;
+}
+.page-template-template-eco-rates .rates-dates .rate-view-iteneraries {
+  clear: both;
+  display: flex;
+  max-width: 1100px;
+  margin: auto;
+  margin-bottom: 60px;
+  justify-content: space-around;
+}
+@media screen and (max-width: 920px) {
+  .page-template-template-eco-rates .rates-dates .rate-view-iteneraries {
+    flex-direction: column;
+    padding: 5% 5% 0;
+  }
+}
+.page-template-template-eco-rates .rates-dates .rate-view-iteneraries a {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+.page-template-template-eco-rates .rates-dates .rate-view-iteneraries div {
+  color: white;
+  font-size: 22px;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  padding: 11px 10px;
+}
+.page-template-template-eco-rates .rates-dates .rate-view-iteneraries #view-itens {
+  background-color: #152838;
+  float: left;
+  width: 90%;
+}
+@media screen and (max-width: 920px) {
+  .page-template-template-eco-rates .rates-dates .rate-view-iteneraries #view-itens {
+    margin-bottom: 0;
+    width: 100%;
+  }
+}
+.page-template-template-eco-rates .rates-dates .rate-view-iteneraries #iten-a {
+  background-color: #44596e;
+  float: left;
+  width: 90%;
+}
+@media screen and (max-width: 920px) {
+  .page-template-template-eco-rates .rates-dates .rate-view-iteneraries #iten-a {
+    width: 100%;
+  }
+}
+.page-template-template-eco-rates .rates-dates .rate-view-iteneraries #iten-b {
+  background-color: #647a8c;
+  width: 100%;
+}
+@media screen and (max-width: 920px) {
+  .page-template-template-eco-rates .rates-dates .rate-view-iteneraries #iten-b {
+    width: 100%;
+  }
+}
+.page-template-template-eco-rates .rates-dates .rate-view-iteneraries #arrow-right {
+  border-top: 28px solid transparent;
+  border-bottom: 29px solid transparent;
+  border-left: 30px solid #152838;
+  float: left;
+  height: 0;
+  margin-left: 0px;
+  padding: 0;
+  width: 0;
+}
+@media screen and (max-width: 920px) {
+  .page-template-template-eco-rates .rates-dates .rate-view-iteneraries #arrow-right {
+    border-left: 45vw solid transparent;
+    border-right: 45vw solid transparent;
+    border-top: 30px solid #152838;
+    margin-bottom: 0;
+    margin-top: -1px;
+  }
+}
+.page-template-template-eco-rates .rates-dates .rate-view-iteneraries #arrow-from-right {
+  border-top: 28px solid #44596e;
+  border-bottom: 29px solid #44596e;
+  border-left: 29px solid transparent;
+  float: left;
+  height: 0;
+  padding: 0;
+  width: 0;
+}
+@media screen and (max-width: 920px) {
+  .page-template-template-eco-rates .rates-dates .rate-view-iteneraries #arrow-from-right {
+    display: none;
+  }
+}
+.page-template-template-eco-rates .rates-expedition,
+.page-template-template-eco-rates .rates-sub-content,
+.page-template-template-eco-rates .rates-charter-content {
+  background-color: white;
+}
+.page-template-template-eco-rates .rate-title-div {
+  background-color: #B9C8BE;
+  color: white;
+  padding-bottom: 50px;
+  padding-top: 30px;
+  text-align: center;
+}
+.page-template-template-eco-rates .rate-title-div h2 {
+  font-size: 3.5rem;
+}
+.page-template-template-eco-rates .book-now-box {
+  top: -30px;
+  position: relative;
+  text-align: center;
+}
+.page-template-template-eco-rates .book-now-box button:hover {
+  background-color: #eeeeee;
+}
+.page-template-template-eco-rates .rate-expedition-content-wrap {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+@media only screen and (max-width: 860px) {
+  .page-template-template-eco-rates .rate-expedition-content-wrap {
+    padding: 5% 5% 0;
+  }
+}
+.page-template-template-eco-rates .rate-expedition-content-wrap h3 {
+  font-size: 35px;
+  font-size: 3.5rem;
+}
+.page-template-template-eco-rates .rate-expedition-content-wrap h5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+.page-template-template-eco-rates .rate-main-image {
+  background-size: cover;
+  background-position-y: 50vw;
+  min-height: 40vw;
+}
+.page-template-template-eco-rates .rates-sub-content .rate-sub-content-wrap {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 50px 0;
+}
+@media only screen and (max-width: 860px) {
+  .page-template-template-eco-rates .rates-sub-content .rate-sub-content-wrap {
+    padding: 5% 5% 0;
+  }
+}
+.page-template-template-eco-rates .rates-sub-content .rate-sub-content-wrap h3 {
+  font-size: 35px;
+  font-size: 3.5rem;
+}
+.page-template-template-eco-rates .rates-sub-content .rate-sub-content-wrap h5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+.page-template-template-eco-rates .rates-sub-content .rate-sub-content-wrap .book-now-box {
+  top: 0;
+}
+.page-template-template-eco-rates .rates-charter-content {
+  position: relative;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding-bottom: 50px;
+  position: relative;
+}
+@media only screen and (max-width: 860px) {
+  .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap {
+    padding: 5% 5% 0;
+  }
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap .table-container {
+  position: relative;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap table.charter-rates-table {
+  font-size: 11px;
+  font-size: 1.1rem;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap table.charter-rates-table th, .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap table.charter-rates-table td {
+  border: 1px solid #333333;
+  text-align: center;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap table.charter-rates-table th {
+  background-color: #B9C8BE;
+  color: white;
+  min-width: 220px;
+  padding: 7px 0;
+  width: 33%;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap table.charter-rates-table .th-dates {
+  width: 166px;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap table.charter-rates-table .th-dots {
+  width: 85px;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap table.charter-rates-table .th-notes {
+  width: 130px;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap table.charter-rates-table tr.rate-table-row-0 {
+  background-color: white;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap table.charter-rates-table tr.rate-table-row-1 {
+  background-color: #eeeeee;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap table.charter-rates-table .td-rate-decks {
+  height: 45px;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap table.charter-rates-table .td-dot {
+  font-size: 100px;
+  font-size: 10rem;
+  line-height: 0.2;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap table.charter-rates-table .td-promotion {
+  border-right: none;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap table.charter-rates-table .td-inquire {
+  border-left: none;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap table.charter-rates-table .td-notes {
+  height: 50px;
+  padding: 0;
+  width: 130px;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap table.charter-rates-table button {
+  font-size: 12px;
+  font-size: 1.2rem;
+  padding: 3px 5px;
+  width: 140px;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap div.pinned {
+  position: absolute;
+  left: 0;
+  min-width: 150px;
+  width: 25%;
+}
+@media screen and (max-width: 860px) {
+  .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap div.pinned {
+    left: auto;
+    top: -2px;
+    width: 150px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap div.pinned th {
+    min-width: 150px;
+  }
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap div.pinned td {
+  line-height: 32px;
+  line-height: 3.2rem;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap div.scroll {
+  position: relative;
+  left: -1px;
+  margin-left: 25%;
+  max-width: calc( 100% - 25% );
+  top: 0;
+  width: 100%;
+}
+@media screen and (max-width: 1115px) {
+  .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap div.scroll {
+    overflow: scroll;
+    overflow-y: hidden;
+  }
+}
+@media screen and (max-width: 860px) {
+  .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap div.scroll {
+    margin-left: 150px;
+    top: -2px;
+  }
+}
+@media screen and (max-width: 615px) {
+  .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap div.scroll {
+    margin-left: 150px;
+  }
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap div.scroll td {
+  line-height: 32px;
+  line-height: 3.2rem;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap h2 {
+  font-weight: 400;
+  margin-bottom: 30px;
+  position: relative;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap h3 {
+  font-size: 35px;
+  font-size: 3.5rem;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap h5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap .rate-charter-terms h2 {
+  font-weight: 400;
+  margin-bottom: 30px;
+  position: relative;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap .rate-charter-terms h3 {
+  font-size: 35px;
+  font-size: 3.5rem;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap .rate-charter-terms h5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
 /* # Sidebars
 ---------------------------------------------------------------------------------------------------- */
 .sidebar {
