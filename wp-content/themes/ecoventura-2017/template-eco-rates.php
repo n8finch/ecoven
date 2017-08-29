@@ -193,6 +193,8 @@ function eco_rates_charter_rates( $acf_fields ) {
 				</div> <!--end scroll class div -->
 			</div>
 
+			<p><em><?php echo esc_html( $acf_fields['charter_below_table_text'] )?></em></p>
+
 			<h2>Charter Terms</h2>
 
 
