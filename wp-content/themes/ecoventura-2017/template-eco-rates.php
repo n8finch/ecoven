@@ -102,15 +102,14 @@ function eco_rates_expedition( $acf_fields ) {
 
 		<!-- Add Plan Your Trip box -->
 		<div class="book-now-box">
-			<a href="<?php echo esc_html( $acf_fields[ 'book_now_link' ] );?>">
+			<a href="<?php echo esc_url( $acf_fields[ 'book_now_link' ] );?>">
 				<button>PLAN YOUR TRIP</button>
 			</a>
 		</div>
 
 		<div class="rate-expedition-content-wrap">
 			<div class="rate-expedition-content">
-				<!--TODO: how to escape?-->
-				<?php echo $acf_fields['rates_main_content']; ?>
+				<?php echo wp_kses_post( $acf_fields['rates_main_content'] ); ?>
 			</div>
 		</div>
 	</section>
@@ -125,11 +124,10 @@ function eco_rates_sub_content( $acf_fields ) {
 		</div>
 		<div class="rate-sub-content-wrap">
 			<div class="rate-sub-content">
-				<!--TODO: how to escape?-->
-				<?php echo $acf_fields['rates_sub_content']; ?>
+				<?php echo wp_kses_post( $acf_fields['rates_sub_content'] ); ?>
 			</div>
 			<div class="book-now-box">
-				<a href="<?php echo esc_html( $acf_fields[ 'book_now_link' ] );?>">
+				<a href="<?php echo esc_url( $acf_fields[ 'book_now_link' ] );?>">
 					<button>PLAN YOUR TRIP</button>
 				</a>
 			</div>
@@ -199,8 +197,7 @@ function eco_rates_charter_rates( $acf_fields ) {
 
 
 			<div class="rate-charter-terms">
-				<!--TODO: how to escape?-->
-				<?php echo $acf_fields['charter_terms']; ?>
+				<?php echo wp_kses_post( $acf_fields['charter_terms'] ); ?>
 			</div>
 		</div>
 	</section>
@@ -220,7 +217,7 @@ function eco_rates_popup( $acf_fields ) {
 			$deck_id = strtolower( str_replace( ' ', '-', $row['deck'] ) );
 			?>
 			<div id="<?php echo esc_html( $deck_id ); ?>" visibility="hidden" class="rates-popup">
-				<img src="<?php echo esc_html( $row['deck_image'] );?>" />
+				<img src="<?php echo esc_attr( $row['deck_image'] );?>" />
 				<p><?php echo esc_html( $row['deck_bullet_description'] ); ?></p>
 			</div>
 			<?php
