@@ -22,6 +22,25 @@
             "maxlength": 4
         },
         {
+            "key": "field_59a4f664c8719",
+            "label": "Book Now Link",
+            "name": "book_now_link",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": 4
+        },
+        {
             "key": "field_598f92db47758",
             "label": "Itinerary A Link",
             "name": "itinerary_a_link",
@@ -438,5 +457,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1502675956
+    "modified": 1503983216
 }

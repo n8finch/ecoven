@@ -88,19 +88,6 @@ function eco_rates_dates( $acf_fields, $depart_year ) {
 				</div> <!--end tab div -->
 			</div> <!-- end table wrap -->
 
-			<div class="rate-view-iteneraries">
-				<a href="#">
-					<div id="view-itens">VIEW ITENERARIES</div>
-					<div id="arrow-right"></div>
-				</a>
-				<a href="<?php echo esc_html( $acf_fields[ 'itinerary_a_link' ] ); ?>">
-					<div id="arrow-from-right"></div>
-					<div id="iten-a">ITENERARY A</div>
-				</a>
-				<a href="<?php echo esc_html( $acf_fields[ 'itinerary_b_link' ] ); ?>">
-					<div id="iten-b">ITENERARY B</div>
-				</a>
-			</div>
 	</section>
 	<?php
 }

@@ -138,9 +138,11 @@ function eco_departures_expedition( $acf_fields ) {
 		</div>
 
 		<!-- Add Plan Your Trip box -->
-		<div class="book-now-box"><a href="#">
+		<div class="book-now-box">
+			<a href="<?php echo esc_html( $acf_fields[ 'book_now_link' ] );?>">
 				<button>PLAN YOUR TRIP</button>
-			</a></div>
+			</a>
+		</div>
 
 		<div class="departure-expedition-content-wrap">
 			<div class="departure-expedition-content">

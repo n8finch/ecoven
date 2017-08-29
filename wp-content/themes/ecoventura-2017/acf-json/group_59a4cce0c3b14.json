@@ -41,44 +41,6 @@
             "maxlength": 4
         },
         {
-            "key": "field_59a4cce0c6633",
-            "label": "Itinerary A Link",
-            "name": "itinerary_a_link",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_59a4cce0c66c1",
-            "label": "Itinerary B Link",
-            "name": "itinerary_b_link",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_59a4cce0c674e",
             "label": "Departures Table",
             "name": "",
@@ -449,5 +411,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1503976230
+    "modified": 1503983134
 }
