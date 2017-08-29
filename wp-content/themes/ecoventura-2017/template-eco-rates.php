@@ -33,7 +33,7 @@ function eco_rates_dates( $acf_fields, $depart_year ) {
 			<div id="tabs">
 				<ul>
 					<li class="rate-table-tabs"
-					    data-tab="#tabs-1"><?php echo esc_html( $acf_fields['date_field'] ); ?></li>
+					    data-tab="#tabs-1">M/Y ERIC & LETTY</li>
 					<!-- <li class="rate-table-tabs" data-tab="#tabs-2">LETTY</li> -->
 				</ul>
 
@@ -157,51 +157,53 @@ function eco_rates_charter_rates( $acf_fields ) {
 	<section class="rates-charter-content">
 		<div class="rates-charter-content-wrap">
 			<h2>Charter Rates</h2>
-			<div class="pinned">
-				<table class="charter-rates-table">
-					<tr>
-						<th class="">SEASON</th>
-					</tr>
-					<?php
-					$rows = $acf_fields['charter_rates_table'];
-					if ( $rows ) {
-						$counter = 0;
-						foreach ( $rows as $row ) {
-							$row_color_var = $counter % 2;
-							echo '<tr class="rate-table-row-' . esc_html( $row_color_var ) . '">';
-							echo '<td class="td-rate-decks" data-th="CRUISE DATES">' . esc_html( $row['season'] ) . '</td>';
-							echo '</tr>';
-							$counter ++;
+			<div class="table-container">
+				<div class="pinned">
+					<table class="charter-rates-table">
+						<tr>
+							<th class="">SEASON</th>
+						</tr>
+						<?php
+						$rows = $acf_fields['charter_rates_table'];
+						if ( $rows ) {
+							$counter = 0;
+							foreach ( $rows as $row ) {
+								$row_color_var = $counter % 2;
+								echo '<tr class="rate-table-row-' . esc_html( $row_color_var ) . '">';
+								echo '<td class="td-rate-decks" data-th="CRUISE DATES">' . esc_html( $row['season'] ) . '</td>';
+								echo '</tr>';
+								$counter ++;
+							}
 						}
-					}
-					?>
-				</table>
-			</div> <!--end pinned class div -->
+						?>
+					</table>
+				</div> <!--end pinned class div -->
 
-			<div class="scroll">
-				<table class="charter-rates-table scroll">
-					<tr>
-						<th class="">2017 RATE</th>
-						<th class="">2018 RATE</th>
-					</tr>
+				<div class="scroll">
+					<table class="charter-rates-table scroll">
+						<tr>
+							<th class="">2017 RATE</th>
+							<th class="">2018 RATE</th>
+						</tr>
 
-					<?php
+						<?php
 
-					$rows = $acf_fields['charter_rates_table'];
-					if ( $rows ) {
-						$counter = 0;
-						foreach ( $rows as $row ) {
-							$row_color_var = $couter % 2;
-							echo '<tr class="rate-table-row-' . esc_html( $row_color_var ) . '">';
-							echo '<td>' . esc_html( $row['2017_rate'] ) . '</td>';
-							echo '<td>' . esc_html( $row['2018_rate'] ) . '</td>';
-							echo '</tr>';
-							$couter ++;
+						$rows = $acf_fields['charter_rates_table'];
+						if ( $rows ) {
+							$counter = 0;
+							foreach ( $rows as $row ) {
+								$row_color_var = $couter % 2;
+								echo '<tr class="rate-table-row-' . esc_html( $row_color_var ) . '">';
+								echo '<td>' . esc_html( $row['2017_rate'] ) . '</td>';
+								echo '<td>' . esc_html( $row['2018_rate'] ) . '</td>';
+								echo '</tr>';
+								$couter ++;
+							}
 						}
-					}
-					?>
-				</table>
-			</div> <!--end scroll class div -->
+						?>
+					</table>
+				</div> <!--end scroll class div -->
+			</div>
 
 			<h2>Charter Terms</h2>
 

@@ -2534,7 +2534,8 @@ p.entry-meta {
   text-decoration: none;
 }
 .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap li.rate-table-tabs:first-child {
-  width: 166px;
+  min-width: 215px;
+  width: 25%;
 }
 .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap li.rate-table-tabs:last-child {
   border-right: 1px solid;
@@ -2542,6 +2543,7 @@ p.entry-meta {
 .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.rate-table-tab-content {
   clear: both;
   display: none;
+  position: relative;
 }
 .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.rate-table-tab-content.tab-open {
   display: block;
@@ -2603,8 +2605,19 @@ p.entry-meta {
   position: absolute;
   left: 0;
   min-width: 150px;
-  top: 60px;
   width: 25%;
+}
+@media screen and (max-width: 860px) {
+  .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.pinned {
+    left: auto;
+    top: -2px;
+    width: 150px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.pinned th {
+    min-width: 150px;
+  }
 }
 .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.pinned td {
   line-height: 32px;
@@ -2626,6 +2639,7 @@ p.entry-meta {
 }
 @media screen and (max-width: 860px) {
   .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.scroll {
+    margin-left: 150px;
     top: -2px;
   }
 }
@@ -2633,6 +2647,20 @@ p.entry-meta {
   .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.scroll {
     margin-left: 150px;
   }
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.scroll table {
+  min-width: 600px;
+}
+@media screen and (max-width: 1115px) {
+  .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.scroll table {
+    width: 75%;
+  }
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.scroll tr {
+  min-width: 600px;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.scroll th {
+  width: 150px;
 }
 .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.scroll td {
   line-height: 32px;
@@ -2809,6 +2837,9 @@ p.entry-meta {
     padding: 5% 5% 0;
   }
 }
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap .table-container {
+  position: relative;
+}
 .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap table.charter-rates-table {
   font-size: 11px;
   font-size: 1.1rem;
@@ -2868,14 +2899,18 @@ p.entry-meta {
   position: absolute;
   left: 0;
   min-width: 150px;
-  top: 66px;
   width: 25%;
 }
 @media screen and (max-width: 860px) {
   .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap div.pinned {
     left: auto;
-    top: 106px;
+    top: -2px;
     width: 150px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap div.pinned th {
+    min-width: 150px;
   }
 }
 .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap div.pinned td {
@@ -2898,6 +2933,7 @@ p.entry-meta {
 }
 @media screen and (max-width: 860px) {
   .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap div.scroll {
+    margin-left: 150px;
     top: -2px;
   }
 }
@@ -2920,6 +2956,20 @@ p.entry-meta {
   font-size: 3.5rem;
 }
 .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap h5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap .rate-charter-terms h2 {
+  font-weight: 400;
+  margin-bottom: 30px;
+  position: relative;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap .rate-charter-terms h3 {
+  font-size: 35px;
+  font-size: 3.5rem;
+}
+.page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap .rate-charter-terms h5 {
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
   letter-spacing: 1px;
