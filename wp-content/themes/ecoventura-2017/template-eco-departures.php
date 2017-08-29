@@ -7,10 +7,10 @@ add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
 // Remove the default Genesis loop
 remove_action( 'genesis_loop', 'genesis_do_loop' );
 
-// Add custom homepage content
-add_action( 'genesis_loop', 'eco_homepage_content' );
+// Add custom departues content
+add_action( 'genesis_loop', 'eco_departues_content' );
 
-function eco_homepage_content() {
+function eco_departues_content() {
 
 	global $post;
 	$acf_fields = get_fields( $post->ID );

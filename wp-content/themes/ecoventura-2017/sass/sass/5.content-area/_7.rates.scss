@@ -1,4 +1,4 @@
-.page-template-template-eco-departures {
+.page-template-template-eco-rates {
 
 	// $color__dark_navy: #152838;
 	// $color__medium_blue_gray: #44596e;
@@ -10,15 +10,16 @@
 		    padding: 0;
 		}
 
+		background-color: white;
 		max-width: 100%;
 		padding-top: 0;
 	}
 
-	.departures-dates {
+	.rates-dates {
 
 		background-color: white;
 
-		.departure-dates-header {
+		.rate-dates-header {
 			background-color: $color__medium_blue_gray;
 			color: white;
 			padding: 30px;
@@ -30,7 +31,7 @@
 			}
 		}
 
-		.departure-dates-table-wrap {
+		.rate-dates-table-wrap {
 			margin: 30px auto 0;
 			max-width: 1100px;
 			overflow: hidden;
@@ -40,7 +41,7 @@
 				position: relative;
 			}
 
-			li.departure-table-tabs {
+			li.rate-table-tabs {
 				background-color: white;
 				border: 1px solid;
 				border-bottom-width: 0;
@@ -67,25 +68,25 @@
 				}
 			}
 
-			li.departure-table-tabs:first-child {
+			li.rate-table-tabs:first-child {
 				width: 166px;
 			}
-			li.departure-table-tabs:last-child {
+			li.rate-table-tabs:last-child {
 				border-right: 1px solid;
 				// width: 171px;
 			}
 
-			div.departure-table-tab-content {
+			div.rate-table-tab-content {
 				clear: both;
 				display: none;
 			}
 
-			div.departure-table-tab-content.tab-open {
+			div.rate-table-tab-content.tab-open {
 				display: block;
 			}
 
 
-			table.departures-table {
+			table.rates-table {
 				font-size: 11px;
 				font-size: 1.1rem;
 
@@ -112,16 +113,16 @@
 					width: 130px;
 				}
 
-				tr.departure-table-row-0 {
+				tr.rate-table-row-0 {
 					background-color: white;
 				}
 
-				tr.departure-table-row-1 {
+				tr.rate-table-row-1 {
 					background-color: #eeeeee;
 				}
 
-				.td-departure-dates {
-					height: 50px;
+				.td-rate-decks {
+					height: 45px;
 				}
 
 				.td-dot {
@@ -155,11 +156,12 @@
 			div.pinned {
 				position: absolute;
 			    left: 0;
+				min-width: 150px;
 			    top: 60px;
-				width: 166px;
+				width: 25%;
 
 				table {
-					width: 166px;
+					// width: 166px;
 				}
 
 				td {
@@ -179,21 +181,31 @@
 					top: -2px;
 				}
 
+				@media screen and (max-width: 615px) {
+					margin-left: 150px;
+				}
+
 				position: relative;
-			    left: 0;
-				margin-left: 165px;
-    			max-width: 935px;
+			    left: -1px;
+				margin-left: 25%;
+    			max-width: calc( 100% - 25% );
 			    top: 0;
+				width: 100%;
 
 				table {
 					@media screen and (max-width: 1115px) {
-						width: 951px;
+						// width: 75%;
 					}
+				}
+
+				td {
+					line-height: 32px;
+					line-height: 3.2rem;
 				}
 			}
 		}
 
-		.departure-view-iteneraries {
+		.rate-view-iteneraries {
 
 			@media screen and (max-width: 920px) {
 				flex-direction: column;
@@ -292,7 +304,13 @@
 		}
 	}
 
-	.departure-title-div {
+	.rates-expedition,
+	.rates-sub-content,
+	.rates-charter-content {
+		background-color: white;
+	}
+
+	.rate-title-div {
 		background-color: $eco_green;
 		color: white;
 		padding-bottom: 50px;
@@ -314,13 +332,13 @@
 		}
 	}
 
-	.departure-expedition-content-wrap {
+	.rate-expedition-content-wrap {
 
 		@media only screen and (max-width: 860px) {
 		    padding: 5% 5% 0;
 		}
 
-		margin: auto;
+		margin: 0 auto;
 		max-width: 1100px;
 
 		h3 {
@@ -336,69 +354,217 @@
 
 	}
 
-	.departures-faqs-terms-conditions {
+	.rate-main-image {
+		background-size: cover;
+		background-position-y: 50vw;
+		min-height: 40vw;
+	}
 
-		.departure-faq-image {
-			background-size: cover;
-			background-position-y: 50vw;
-    		min-height: 40vw;
-		}
+	.rates-sub-content {
 
-		.departure-faqs,
-		.departure-terms-conditions {
+		.rate-sub-content-wrap {
 
 			@media only screen and (max-width: 860px) {
 			    padding: 5% 5% 0;
 			}
 
-			margin: 60px auto;
+			margin: 0 auto;
 			max-width: 1100px;
-		}
+			padding: 50px 0;
 
-		h3 {
-			font-size: 35px;
-			font-size: 3.5rem;
-			font-weight: normal;
-		}
-
-		h5 {
-			font-family: 'Roboto', sans-serif;
-			font-weight: normal;
-			letter-spacing: 1px;
-		}
-
-		.departure-term-condition {
-
-			border-top: 1px solid #333333;
-    		margin-top: -1px;
+			h3 {
+				font-size: 35px;
+				font-size: 3.5rem;
+			}
 
 			h5 {
-
-				@media only screen and (max-width: 860px) {
-					padding: 30px 0;
-				}
-
-				border-bottom: 1px solid #333333;
-				margin-bottom: 0;
-				padding: 30px 60px;
+				font-family: 'Roboto', sans-serif;
+				font-weight: normal;
+				letter-spacing: 1px;
 			}
 
-			p {
-				@media only screen and (max-width: 860px) {
-					padding: 30px 0;
+			.book-now-box {
+				top: 0;
+			}
+		}
+
+
+
+	}
+
+	.rates-charter-content {
+
+		position: relative;
+
+		.rates-charter-content-wrap {
+
+			@media only screen and (max-width: 860px) {
+			    padding: 5% 5% 0;
+			}
+
+			margin: 0 auto;
+			max-width: 1100px;
+			padding-bottom: 50px;
+			position: relative;
+
+			table.charter-rates-table {
+				font-size: 11px;
+				font-size: 1.1rem;
+
+				th, td {
+					border: 1px solid #333333;
+					text-align: center;
+
 				}
 
-				display: none;
-				padding: 30px 60px 0;
-				margin-bottom: 0;
+				th {
+					background-color: $eco_green;
+					color: white;
+					min-width: 220px;
+					padding: 7px 0;
+					width: 33%;
+				}
 
-				.departure-term-condition-subhead {
+				.th-dates {
+					width: 166px;
+				}
+				.th-dots {
+					width: 85px;
+				}
 
+				.th-notes {
+					width: 130px;
+				}
+
+				tr.rate-table-row-0 {
+					background-color: white;
+				}
+
+				tr.rate-table-row-1 {
+					background-color: #eeeeee;
+				}
+
+				.td-rate-decks {
+					height: 45px;
+				}
+
+				.td-dot {
+					font-size: 100px;
+					font-size: 10rem;
+					line-height: 0.2;
+				}
+
+				.td-promotion {
+					border-right: none;
+				}
+
+				.td-inquire {
+					border-left: none;
+				}
+
+				.td-notes {
+					height: 50px;
+					padding: 0;
+					width: 130px;
+				}
+
+				button {
+					font-size: 12px;
+					font-size: 1.2rem;
+					padding: 3px 5px;
+					width: 140px;
 				}
 			}
+
+			div.pinned {
+
+				@media screen and (max-width: 860px) {
+					left: auto;
+					top: 106px;
+					width: 150px;
+				}
+
+				position: absolute;
+				left: 0;
+				min-width: 150px;
+				top: 66px;
+				width: 25%;
+
+				table {
+					// width: 166px;
+				}
+
+				th {
+					// @media screen and (max-width: 860px) {
+					// 	min-width: 209px;
+					// }
+				}
+
+				td {
+					line-height: 32px;
+					line-height: 3.2rem;
+				}
+			}
+
+			div.scroll {
+				@media screen and (max-width: 1115px) {
+					overflow: scroll;
+					overflow-y: hidden;
+				}
+
+
+				@media screen and (max-width: 860px) {
+					top: -2px;
+				}
+
+				@media screen and (max-width: 615px) {
+					margin-left: 150px;
+				}
+
+				position: relative;
+				left: -1px;
+				margin-left: 25%;
+				max-width: calc( 100% - 25% );
+				top: 0;
+				width: 100%;
+
+				table {
+					@media screen and (max-width: 1115px) {
+						// width: 75%;
+					}
+				}
+
+				td {
+					line-height: 32px;
+					line-height: 3.2rem;
+				}
+			}
+
+			h2 {
+				font-weight: 400;
+				margin-bottom: 30px;
+				position: relative;
+			}
+
+			h3 {
+				font-size: 35px;
+				font-size: 3.5rem;
+			}
+
+			h5 {
+				font-family: 'Roboto', sans-serif;
+				font-weight: normal;
+				letter-spacing: 1px;
+			}
+
+			.rate-charter-terms {
+
+			}
+
 		}
 
 	}
+
 
 
 
