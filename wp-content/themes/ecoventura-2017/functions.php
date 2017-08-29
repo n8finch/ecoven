@@ -46,9 +46,9 @@ function child_theme_setup() {
 	require_once( CHILD_DIR . '/inc/eco-functions.php' );
 	require_once( CHILD_DIR . '/inc/eco-types.php' );
 	require_once( CHILD_DIR . '/inc/eco-builds.php' );
-	require_once( CHILD_DIR . '/inc/shortcodes/world-nomads.php' );
-	require_once( CHILD_DIR . '/inc/shortcodes/eco-shortcodes.php' );
-	require_once( CHILD_DIR . '/inc/shortcodes/div-shortcode.php' );
+	// require_once( CHILD_DIR . '/inc/shortcodes/world-nomads.php' );
+	// require_once( CHILD_DIR . '/inc/shortcodes/eco-shortcodes.php' );
+	// require_once( CHILD_DIR . '/inc/shortcodes/div-shortcode.php' );
 
 	// Admin
 	require_once( CHILD_DIR . '/inc/admin/admin.php' );

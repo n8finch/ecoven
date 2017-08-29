@@ -33,7 +33,7 @@ function eco_homepage_above_fold($acf_fields) {
 		<!-- Add title div -->
 
 		<div class="homepage-title-div">
-			<h2><?php echo $acf_fields["above_the_fold_heading"]; ?></h2>
+			<h2><?php echo esc_html( $acf_fields["above_the_fold_heading"] ); ?></h2>
 		</div>
 
 		<!-- Add Plan Your Trip box -->
@@ -47,34 +47,34 @@ function eco_homepage_page_image_boxes($acf_fields) {
 	?>
 	<section class="homepage-page-image-boxes">
 
-		<a href="<?php echo $acf_fields['image_box_1_link'];?>">
+		<a href="<?php echo esc_html( $acf_fields['image_box_1_link'] );?>">
 			<div class="homepage-page-image-box">
-				<img src="<?php echo $acf_fields['image_box_1_image'];?>" />
-				<div><?php echo $acf_fields['image_box_1_title'];?></div>
+				<img src="<?php echo esc_html( $acf_fields['image_box_1_image'] );?>" />
+				<div><?php echo esc_html( $acf_fields['image_box_1_title'] );?></div>
 			</div>
 		</a>
 
 
-		<a href="<?php echo $acf_fields['image_box_2_link'];?>">
+		<a href="<?php echo esc_html( $acf_fields['image_box_2_link'] );?>">
 			<div class="homepage-page-image-box">
-				<img src="<?php echo $acf_fields['image_box_2_image'];?>" />
-				<div><?php echo $acf_fields['image_box_2_title'];?></div>
+				<img src="<?php echo esc_html( $acf_fields['image_box_2_image'] );?>" />
+				<div><?php echo esc_html( $acf_fields['image_box_2_title'] );?></div>
 			</div>
 		</a>
 
 
-		<a href="<?php echo $acf_fields['image_box_3_link'];?>">
+		<a href="<?php echo esc_html( $acf_fields['image_box_3_link'] );?>">
 			<div class="homepage-page-image-box">
-				<img src="<?php echo $acf_fields['image_box_3_image'];?>" />
-				<div><?php echo $acf_fields['image_box_3_title'];?></div>
+				<img src="<?php echo esc_html( $acf_fields['image_box_3_image'] );?>" />
+				<div><?php echo esc_html( $acf_fields['image_box_3_title'] );?></div>
 			</div>
 		</a>
 
 
-		<a href="<?php echo $acf_fields['image_box_4_link'];?>">
+		<a href="<?php echo esc_html( $acf_fields['image_box_4_link'] );?>">
 			<div class="homepage-page-image-box">
-				<img src="<?php echo $acf_fields['image_box_4_image'];?>" />
-				<div><?php echo $acf_fields['image_box_4_title'];?></div>
+				<img src="<?php echo esc_html( $acf_fields['image_box_4_image'] );?>" />
+				<div><?php echo esc_html(  $acf_fields['image_box_4_title'] );?></div>
 			</div>
 		</a>
 
@@ -91,8 +91,8 @@ function eco_homepage_video($acf_fields) {
 	<section class="homepage-video">
 		<div>
 			<video width="100%" autoplay muted>
-			  <source src="<?php echo $acf_fields['video_embed']; ?>" type="video/mp4">
-			  <source src="<?php echo $acf_fields['video_embed']; ?>" type="video/ogg">
+			  <source src="<?php echo esc_html( $acf_fields['video_embed'] ); ?>" type="video/mp4">
+			  <source src="<?php echo esc_html( $acf_fields['video_embed'] ); ?>" type="video/ogg">
 			Your browser does not support the video tag.
 			</video>
 		</div>
@@ -122,7 +122,7 @@ function eco_homepage_recent_blog_posts() {
 			        setup_postdata( $post ); ?>
 					<div class="recent-post-box">
 						<a href="<?php the_permalink(); ?>">
-							<img class="" src="<?php echo the_post_thumbnail_url('reason'); ?>"/>
+							<img class="" src="<?php echo esc_html( the_post_thumbnail_url('reason') ); ?>"/>
 						</a>
 						<div class="recent-post-box-content">
 							<h3><?php the_title(); ?></h3>
@@ -176,28 +176,28 @@ function eco_homepage_page_as_seen_in_the_media($acf_fields) {
 			<div class="as-seen-logo-container">
 				<h2>AS SEEN IN THE MEDIA</h2>
 
-				<a href="<?php echo $acf_fields['media_logo_1_link']; ?>">
-					<img src="<?php echo $acf_fields['media_logo_1_image']; ?>" />
+				<a href="<?php echo esc_html( $acf_fields['media_logo_1_link'] ); ?>">
+					<img src="<?php echo esc_html( $acf_fields['media_logo_1_image'] ); ?>" />
 				</a>
 
-				<a href="<?php echo $acf_fields['media_logo_2_link']; ?>">
-					<img src="<?php echo $acf_fields['media_logo_2_image']; ?>" />
+				<a href="<?php echo esc_html( $acf_fields['media_logo_2_link'] ); ?>">
+					<img src="<?php echo esc_html( $acf_fields['media_logo_2_image'] ); ?>" />
 				</a>
 
-				<a href="<?php echo $acf_fields['media_logo_3_link']; ?>">
-					<img src="<?php echo $acf_fields['media_logo_3_image']; ?>" />
+				<a href="<?php echo esc_html( $acf_fields['media_logo_3_link'] ); ?>">
+					<img src="<?php echo esc_html( $acf_fields['media_logo_3_image'] ); ?>" />
 				</a>
 
-				<a href="<?php echo $acf_fields['media_logo_4_link']; ?>">
-					<img src="<?php echo $acf_fields['media_logo_4_image']; ?>" />
+				<a href="<?php echo esc_html( $acf_fields['media_logo_4_link'] ); ?>">
+					<img src="<?php echo esc_html( $acf_fields['media_logo_4_image'] ); ?>" />
 				</a>
 
-				<a href="<?php echo $acf_fields['media_logo_5_link']; ?>">
-					<img src="<?php echo $acf_fields['media_logo_5_image']; ?>" />
+				<a href="<?php echo esc_html( $acf_fields['media_logo_5_link'] ); ?>">
+					<img src="<?php echo esc_html( $acf_fields['media_logo_5_image'] ); ?>" />
 				</a>
 
-				<a href="<?php echo $acf_fields['media_logo_6_link']; ?>">
-					<img src="<?php echo $acf_fields['media_logo_6_image']; ?>" />
+				<a href="<?php echo esc_html( $acf_fields['media_logo_6_link'] ); ?>">
+					<img src="<?php echo esc_html( $acf_fields['media_logo_6_image'] ); ?>" />
 				</a>
 
 			</div>
