@@ -543,6 +543,7 @@
 
 				@media screen and (max-width: 860px) {
 					margin-left: 150px;
+					max-width: calc( 100% - 40% );
 					top: -2px;
 				}
 

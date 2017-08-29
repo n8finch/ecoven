@@ -2934,6 +2934,7 @@ p.entry-meta {
 @media screen and (max-width: 860px) {
   .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap div.scroll {
     margin-left: 150px;
+    max-width: calc( 100% - 40% );
     top: -2px;
   }
 }
