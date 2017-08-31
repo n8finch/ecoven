@@ -2787,6 +2787,9 @@ p.entry-meta {
     padding: 5% 5% 0;
   }
 }
+.page-template-template-eco-rates .rate-expedition-content-wrap h2 {
+  font-weight: 400;
+}
 .page-template-template-eco-rates .rate-expedition-content-wrap h3 {
   font-size: 35px;
   font-size: 3.5rem;
@@ -2810,6 +2813,9 @@ p.entry-meta {
   .page-template-template-eco-rates .rates-sub-content .rate-sub-content-wrap {
     padding: 5% 5% 0;
   }
+}
+.page-template-template-eco-rates .rates-sub-content .rate-sub-content-wrap h2 {
+  font-weight: 400;
 }
 .page-template-template-eco-rates .rates-sub-content .rate-sub-content-wrap h3 {
   font-size: 35px;

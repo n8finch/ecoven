@@ -126,6 +126,9 @@ function eco_rates_sub_content( $acf_fields ) {
 			<div class="rate-sub-content">
 				<?php echo wp_kses_post( $acf_fields['rates_sub_content'] ); ?>
 			</div>
+			<div class="rate-sub-content">
+				<?php echo wp_kses_post( $acf_fields['rates_cruise_options'] ); ?>
+			</div>
 			<div class="book-now-box">
 				<a href="<?php echo esc_url( $acf_fields[ 'book_now_link' ] );?>">
 					<button>PLAN YOUR TRIP</button>
