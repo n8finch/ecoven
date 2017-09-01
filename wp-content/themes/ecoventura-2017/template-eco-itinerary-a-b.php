@@ -104,22 +104,24 @@ function eco_intinerary_b( $acf_fields ) {
 				<?php
 				$rows = $acf_fields['itinerary_b_highlights'];
 				if($rows) {
+					$counter = 1;
 					foreach ( $rows as $row ) {
-						$pop_id = strtolower( str_replace( ' ', '-', $row['deck'] ) );
+						$pop_id = 'iten-b-popup-' . $counter;
 					?>
 						<div class="highlight-box">
-							<div class="image-container">
-								<img src="<?php echo esc_attr( $row['image'] ); ?>" />
+							<div class="image-container" data-popup-id="<?php echo esc_html( $pop_id ); ?>">
+								<img src="<?php echo esc_attr( $row['image'] ); ?>" data-popup-id="<?php echo esc_html( $pop_id ); ?>"/>
 							</div>
 							<div class="hr-blue"></div>
 							<p class="image-subtitle"><?php echo wp_kses_post( $row['image_subtitle'] ); ?></p>
 
-							<div id="<?php echo esc_html( $pop_id ); ?>" visibility="hidden" class="rates-popup">
-								<img src="<?php echo esc_attr( $row['deck_image'] );?>" />
-								<p><?php echo esc_html( $row['deck_bullet_description'] ); ?></p>
+							<div id="<?php echo esc_html( $pop_id ); ?>" visibility="hidden" class="iteneraries-popup">
+								<img src="<?php echo esc_attr( $row['popup_image'] );?>" />
+								<p><?php echo wp_kses_post( $row['popup_facts'] ); ?></p>
 							</div>
 						</div>
 					<?php
+					$counter++;
 					} //end foreach
 				} //end if ?>
 
