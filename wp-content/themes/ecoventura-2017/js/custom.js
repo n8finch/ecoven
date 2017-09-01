@@ -37,23 +37,27 @@
 		}
 		do_departure_toggles();
 
-
-
+		var doEcoPopUp = function( divID ) {
+			$( divID ).dialog({
+				modal: true,
+				closeOnEscape: true,
+				height: 'auto',
+				width: 400,
+			});
+		}
 
 		// Rates Page PopUp
 
 		$( function() {
+			$( ".td-rate-decks" ).on( 'click', function(e) {
+				var divID = '#' + e.target.id.replace(' ', '-').toLowerCase();
 
-			$( ".td-rate-decks" ).on('click', function(e) {
-
-				var deckID = '#' + e.target.id.replace(' ', '-').toLowerCase();
-
-				$( deckID ).dialog({
-      				modal: true,
-					closeOnEscape: true,
-					height: 'auto',
-					width: 400,
-				});
+				doEcoPopUp(divID);
+			});
+			$( ".highlight-box .image-container" ).on( 'click', function(e) {
+				var divID = '#' + e.target.dataset.popupId;
+				
+				doEcoPopUp(divID);
 			});
 		});
 

@@ -28,7 +28,7 @@
             "label": "Above the fold heading",
             "name": "above_the_fold_heading",
             "type": "text",
-            "instructions": "",
+            "instructions": "SOUTHERN\/CENTRAL ROUTE\r\n\r\n7 nights of pure enjoyment. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum arcu eget velit auctor consequat. Maecenas ultrices, felis vitae varius interdum, lectus orci accumsan odio, quis egestas sapien ex sed leo. Etiam rutrum mi et velit ultricies, eu cursus nisi hendrerit. Aliquam quis odio nisi. Fusce mattis dolor a porta porta.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -62,6 +62,54 @@
             "key": "field_594bdfc4769c8",
             "label": "Image Box 1 Image",
             "name": "image_box_1_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_59a8814d46ee9",
+            "label": "Image Box 1 Image (copy)",
+            "name": "image_box_1_image_copy",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_59a8814d46ee9",
+            "label": "Image Box 1 Image (copy)",
+            "name": "image_box_1_image_copy",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -183,6 +231,63 @@
             "key": "field_594be0f906afd",
             "label": "Image Box 2 Link",
             "name": "image_box_2_link",
+            "type": "page_link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        },
+        {
+            "key": "field_59a881348866d",
+            "label": "Image Box 2 Link (copy)",
+            "name": "image_box_2_link_copy",
+            "type": "page_link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        },
+        {
+            "key": "field_59a881248866c",
+            "label": "Image Box 2 Link (copy)",
+            "name": "image_box_2_link_copy",
+            "type": "page_link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        },
+        {
+            "key": "field_59a881208866b",
+            "label": "Image Box 2 Link (copy)",
+            "name": "image_box_2_link_copy",
             "type": "page_link",
             "instructions": "",
             "required": 0,
@@ -353,22 +458,6 @@
             "allow_null": 0,
             "allow_archives": 1,
             "multiple": 0
-        },
-        {
-            "key": "field_594be4b2c39d0",
-            "label": "Video Embed",
-            "name": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 1
         },
         {
             "key": "field_594be1f563623",
@@ -780,5 +869,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1502580643
+    "modified": 1504215869
 }
