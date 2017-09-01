@@ -48,22 +48,24 @@ function eco_intinerary_a( $acf_fields ) {
 				<?php
 				$rows = $acf_fields['itinerary_a_highlights'];
 				if($rows) {
+					$counter = 1;
 					foreach ( $rows as $row ) {
-						$pop_id = strtolower( str_replace( ' ', '-', $row['deck'] ) );
+						$pop_id = 'iten-a-popup-' . $counter;
 					?>
 						<div class="highlight-box">
-							<div class="image-container">
-								<img src="<?php echo esc_attr( $row['image'] ); ?>" />
+							<div class="image-container" data-popup-id="<?php echo esc_html( $pop_id ); ?>">
+								<img src="<?php echo esc_attr( $row['image'] ); ?>" data-popup-id="<?php echo esc_html( $pop_id ); ?>"/>
 							</div>
 							<div class="hr-blue"></div>
 							<p class="image-subtitle"><?php echo wp_kses_post( $row['image_subtitle'] ); ?></p>
 
-							<div id="<?php echo esc_html( $pop_id ); ?>" visibility="hidden" class="rates-popup">
-								<img src="<?php echo esc_attr( $row['deck_image'] );?>" />
-								<p><?php echo esc_html( $row['deck_bullet_description'] ); ?></p>
+							<div id="<?php echo esc_html( $pop_id ); ?>" visibility="hidden" class="iteneraries-popup">
+								<img src="<?php echo esc_attr( $row['popup_image'] );?>" />
+								<p><?php echo wp_kses_post( $row['popup_facts'] ); ?></p>
 							</div>
 						</div>
 					<?php
+					$counter++;
 					} //end foreach
 				} //end if ?>
 
@@ -140,23 +142,6 @@ function eco_intinerary_b( $acf_fields ) {
 
 
 function eco_intinerary_ab_popup( $acf_fields ) {
-	?>
-
-	<?php
-
-	$rows = $acf_fields['rates_table_values'];
-	if ( $rows ) {
-		foreach ( $rows as $row ) {
-
-			$deck_id = strtolower( str_replace( ' ', '-', $row['deck'] ) );
-			?>
-			<div id="<?php echo esc_html( $deck_id ); ?>" visibility="hidden" class="rates-popup">
-				<img src="<?php echo esc_attr( $row['deck_image'] );?>" />
-				<p><?php echo esc_html( $row['deck_bullet_description'] ); ?></p>
-			</div>
-			<?php
-		}
-	}
 
 }
 //* Run the Genesis loop
