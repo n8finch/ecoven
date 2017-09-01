@@ -43,9 +43,7 @@
 		// Rates Page PopUp
 
 		$( function() {
-
 			$( ".td-rate-decks" ).on('click', function(e) {
-
 				var deckID = '#' + e.target.id.replace(' ', '-').toLowerCase();
 
 				$( deckID ).dialog({
