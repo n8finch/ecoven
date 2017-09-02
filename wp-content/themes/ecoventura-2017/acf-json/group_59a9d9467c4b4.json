@@ -51,6 +51,25 @@
             "mime_types": ""
         },
         {
+            "key": "field_59a9f6f4e9353",
+            "label": "Itinerary Title",
+            "name": "itinerary_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_59a9d9467ee19",
             "label": "Itinerary Agenda",
             "name": "itinerary_agenda",
@@ -439,5 +458,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1504304742
+    "modified": 1504311046
 }

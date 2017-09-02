@@ -166,7 +166,7 @@ function eco_departures_faqs_terms_conditions( $acf_fields ) {
 			if( $rows ) {
 				foreach ( $rows as $row ) {
 					?>
-					<div class="departure-term-condition">
+					<div class="departure-term-condition eco_toggles">
 						<h5><?php echo esc_html( $row['header'] );?></h5>
 						<p class="departure-term-condition-subhead">
 							<b><?php echo esc_html( $row['subheader'] );?></b>

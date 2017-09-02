@@ -17,8 +17,8 @@ function eco_rates_content() {
 
 	//* Add in the sections
 	eco_intinerary_single( $acf_fields);
-	eco_intinerary_b( $acf_fields);
-	eco_intinerary_single_popup( $acf_fields );
+	eco_intinerary_single_highlights( $acf_fields);
+	eco_intinerary_single_movie_faqs( $acf_fields);
 
 }
 
@@ -28,25 +28,57 @@ function eco_intinerary_single( $acf_fields ) {
 		<h2><?php echo esc_html( get_the_title() ); ?></h2>
 	</header>
 	<section class="itinerary-section">
-		<img src="<?php echo esc_attr( $acf_fields['itinerary_a_image'] ); ?>" />
-		<div class="view-iteneraries">
-			<a href="#">
-				<div id="view-itens">VIEW ITENERARIES</div>
-				<div id="arrow-right"></div>
-			</a>
-			<a href="<?php echo esc_url( $acf_fields[ 'itinerary_a_link' ] );?>">
-				<div id="arrow-from-right"></div>
-				<div id="iten-a">ITENERARY A</div>
-			</a>
-		</div>
+		<img src="<?php echo esc_attr( $acf_fields['itinerary_image'] ); ?>" />
 		<div class="itinerary-content">
-			<?php echo wp_kses_post( $acf_fields['itinerary_a_content'] ); ?>
+			<h2><?php echo esc_html( $acf_fields['itinerary_title'] ); ?></h2>
+			<div class="itinerary-boxes">
+				<?php
+				$rows = $acf_fields['itinerary_agenda'];
+				if($rows) {
+					$counter = 1;
+					foreach ( $rows as $row ) {
+						$pop_id = 'itin-agenda-popup';
+					?>
+						<div class="itinerary-box">
+							<h3 class="itinerary-day"><?php echo esc_html( $row['day'] ); ?></h3>
+							<div class="itin-hr-blue"></div>
+							<p class="itinerary-descritpion">
+								<?php echo $row['day_bullet_points']; ?>
+							</p>
+							<div id="<?php echo esc_html( $pop_id ); ?>" visibility="hidden" class="itenerary-popup-image">
+								<img src="<?php echo esc_attr( $row['itinerary_popup_image'] );?>" />
+							</div>
+						</div>
+					<?php
+					} //end foreach
+				} //end if ?>
+
+
+			</div> <!-- end #highlights-boxes -->
+			<div class="itinerary-below-content">
+				<?php echo wp_kses_post( $acf_fields['itinerary_bottom_text'] ); ?>
+			</div>
 		</div>
+	</section>
+	<?php
+}
+
+function eco_intinerary_single_highlights( $acf_fields ) {
+	?>
+	<section class="itinerary-expedition">
+		<h2>ready for itineray a? check out the departure dates</h2>
+		<div class="book-now-box">
+			<a href="<?php echo esc_url( $acf_fields[ 'book_now_link' ] );?>">
+				<button>VIEW DATES</button>
+			</a>
+		</div>
+	</section>
+	<section id="itinerary-highlights">
 		<div class="itinerary-highlights">
 			<h2>HIGHLIGHTS</h2>
 			<div class="highlight-boxes">
 				<?php
-				$rows = $acf_fields['itinerary_a_highlights'];
+				$rows = $acf_fields['itinerary_highlights'];
 				if($rows) {
 					$counter = 1;
 					foreach ( $rows as $row ) {
@@ -70,14 +102,72 @@ function eco_intinerary_single( $acf_fields ) {
 				} //end if ?>
 
 
-			</div>
-			<div class="book-now-box">
-				<a href="<?php echo esc_url( $acf_fields[ 'itinerary_a_link' ] );?>">
-					<button><?php echo esc_html( $acf_fields[ 'itinerary_a_button_text' ] );?></button>
-				</a>
-			</div>
+			</div> <!-- end #highlights-boxes -->
+
 		</div>
 	</section>
+	<section id="itinerary-dropdowns">
+		<div class="itinerary-terms-conditions">
+			<?php
+			$rows = $acf_fields['itinerary_dropdowns'];
+			if( $rows ) {
+				foreach ( $rows as $row ) {
+					?>
+					<div class="itinerary-term-condition eco_toggles">
+						<h5><?php echo esc_html( $row['header'] );?></h5>
+						<p class="itinerary-term-condition-subhead">
+							<b><?php echo esc_html( $row['subheader'] );?></b>
+						</p>
+						<p>
+							<?php echo wp_kses_post ( $row['content'] ); ?>
+						</p>
+
+					</div>	<?php
+				}
+				?>
+			<?php } //end if( $rows ) ?>
+		</div>
+	</section>
+
+
+	<?php
+}
+
+function eco_intinerary_single_movie_faqs( $acf_fields ) {
+	?>
+	<section id="itinerary-movie">
+		<div>
+			<video width="100%" autoplay muted>
+			  <source src="<?php echo esc_attr( $acf_fields['itinerary_movie_url'] ); ?>" type="video/mp4">
+			  <source src="<?php echo esc_attr( $acf_fields['itinerary_movie_url'] ); ?>" type="video/ogg">
+			Your browser does not support the video tag.
+			</video>
+		</div>
+	</section>
+	<section id="itinerary-faqs">
+		<div class="itinerary-terms-conditions">
+			<?php
+			$rows = $acf_fields['itinerary_stipulations_dropdowns'];
+			if( $rows ) {
+				foreach ( $rows as $row ) {
+					?>
+					<div class="itinerary-term-condition eco_toggles">
+						<h5><?php echo esc_html( $row['header'] );?></h5>
+						<p class="itinerary-term-condition-subhead">
+							<b><?php echo esc_html( $row['subheader'] );?></b>
+						</p>
+						<p>
+							<?php echo wp_kses_post ( $row['content'] ); ?>
+						</p>
+
+					</div>	<?php
+				}
+				?>
+			<?php } //end if( $rows ) ?>
+		</div>
+	</section>
+
+
 	<?php
 }
 

@@ -21,9 +21,9 @@
 
 
 		//*Hide and toggle Terms and Conditions on Departure pages
-		var do_departure_toggles = function() {
+		var do_eco_toggles = function() {
 
-			$('.departure-term-condition h5').on('click', function(e) {
+			$('.eco_toggles h5').on('click', function(e) {
 
 				if( $(this).siblings('p').hasClass('tc-open') ) {
 					$('.tc-open').removeClass('tc-open').toggle('slow');
@@ -35,7 +35,11 @@
 			});
 
 		}
-		do_departure_toggles();
+
+		do_eco_toggles();
+
+
+		//Do Eco Popup
 
 		var doEcoPopUp = function( divID ) {
 			$( divID ).dialog({
@@ -56,7 +60,7 @@
 			});
 			$( ".highlight-box .image-container" ).on( 'click', function(e) {
 				var divID = '#' + e.target.dataset.popupId;
-				
+
 				doEcoPopUp(divID);
 			});
 		});
