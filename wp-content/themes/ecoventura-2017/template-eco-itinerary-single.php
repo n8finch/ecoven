@@ -40,13 +40,13 @@ function eco_intinerary_single( $acf_fields ) {
 						$pop_id = 'itin-agenda-popup';
 					?>
 						<div class="itinerary-box">
-							<h3 class="itinerary-day"><?php echo esc_html( $row['day'] ); ?></h3>
+							<h3 class="itinerary-day" data-popup-id="<?php echo esc_html( $pop_id ); ?>"><?php echo esc_html( $row['day'] ); ?></h3>
 							<div class="itin-hr-blue"></div>
 							<p class="itinerary-descritpion">
 								<?php echo $row['day_bullet_points']; ?>
 							</p>
-							<div id="<?php echo esc_html( $pop_id ); ?>" visibility="hidden" class="itenerary-popup-image">
-								<img src="<?php echo esc_attr( $row['itinerary_popup_image'] );?>" />
+							<div id="<?php echo esc_html( $pop_id ); ?>" visibility="hidden" class="itenerary-popup-image" style="background: url('<?php echo esc_attr( $acf_fields['itinerary_popup_image'] );?>'); background-size: cover;">
+
 							</div>
 						</div>
 					<?php
@@ -68,10 +68,9 @@ function eco_intinerary_single_highlights( $acf_fields ) {
 	<section class="itinerary-expedition">
 		<h2>ready for itineray a? check out the departure dates</h2>
 		<div class="book-now-box">
-			<a href="<?php echo esc_url( $acf_fields[ 'book_now_link' ] );?>">
-				<button>VIEW DATES</button>
-			</a>
+			<button data-popup-id="view-dates-popup">VIEW DATES</button>
 		</div>
+		<div id="view-dates-popup" visibility="hidden" class="itenerary-popup-image" style="background: url('<?php echo esc_attr( $acf_fields['itinerary_cruise_route_popup'] );?>'); background-size: cover;">
 	</section>
 	<section id="itinerary-highlights">
 		<div class="itinerary-highlights">

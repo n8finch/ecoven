@@ -257,7 +257,8 @@
 
 
 	.itenerary-popup,
-	.iteneraries-popup {
+	.iteneraries-popup,
+	.itenerary-popup-image {
 		display: none;
 	}
 
@@ -265,7 +266,6 @@
 		background-color: white;
 		border-radius: 5px;
 		padding: 20px;
-		width: 50% !important;
 		z-index: 5;
 
 		button {
@@ -292,5 +292,8 @@
 	    text-align:center;
 	}
 
+	#itin-agenda-popup.itenerary-popup-image > img {
+		width: 100%;
+	}
 
 }

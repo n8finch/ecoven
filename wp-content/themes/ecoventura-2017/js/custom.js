@@ -42,11 +42,22 @@
 		//Do Eco Popup
 
 		var doEcoPopUp = function( divID ) {
+			console.log(divID);
+
+			var width = 550;
+			var height = 'auto';
+
+			if( '#itin-agenda-popup' == divID || '#view-dates-popup' ==divID ) {
+				width = 900;
+				height = 500;
+			}
+
+
 			$( divID ).dialog({
 				modal: true,
 				closeOnEscape: true,
-				height: 'auto',
-				width: 400,
+				height: height,
+				width: width,
 			});
 		}
 
@@ -59,6 +70,18 @@
 				doEcoPopUp(divID);
 			});
 			$( ".highlight-box .image-container" ).on( 'click', function(e) {
+				var divID = '#' + e.target.dataset.popupId;
+
+				doEcoPopUp(divID);
+			});
+			$( ".itinerary-box .itinerary-day" ).on( 'click', function(e) {
+
+				var divID = '#' + e.target.dataset.popupId;
+
+				doEcoPopUp(divID);
+			});
+			$( ".itinerary-expedition .book-now-box" ).on( 'click', function(e) {
+				console.log(e);
 				var divID = '#' + e.target.dataset.popupId;
 
 				doEcoPopUp(divID);
