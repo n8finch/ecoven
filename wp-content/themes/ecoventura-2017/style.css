@@ -3242,6 +3242,252 @@ p.entry-meta {
   text-align: center;
 }
 
+.page-template-template-eco-itinerary-single .site-inner {
+  background-color: white;
+  max-width: 100%;
+  padding-top: 0;
+}
+@media only screen and (max-width: 860px) {
+  .page-template-template-eco-itinerary-single .site-inner {
+    padding: 0;
+  }
+}
+.page-template-template-eco-itinerary-single .itinerary-header {
+  background-color: #44596e;
+  color: white;
+  padding: 30px;
+  width: 100%;
+}
+.page-template-template-eco-itinerary-single .itinerary-header h2 {
+  margin: auto;
+  max-width: 1100px;
+}
+.page-template-template-eco-itinerary-single .itinerary-content {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+@media only screen and (max-width: 860px) {
+  .page-template-template-eco-itinerary-single .itinerary-content {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+.page-template-template-eco-itinerary-single .itinerary-content h2 {
+  font-weight: 400;
+}
+.page-template-template-eco-itinerary-single div.itinerary-content {
+  margin: 60px auto;
+  max-width: 1100px;
+}
+@media only screen and (max-width: 860px) {
+  .page-template-template-eco-itinerary-single div.itinerary-content {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+.page-template-template-eco-itinerary-single div.itinerary-content h2 {
+  font-weight: 400;
+}
+.page-template-template-eco-itinerary-single div.itinerary-content .itinerary-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.page-template-template-eco-itinerary-single div.itinerary-content .itinerary-box {
+  max-width: 250px;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 225px;
+}
+@media only screen and (max-width: 860px) {
+  .page-template-template-eco-itinerary-single div.itinerary-content .itinerary-box {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.page-template-template-eco-itinerary-single div.itinerary-content .itinerary-box h3 {
+  font-style: italic;
+}
+.page-template-template-eco-itinerary-single div.itinerary-content .itinerary-box .itin-hr-blue {
+  border-top: 1px solid #647a8c;
+  margin: 20px auto;
+  width: 100%;
+}
+.page-template-template-eco-itinerary-single .itinerary-expedition {
+  position: relative;
+  text-align: center;
+}
+.page-template-template-eco-itinerary-single .itinerary-expedition h2 {
+  background-color: #B9C8BE;
+  color: white;
+  font-size: 3.5rem;
+  padding-bottom: 60px;
+  padding-top: 40px;
+  text-transform: uppercase;
+}
+.page-template-template-eco-itinerary-single .book-now-box {
+  top: -30px;
+  position: relative;
+  text-align: center;
+}
+.page-template-template-eco-itinerary-single .book-now-box button:hover {
+  background-color: #eeeeee;
+}
+.page-template-template-eco-itinerary-single div.itinerary-highlights {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+@media only screen and (max-width: 860px) {
+  .page-template-template-eco-itinerary-single div.itinerary-highlights {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+.page-template-template-eco-itinerary-single div.itinerary-highlights h2 {
+  font-weight: 400;
+}
+.page-template-template-eco-itinerary-single div.itinerary-highlights .highlight-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.page-template-template-eco-itinerary-single div.itinerary-highlights .highlight-box {
+  max-width: 250px;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 250px;
+}
+@media only screen and (max-width: 860px) {
+  .page-template-template-eco-itinerary-single div.itinerary-highlights .highlight-box {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.page-template-template-eco-itinerary-single div.itinerary-highlights .highlight-box .image-container {
+  align-items: center;
+  border: 3px solid #647a8c;
+  border-radius: 150px;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  width: 150px;
+}
+.page-template-template-eco-itinerary-single div.itinerary-highlights .highlight-box .image-container img {
+  max-height: 75px;
+  max-width: 75px;
+}
+.page-template-template-eco-itinerary-single div.itinerary-highlights .highlight-box .hr-blue {
+  border-top: 1px solid #647a8c;
+  margin: 20px auto;
+  width: 150px;
+}
+.page-template-template-eco-itinerary-single div.itinerary-highlights .highlight-box .image-subtitle {
+  text-transform: uppercase;
+}
+.page-template-template-eco-itinerary-single div.itinerary-highlights .book-now-box {
+  top: -30px;
+  position: relative;
+  text-align: center;
+}
+.page-template-template-eco-itinerary-single div.itinerary-highlights .book-now-box button:hover {
+  background-color: #eeeeee;
+}
+.page-template-template-eco-itinerary-single #itinerary-dropdowns .itinerary-terms-conditions,
+.page-template-template-eco-itinerary-single #itinerary-faqs .itinerary-terms-conditions {
+  margin: 60px auto;
+  max-width: 1100px;
+}
+@media only screen and (max-width: 860px) {
+  .page-template-template-eco-itinerary-single #itinerary-dropdowns .itinerary-terms-conditions,
+  .page-template-template-eco-itinerary-single #itinerary-faqs .itinerary-terms-conditions {
+    padding: 5% 5% 0;
+  }
+}
+.page-template-template-eco-itinerary-single #itinerary-dropdowns h3,
+.page-template-template-eco-itinerary-single #itinerary-faqs h3 {
+  font-size: 35px;
+  font-size: 3.5rem;
+  font-weight: normal;
+}
+.page-template-template-eco-itinerary-single #itinerary-dropdowns h5,
+.page-template-template-eco-itinerary-single #itinerary-faqs h5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+.page-template-template-eco-itinerary-single #itinerary-dropdowns .itinerary-term-condition,
+.page-template-template-eco-itinerary-single #itinerary-faqs .itinerary-term-condition {
+  border-top: 1px solid #333333;
+  margin-top: -1px;
+}
+.page-template-template-eco-itinerary-single #itinerary-dropdowns .itinerary-term-condition h5,
+.page-template-template-eco-itinerary-single #itinerary-faqs .itinerary-term-condition h5 {
+  border-bottom: 1px solid #333333;
+  margin-bottom: 0;
+  padding: 30px 60px;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 860px) {
+  .page-template-template-eco-itinerary-single #itinerary-dropdowns .itinerary-term-condition h5,
+  .page-template-template-eco-itinerary-single #itinerary-faqs .itinerary-term-condition h5 {
+    padding: 30px 0;
+  }
+}
+.page-template-template-eco-itinerary-single #itinerary-dropdowns .itinerary-term-condition .itinerary-term-condition-subhead,
+.page-template-template-eco-itinerary-single #itinerary-faqs .itinerary-term-condition .itinerary-term-condition-subhead {
+  padding: 20px 60px 0;
+}
+.page-template-template-eco-itinerary-single #itinerary-dropdowns .itinerary-term-condition p,
+.page-template-template-eco-itinerary-single #itinerary-faqs .itinerary-term-condition p {
+  display: none;
+  padding: 20px 60px 40px;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 860px) {
+  .page-template-template-eco-itinerary-single #itinerary-dropdowns .itinerary-term-condition p,
+  .page-template-template-eco-itinerary-single #itinerary-faqs .itinerary-term-condition p {
+    padding: 30px 0;
+  }
+}
+.page-template-template-eco-itinerary-single .itenerary-popup,
+.page-template-template-eco-itinerary-single .iteneraries-popup,
+.page-template-template-eco-itinerary-single .itenerary-popup-image {
+  display: none;
+}
+.page-template-template-eco-itinerary-single .ui-dialog {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  z-index: 5;
+}
+.page-template-template-eco-itinerary-single .ui-dialog button {
+  background-color: white;
+  color: black;
+  float: right;
+  height: 20px;
+  padding: 10px 20px;
+  line-height: 0;
+}
+.page-template-template-eco-itinerary-single .ui-dialog .no-close .ui-dialog-titlebar-close {
+  display: none;
+}
+.page-template-template-eco-itinerary-single .ui-widget-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+.page-template-template-eco-itinerary-single #itin-agenda-popup.itenerary-popup-image > img {
+  width: 100%;
+}
+
 /* # Sidebars
 ---------------------------------------------------------------------------------------------------- */
 .sidebar {

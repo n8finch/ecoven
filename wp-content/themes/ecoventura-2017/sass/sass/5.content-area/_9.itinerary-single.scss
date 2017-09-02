@@ -1,0 +1,299 @@
+.page-template-template-eco-itinerary-single {
+
+	// $color__dark_navy: #152838;
+	// $color__medium_blue_gray: #44596e;
+	// $color__light_blue_gray: #647a8c;
+
+
+	.site-inner {
+
+		@media only screen and (max-width: 860px) {
+		    padding: 0;
+		}
+
+		background-color: white;
+		max-width: 100%;
+		padding-top: 0;
+	}
+
+	.itinerary-header {
+		background-color: $color__medium_blue_gray;
+		color: white;
+		padding: 30px;
+		width: 100%;
+
+		h2 {
+			margin: auto;
+			max-width: 1100px;
+		}
+	}
+
+	.itinerary-content {
+
+		@media only screen and (max-width: 860px) {
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+
+		margin: 0 auto;
+		max-width: 1100px;
+
+		h2 {
+			font-weight: 400;
+		}
+	}
+
+	div.itinerary-content {
+
+		@media only screen and (max-width: 860px) {
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+
+		margin: 60px auto;
+		max-width: 1100px;
+
+		h2 {
+			font-weight: 400;
+		}
+
+		.itinerary-boxes {
+
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-top: 60px;
+		}
+
+		.itinerary-box {
+
+			@media only screen and (max-width: 860px) {
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			max-width: 250px;
+			margin-bottom: 10px;
+			text-align: left;
+			width: 225px;
+
+			h3 {
+				font-style: italic;
+			}
+
+			.itin-hr-blue {
+				border-top: 1px solid $color__light_blue_gray;
+				margin: 20px auto;
+				width: 100%;
+			}
+
+		}
+
+	}
+
+	.itinerary-expedition {
+
+		position: relative;
+		text-align: center;
+
+		h2 {
+			background-color: $eco_green;
+			color: white;
+			font-size: 3.5rem;
+			padding-bottom: 60px;
+			padding-top: 40px;
+			text-transform: uppercase;
+		}
+	}
+
+	.book-now-box {
+		top: -30px;
+	    position: relative;
+	    text-align: center;
+
+		button:hover {
+			background-color: #eeeeee;
+		}
+	}
+
+
+	div.itinerary-highlights {
+
+		@media only screen and (max-width: 860px) {
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+
+		margin: 0 auto;
+		max-width: 1100px;
+
+		h2 {
+			font-weight: 400;
+		}
+
+		.highlight-boxes {
+
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-top: 60px;
+		}
+
+		.highlight-box {
+
+			@media only screen and (max-width: 860px) {
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			max-width: 250px;
+			margin-bottom: 40px;
+			text-align: center;
+			width: 250px;
+
+			.image-container {
+				align-items: center;
+				border: 3px solid $color__light_blue_gray;
+				border-radius: 150px;
+				display: flex;
+				height: 150px;
+				justify-content: center;
+				margin: auto;
+				text-align: center;
+				width: 150px;
+
+				img {
+					max-height: 75px;
+					max-width: 75px;
+				}
+			}
+
+			.hr-blue {
+				border-top: 1px solid $color__light_blue_gray;
+				margin: 20px auto;
+				width: 150px;
+			}
+
+			.image-subtitle {
+				text-transform: uppercase;
+			}
+
+		}
+
+		.book-now-box {
+			top: -30px;
+		    position: relative;
+		    text-align: center;
+
+			button:hover {
+				background-color: #eeeeee;
+			}
+		}
+
+	}
+
+
+	#itinerary-dropdowns,
+	#itinerary-faqs {
+
+		.itinerary-terms-conditions {
+
+			@media only screen and (max-width: 860px) {
+			    padding: 5% 5% 0;
+			}
+
+			margin: 60px auto;
+			max-width: 1100px;
+		}
+
+		h3 {
+			font-size: 35px;
+			font-size: 3.5rem;
+			font-weight: normal;
+		}
+
+		h5 {
+			font-family: 'Roboto', sans-serif;
+			font-weight: normal;
+			letter-spacing: 1px;
+		}
+
+		.itinerary-term-condition {
+
+			border-top: 1px solid #333333;
+    		margin-top: -1px;
+
+			h5 {
+
+				@media only screen and (max-width: 860px) {
+					padding: 30px 0;
+				}
+
+				border-bottom: 1px solid #333333;
+				margin-bottom: 0;
+				padding: 30px 60px;
+				text-transform: uppercase;
+			}
+
+			.itinerary-term-condition-subhead {
+				padding: 20px 60px 0;
+			}
+
+			p {
+				@media only screen and (max-width: 860px) {
+					padding: 30px 0;
+				}
+
+				display: none;
+				padding: 20px 60px 40px;
+				margin-bottom: 0;
+
+
+			}
+		}
+
+	}
+
+
+
+	.itenerary-popup,
+	.iteneraries-popup,
+	.itenerary-popup-image {
+		display: none;
+	}
+
+	.ui-dialog {
+		background-color: white;
+		border-radius: 5px;
+		padding: 20px;
+		z-index: 5;
+
+		button {
+			background-color: white;
+			color: black;
+			float: right;
+		    height: 20px;
+		    padding: 10px 20px;
+		    line-height: 0;
+		}
+
+		.no-close .ui-dialog-titlebar-close {
+		  display: none;
+		}
+	}
+
+	.ui-widget-overlay {
+	    position:fixed;
+	    top:0;
+	    left:0;
+	    width:100%;
+	    height:100%;
+	    background-color: rgba(0,0,0,.7);
+	    text-align:center;
+	}
+
+	#itin-agenda-popup.itenerary-popup-image > img {
+		width: 100%;
+	}
+
+}

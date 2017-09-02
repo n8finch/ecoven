@@ -18,7 +18,6 @@ function eco_rates_content() {
 	//* Add in the sections
 	eco_intinerary_a( $acf_fields);
 	eco_intinerary_b( $acf_fields);
-	eco_intinerary_ab_popup( $acf_fields );
 
 }
 
@@ -137,14 +136,5 @@ function eco_intinerary_b( $acf_fields ) {
 	<?php
 }
 
-
-
-
-
-
-
-function eco_intinerary_ab_popup( $acf_fields ) {
-
-}
 //* Run the Genesis loop
 genesis();

@@ -460,6 +460,22 @@
             "multiple": 0
         },
         {
+            "key": "field_59a9f4e9f954f",
+            "label": "Homepage Movie",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 1
+        },
+        {
             "key": "field_594be1f563623",
             "label": "Video Embed",
             "name": "video_embed",
@@ -477,7 +493,7 @@
         },
         {
             "key": "field_594c0a94e7fd9",
-            "label": "",
+            "label": "Media Section",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -504,7 +520,7 @@
                 "class": "",
                 "id": ""
             },
-            "message": "Add the media image logo and link clicking on the tabs above",
+            "message": "Add the media image logo and link clicking on the tabs below.",
             "new_lines": "wpautop",
             "esc_html": 0
         },
@@ -522,7 +538,7 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 1
         },
         {
             "key": "field_594be2e37f246",
@@ -869,5 +885,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1504215869
+    "modified": 1504310662
 }
