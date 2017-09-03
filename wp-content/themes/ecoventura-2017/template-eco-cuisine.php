@@ -31,8 +31,67 @@ function eco_cuisine_header_slider( $acf_fields ) {
 	<section class="cuisine-content">
 		<?php echo wp_kses_post( $acf_fields['cuisine_content'] ); ?>
 
-		<div class="cuisine-out-menus">
+		<div class="cuisine-our-menus">
+			<div class="menu-tabs">
+				<div class="menu-tab" data-menu-tab-id="main_menu_day_and_menu">
+					MAIN MENU
+				</div>
+				<div class="menu-tab" data-menu-tab-id="vegetarian_menu_day_and_menu">
+					VEGETARIAN MENU
+				</div>
+				<div class="menu-tab" data-menu-tab-id="kids_menu_day_and_menu">
+					KIDS MENU
+				</div>
+			</div>
+			<?php
+			$menu_tabs = array( 'main_menu_day_and_menu', 'vegetarian_menu_day_and_menu', 'kids_menu_day_and_menu');
 
+			foreach( $menu_tabs as $tab ) {
+
+				$rows = $acf_fields[$tab];
+				?>
+				<div id="<?php echo $tab; ?>" class="menu-wrapper">
+				<?php
+				if($rows) {
+					//output the datys first
+					?>
+					<div class="menu-days-wrapper">
+						<?php
+						foreach( $rows as $row ) {
+							?>
+							<span data-menu-day-id="menu-for-<?php echo esc_html( $tab . $row['day'] ); ?>"><?php echo esc_html( $row['day'] ); ?></span>
+							<?php
+						}
+						?>
+					</div> <!-- end days wrapper -->
+					<?php
+					$menu_counter = 1;
+					foreach( $rows as $row ) {
+						?>
+						<div id="menu-for-<?php echo esc_html( $tab . $row['day'] ); ?>" class="menu-items-wrapper menu-<?php echo $menu_counter ?>">
+							<div class="menu-breakfast">
+								<p><strong>BREAKFAST</strong></p>
+								<?php echo wp_kses_post( $row['breakfast'] ); ?>
+							</div>
+							<div class="menu-lunch">
+								<p><strong>LUNCH</strong></p>
+								<?php echo wp_kses_post( $row['lunch'] ); ?>
+							</div>
+							<div class="menu-dinner">
+								<p><strong>DINNER</strong></p>
+								<?php echo wp_kses_post( $row['dinner'] ); ?>
+							</div>
+						</div>
+						<?php
+					$menu_counter++;
+					}
+				}
+				?>
+			</div> <!-- end menu div -->
+				<?php
+			}
+
+			?>
 		</div>
 	</section>
 
