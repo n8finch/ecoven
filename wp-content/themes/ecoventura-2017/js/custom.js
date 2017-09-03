@@ -3,21 +3,17 @@
 	$(document).ready(function() {
 
 		//*Departure tabs
-		var do_departure_tabs = function() {
-			var tabContent = $('.departure-table-tab-content');
+		var do_recipe_tabs = function() {
+			var tabContent = $('.recipe-single');
 
-			$('.departure-table-tabs').on('click', function(e) {
-					var tabClicked = $(this).attr('data-tab');
+			$('.recipe-links .recipe-title').on('click', function(e) {
+					var tabClicked = '#' + e.target.dataset.recipeId;
 					$(tabContent).hide();
 					$(tabClicked).show();
-					console.log(tabClicked);
-					console.log(tabContent);
 			});
-
-
 		}
 
-		do_departure_tabs();
+		do_recipe_tabs();
 
 
 		//*Hide and toggle Terms and Conditions on Departure pages

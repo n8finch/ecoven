@@ -3596,6 +3596,12 @@ p.entry-meta {
   padding-left: 5%;
   width: 75%;
 }
+.page-template-template-eco-cuisine .our-recipes .recipes-wrapper .recipe-content .recipe-single {
+  display: none;
+}
+.page-template-template-eco-cuisine .our-recipes .recipes-wrapper .recipe-content .recipe-single:first-child {
+  display: block;
+}
 @media only screen and (max-width: 860px) {
   .page-template-template-eco-cuisine .our-recipes .recipes-wrapper .recipe-links,
   .page-template-template-eco-cuisine .our-recipes .recipes-wrapper .recipe-content {

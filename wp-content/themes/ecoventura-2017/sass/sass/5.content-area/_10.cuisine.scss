@@ -131,6 +131,14 @@
 				border-left: 1px solid #000000;
 				padding-left: 5%;
 				width: 75%;
+
+				.recipe-single {
+					display: none;
+				}
+
+				.recipe-single:first-child {
+					display: block;
+				}
 			}
 
 			.recipe-links,

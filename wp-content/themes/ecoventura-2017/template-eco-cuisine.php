@@ -67,20 +67,24 @@ function eco_cuisine_recipes ( $acf_fields ) {
 			<div class="recipe-links">
 				<?php
 				$rows = $acf_fields['recipe_list'];
+				$title_counter = 1;
 				foreach( $rows as $row ) {
 					?>
-					<div class="recipe-title"><?php echo esc_html( $row['recipe_title'] ); ?></div>
+					<div data-recipe-id="recipe-content-<?php echo $title_counter; ?>" class="recipe-title"><?php echo esc_html( $row['recipe_title'] ); ?></div>
 					<?php
+				$title_counter++;
 				}
 				?>
 			</div>
 			<div class="recipe-content">
 				<?php
 				$rows = $acf_fields['recipe_list'];
+				$content_counter = 1;
 				foreach( $rows as $row ) {
 					?>
-					<div class="recipe-title"><?php echo wp_kses_post( $row['recipe_content'] ); ?></div>
+					<div id="recipe-content-<?php echo $content_counter; ?>" class="recipe-single"><?php echo wp_kses_post( $row['recipe_content'] ); ?></div>
 					<?php
+				$content_counter++;
 				}
 				?>
 			</div>
