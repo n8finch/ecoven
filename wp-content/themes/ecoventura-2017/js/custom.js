@@ -2,22 +2,58 @@
 
 	$(document).ready(function() {
 
-		//*Departure tabs
-		var do_departure_tabs = function() {
-			var tabContent = $('.departure-table-tab-content');
+		//*Recipe tabs
+		var do_recipe_tabs = function() {
+			var tabContent = $('.recipe-single');
 
-			$('.departure-table-tabs').on('click', function(e) {
-					var tabClicked = $(this).attr('data-tab');
+			$('.recipe-links .recipe-title').on('click', function(e) {
+					var tabClicked = '#' + e.target.dataset.recipeId;
 					$(tabContent).hide();
 					$(tabClicked).show();
-					console.log(tabClicked);
-					console.log(tabContent);
 			});
-
-
 		}
 
-		do_departure_tabs();
+		do_recipe_tabs();
+
+		//* Our Menu Main Tabs
+
+		var do_menu_main_tabs = function() {
+			var tabContent = $('.menu-wrapper');
+
+			$('.menu-tab').on('click', function(e) {
+					console.log(e);
+					var tabClicked = '#' + e.target.dataset.menuTabId;
+
+					var assocMenu = tabClicked + ' .menu-days-wrapper span:first-child';
+
+					console.log(assocMenu);
+
+					$('.menu-tab').css( 'background-color', '#eeeeee' );
+					$(e.target).css( 'background-color', '#ffffff')
+					$(tabContent).hide();
+					$(tabClicked).show();
+					$(assocMenu).trigger('click');
+			});
+		}
+
+		do_menu_main_tabs();
+
+		//* Our Menu Day Tabs
+
+		var do_menu_day_tabs = function() {
+			var tabContent = $('.menu-items-wrapper');
+
+			$('.menu-days-wrapper span').on('click', function(e) {
+					var tabClicked = '#' + e.target.dataset.menuDayId;
+					$('.menu-days-wrapper span').css( 'color', 'black' );
+					$(e.target).css( 'color', '#CFAA42')
+					$(tabContent).hide();
+					$(tabClicked).css( 'display', 'flex' );
+					$(tabClicked).show();
+			});
+		}
+
+		do_menu_day_tabs();
 
 
 		//*Hide and toggle Terms and Conditions on Departure pages
