@@ -3603,11 +3603,11 @@ p.entry-meta {
   justify-content: space-between;
 }
 .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-items-wrapper div {
-  max-width: 33%;
+  width: 33%;
 }
 @media screen and (max-width: 768px) {
   .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-items-wrapper div {
-    max-width: 100%;
+    width: 100%;
   }
 }
 .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-items-wrapper.menu-1 {
