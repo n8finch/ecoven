@@ -49,10 +49,17 @@
 		.cuisine-our-menus {
 
 			.menu-tabs {
+				@media screen and (max-width: 768px) {
+					display: block;
+				}
+
 				display: flex;
 				justify-content: flex-start;
 
 				.menu-tab {
+					@media screen and (max-width: 768px) {
+						border-left: 1px solid black;
+					}
 					background-color: #eeeeee;
 					border: 1px solid black;
 					border-left: 0;
@@ -102,7 +109,11 @@
 				justify-content: space-between;
 
 				div {
-					max-width: 30%;
+
+					@media screen and (max-width: 768px) {
+						max-width: 100%;
+					}
+					max-width: 33%;
 				}
 			}
 

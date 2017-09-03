@@ -3554,11 +3554,21 @@ p.entry-meta {
   display: flex;
   justify-content: flex-start;
 }
+@media screen and (max-width: 768px) {
+  .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-tabs {
+    display: block;
+  }
+}
 .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-tabs .menu-tab {
   background-color: #eeeeee;
   border: 1px solid black;
   border-left: 0;
   padding: 20px 40px;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-tabs .menu-tab {
+    border-left: 1px solid black;
+  }
 }
 .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-tabs .menu-tab:first-child {
   background-color: #ffffff;
@@ -3593,7 +3603,12 @@ p.entry-meta {
   justify-content: space-between;
 }
 .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-items-wrapper div {
-  max-width: 30%;
+  max-width: 33%;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-items-wrapper div {
+    max-width: 100%;
+  }
 }
 .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-items-wrapper.menu-1 {
   display: flex;
