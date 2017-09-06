@@ -275,6 +275,44 @@
                     "toolbar": "basic",
                     "media_upload": 1,
                     "delay": 0
+                },
+                {
+                    "key": "field_59af5625c2104",
+                    "label": "Learn More Button Link",
+                    "name": "learn_more_button_link",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_59af5625c2104",
+                    "label": "Learn More Button Link",
+                    "name": "learn_more_button_link",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
         },
@@ -285,7 +323,7 @@
             "type": "repeater",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": null,
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -295,7 +333,7 @@
             "min": 0,
             "max": 0,
             "layout": "table",
-            "button_label": "",
+            "button_label": "Learn More Button Link",
             "sub_fields": [
                 {
                     "key": "field_59a9dd4767d7a",
@@ -481,5 +519,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1504317901
+    "modified": 1504663163
 }

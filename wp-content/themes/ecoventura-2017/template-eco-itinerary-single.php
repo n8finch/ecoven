@@ -91,8 +91,17 @@ function eco_intinerary_single_highlights( $acf_fields ) {
 							<p class="image-subtitle"><?php echo wp_kses_post( $row['image_subtitle'] ); ?></p>
 
 							<div id="<?php echo esc_html( $pop_id ); ?>" visibility="hidden" class="iteneraries-popup">
-								<img src="<?php echo esc_attr( $row['popup_image'] );?>" />
-								<p><?php echo wp_kses_post( $row['popup_facts'] ); ?></p>
+								<h2><?php echo wp_kses_post( $row['image_subtitle'] ); ?></h2>
+								<div class="highlight-popup-flex">
+									<div><?php echo wp_kses_post( $row['popup_facts'] ); ?></div>
+									<div>
+										<img src="<?php echo esc_attr( $row['popup_image'] );?>" />
+									</div>
+									<div>
+										<a href="<?php echo esc_url( $row['learn_more_button_link'] );?>"><button class="highlight-popup-button">LEARN MORE</button></a>
+									</div>
+								</div>
+
 							</div>
 						</div>
 					<?php
