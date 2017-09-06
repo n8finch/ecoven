@@ -3262,6 +3262,7 @@ p.entry-meta {
 .page-template-template-eco-itinerary-a-b .itenerary-popup .highlight-popup-flex div,
 .page-template-template-eco-itinerary-a-b .iteneraries-popup .highlight-popup-flex div,
 .page-template-template-eco-itinerary-a-b .itenerary-popup-image .highlight-popup-flex div {
+  padding-bottom: 20px;
   width: 40%;
 }
 .page-template-template-eco-itinerary-a-b .itenerary-popup .highlight-popup-flex div li,
@@ -3273,6 +3274,7 @@ p.entry-meta {
 .page-template-template-eco-itinerary-a-b .itenerary-popup .highlight-popup-flex div:last-child,
 .page-template-template-eco-itinerary-a-b .iteneraries-popup .highlight-popup-flex div:last-child,
 .page-template-template-eco-itinerary-a-b .itenerary-popup-image .highlight-popup-flex div:last-child {
+  padding-bottom: 0;
   width: 100%;
 }
 .page-template-template-eco-itinerary-a-b .itenerary-popup .highlight-popup-button,
@@ -3554,6 +3556,7 @@ p.entry-meta {
 .page-template-template-eco-itinerary-single .itenerary-popup .highlight-popup-flex div,
 .page-template-template-eco-itinerary-single .iteneraries-popup .highlight-popup-flex div,
 .page-template-template-eco-itinerary-single .itenerary-popup-image .highlight-popup-flex div {
+  padding-bottom: 20px;
   width: 40%;
 }
 .page-template-template-eco-itinerary-single .itenerary-popup .highlight-popup-flex div li,
@@ -3565,6 +3568,7 @@ p.entry-meta {
 .page-template-template-eco-itinerary-single .itenerary-popup .highlight-popup-flex div:last-child,
 .page-template-template-eco-itinerary-single .iteneraries-popup .highlight-popup-flex div:last-child,
 .page-template-template-eco-itinerary-single .itenerary-popup-image .highlight-popup-flex div:last-child {
+  padding-bottom: 0;
   width: 100%;
 }
 .page-template-template-eco-itinerary-single .itenerary-popup .highlight-popup-button,

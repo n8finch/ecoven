@@ -277,6 +277,7 @@
 			justify-content: space-around;
 
 			div {
+				padding-bottom: 20px;
 				width: 40%;
 
 				li {
@@ -286,6 +287,7 @@
 			}
 
 			div:last-child {
+				padding-bottom: 0;
 				width: 100%
 			}
 
