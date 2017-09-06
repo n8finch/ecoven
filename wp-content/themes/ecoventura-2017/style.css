@@ -3226,6 +3226,8 @@ p.entry-meta {
   width: 150px;
 }
 .page-template-template-eco-itinerary-a-b div.itinerary-highlights .highlight-box .image-subtitle {
+  margin: auto;
+  max-width: 200px;
   text-transform: uppercase;
 }
 .page-template-template-eco-itinerary-a-b div.itinerary-highlights .book-now-box {
@@ -3236,14 +3238,59 @@ p.entry-meta {
 .page-template-template-eco-itinerary-a-b div.itinerary-highlights .book-now-box button:hover {
   background-color: #eeeeee;
 }
-.page-template-template-eco-itinerary-a-b .iteneraries-popup {
+.page-template-template-eco-itinerary-a-b .itenerary-popup,
+.page-template-template-eco-itinerary-a-b .iteneraries-popup,
+.page-template-template-eco-itinerary-a-b .itenerary-popup-image {
+  border: 5px solid white;
+  background-color: #44596e;
+  color: white;
   display: none;
 }
+.page-template-template-eco-itinerary-a-b .itenerary-popup h2,
+.page-template-template-eco-itinerary-a-b .iteneraries-popup h2,
+.page-template-template-eco-itinerary-a-b .itenerary-popup-image h2 {
+  text-align: center;
+  width: 100%;
+}
+.page-template-template-eco-itinerary-a-b .itenerary-popup .highlight-popup-flex,
+.page-template-template-eco-itinerary-a-b .iteneraries-popup .highlight-popup-flex,
+.page-template-template-eco-itinerary-a-b .itenerary-popup-image .highlight-popup-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.page-template-template-eco-itinerary-a-b .itenerary-popup .highlight-popup-flex div,
+.page-template-template-eco-itinerary-a-b .iteneraries-popup .highlight-popup-flex div,
+.page-template-template-eco-itinerary-a-b .itenerary-popup-image .highlight-popup-flex div {
+  width: 40%;
+}
+.page-template-template-eco-itinerary-a-b .itenerary-popup .highlight-popup-flex div li,
+.page-template-template-eco-itinerary-a-b .iteneraries-popup .highlight-popup-flex div li,
+.page-template-template-eco-itinerary-a-b .itenerary-popup-image .highlight-popup-flex div li {
+  font-size: 14px;
+  list-style-type: disc;
+}
+.page-template-template-eco-itinerary-a-b .itenerary-popup .highlight-popup-flex div:last-child,
+.page-template-template-eco-itinerary-a-b .iteneraries-popup .highlight-popup-flex div:last-child,
+.page-template-template-eco-itinerary-a-b .itenerary-popup-image .highlight-popup-flex div:last-child {
+  width: 100%;
+}
+.page-template-template-eco-itinerary-a-b .itenerary-popup .highlight-popup-button,
+.page-template-template-eco-itinerary-a-b .iteneraries-popup .highlight-popup-button,
+.page-template-template-eco-itinerary-a-b .itenerary-popup-image .highlight-popup-button {
+  flex-grow: 2;
+  background-color: #B9C8BE;
+  border-color: #B9C8BE;
+  border-top: 0;
+  color: #44596e;
+  padding: 30px;
+  text-transform: uppercase;
+  width: 100%;
+}
 .page-template-template-eco-itinerary-a-b .ui-dialog {
-  background-color: white;
+  background-color: transparent;
   border-radius: 5px;
   padding: 20px;
-  width: 50% !important;
   z-index: 5;
 }
 .page-template-template-eco-itinerary-a-b .ui-dialog button {
@@ -3265,6 +3312,9 @@ p.entry-meta {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
+}
+.page-template-template-eco-itinerary-a-b #itin-agenda-popup.itenerary-popup-image > img {
+  width: 100%;
 }
 
 .page-template-template-eco-itinerary-single .site-inner {
@@ -3411,6 +3461,8 @@ p.entry-meta {
   width: 150px;
 }
 .page-template-template-eco-itinerary-single div.itinerary-highlights .highlight-box .image-subtitle {
+  margin: auto;
+  max-width: 200px;
   text-transform: uppercase;
 }
 .page-template-template-eco-itinerary-single div.itinerary-highlights .book-now-box {
@@ -3481,10 +3533,54 @@ p.entry-meta {
 .page-template-template-eco-itinerary-single .itenerary-popup,
 .page-template-template-eco-itinerary-single .iteneraries-popup,
 .page-template-template-eco-itinerary-single .itenerary-popup-image {
+  border: 5px solid white;
+  background-color: #44596e;
+  color: white;
   display: none;
 }
+.page-template-template-eco-itinerary-single .itenerary-popup h2,
+.page-template-template-eco-itinerary-single .iteneraries-popup h2,
+.page-template-template-eco-itinerary-single .itenerary-popup-image h2 {
+  text-align: center;
+  width: 100%;
+}
+.page-template-template-eco-itinerary-single .itenerary-popup .highlight-popup-flex,
+.page-template-template-eco-itinerary-single .iteneraries-popup .highlight-popup-flex,
+.page-template-template-eco-itinerary-single .itenerary-popup-image .highlight-popup-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.page-template-template-eco-itinerary-single .itenerary-popup .highlight-popup-flex div,
+.page-template-template-eco-itinerary-single .iteneraries-popup .highlight-popup-flex div,
+.page-template-template-eco-itinerary-single .itenerary-popup-image .highlight-popup-flex div {
+  width: 40%;
+}
+.page-template-template-eco-itinerary-single .itenerary-popup .highlight-popup-flex div li,
+.page-template-template-eco-itinerary-single .iteneraries-popup .highlight-popup-flex div li,
+.page-template-template-eco-itinerary-single .itenerary-popup-image .highlight-popup-flex div li {
+  font-size: 14px;
+  list-style-type: disc;
+}
+.page-template-template-eco-itinerary-single .itenerary-popup .highlight-popup-flex div:last-child,
+.page-template-template-eco-itinerary-single .iteneraries-popup .highlight-popup-flex div:last-child,
+.page-template-template-eco-itinerary-single .itenerary-popup-image .highlight-popup-flex div:last-child {
+  width: 100%;
+}
+.page-template-template-eco-itinerary-single .itenerary-popup .highlight-popup-button,
+.page-template-template-eco-itinerary-single .iteneraries-popup .highlight-popup-button,
+.page-template-template-eco-itinerary-single .itenerary-popup-image .highlight-popup-button {
+  flex-grow: 2;
+  background-color: #B9C8BE;
+  border-color: #B9C8BE;
+  border-top: 0;
+  color: #44596e;
+  padding: 30px;
+  text-transform: uppercase;
+  width: 100%;
+}
 .page-template-template-eco-itinerary-single .ui-dialog {
-  background-color: white;
+  background-color: transparent;
   border-radius: 5px;
   padding: 20px;
   z-index: 5;

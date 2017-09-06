@@ -80,7 +80,7 @@
 		var doEcoPopUp = function( divID ) {
 			console.log(divID);
 
-			var width = 550;
+			var width = 850;
 			var height = 'auto';
 
 			if( '#itin-agenda-popup' == divID || '#view-dates-popup' ==divID ) {
