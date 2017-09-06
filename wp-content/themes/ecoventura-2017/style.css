@@ -3798,6 +3798,127 @@ p.entry-meta {
   }
 }
 
+.page-template-template-eco-hotels .site-inner {
+  background-color: white;
+  max-width: 100%;
+  padding-top: 0;
+}
+@media only screen and (max-width: 860px) {
+  .page-template-template-eco-hotels .site-inner {
+    padding: 0;
+  }
+}
+.page-template-template-eco-hotels .hotels-header {
+  background-color: #44596e;
+  color: white;
+  padding: 30px;
+  width: 100%;
+}
+.page-template-template-eco-hotels .hotels-header h2 {
+  margin: auto;
+  max-width: 1100px;
+}
+.page-template-template-eco-hotels .hotels-content {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 60px 0;
+}
+@media only screen and (max-width: 860px) {
+  .page-template-template-eco-hotels .hotels-content {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+.page-template-template-eco-hotels .hotels-content h2 {
+  font-weight: 400;
+}
+.page-template-template-eco-hotels .hotels-content .hotels-learn-more-button {
+  text-align: center;
+}
+.page-template-template-eco-hotels section.hotels {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 60px 0;
+}
+@media only screen and (max-width: 860px) {
+  .page-template-template-eco-hotels section.hotels {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+.page-template-template-eco-hotels section.hotels .hotel-tabs {
+  display: flex;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-eco-hotels section.hotels .hotel-tabs {
+    display: block;
+  }
+}
+.page-template-template-eco-hotels section.hotels .hotel-tabs .hotel-tab {
+  background-color: #eeeeee;
+  border: 1px solid black;
+  border-bottom: 0;
+  border-left: 0;
+  padding: 20px 40px;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-eco-hotels section.hotels .hotel-tabs .hotel-tab {
+    border-left: 1px solid black;
+  }
+}
+.page-template-template-eco-hotels section.hotels .hotel-tabs .hotel-tab:first-child {
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-bottom: 0;
+}
+.page-template-template-eco-hotels section.hotels .hotel-tabs .hotel-tab:hover {
+  background-color: #ffffff;
+}
+.page-template-template-eco-hotels section.hotels .hotel-wrapper {
+  border: 1px solid black;
+  display: none;
+}
+.page-template-template-eco-hotels section.hotels #hotels_in_guayaquil {
+  display: block;
+}
+.page-template-template-eco-hotels section.hotels .hotel-items-wrapper {
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
+}
+.page-template-template-eco-hotels section.hotels .hotel-items-wrapper div h2 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.page-template-template-eco-hotels section.hotels .hotel-items-wrapper div p {
+  margin-bottom: 20px;
+}
+.page-template-template-eco-hotels section.hotels .hotel-items-wrapper .hotel-image {
+  width: 35%;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-eco-hotels section.hotels .hotel-items-wrapper .hotel-image {
+    width: 100%;
+  }
+}
+.page-template-template-eco-hotels section.hotels .hotel-items-wrapper .hotel-content {
+  width: 55%;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-eco-hotels section.hotels .hotel-items-wrapper .hotel-content {
+    width: 100%;
+  }
+}
+.page-template-template-eco-hotels section.hotels .hotel-items-wrapper.hotel-1 {
+  display: flex;
+}
+.page-template-template-eco-hotels section.hotels .hotel-items-wrapper:last-child {
+  border-bottom: 0;
+}
+
 /* # Sidebars
 ---------------------------------------------------------------------------------------------------- */
 .sidebar {
