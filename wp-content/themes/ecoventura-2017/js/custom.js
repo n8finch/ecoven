@@ -56,6 +56,25 @@
 		do_menu_day_tabs();
 
 
+		//* Hotel Tabs
+
+		var do_hotel_tabs = function() {
+			var tabContent = $('.hotel-wrapper');
+
+			$('.hotel-tab').on('click', function(e) {
+
+					var tabClicked = '#' + e.target.dataset.hotelTabId;
+					console.log(tabClicked);
+
+					$('.hotel-tab').css( 'background-color', '#eeeeee' );
+					$(e.target).css( 'background-color', '#ffffff')
+					$(tabContent).hide();
+					$(tabClicked).show();
+			});
+		}
+
+		do_hotel_tabs();
+
 		//*Hide and toggle Terms and Conditions on Departure pages
 		var do_eco_toggles = function() {
 
