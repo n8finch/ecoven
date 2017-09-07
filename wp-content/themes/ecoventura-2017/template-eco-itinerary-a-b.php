@@ -30,12 +30,12 @@ function eco_intinerary_a( $acf_fields ) {
 		<img src="<?php echo esc_attr( $acf_fields['itinerary_a_image'] ); ?>" />
 		<div class="view-iteneraries">
 			<a href="#">
-				<div id="view-itens">VIEW ITENERARIES</div>
+				<div id="view-itens">VIEW ITINERARIES</div>
 				<div id="arrow-right"></div>
 			</a>
 			<a href="<?php echo esc_url( $acf_fields[ 'itinerary_a_link' ] );?>">
 				<div id="arrow-from-right"></div>
-				<div id="iten-a">ITENERARY A</div>
+				<div id="iten-a">ITINERARY A</div>
 			</a>
 		</div>
 		<div class="itinerary-content">
@@ -66,7 +66,7 @@ function eco_intinerary_a( $acf_fields ) {
 										<img src="<?php echo esc_attr( $row['popup_image'] );?>" />
 									</div>
 									<div>
-										<a href="<?php echo esc_url( $row['learn_more_button_link'] );?>"><button class="highlight-popup-button">LEARN MORE</button></a>
+										<a class="highlight-popup-button" href="<?php echo esc_url( $row['learn_more_button_link'] );?>">LEARN MORE</a>
 									</div>
 								</div>
 							</div>
@@ -79,8 +79,8 @@ function eco_intinerary_a( $acf_fields ) {
 
 			</div>
 			<div class="book-now-box">
-				<a href="<?php echo esc_url( $acf_fields[ 'itinerary_a_link' ] );?>">
-					<button><?php echo esc_html( $acf_fields[ 'itinerary_a_button_text' ] );?></button>
+				<a class="button" href="<?php echo esc_url( $acf_fields[ 'itinerary_a_link' ] );?>">
+					<?php echo esc_html( $acf_fields[ 'itinerary_a_button_text' ] );?>
 				</a>
 			</div>
 		</div>
@@ -94,12 +94,12 @@ function eco_intinerary_b( $acf_fields ) {
 		<img src="<?php echo esc_attr( $acf_fields['itinerary_b_image'] ); ?>" />
 		<div class="view-iteneraries">
 			<a href="#">
-				<div id="view-itens">VIEW ITENERARIES</div>
+				<div id="view-itens">VIEW ITINERARIES</div>
 				<div id="arrow-right"></div>
 			</a>
 			<a href="<?php echo esc_url( $acf_fields[ 'itinerary_b_link' ] );?>">
 				<div id="arrow-from-right-b"></div>
-				<div id="iten-b">ITENERARY B</div>
+				<div id="iten-b">ITINERARY B</div>
 			</a>
 		</div>
 		<div class="itinerary-content">
@@ -130,7 +130,7 @@ function eco_intinerary_b( $acf_fields ) {
 										<img src="<?php echo esc_attr( $row['popup_image'] );?>" />
 									</div>
 									<div>
-										<a href="<?php echo esc_url( $row['learn_more_button_link'] );?>"><button class="highlight-popup-button">LEARN MORE</button></a>
+										<a class="highlight-popup-button" href="<?php echo esc_url( $row['learn_more_button_link'] );?>">LEARN MORE</a>
 									</div>
 								</div>
 							</div>
@@ -143,8 +143,8 @@ function eco_intinerary_b( $acf_fields ) {
 
 			</div>
 			<div class="book-now-box">
-				<a href="<?php echo esc_url( $acf_fields[ 'itinerary_b_link' ] );?>">
-					<button><?php echo esc_html( $acf_fields[ 'itinerary_b_button_text' ] );?></button>
+				<a class="button" href="<?php echo esc_url( $acf_fields[ 'itinerary_b_link' ] );?>">
+					<?php echo esc_html( $acf_fields[ 'itinerary_b_button_text' ] );?>
 				</a>
 			</div>
 		</div>

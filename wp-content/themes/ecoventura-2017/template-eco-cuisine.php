@@ -108,8 +108,8 @@ function eco_cuisine_cookbook( $acf_fields ) {
 			<div class="cookbook-content">
 				<h2><?php echo esc_html( $acf_fields['cookbook_title'] ); ?></h2>
 				<?php echo wp_kses_post( $acf_fields['cookbook_content'] ); ?>
-				<a href="<?php echo esc_url( $acf_fields['cookbook_button_link'] ); ?>">
-					<button><?php echo esc_html( $acf_fields['cookbook_button_text'] ); ?></button>
+				<a class="button" href="<?php echo esc_url( $acf_fields['cookbook_button_link'] ); ?>">
+					<?php echo esc_html( $acf_fields['cookbook_button_text'] ); ?>
 				</a>
 			</div>
 		</div>

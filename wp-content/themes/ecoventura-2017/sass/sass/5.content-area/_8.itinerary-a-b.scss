@@ -30,7 +30,7 @@
 
 	.itinerary-content {
 
-		@media only screen and (max-width: 860px) {
+		@media only screen and (max-width: 1150px) {
 			padding-left: 5%;
 			padding-right: 5%;
 		}
@@ -44,6 +44,10 @@
 	}
 
 	.view-iteneraries {
+
+		@media screen and (max-width: 1150px) {
+			padding: 5% 5% 0;
+		}
 
 		@media screen and (max-width: 920px) {
 			flex-direction: column;
@@ -159,7 +163,7 @@
 
 	div.itinerary-highlights {
 
-		@media only screen and (max-width: 860px) {
+		@media only screen and (max-width: 1150px) {
 			padding-left: 5%;
 			padding-right: 5%;
 		}
@@ -279,6 +283,7 @@
 			border-top: 0;
 			color: $color__medium_blue_gray;
 			padding: 30px;
+			text-decoration: none;
 			text-transform: uppercase;
 			width: 100%;
 		}
@@ -296,8 +301,12 @@
 			color: black;
 			float: right;
 		    height: 20px;
-		    padding: 10px 20px;
+		    padding: 10px;
 		    line-height: 0;
+
+			.ui-button-text {
+				font-weight: bold;
+			}
 		}
 
 		.no-close .ui-dialog-titlebar-close {

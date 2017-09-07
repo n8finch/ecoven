@@ -113,6 +113,7 @@
 				closeOnEscape: true,
 				height: height,
 				width: width,
+				closeText: "X"
 			});
 		}
 
@@ -136,14 +137,14 @@
 				doEcoPopUp(divID);
 			});
 			$( ".itinerary-expedition .book-now-box" ).on( 'click', function(e) {
-				console.log(e);
-				var divID = '#' + e.target.dataset.popupId;
+				e.preventDefault();
 
+				var divID = '#' + e.target.dataset.popupId;
+				console.log(divID);
 				doEcoPopUp(divID);
 			});
 		});
 
-
-	});
+	}); //end document.ready
 
 })(jQuery);

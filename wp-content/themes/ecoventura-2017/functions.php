@@ -46,9 +46,6 @@ function child_theme_setup() {
 	require_once( CHILD_DIR . '/inc/eco-functions.php' );
 	require_once( CHILD_DIR . '/inc/eco-types.php' );
 	require_once( CHILD_DIR . '/inc/eco-builds.php' );
-	// require_once( CHILD_DIR . '/inc/shortcodes/world-nomads.php' );
-	// require_once( CHILD_DIR . '/inc/shortcodes/eco-shortcodes.php' );
-	// require_once( CHILD_DIR . '/inc/shortcodes/div-shortcode.php' );
 
 	// Admin
 	require_once( CHILD_DIR . '/inc/admin/admin.php' );
@@ -553,7 +550,7 @@ function eco_footer_testimonials() {
 
 				echo "<p>{$post_content}...</p>";
 				echo "<p><em>{$post_meta}</em></p>";
-				echo "<a href='/guest-reviews/'><button>MORE REVIEWS</button></a>";
+				echo '<a class="button" href="/guest-reviews/">MORE REVIEWS</a>';
 
 		    endforeach;
 		    wp_reset_postdata();

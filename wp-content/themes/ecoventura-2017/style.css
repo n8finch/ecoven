@@ -640,7 +640,7 @@ input[type="submit"]:focus,
 input[type="submit"]:hover,
 .button:focus,
 .button:hover {
-  background-color: transparent;
+  background-color: #eee;
   color: #333;
 }
 
@@ -2144,8 +2144,12 @@ p.entry-meta {
     width: 325px;
   }
 }
-.home.page .homepage-recent-blog-posts a {
-  color: #999999;
+.home.page .homepage-recent-blog-posts a.button {
+  color: #ffffff;
+  text-decoration: none;
+}
+.home.page .homepage-recent-blog-posts a.button:hover {
+  color: #333333;
   text-decoration: none;
 }
 .home.page .homepage-page-as-seen {
@@ -2241,6 +2245,7 @@ p.entry-meta {
 .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap table.departures-table {
   font-size: 11px;
   font-size: 1.1rem;
+  margin-bottom: 80px;
 }
 .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap table.departures-table th, .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap table.departures-table td {
   border: 1px solid #333333;
@@ -2285,7 +2290,7 @@ p.entry-meta {
   padding: 0;
   width: 130px;
 }
-.page-template-template-eco-departures .departures-dates .departure-dates-table-wrap table.departures-table button {
+.page-template-template-eco-departures .departures-dates .departure-dates-table-wrap table.departures-table a {
   font-size: 12px;
   font-size: 1.2rem;
   padding: 3px 5px;
@@ -2335,10 +2340,14 @@ p.entry-meta {
   margin-bottom: 60px;
   justify-content: space-around;
 }
+@media screen and (max-width: 1150px) {
+  .page-template-template-eco-departures .departures-dates .departure-view-iteneraries {
+    padding: 5% 5% 0;
+  }
+}
 @media screen and (max-width: 920px) {
   .page-template-template-eco-departures .departures-dates .departure-view-iteneraries {
     flex-direction: column;
-    padding: 5% 5% 0;
   }
 }
 .page-template-template-eco-departures .departures-dates .departure-view-iteneraries a {
@@ -2431,14 +2440,14 @@ p.entry-meta {
   position: relative;
   text-align: center;
 }
-.page-template-template-eco-departures .book-now-box button:hover {
+.page-template-template-eco-departures .book-now-box a:hover {
   background-color: #eeeeee;
 }
 .page-template-template-eco-departures .departure-expedition-content-wrap {
   margin: auto;
   max-width: 1100px;
 }
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1150px) {
   .page-template-template-eco-departures .departure-expedition-content-wrap {
     padding: 5% 5% 0;
   }
@@ -2462,7 +2471,7 @@ p.entry-meta {
   margin: 60px auto;
   max-width: 1100px;
 }
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1150px) {
   .page-template-template-eco-departures .departures-faqs-terms-conditions .departure-faqs,
   .page-template-template-eco-departures .departures-faqs-terms-conditions .departure-terms-conditions {
     padding: 5% 5% 0;
@@ -2531,6 +2540,11 @@ p.entry-meta {
   max-width: 1100px;
   overflow: hidden;
   position: relative;
+}
+@media only screen and (max-width: 1150px) {
+  .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap {
+    padding: 0 5%;
+  }
 }
 .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap ul {
   position: relative;
@@ -2699,7 +2713,7 @@ p.entry-meta {
   margin-bottom: 60px;
   justify-content: space-around;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1150px) {
   .page-template-template-eco-rates .rates-dates .rate-view-iteneraries {
     flex-direction: column;
     padding: 5% 5% 0;
@@ -2807,7 +2821,7 @@ p.entry-meta {
   margin: 0 auto;
   max-width: 1100px;
 }
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1150px) {
   .page-template-template-eco-rates .rate-expedition-content-wrap {
     padding: 5% 5% 0;
   }
@@ -2834,7 +2848,7 @@ p.entry-meta {
   max-width: 1100px;
   padding: 50px 0;
 }
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1150px) {
   .page-template-template-eco-rates .rates-sub-content .rate-sub-content-wrap {
     padding: 5% 5% 0;
   }
@@ -2863,7 +2877,7 @@ p.entry-meta {
   padding-bottom: 50px;
   position: relative;
 }
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1150px) {
   .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap {
     padding: 5% 5% 0;
   }
@@ -3061,7 +3075,7 @@ p.entry-meta {
   margin: 0 auto;
   max-width: 1100px;
 }
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1150px) {
   .page-template-template-eco-itinerary-a-b .itinerary-content {
     padding-left: 5%;
     padding-right: 5%;
@@ -3078,6 +3092,11 @@ p.entry-meta {
   margin-bottom: 60px;
   margin-top: 60px;
   justify-content: flex-start;
+}
+@media screen and (max-width: 1150px) {
+  .page-template-template-eco-itinerary-a-b .view-iteneraries {
+    padding: 5% 5% 0;
+  }
 }
 @media screen and (max-width: 920px) {
   .page-template-template-eco-itinerary-a-b .view-iteneraries {
@@ -3178,7 +3197,7 @@ p.entry-meta {
   margin: 0 auto;
   max-width: 1100px;
 }
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1150px) {
   .page-template-template-eco-itinerary-a-b div.itinerary-highlights {
     padding-left: 5%;
     padding-right: 5%;
@@ -3286,6 +3305,7 @@ p.entry-meta {
   border-top: 0;
   color: #44596e;
   padding: 30px;
+  text-decoration: none;
   text-transform: uppercase;
   width: 100%;
 }
@@ -3300,8 +3320,11 @@ p.entry-meta {
   color: black;
   float: right;
   height: 20px;
-  padding: 10px 20px;
+  padding: 10px;
   line-height: 0;
+}
+.page-template-template-eco-itinerary-a-b .ui-dialog button .ui-button-text {
+  font-weight: bold;
 }
 .page-template-template-eco-itinerary-a-b .ui-dialog .no-close .ui-dialog-titlebar-close {
   display: none;
@@ -3343,7 +3366,7 @@ p.entry-meta {
   margin: 0 auto;
   max-width: 1100px;
 }
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1150px) {
   .page-template-template-eco-itinerary-single .itinerary-content {
     padding-left: 5%;
     padding-right: 5%;
@@ -3356,7 +3379,7 @@ p.entry-meta {
   margin: 60px auto;
   max-width: 1100px;
 }
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1150px) {
   .page-template-template-eco-itinerary-single div.itinerary-content {
     padding-left: 5%;
     padding-right: 5%;
@@ -3385,6 +3408,9 @@ p.entry-meta {
 }
 .page-template-template-eco-itinerary-single div.itinerary-content .itinerary-box h3 {
   font-style: italic;
+}
+.page-template-template-eco-itinerary-single div.itinerary-content .itinerary-box h3:hover {
+  color: #CFAA42;
 }
 .page-template-template-eco-itinerary-single div.itinerary-content .itinerary-box .itin-hr-blue {
   border-top: 1px solid #647a8c;
@@ -3415,7 +3441,7 @@ p.entry-meta {
   margin: 0 auto;
   max-width: 1100px;
 }
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1150px) {
   .page-template-template-eco-itinerary-single div.itinerary-highlights {
     padding-left: 5%;
     padding-right: 5%;
@@ -3480,7 +3506,7 @@ p.entry-meta {
   margin: 60px auto;
   max-width: 1100px;
 }
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1150px) {
   .page-template-template-eco-itinerary-single #itinerary-dropdowns .itinerary-terms-conditions,
   .page-template-template-eco-itinerary-single #itinerary-faqs .itinerary-terms-conditions {
     padding: 5% 5% 0;
@@ -3594,8 +3620,11 @@ p.entry-meta {
   color: black;
   float: right;
   height: 20px;
-  padding: 10px 20px;
+  padding: 10px;
   line-height: 0;
+}
+.page-template-template-eco-itinerary-single .ui-dialog button .ui-button-text {
+  font-weight: bold;
 }
 .page-template-template-eco-itinerary-single .ui-dialog .no-close .ui-dialog-titlebar-close {
   display: none;
@@ -3641,7 +3670,7 @@ p.entry-meta {
   max-width: 1100px;
   padding: 60px 0;
 }
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1150px) {
   .page-template-template-eco-cuisine .cuisine-content {
     padding-left: 5%;
     padding-right: 5%;
@@ -3675,7 +3704,7 @@ p.entry-meta {
   border: 1px solid black;
 }
 .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-tabs .menu-tab:hover {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-wrapper {
   border: 1px solid black;
@@ -3696,6 +3725,9 @@ p.entry-meta {
   border-left: 0;
   color: #CFAA42;
   padding-left: 0;
+}
+.page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-days-wrapper span:hover {
+  color: #CFAA42 !important;
 }
 .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-items-wrapper {
   display: none;
@@ -3725,7 +3757,7 @@ p.entry-meta {
   margin: 0 auto;
   max-width: 1100px;
 }
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1150px) {
   .page-template-template-eco-cuisine .our-cookbook .cookbook-wrapper {
     display: block;
     padding-left: 5%;
@@ -3738,7 +3770,7 @@ p.entry-meta {
 .page-template-template-eco-cuisine .our-cookbook .cookbook-wrapper .cookbook-content {
   width: 35%;
 }
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1150px) {
   .page-template-template-eco-cuisine .our-cookbook .cookbook-wrapper .cookbook-image,
   .page-template-template-eco-cuisine .our-cookbook .cookbook-wrapper .cookbook-content {
     margin-bottom: 20px;
@@ -3753,7 +3785,7 @@ p.entry-meta {
   max-width: 1100px;
   padding-top: 60px;
 }
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1150px) {
   .page-template-template-eco-cuisine .our-recipes {
     padding-left: 5%;
     padding-right: 5%;
@@ -3823,7 +3855,7 @@ p.entry-meta {
   max-width: 1100px;
   padding: 60px 0;
 }
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1150px) {
   .page-template-template-eco-hotels .hotels-content {
     padding-left: 5%;
     padding-right: 5%;
@@ -3840,7 +3872,7 @@ p.entry-meta {
   max-width: 1100px;
   padding: 60px 0;
 }
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1150px) {
   .page-template-template-eco-hotels section.hotels {
     padding-left: 5%;
     padding-right: 5%;
@@ -3873,7 +3905,7 @@ p.entry-meta {
   border-bottom: 0;
 }
 .page-template-template-eco-hotels section.hotels .hotel-tabs .hotel-tab:hover {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 .page-template-template-eco-hotels section.hotels .hotel-wrapper {
   border: 1px solid black;
@@ -4247,6 +4279,16 @@ p.entry-meta {
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
+  }
+
+  button.sub-menu-toggle.dashicons-before.dashicons-arrow-down-alt2 {
+    width: 100%;
+    text-align: right;
+    background-color: transparent;
+  }
+
+  button.sub-menu-toggle.dashicons-before.dashicons-arrow-down-alt2.activated {
+    width: auto;
   }
 
   .genesis-responsive-menu .genesis-nav-menu .menu-item {
