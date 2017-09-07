@@ -32,6 +32,11 @@
 		}
 
 		.rate-dates-table-wrap {
+
+			@media only screen and (max-width: 1150px) {
+			    padding: 0 5%;
+			}
+
 			margin: 30px auto 0;
 			max-width: 1100px;
 			overflow: hidden;
@@ -232,7 +237,7 @@
 
 		.rate-view-iteneraries {
 
-			@media screen and (max-width: 920px) {
+			@media screen and (max-width: 1150px) {
 				flex-direction: column;
 				padding: 5% 5% 0;
 			}
@@ -359,7 +364,7 @@
 
 	.rate-expedition-content-wrap {
 
-		@media only screen and (max-width: 860px) {
+		@media only screen and (max-width: 1150px) {
 		    padding: 5% 5% 0;
 		}
 
@@ -393,7 +398,7 @@
 
 		.rate-sub-content-wrap {
 
-			@media only screen and (max-width: 860px) {
+			@media only screen and (max-width: 1150px) {
 			    padding: 5% 5% 0;
 			}
 
@@ -431,7 +436,7 @@
 
 		.rates-charter-content-wrap {
 
-			@media only screen and (max-width: 860px) {
+			@media only screen and (max-width: 1150px) {
 			    padding: 5% 5% 0;
 			}
 

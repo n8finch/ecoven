@@ -68,7 +68,7 @@ function eco_intinerary_single_highlights( $acf_fields ) {
 	<section class="itinerary-expedition">
 		<h2>ready for itineray a? check out the departure dates</h2>
 		<div class="book-now-box">
-			<button data-popup-id="view-dates-popup">VIEW DATES</button>
+			<a class="button" href="#" data-popup-id="view-dates-popup">VIEW DATES</a>
 		</div>
 		<div id="view-dates-popup" visibility="hidden" class="itenerary-popup-image" style="background: url('<?php echo esc_attr( $acf_fields['itinerary_cruise_route_popup'] );?>'); background-size: cover;">
 	</section>
@@ -98,7 +98,7 @@ function eco_intinerary_single_highlights( $acf_fields ) {
 										<img src="<?php echo esc_attr( $row['popup_image'] );?>" />
 									</div>
 									<div>
-										<a href="<?php echo esc_url( $row['learn_more_button_link'] );?>"><button class="highlight-popup-button">LEARN MORE</button></a>
+										<a class="highlight-popup-button" href="<?php echo esc_url( $row['learn_more_button_link'] );?>">LEARN MORE</a>
 									</div>
 								</div>
 

@@ -198,8 +198,13 @@
 			width: 425px;
 		}
 
-		a {
-			color: #999999;
+		a.button {
+			color: #ffffff;
+			text-decoration: none;
+		}
+
+		a.button:hover {
+			color: #333333;
 			text-decoration: none;
 		}
 	}

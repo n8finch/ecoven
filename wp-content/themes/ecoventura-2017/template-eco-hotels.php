@@ -28,8 +28,8 @@ function eco_hotels_main( $acf_fields ) {
 	<section class="hotels-content">
 		<?php echo wp_kses_post( $acf_fields['hotels_main_content'] ); ?>
 		<div class="hotels-learn-more-button">
-			<a href="<?php echo esc_url( $acf_fields['hotels_main_button_link'] ); ?>">
-				<button><?php echo esc_html( $acf_fields['hotels_main_button_text'] ); ?></button>
+			<a class="button" href="<?php echo esc_url( $acf_fields['hotels_main_button_link'] ); ?>">
+				<?php echo esc_html( $acf_fields['hotels_main_button_text'] ); ?>
 			</a>
 		</div>
 	</section>
@@ -69,8 +69,8 @@ function eco_hotels_main( $acf_fields ) {
 						<div class="hotel-content">
 							<h2><?php echo esc_html( $row['name'] ); ?></h2>
 							<?php echo wp_kses_post( $row['description'] ); ?>
-							<a href="<?php echo esc_url( $row['button_link'] ); ?>">
-								<button><?php echo esc_html( $row['button_text'] ); ?></button>
+							<a class="button" href="<?php echo esc_url( $row['button_link'] ); ?>">
+								<?php echo esc_html( $row['button_text'] ); ?>
 							</a>
 						</div>
 					</div>

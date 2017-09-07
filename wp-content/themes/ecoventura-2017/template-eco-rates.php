@@ -102,9 +102,7 @@ function eco_rates_expedition( $acf_fields ) {
 
 		<!-- Add Plan Your Trip box -->
 		<div class="book-now-box">
-			<a href="<?php echo esc_url( $acf_fields[ 'book_now_link' ] );?>">
-				<button>PLAN YOUR TRIP</button>
-			</a>
+			<a class="button" href="<?php echo esc_url( $acf_fields[ 'book_now_link' ] );?>">PLAN YOUR TRIP</a>
 		</div>
 
 		<div class="rate-expedition-content-wrap">
@@ -130,9 +128,7 @@ function eco_rates_sub_content( $acf_fields ) {
 				<?php echo wp_kses_post( $acf_fields['rates_cruise_options'] ); ?>
 			</div>
 			<div class="book-now-box">
-				<a href="<?php echo esc_url( $acf_fields[ 'book_now_link' ] );?>">
-					<button>PLAN YOUR TRIP</button>
-				</a>
+				<a class="button" href="<?php echo esc_url( $acf_fields[ 'book_now_link' ] );?>">PLAN YOUR TRIP</a>
 			</div>
 		</div>
 	</section>

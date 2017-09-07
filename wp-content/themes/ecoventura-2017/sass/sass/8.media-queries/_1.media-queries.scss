@@ -214,6 +214,16 @@
 	  transform:         rotate( 180deg );
   }
 
+  button.sub-menu-toggle.dashicons-before.dashicons-arrow-down-alt2 {
+    width: 100%;
+    text-align: right;
+    background-color: transparent;
+  }
+
+  button.sub-menu-toggle.dashicons-before.dashicons-arrow-down-alt2.activated {
+	width: auto;
+  }
+
   .genesis-responsive-menu .genesis-nav-menu .menu-item {
 	  display: block;
 	  float: none;

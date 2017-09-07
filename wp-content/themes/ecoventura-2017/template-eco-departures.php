@@ -80,11 +80,11 @@ function eco_departures_dates( $acf_fields, $depart_year ) {
 
 							function eco_promotion_button( $button_val ) {
 								if ( 'Sold Out' === $button_val ) {
-									return '<a href="https://www.origingalapagos.com/" target="_blank"><button>INQUIRE FOR ORIGIN</button></a>';
+									return '<a class="button" href="https://www.origingalapagos.com/" target="_blank">INQUIRE FOR ORIGIN</a>';
 								}
 
 								if ( 'Available' === $button_val ) {
-									return '<a href="#" target="_blank"><button>INQUIRE</button></a>';
+									return '<a class="button" href="#" target="_blank">INQUIRE</a>';
 								}
 							}
 
@@ -115,15 +115,15 @@ function eco_departures_dates( $acf_fields, $depart_year ) {
 
 			<div class="departure-view-iteneraries">
 				<a href="#">
-					<div id="view-itens">VIEW ITENERARIES</div>
+					<div id="view-itens">VIEW ITINERARIES</div>
 					<div id="arrow-right"></div>
 				</a>
 				<a href="<?php echo esc_url( $acf_fields[ itinerary_a_link ] ); ?>">
 					<div id="arrow-from-right"></div>
-					<div id="iten-a">ITENERARY A</div>
+					<div id="iten-a">ITINERARY A</div>
 				</a>
 				<a href="<?php echo esc_url( $acf_fields[ itinerary_b_link ] ); ?>">
-					<div id="iten-b">ITENERARY B</div>
+					<div id="iten-b">ITINERARY B</div>
 				</a>
 			</div>
 	</section>
@@ -139,9 +139,7 @@ function eco_departures_expedition( $acf_fields ) {
 
 		<!-- Add Plan Your Trip box -->
 		<div class="book-now-box">
-			<a href="<?php echo esc_url( $acf_fields[ 'book_now_link' ] );?>">
-				<button>PLAN YOUR TRIP</button>
-			</a>
+			<a class="button" href="<?php echo esc_url( $acf_fields[ 'book_now_link' ] );?>">PLAN YOUR TRIP</a>
 		</div>
 
 		<div class="departure-expedition-content-wrap">

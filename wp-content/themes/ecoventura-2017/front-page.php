@@ -37,7 +37,7 @@ function eco_homepage_above_fold($acf_fields) {
 		</div>
 
 		<!-- Add Plan Your Trip box -->
-		<div class="plan-your-trip-box"><a href="#"><button>PLAN YOUR TRIP</button></a></div>
+		<div class="plan-your-trip-box"><a class="button" href="#">PLAN YOUR TRIP</a></div>
 
 	</section>
 	<?php
@@ -125,7 +125,7 @@ function eco_homepage_recent_blog_posts() {
 						<div class="recent-post-box-content">
 							<h3><?php the_title(); ?></h3>
 					        <?php the_excerpt(); ?>
-							<a href="<?php the_permalink(); ?>"><button>READ MORE</button></a>
+							<a class="button" href="<?php the_permalink(); ?>">READ MORE</a>
 						</div>
 					</div>
 
@@ -134,7 +134,7 @@ function eco_homepage_recent_blog_posts() {
 			    wp_reset_postdata();
 				?>
 			</div><!-- end Recent Post Box Container -->
-			<a href="/blog"><button>READ MORE ARTICLES</button></a>
+			<a class="button" href="/blog">READ MORE ARTICLES</a>
 		</section>
 		<?php
 	}
@@ -200,7 +200,7 @@ function eco_homepage_page_as_seen_in_the_media($acf_fields) {
 
 			</div>
 
-			<a href="/in-the-media/"><button>READ ARTICLES</button></a>
+			<a class="button" href="/in-the-media/">READ ARTICLES</a>
 
 		</div>
 

@@ -29,7 +29,7 @@
 
 	.hotels-content {
 
-		@media only screen and (max-width: 860px) {
+		@media only screen and (max-width: 1150px) {
 			padding-left: 5%;
 			padding-right: 5%;
 		}
@@ -49,7 +49,7 @@
 
 	section.hotels {
 
-		@media only screen and (max-width: 860px) {
+		@media only screen and (max-width: 1150px) {
 			padding-left: 5%;
 			padding-right: 5%;
 		}
@@ -84,7 +84,7 @@
 			}
 
 			.hotel-tab:hover {
-				background-color: #ffffff;
+				background-color: #ffffff !important;
 			}
 
 		}
@@ -129,7 +129,7 @@
 				@media screen and (max-width: 768px) {
 					width: 100%;
 				}
-				
+
 				width: 55%;
 			}
 		}
