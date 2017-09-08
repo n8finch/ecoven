@@ -4040,6 +4040,9 @@ p.entry-meta {
 .page-template-template-eco-tours .tours-list-guayaquil h2 {
   color: black;
 }
+.page-template-template-eco-tours .tours-main-content h2 {
+  margin-bottom: 40px;
+}
 
 /* # Sidebars
 ---------------------------------------------------------------------------------------------------- */
