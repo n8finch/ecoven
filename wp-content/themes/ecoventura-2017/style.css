@@ -3951,6 +3951,96 @@ p.entry-meta {
   border-bottom: 0;
 }
 
+.page-template-template-eco-tours .site-inner {
+  background-color: white;
+  max-width: 100%;
+  padding-top: 0;
+}
+@media only screen and (max-width: 860px) {
+  .page-template-template-eco-tours .site-inner {
+    padding: 0;
+  }
+}
+.page-template-template-eco-tours .tours-header {
+  background-color: #44596e;
+  color: white;
+  padding: 30px;
+  width: 100%;
+}
+.page-template-template-eco-tours .tours-header h2 {
+  margin: auto;
+  max-width: 1100px;
+}
+.page-template-template-eco-tours .tours-main-content {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 60px 0;
+}
+@media only screen and (max-width: 1150px) {
+  .page-template-template-eco-tours .tours-main-content {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+.page-template-template-eco-tours .tours-main-content h2 {
+  font-weight: 400;
+}
+.page-template-template-eco-tours .tours-main-content .tours-learn-more-button {
+  text-align: center;
+}
+.page-template-template-eco-tours .tours-list-quito,
+.page-template-template-eco-tours .tours-list-guayaquil {
+  padding: 60px 0;
+  width: 100%;
+}
+.page-template-template-eco-tours .tours-list-quito h2,
+.page-template-template-eco-tours .tours-list-guayaquil h2 {
+  font-weight: 400;
+  text-align: center;
+}
+.page-template-template-eco-tours .tours-list-quito .tours-content,
+.page-template-template-eco-tours .tours-list-guayaquil .tours-content {
+  background-color: white;
+  border: 1px solid black;
+  margin: 40px auto;
+  max-width: 1100px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.page-template-template-eco-tours .tours-list-quito .tours-content .tour-image,
+.page-template-template-eco-tours .tours-list-guayaquil .tours-content .tour-image {
+  max-height: 350px;
+  overflow: hidden;
+}
+.page-template-template-eco-tours .tours-list-quito .tours-content .tour-image img,
+.page-template-template-eco-tours .tours-list-guayaquil .tours-content .tour-image img {
+  width: 100%;
+}
+.page-template-template-eco-tours .tours-list-quito .tours-content h2,
+.page-template-template-eco-tours .tours-list-guayaquil .tours-content h2 {
+  color: black;
+  font-weight: 400;
+  margin: 60px 5% 20px;
+  text-align: left;
+}
+.page-template-template-eco-tours .tours-list-quito .tours-content > p,
+.page-template-template-eco-tours .tours-list-guayaquil .tours-content > p {
+  margin: 20px 5% 40px;
+  text-align: left;
+}
+.page-template-template-eco-tours .tours-list-quito {
+  background-color: #152838;
+}
+.page-template-template-eco-tours .tours-list-quito h2 {
+  color: white;
+}
+.page-template-template-eco-tours .tours-list-guayaquil {
+  background-color: #B9C8BE;
+}
+.page-template-template-eco-tours .tours-list-guayaquil h2 {
+  color: black;
+}
+
 /* # Sidebars
 ---------------------------------------------------------------------------------------------------- */
 .sidebar {
