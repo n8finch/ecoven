@@ -3330,6 +3330,7 @@ p.entry-meta {
   display: none;
 }
 .page-template-template-eco-itinerary-a-b .ui-widget-overlay {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -3630,6 +3631,7 @@ p.entry-meta {
   display: none;
 }
 .page-template-template-eco-itinerary-single .ui-widget-overlay {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;

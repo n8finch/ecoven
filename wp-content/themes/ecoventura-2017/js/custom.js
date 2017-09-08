@@ -98,23 +98,29 @@
 
 		var doEcoPopUp = function( divID ) {
 			console.log(divID);
+			console.log(window);
+			var winHeight = window.innerHeight;
+			var winHeight0 = window.outerHeight;
+			var winWidth = window.innerWidth;
+			var winWidtho = window.outerWidth;
+			var scrollY = window.scrollY;
+			var popupWidth = 900;
+			var centeredWidth = winWidth/2 - popupWidth/2;
 
-			var width = 850;
-			var height = 'auto';
 
-			if( '#itin-agenda-popup' == divID || '#view-dates-popup' ==divID ) {
-				width = 900;
-				height = 500;
-			}
+			console.log(winWidtho);
 
-
-			$( divID ).dialog({
-				modal: true,
-				closeOnEscape: true,
-				height: height,
-				width: width,
-				closeText: "X"
+			$('.ui-widget-overlay').show();
+			$(divID).show().css({
+				'z-index': '10',
+				'width': popupWidth,
+				'max-width': '900px',
+				'height': '50%',
+				'position': 'absolute',
+				'top': scrollY + 100,
+				'left': centeredWidth
 			});
+
 		}
 
 		// Rates Page PopUp

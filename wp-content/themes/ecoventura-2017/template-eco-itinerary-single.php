@@ -175,7 +175,8 @@ function eco_intinerary_single_movie_faqs( $acf_fields ) {
 		</div>
 	</section>
 
-
+	<div class="ui-widget-overlay"></div>
+	
 	<?php
 }
 

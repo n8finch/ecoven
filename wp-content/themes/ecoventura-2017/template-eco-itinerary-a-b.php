@@ -149,6 +149,7 @@ function eco_intinerary_b( $acf_fields ) {
 			</div>
 		</div>
 	</section>
+	<div class="ui-widget-overlay"></div>
 	<?php
 }
 
