@@ -93,15 +93,22 @@
 
 		do_eco_toggles();
 
-
+		$(window).on('scroll', function( e ) {
+				console.log(e);
+				console.log($(window.scrollY));
+		});
 		//Do Eco Popup
 		var doEcoPopUp = function( divID ) {
+
+			console.log(divID);
 
 			var winHeight = window.innerHeight;
 			var winWidth = window.innerWidth;
 			var scrollY = window.scrollY;
 			var popupWidth = winWidth*.9;
 			var centeredWidth = winWidth/2 - popupWidth/2;
+
+			console.log(scrollY);
 
 			if( winWidth > 1000 ) {
 				centeredWidth = winWidth/2 - 450  ;
