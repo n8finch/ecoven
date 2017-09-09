@@ -95,30 +95,32 @@
 
 
 		//Do Eco Popup
-
 		var doEcoPopUp = function( divID ) {
-			console.log(divID);
-			console.log(window);
+
 			var winHeight = window.innerHeight;
-			var winHeight0 = window.outerHeight;
 			var winWidth = window.innerWidth;
-			var winWidtho = window.outerWidth;
 			var scrollY = window.scrollY;
-			var popupWidth = 900;
+			var popupWidth = winWidth*.9;
 			var centeredWidth = winWidth/2 - popupWidth/2;
 
-
-			console.log(winWidtho);
+			if( winWidth > 1000 ) {
+				centeredWidth = winWidth/2 - 450  ;
+			}
 
 			$('.ui-widget-overlay').show();
 			$(divID).show().css({
 				'z-index': '10',
 				'width': popupWidth,
 				'max-width': '900px',
-				'height': '50%',
+				'height': 'auto',
 				'position': 'absolute',
 				'top': scrollY + 100,
 				'left': centeredWidth
+			}).append('<span class="popup-close-button">X</span>');
+
+			$('.popup-close-button').on('click', function(e) {
+				$(divID).hide();
+				$('.ui-widget-overlay').hide();
 			});
 
 		}
