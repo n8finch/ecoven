@@ -281,12 +281,30 @@
 			justify-content: space-around;
 
 			div {
-				padding-bottom: 20px;
-				width: 40%;
+
+				@media screen and (max-width: 800px) {
+					width: 100% !important;
+				}
 
 				li {
 					font-size: 14px;
 				    list-style-type: disc;
+				}
+			}
+
+			.popup-facts {
+				width: 35%;
+				margin-bottom: 20px;
+				margin-left: 30px;
+				text-align: left;
+			}
+
+			.popup-image {
+				margin-bottom: 20px;
+				width: 55%;
+
+				img {
+					height: 250px;
 				}
 			}
 
@@ -303,7 +321,8 @@
 			border-color: $eco_green;
 			border-top: 0;
 			color: $color__medium_blue_gray;
-			padding: 30px;
+			padding: 20px;
+			text-decoration: none;
 			text-transform: uppercase;
 			width: 100%;
 		}
@@ -335,6 +354,7 @@
 	}
 
 	.ui-widget-overlay {
+		display: none;
 	    position:fixed;
 	    top:0;
 	    left:0;
@@ -350,6 +370,20 @@
 
 	#itin-agenda-popup.itenerary-popup-image > img {
 		width: 100%;
+	}
+
+	.popup-close-button {
+		background: white;
+		color: black;
+		position: absolute;
+	    padding: 0px 5px;
+	    right: 0;
+	    top: 0;
+	}
+
+	.popup-close-button:hover {
+		background: $color__medium_blue_gray;
+		color: white;
 	}
 
 }

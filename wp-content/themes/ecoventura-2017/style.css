@@ -3268,6 +3268,7 @@ p.entry-meta {
 .page-template-template-eco-itinerary-a-b .itenerary-popup h2,
 .page-template-template-eco-itinerary-a-b .iteneraries-popup h2,
 .page-template-template-eco-itinerary-a-b .itenerary-popup-image h2 {
+  margin: 20px auto;
   text-align: center;
   width: 100%;
 }
@@ -3278,17 +3279,37 @@ p.entry-meta {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.page-template-template-eco-itinerary-a-b .itenerary-popup .highlight-popup-flex div,
-.page-template-template-eco-itinerary-a-b .iteneraries-popup .highlight-popup-flex div,
-.page-template-template-eco-itinerary-a-b .itenerary-popup-image .highlight-popup-flex div {
-  padding-bottom: 20px;
-  width: 40%;
+@media screen and (max-width: 800px) {
+  .page-template-template-eco-itinerary-a-b .itenerary-popup .highlight-popup-flex div,
+  .page-template-template-eco-itinerary-a-b .iteneraries-popup .highlight-popup-flex div,
+  .page-template-template-eco-itinerary-a-b .itenerary-popup-image .highlight-popup-flex div {
+    width: 100% !important;
+  }
 }
 .page-template-template-eco-itinerary-a-b .itenerary-popup .highlight-popup-flex div li,
 .page-template-template-eco-itinerary-a-b .iteneraries-popup .highlight-popup-flex div li,
 .page-template-template-eco-itinerary-a-b .itenerary-popup-image .highlight-popup-flex div li {
   font-size: 14px;
   list-style-type: disc;
+}
+.page-template-template-eco-itinerary-a-b .itenerary-popup .highlight-popup-flex .popup-facts,
+.page-template-template-eco-itinerary-a-b .iteneraries-popup .highlight-popup-flex .popup-facts,
+.page-template-template-eco-itinerary-a-b .itenerary-popup-image .highlight-popup-flex .popup-facts {
+  width: 35%;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  text-align: left;
+}
+.page-template-template-eco-itinerary-a-b .itenerary-popup .highlight-popup-flex .popup-image,
+.page-template-template-eco-itinerary-a-b .iteneraries-popup .highlight-popup-flex .popup-image,
+.page-template-template-eco-itinerary-a-b .itenerary-popup-image .highlight-popup-flex .popup-image {
+  margin-bottom: 20px;
+  width: 55%;
+}
+.page-template-template-eco-itinerary-a-b .itenerary-popup .highlight-popup-flex .popup-image img,
+.page-template-template-eco-itinerary-a-b .iteneraries-popup .highlight-popup-flex .popup-image img,
+.page-template-template-eco-itinerary-a-b .itenerary-popup-image .highlight-popup-flex .popup-image img {
+  height: 250px;
 }
 .page-template-template-eco-itinerary-a-b .itenerary-popup .highlight-popup-flex div:last-child,
 .page-template-template-eco-itinerary-a-b .iteneraries-popup .highlight-popup-flex div:last-child,
@@ -3304,7 +3325,7 @@ p.entry-meta {
   border-color: #B9C8BE;
   border-top: 0;
   color: #44596e;
-  padding: 30px;
+  padding: 20px;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
@@ -3330,6 +3351,7 @@ p.entry-meta {
   display: none;
 }
 .page-template-template-eco-itinerary-a-b .ui-widget-overlay {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -3340,6 +3362,18 @@ p.entry-meta {
 }
 .page-template-template-eco-itinerary-a-b #itin-agenda-popup.itenerary-popup-image > img {
   width: 100%;
+}
+.page-template-template-eco-itinerary-a-b .popup-close-button {
+  background: white;
+  color: black;
+  position: absolute;
+  padding: 0px 5px;
+  right: 0;
+  top: 0;
+}
+.page-template-template-eco-itinerary-a-b .popup-close-button:hover {
+  background: #44596e;
+  color: white;
 }
 
 .page-template-template-eco-itinerary-single .site-inner {
@@ -3579,17 +3613,37 @@ p.entry-meta {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.page-template-template-eco-itinerary-single .itenerary-popup .highlight-popup-flex div,
-.page-template-template-eco-itinerary-single .iteneraries-popup .highlight-popup-flex div,
-.page-template-template-eco-itinerary-single .itenerary-popup-image .highlight-popup-flex div {
-  padding-bottom: 20px;
-  width: 40%;
+@media screen and (max-width: 800px) {
+  .page-template-template-eco-itinerary-single .itenerary-popup .highlight-popup-flex div,
+  .page-template-template-eco-itinerary-single .iteneraries-popup .highlight-popup-flex div,
+  .page-template-template-eco-itinerary-single .itenerary-popup-image .highlight-popup-flex div {
+    width: 100% !important;
+  }
 }
 .page-template-template-eco-itinerary-single .itenerary-popup .highlight-popup-flex div li,
 .page-template-template-eco-itinerary-single .iteneraries-popup .highlight-popup-flex div li,
 .page-template-template-eco-itinerary-single .itenerary-popup-image .highlight-popup-flex div li {
   font-size: 14px;
   list-style-type: disc;
+}
+.page-template-template-eco-itinerary-single .itenerary-popup .highlight-popup-flex .popup-facts,
+.page-template-template-eco-itinerary-single .iteneraries-popup .highlight-popup-flex .popup-facts,
+.page-template-template-eco-itinerary-single .itenerary-popup-image .highlight-popup-flex .popup-facts {
+  width: 35%;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  text-align: left;
+}
+.page-template-template-eco-itinerary-single .itenerary-popup .highlight-popup-flex .popup-image,
+.page-template-template-eco-itinerary-single .iteneraries-popup .highlight-popup-flex .popup-image,
+.page-template-template-eco-itinerary-single .itenerary-popup-image .highlight-popup-flex .popup-image {
+  margin-bottom: 20px;
+  width: 55%;
+}
+.page-template-template-eco-itinerary-single .itenerary-popup .highlight-popup-flex .popup-image img,
+.page-template-template-eco-itinerary-single .iteneraries-popup .highlight-popup-flex .popup-image img,
+.page-template-template-eco-itinerary-single .itenerary-popup-image .highlight-popup-flex .popup-image img {
+  height: 250px;
 }
 .page-template-template-eco-itinerary-single .itenerary-popup .highlight-popup-flex div:last-child,
 .page-template-template-eco-itinerary-single .iteneraries-popup .highlight-popup-flex div:last-child,
@@ -3605,7 +3659,8 @@ p.entry-meta {
   border-color: #B9C8BE;
   border-top: 0;
   color: #44596e;
-  padding: 30px;
+  padding: 20px;
+  text-decoration: none;
   text-transform: uppercase;
   width: 100%;
 }
@@ -3630,6 +3685,7 @@ p.entry-meta {
   display: none;
 }
 .page-template-template-eco-itinerary-single .ui-widget-overlay {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -3640,6 +3696,18 @@ p.entry-meta {
 }
 .page-template-template-eco-itinerary-single #itin-agenda-popup.itenerary-popup-image > img {
   width: 100%;
+}
+.page-template-template-eco-itinerary-single .popup-close-button {
+  background: white;
+  color: black;
+  position: absolute;
+  padding: 0px 5px;
+  right: 0;
+  top: 0;
+}
+.page-template-template-eco-itinerary-single .popup-close-button:hover {
+  background: #44596e;
+  color: white;
 }
 
 .page-template-template-eco-cuisine .site-inner {

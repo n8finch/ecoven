@@ -45,8 +45,8 @@ function eco_intinerary_single( $acf_fields ) {
 							<p class="itinerary-descritpion">
 								<?php echo $row['day_bullet_points']; ?>
 							</p>
-							<div id="<?php echo esc_html( $pop_id ); ?>" visibility="hidden" class="itenerary-popup-image" style="background: url('<?php echo esc_attr( $acf_fields['itinerary_popup_image'] );?>'); background-size: cover;">
-
+							<div id="<?php echo esc_html( $pop_id ); ?>" visibility="hidden" class="itenerary-popup-image">
+								<img src="<?php echo esc_attr( $acf_fields['itinerary_popup_image'] );?>" />
 							</div>
 						</div>
 					<?php
@@ -70,8 +70,11 @@ function eco_intinerary_single_highlights( $acf_fields ) {
 		<div class="book-now-box">
 			<a class="button" href="#" data-popup-id="view-dates-popup">VIEW DATES</a>
 		</div>
-		<div id="view-dates-popup" visibility="hidden" class="itenerary-popup-image" style="background: url('<?php echo esc_attr( $acf_fields['itinerary_cruise_route_popup'] );?>'); background-size: cover;">
 	</section>
+
+	<div id="view-dates-popup" visibility="hidden" class="itenerary-popup-image">
+		<img src="<?php echo esc_attr( $acf_fields['itinerary_cruise_route_popup'] );?>" />
+	</div>
 	<section id="itinerary-highlights">
 		<div class="itinerary-highlights">
 			<h2>HIGHLIGHTS</h2>
@@ -93,15 +96,14 @@ function eco_intinerary_single_highlights( $acf_fields ) {
 							<div id="<?php echo esc_html( $pop_id ); ?>" visibility="hidden" class="iteneraries-popup">
 								<h2><?php echo wp_kses_post( $row['image_subtitle'] ); ?></h2>
 								<div class="highlight-popup-flex">
-									<div><?php echo wp_kses_post( $row['popup_facts'] ); ?></div>
-									<div>
+									<div class="popup-facts"><?php echo wp_kses_post( $row['popup_facts'] ); ?></div>
+									<div class="popup-image">
 										<img src="<?php echo esc_attr( $row['popup_image'] );?>" />
 									</div>
-									<div>
-										<a class="highlight-popup-button" href="<?php echo esc_url( $row['learn_more_button_link'] );?>">LEARN MORE</a>
-									</div>
+									<a class="highlight-popup-button" href="<?php echo esc_url( $row['learn_more_button_link'] );?>">
+										<div>LEARN MORE</div>
+									</a>
 								</div>
-
 							</div>
 						</div>
 					<?php
@@ -175,6 +177,7 @@ function eco_intinerary_single_movie_faqs( $acf_fields ) {
 		</div>
 	</section>
 
+	<div class="ui-widget-overlay"></div>
 
 	<?php
 }

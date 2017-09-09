@@ -61,13 +61,13 @@ function eco_intinerary_a( $acf_fields ) {
 							<div id="<?php echo esc_html( $pop_id ); ?>" visibility="hidden" class="iteneraries-popup">
 								<h2><?php echo wp_kses_post( $row['image_subtitle'] ); ?></h2>
 								<div class="highlight-popup-flex">
-									<div><?php echo wp_kses_post( $row['popup_facts'] ); ?></div>
-									<div>
+									<div class="popup-facts"><?php echo wp_kses_post( $row['popup_facts'] ); ?></div>
+									<div class="popup-image">
 										<img src="<?php echo esc_attr( $row['popup_image'] );?>" />
 									</div>
-									<div>
-										<a class="highlight-popup-button" href="<?php echo esc_url( $row['learn_more_button_link'] );?>">LEARN MORE</a>
-									</div>
+									<a class="highlight-popup-button" href="<?php echo esc_url( $row['learn_more_button_link'] );?>">
+										<div>LEARN MORE</div>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -125,13 +125,13 @@ function eco_intinerary_b( $acf_fields ) {
 							<div id="<?php echo esc_html( $pop_id ); ?>" visibility="hidden" class="iteneraries-popup">
 								<h2><?php echo wp_kses_post( $row['image_subtitle'] ); ?></h2>
 								<div class="highlight-popup-flex">
-									<div><?php echo wp_kses_post( $row['popup_facts'] ); ?></div>
-									<div>
+									<div class="popup-facts"><?php echo wp_kses_post( $row['popup_facts'] ); ?></div>
+									<div class="popup-image">
 										<img src="<?php echo esc_attr( $row['popup_image'] );?>" />
 									</div>
-									<div>
-										<a class="highlight-popup-button" href="<?php echo esc_url( $row['learn_more_button_link'] );?>">LEARN MORE</a>
-									</div>
+									<a class="highlight-popup-button" href="<?php echo esc_url( $row['learn_more_button_link'] );?>">
+										<div>LEARN MORE</div>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -149,6 +149,7 @@ function eco_intinerary_b( $acf_fields ) {
 			</div>
 		</div>
 	</section>
+	<div class="ui-widget-overlay"></div>
 	<?php
 }
 

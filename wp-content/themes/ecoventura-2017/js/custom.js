@@ -93,28 +93,43 @@
 
 		do_eco_toggles();
 
-
+		$(window).on('scroll', function( e ) {
+				console.log(e);
+				console.log($(window.scrollY));
+		});
 		//Do Eco Popup
-
 		var doEcoPopUp = function( divID ) {
+
 			console.log(divID);
 
-			var width = 850;
-			var height = 'auto';
+			var winHeight = window.innerHeight;
+			var winWidth = window.innerWidth;
+			var scrollY = window.scrollY;
+			var popupWidth = winWidth*.9;
+			var centeredWidth = winWidth/2 - popupWidth/2;
 
-			if( '#itin-agenda-popup' == divID || '#view-dates-popup' ==divID ) {
-				width = 900;
-				height = 500;
+			console.log(scrollY);
+
+			if( winWidth > 1000 ) {
+				centeredWidth = winWidth/2 - 450  ;
 			}
 
+			$('.ui-widget-overlay').show();
+			$(divID).show().css({
+				'z-index': '10',
+				'width': popupWidth,
+				'max-width': '900px',
+				'height': 'auto',
+				'position': 'absolute',
+				'top': scrollY + 100,
+				'left': centeredWidth
+			}).append('<span class="popup-close-button">X</span>');
 
-			$( divID ).dialog({
-				modal: true,
-				closeOnEscape: true,
-				height: height,
-				width: width,
-				closeText: "X"
+			$('.popup-close-button').on('click', function(e) {
+				$(divID).hide();
+				$('.ui-widget-overlay').hide();
 			});
+
 		}
 
 		// Rates Page PopUp
