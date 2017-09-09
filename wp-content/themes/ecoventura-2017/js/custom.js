@@ -93,10 +93,6 @@
 
 		do_eco_toggles();
 
-		$(window).on('scroll', function( e ) {
-				console.log(e);
-				console.log($(window.scrollY));
-		});
 		//Do Eco Popup
 		var doEcoPopUp = function( divID ) {
 
