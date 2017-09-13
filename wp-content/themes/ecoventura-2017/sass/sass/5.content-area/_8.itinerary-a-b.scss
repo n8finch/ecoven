@@ -342,6 +342,7 @@
 	    height:100%;
 	    background-color: rgba(0,0,0,.7);
 	    text-align:center;
+		z-index: 1000;
 	}
 
 	.ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix.ui-draggable-handle {

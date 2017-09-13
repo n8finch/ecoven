@@ -216,12 +216,16 @@ function eco_rates_popup( $acf_fields ) {
 			$deck_id = strtolower( str_replace( ' ', '-', $row['deck'] ) );
 			?>
 			<div id="<?php echo esc_html( $deck_id ); ?>" visibility="hidden" class="rates-popup">
+				<h2><?php echo wp_kses_post( $row['deck'] ); ?></h2>
 				<img src="<?php echo esc_attr( $row['deck_image'] );?>" />
 				<p><?php echo esc_html( $row['deck_bullet_description'] ); ?></p>
 			</div>
 			<?php
 		}
 	}
+	?>
+	<div class="ui-widget-overlay"></div>
+	<?php
 
 }
 //* Run the Genesis loop
