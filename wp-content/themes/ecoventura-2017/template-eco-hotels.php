@@ -69,9 +69,6 @@ function eco_hotels_main( $acf_fields ) {
 						<div class="hotel-content">
 							<h2><?php echo esc_html( $row['name'] ); ?></h2>
 							<?php echo wp_kses_post( $row['description'] ); ?>
-							<a class="button" href="<?php echo esc_url( $row['button_link'] ); ?>">
-								<?php echo esc_html( $row['button_text'] ); ?>
-							</a>
 						</div>
 					</div>
 					<?php
