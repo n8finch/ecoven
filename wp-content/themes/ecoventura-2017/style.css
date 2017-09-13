@@ -2584,6 +2584,16 @@ p.entry-meta {
   display: none;
   position: relative;
 }
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.rate-table-tab-content .pinned .rate-table-row-0:hover {
+  background-color: #B9C8BE;
+  color: white;
+  cursor: pointer;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.rate-table-tab-content .pinned .rate-table-row-1:hover {
+  background-color: #B9C8BE;
+  color: white;
+  cursor: pointer;
+}
 .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.rate-table-tab-content.tab-open {
   display: block;
 }
@@ -3023,11 +3033,43 @@ p.entry-meta {
 .page-template-template-eco-rates .rates-popup {
   display: none;
 }
+.page-template-template-eco-rates .rates-popup {
+  border: 5px solid white;
+  background-color: #44596e;
+  color: white;
+  display: none;
+}
+.page-template-template-eco-rates .rates-popup h2 {
+  text-align: center;
+  width: 100%;
+}
+.page-template-template-eco-rates .rates-popup img {
+  width: 100%;
+}
+.page-template-template-eco-rates .rates-popup p {
+  padding: 20px 40px;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 900px) {
+  .page-template-template-eco-rates .rates-popup p {
+    padding: 20px 5%;
+  }
+}
+.page-template-template-eco-rates .rates-popup .rates-popup-button {
+  flex-grow: 2;
+  background-color: #B9C8BE;
+  border-color: #B9C8BE;
+  border-top: 0;
+  color: #44596e;
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
 .page-template-template-eco-rates .ui-dialog {
-  background-color: white;
+  background-color: transparent;
   border-radius: 5px;
   padding: 20px;
-  width: 50% !important;
   z-index: 5;
 }
 .page-template-template-eco-rates .ui-dialog button {
@@ -3035,13 +3077,17 @@ p.entry-meta {
   color: black;
   float: right;
   height: 20px;
-  padding: 10px 20px;
+  padding: 10px;
   line-height: 0;
+}
+.page-template-template-eco-rates .ui-dialog button .ui-button-text {
+  font-weight: bold;
 }
 .page-template-template-eco-rates .ui-dialog .no-close .ui-dialog-titlebar-close {
   display: none;
 }
 .page-template-template-eco-rates .ui-widget-overlay {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -3049,6 +3095,22 @@ p.entry-meta {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
+  z-index: 1000;
+}
+.page-template-template-eco-rates #itin-agenda-popup.itenerary-popup-image > img {
+  width: 100%;
+}
+.page-template-template-eco-rates .popup-close-button {
+  background: white;
+  color: black;
+  position: absolute;
+  padding: 0px 5px;
+  right: 0;
+  top: 0;
+}
+.page-template-template-eco-rates .popup-close-button:hover {
+  background: #44596e;
+  color: white;
 }
 
 .page-template-template-eco-itinerary-a-b .site-inner {
@@ -3359,6 +3421,7 @@ p.entry-meta {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
+  z-index: 1000;
 }
 .page-template-template-eco-itinerary-a-b #itin-agenda-popup.itenerary-popup-image > img {
   width: 100%;
@@ -3693,6 +3756,7 @@ p.entry-meta {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
+  z-index: 1000;
 }
 .page-template-template-eco-itinerary-single #itin-agenda-popup.itenerary-popup-image > img {
   width: 100%;

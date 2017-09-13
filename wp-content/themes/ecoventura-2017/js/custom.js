@@ -112,7 +112,7 @@
 
 			$('.ui-widget-overlay').show();
 			$(divID).show().css({
-				'z-index': '10',
+				'z-index': '1001',
 				'width': popupWidth,
 				'max-width': '900px',
 				'height': 'auto',
