@@ -3040,8 +3040,14 @@ p.entry-meta {
   display: none;
 }
 .page-template-template-eco-rates .rates-popup h2 {
+  padding-left: 20px;
   text-align: center;
   width: 100%;
+}
+@media screen and (max-width: 900px) {
+  .page-template-template-eco-rates .rates-popup h2 {
+    padding: 20px 5%;
+  }
 }
 .page-template-template-eco-rates .rates-popup img {
   width: 100%;
