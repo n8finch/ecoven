@@ -1,0 +1,60 @@
+/* ## Entries
+--------------------------------------------- */
+
+body.page,
+body.single,
+body.archive {
+
+	.site-inner {
+
+		@media only screen and (max-width: 860px) {
+		    padding: 0;
+		}
+
+		background-color: white;
+		max-width: 100%;
+		padding-top: 0;
+	}
+
+	.content-header {
+		background-color: $color__medium_blue_gray;
+		color: white;
+		padding: 30px;
+		width: 100%;
+
+		h2 {
+			margin: auto;
+			max-width: 1100px;
+		}
+	}
+}
+
+.entry {
+  background-color: #fff;
+  margin-bottom: 40px;
+  padding: 70px 80px;
+}
+
+.entry-content ol,
+.entry-content ul {
+  margin-bottom: 28px;
+  margin-left: 40px;
+}
+
+.entry-content ol > li {
+  list-style-type: decimal;
+}
+
+.entry-content ul > li {
+  list-style-type: disc;
+}
+
+.entry-content ol ol,
+.entry-content ul ul {
+  margin-bottom: 0;
+}
+
+.entry-content code {
+  background-color: #333;
+  color: #eee;
+}

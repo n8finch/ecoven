@@ -1,0 +1,755 @@
+.page-template-template-eco-rates {
+
+	// $color__dark_navy: #152838;
+	// $color__medium_blue_gray: #44596e;
+	// $color__light_blue_gray: #647a8c;
+
+	.site-inner {
+
+		@media only screen and (max-width: 860px) {
+		    padding: 0;
+		}
+
+		background-color: white;
+		max-width: 100%;
+		padding-top: 0;
+	}
+
+	.rates-dates {
+
+		background-color: white;
+
+		.rate-dates-header {
+			background-color: $color__medium_blue_gray;
+			color: white;
+			padding: 30px;
+			width: 100%;
+
+			h2 {
+				margin: auto;
+				max-width: 1100px;
+			}
+		}
+
+		.rate-dates-table-wrap {
+
+			@media only screen and (max-width: 1150px) {
+			    padding: 0 5%;
+			}
+
+			margin: 30px auto 0;
+			max-width: 1100px;
+			overflow: hidden;
+			position: relative;
+
+			ul {
+				position: relative;
+			}
+
+			li.rate-table-tabs {
+				background-color: white;
+				border: 1px solid;
+				border-bottom-width: 0;
+				border-color: $color__dark_navy;
+				border-bottom: none;
+				border-right: none;
+				color: $color__dark_navy;
+				cursor: pointer;
+				font-family: 'Raleway', sans-serif;
+				font-weight: 600;
+				float: left;
+				list-style: none;
+				padding: 16px;
+				position: relative;
+				margin: 0;
+				text-align: center;
+				top: 0;
+				white-space: nowrap;
+				width: 171px;
+
+
+
+				a {
+					color: $color__dark_navy;
+					text-decoration: none;
+				}
+			}
+
+			li.rate-table-tabs:first-child {
+				min-width: 215px;
+				width: 25%;
+			}
+			li.rate-table-tabs:last-child {
+				border-right: 1px solid;
+				// width: 171px;
+			}
+
+			div.rate-table-tab-content {
+				clear: both;
+				display: none;
+				position: relative;
+
+				.pinned .rate-table-row-0:hover {
+					background-color: $eco_green;
+					color: white;
+					cursor: pointer;
+				}
+
+				.pinned .rate-table-row-1:hover {
+					background-color: $eco_green;
+					color: white;
+					cursor: pointer;
+				}
+			}
+
+			div.rate-table-tab-content.tab-open {
+				display: block;
+			}
+
+
+			table.rates-table {
+				font-size: 11px;
+				font-size: 1.1rem;
+
+				th, td {
+					border: 1px solid #333333;
+					text-align: center;
+
+				}
+
+				th {
+					background-color: $eco_green;
+					color: white;
+					padding: 7px 0;
+				}
+
+				.th-dates {
+					width: 166px;
+				}
+				.th-dots {
+					width: 85px;
+				}
+
+				.th-notes {
+					width: 130px;
+				}
+
+				tr.rate-table-row-0 {
+					background-color: white;
+				}
+
+				tr.rate-table-row-1 {
+					background-color: #eeeeee;
+				}
+
+				.td-rate-decks {
+					height: 45px;
+				}
+
+				.td-dot {
+					font-size: 100px;
+					font-size: 10rem;
+    				line-height: 0.2;
+				}
+
+				.td-promotion {
+					border-right: none;
+				}
+
+				.td-inquire {
+					border-left: none;
+				}
+
+				.td-notes {
+					height: 50px;
+					padding: 0;
+					width: 130px;
+				}
+
+				button {
+					font-size: 12px;
+					font-size: 1.2rem;
+					padding: 3px 5px;
+					width: 140px;
+				}
+			}
+
+			div.pinned {
+
+				@media screen and (max-width: 860px) {
+					left: auto;
+					top: -2px;
+					width: 150px;
+				}
+
+				position: absolute;
+				left: 0;
+				min-width: 150px;
+				width: 25%;
+
+				table {
+					// width: 166px;
+				}
+
+				th {
+					@media screen and (max-width: 860px) {
+						min-width: 150px;
+					}
+				}
+
+				td {
+					line-height: 32px;
+					line-height: 3.2rem;
+				}
+			}
+
+			div.scroll {
+				@media screen and (max-width: 1115px) {
+					overflow: scroll;
+					overflow-y: hidden;
+				}
+
+
+				@media screen and (max-width: 860px) {
+					margin-left: 150px;
+					top: -2px;
+				}
+
+				@media screen and (max-width: 615px) {
+					margin-left: 150px;
+				}
+
+				position: relative;
+				left: -1px;
+				margin-left: 25%;
+				max-width: calc( 100% - 25% );
+				top: 0;
+				width: 100%;
+
+				table {
+					@media screen and (max-width: 1115px) {
+						width: 75%;
+					}
+
+					min-width: 600px;
+				}
+
+				tr {
+					min-width: 600px;
+				}
+
+				th {
+					width: 150px;
+				}
+
+				td {
+					line-height: 32px;
+					line-height: 3.2rem;
+				}
+			}
+		}
+
+		.rate-view-iteneraries {
+
+			@media screen and (max-width: 1150px) {
+				flex-direction: column;
+				padding: 5% 5% 0;
+			}
+
+			clear: both;
+		    display: flex;
+		    max-width: 1100px;
+		    margin: auto;
+			margin-bottom: 60px;
+		    justify-content: space-around;
+
+			a {
+				width: 100%;
+	    		text-align: center;
+				text-decoration: none;
+			}
+
+			div {
+				color: white;
+				font-size: 22px;
+				font-size: 2.2rem;
+				margin-bottom: 20px;
+				padding: 11px 10px;
+			}
+
+			#view-itens {
+
+				@media screen and (max-width: 920px) {
+				    margin-bottom: 0;
+					width: 100%;
+				}
+
+				background-color: $color__dark_navy;
+				float: left;
+				width: 90%
+			}
+
+			#iten-a {
+
+				@media screen and (max-width: 920px) {
+					width: 100%;
+				}
+
+				background-color: $color__medium_blue_gray;
+				float: left;
+				width: 90%
+			}
+
+			#iten-b {
+
+				@media screen and (max-width: 920px) {
+					width: 100%;
+				}
+
+				background-color: $color__light_blue_gray;
+			    width: 100%;
+			}
+
+
+			#arrow-right {
+
+				@media screen and (max-width: 920px) {
+					border-left: 45vw solid transparent;
+				    border-right: 45vw solid transparent;
+				    border-top: 30px solid #152838;
+					margin-bottom: 0;
+				    margin-top: -1px;
+				}
+
+				border-top: 28px solid transparent;
+			    border-bottom: 29px solid transparent;
+			    border-left: 30px solid $color__dark_navy;
+				float: left;
+			    height: 0;
+			    margin-left: 0px;
+			    padding: 0;
+			    width: 0;
+			}
+
+			#arrow-from-right {
+
+				@media screen and (max-width: 920px) {
+					display: none;
+				}
+
+				border-top: 28px solid $color__medium_blue_gray;
+			    border-bottom: 29px solid $color__medium_blue_gray;
+				border-left: 29px solid transparent;
+				float: left;
+				height: 0;
+			    padding: 0;
+			    width: 0;
+			}
+		}
+	}
+
+	.rates-expedition,
+	.rates-sub-content,
+	.rates-charter-content {
+		background-color: white;
+	}
+
+	.rate-title-div {
+		background-color: $eco_green;
+		color: white;
+		padding-bottom: 50px;
+		padding-top: 30px;
+		text-align: center;
+
+		h2 {
+			font-size: 3.5rem;
+		}
+	}
+
+	.book-now-box {
+		top: -30px;
+	    position: relative;
+	    text-align: center;
+
+		button:hover {
+			background-color: #eeeeee;
+		}
+	}
+
+	.rate-expedition-content-wrap {
+
+		@media only screen and (max-width: 1150px) {
+		    padding: 5% 5% 0;
+		}
+
+		margin: 0 auto;
+		max-width: 1100px;
+
+		h2 {
+			font-weight: 400;
+		}
+
+		h3 {
+			font-size: 35px;
+			font-size: 3.5rem;
+		}
+
+		h5 {
+			font-family: 'Roboto', sans-serif;
+			font-weight: normal;
+			letter-spacing: 1px;
+		}
+
+	}
+
+	.rate-main-image {
+		background-size: cover;
+		background-position-y: 50vw;
+		min-height: 40vw;
+	}
+
+	.rates-sub-content {
+
+		.rate-sub-content-wrap {
+
+			@media only screen and (max-width: 1150px) {
+			    padding: 5% 5% 0;
+			}
+
+			margin: 0 auto;
+			max-width: 1100px;
+			padding: 50px 0;
+
+			h2 {
+				font-weight: 400;
+			}
+
+			h3 {
+				font-size: 35px;
+				font-size: 3.5rem;
+			}
+
+			h5 {
+				font-family: 'Roboto', sans-serif;
+				font-weight: normal;
+				letter-spacing: 1px;
+			}
+
+			.book-now-box {
+				top: 0;
+			}
+		}
+
+
+
+	}
+
+	.rates-charter-content {
+
+		position: relative;
+
+		.rates-charter-content-wrap {
+
+			@media only screen and (max-width: 1150px) {
+			    padding: 5% 5% 0;
+			}
+
+			margin: 0 auto;
+			max-width: 1100px;
+			padding-bottom: 50px;
+			position: relative;
+
+			.table-container {
+				@media screen and (max-width: 860px) {
+					padding-top: 2px;
+				}
+
+				overflow: auto;
+				position: relative;
+			}
+
+			table.charter-rates-table {
+				font-size: 11px;
+				font-size: 1.1rem;
+
+				th, td {
+					border: 1px solid #333333;
+					text-align: center;
+
+				}
+
+				th {
+					background-color: $eco_green;
+					color: white;
+					min-width: 220px;
+					padding: 7px 0;
+					width: 33%;
+				}
+
+				.th-dates {
+					width: 166px;
+				}
+				.th-dots {
+					width: 85px;
+				}
+
+				.th-notes {
+					width: 130px;
+				}
+
+				tr.rate-table-row-0 {
+					background-color: white;
+				}
+
+				tr.rate-table-row-1 {
+					background-color: #eeeeee;
+				}
+
+				.td-rate-decks {
+					height: 45px;
+				}
+
+				.td-dot {
+					font-size: 100px;
+					font-size: 10rem;
+					line-height: 0.2;
+				}
+
+				.td-promotion {
+					border-right: none;
+				}
+
+				.td-inquire {
+					border-left: none;
+				}
+
+				.td-notes {
+					height: 50px;
+					padding: 0;
+					width: 130px;
+				}
+
+				button {
+					font-size: 12px;
+					font-size: 1.2rem;
+					padding: 3px 5px;
+					width: 140px;
+				}
+			}
+
+			div.pinned {
+
+				@media screen and (max-width: 860px) {
+					left: auto;
+					top: 0;
+					width: 150px;
+				}
+
+				position: absolute;
+				left: 0;
+				min-width: 150px;
+				width: 25%;
+
+				table {
+					// width: 166px;
+				}
+
+				th {
+					@media screen and (max-width: 860px) {
+						min-width: 150px;
+					}
+				}
+
+				td {
+					line-height: 32px;
+					line-height: 3.2rem;
+				}
+			}
+
+			div.scroll {
+				@media screen and (max-width: 1115px) {
+				}
+
+
+				@media screen and (max-width: 860px) {
+					margin-left: 150px;
+					top: -2px;
+				}
+
+				@media screen and (max-width: 615px) {
+					margin-left: 150px;
+				}
+
+				position: relative;
+				left: -1px;
+				margin-left: 25%;
+				max-width: calc( 100% - 25% );
+				top: 0;
+				width: 100%;
+
+				table {
+					@media screen and (max-width: 1115px) {
+						// width: 75%;
+					}
+				}
+
+				td {
+					line-height: 32px;
+					line-height: 3.2rem;
+				}
+			}
+
+			h2 {
+				font-weight: 400;
+				margin-bottom: 30px;
+				position: relative;
+			}
+
+			h3 {
+				font-size: 35px;
+				font-size: 3.5rem;
+			}
+
+			h5 {
+				font-family: 'Roboto', sans-serif;
+				font-weight: normal;
+				letter-spacing: 1px;
+			}
+
+			.rate-charter-terms {
+				h2 {
+					font-weight: 400;
+					margin-bottom: 30px;
+					position: relative;
+				}
+
+				h3 {
+					font-size: 35px;
+					font-size: 3.5rem;
+				}
+
+				h5 {
+					font-family: 'Roboto', sans-serif;
+					font-weight: normal;
+					letter-spacing: 1px;
+				}
+			}
+
+		}
+
+	}
+
+ 	.rates-popup {
+		display: none;
+	}
+
+
+
+
+	.rates-popup {
+		border: 5px solid white;
+		background-color: $color__medium_blue_gray;
+		color: white;
+		display: none;
+
+		h2 {
+			@media screen and (max-width: 900px) {
+				padding: 20px 5%;
+			}
+
+			padding-left: 20px;
+			text-align: center;
+			width: 100%;
+		}
+
+		img {
+			width: 100%
+		}
+
+		p {
+			@media screen and (max-width: 900px) {
+				padding: 20px 5%;
+			}
+
+			padding: 20px 40px;
+			margin-bottom: 0;
+		}
+
+		.rates-popup-button {
+			flex-grow: 2;
+			background-color: $eco_green;
+			border-color: $eco_green;
+			border-top: 0;
+			color: $color__medium_blue_gray;
+			padding: 20px;
+			text-decoration: none;
+			text-transform: uppercase;
+			width: 100%;
+		}
+
+
+
+
+
+	}
+
+	.ui-dialog {
+		background-color: transparent;
+		border-radius: 5px;
+		padding: 20px;
+		z-index: 5;
+
+		button {
+			background-color: white;
+			color: black;
+			float: right;
+		    height: 20px;
+		    padding: 10px;
+		    line-height: 0;
+
+			.ui-button-text {
+				font-weight: bold;
+			}
+		}
+
+		.no-close .ui-dialog-titlebar-close {
+		  display: none;
+		}
+	}
+
+	.ui-widget-overlay {
+		display: none;
+	    position:fixed;
+	    top:0;
+	    left:0;
+	    width:100%;
+	    height:100%;
+	    background-color: rgba(0,0,0,.7);
+	    text-align:center;
+		z-index: 1000;
+	}
+
+	.ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix.ui-draggable-handle {
+		// display: none;
+	}
+
+	#itin-agenda-popup.itenerary-popup-image > img {
+		width: 100%;
+	}
+
+	.popup-close-button {
+		background: white;
+		color: black;
+		position: absolute;
+	    padding: 0px 5px;
+	    right: 0;
+	    top: 0;
+	}
+
+	.popup-close-button:hover {
+		background: $color__medium_blue_gray;
+		color: white;
+	}
+
+
+}

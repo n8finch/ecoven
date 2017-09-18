@@ -1,0 +1,234 @@
+.page-template-template-eco-cuisine {
+
+	// $color__dark_navy: #152838;
+	// $color__medium_blue_gray: #44596e;
+	// $color__light_blue_gray: #647a8c;
+
+	.site-inner {
+
+		@media only screen and (max-width: 860px) {
+		    padding: 0;
+		}
+
+		background-color: white;
+		max-width: 100%;
+		padding-top: 0;
+	}
+
+	.cuisine-header {
+		background-color: $color__medium_blue_gray;
+		color: white;
+		padding: 30px;
+		width: 100%;
+
+		h2 {
+			margin: auto;
+			max-width: 1100px;
+		}
+	}
+
+	.soliloquy-controls-direction {
+		display: none;
+	}
+
+	.cuisine-content {
+
+		@media only screen and (max-width: 1150px) {
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+
+		margin: 0 auto;
+		max-width: 1100px;
+		padding: 60px 0;
+
+		h2 {
+			font-weight: 400;
+		}
+
+		.cuisine-our-menus {
+
+			.menu-tabs {
+				@media screen and (max-width: 768px) {
+					display: block;
+				}
+
+				display: flex;
+				justify-content: flex-start;
+
+				.menu-tab {
+					@media screen and (max-width: 768px) {
+						border-left: 1px solid black;
+					}
+					background-color: #eeeeee;
+					border: 1px solid black;
+					border-left: 0;
+					padding: 20px 40px;
+				}
+				.menu-tab:first-child {
+					background-color: #ffffff;
+					border: 1px solid black;
+				}
+
+				.menu-tab:hover {
+					background-color: #ffffff !important;
+				}
+
+			}
+
+			.menu-wrapper {
+				border: 1px solid black;
+				display: none;
+				padding: 20px 40px;
+			}
+
+			#main_menu_day_and_menu {
+				display: block;
+			}
+
+			.menu-days-wrapper {
+
+				margin: 20px 0;
+
+				span {
+					border-left: 1px solid black;
+					padding: 0 20px;
+				}
+
+				span:first-child {
+					border-left: 0;
+					color: #CFAA42;
+					padding-left: 0;
+				}
+
+			}
+
+			.menu-days-wrapper span:hover {
+				color: #CFAA42 !important;
+			}
+
+			.menu-items-wrapper {
+				display: none;
+				flex-wrap: wrap;
+				justify-content: space-between;
+
+				div {
+
+					@media screen and (max-width: 768px) {
+						width: 100%;
+					}
+					width: 33%;
+				}
+			}
+
+			.menu-items-wrapper.menu-1 {
+				display: flex;
+			}
+
+		}
+	}
+
+	.our-cookbook {
+
+		background-color: #eeeeee;
+		margin: 0 auto;
+		padding: 60px 0;
+
+		.cookbook-wrapper {
+
+			@media only screen and (max-width: 1150px) {
+				display: block;
+				padding-left: 5%;
+				padding-right: 5%;
+			}
+
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin: 0 auto;
+			max-width: 1100px;
+
+			.cookbook-image {
+				width: 55%;
+			}
+
+			.cookbook-content {
+				width: 35%;
+			}
+
+			.cookbook-image,
+			.cookbook-content {
+				@media only screen and (max-width: 1150px) {
+					margin-bottom: 20px;
+					width: 100%;
+				}
+			}
+		}
+
+		h2 {
+			font-weight: 400;
+		}
+	}
+
+	.our-recipes {
+
+		@media only screen and (max-width: 1150px) {
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+
+		margin: 0 auto;
+		max-width: 1100px;
+		padding-top: 60px;
+
+		h2 {
+			font-weight: 400;
+			margin-bottom: 20px;
+		}
+
+		.recipes-wrapper {
+
+			@media only screen and (max-width: 860px) {
+				display: block;
+			}
+
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			.recipe-links {
+				width: 25%;
+
+				span {
+					width: 100%;
+				}
+			}
+
+			.recipe-content {
+				border-left: 1px solid #000000;
+				padding-left: 5%;
+				width: 75%;
+
+				.recipe-single {
+					display: none;
+				}
+
+				.recipe-single:first-child {
+					display: block;
+				}
+			}
+
+			.recipe-links,
+			.recipe-content {
+				@media only screen and (max-width: 860px) {
+					margin-bottom: 20px;
+					width: 100%;
+				}
+			}
+
+		}
+
+
+	}
+
+}
