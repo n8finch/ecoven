@@ -110,7 +110,6 @@ function child_theme_setup() {
 	// Image sizes
 	add_image_size( 'media-thumb',            52             );
 	add_image_size( 'media-thumb-mini',       22             );
-	add_image_size( 'footer-logo',           100,   54       );
 	add_image_size( 'reason',                350,  233, true );
 	add_image_size( 'gallery-archive-thumb', 345,  230, true );
 	add_image_size( 'book-cover',            200,  300, true );

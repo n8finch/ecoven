@@ -105,7 +105,7 @@ body > div {
 body {
   background-color: #eee;
   color: #333;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Arial', sans-serif;
   font-size: 20px;
   font-size: 2rem;
   -webkit-font-smoothing: antialiased;
@@ -687,6 +687,7 @@ input[type="search"]::-webkit-search-results-button {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  font-family: 'Raleway', sans-serif;
   line-height: 2;
   margin-bottom: 40px;
   width: 100%;
@@ -2221,6 +2222,8 @@ p.entry-meta {
   color: #152838;
   cursor: pointer;
   float: left;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
   list-style: none;
   padding: 16px;
   position: relative;
@@ -2280,6 +2283,7 @@ p.entry-meta {
   height: 50px;
 }
 .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap table.departures-table .td-dot {
+  font-family: sans-serif;
   font-size: 100px;
   font-size: 10rem;
   line-height: 0.2;
@@ -2558,6 +2562,8 @@ p.entry-meta {
   border-right: none;
   color: #152838;
   cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
   float: left;
   list-style: none;
   padding: 16px;
