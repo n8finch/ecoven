@@ -34,10 +34,21 @@ function eco_homepage_above_fold($acf_fields) {
 
 		<div class="homepage-title-div">
 			<h2><?php echo esc_html( $acf_fields["above_the_fold_heading"] ); ?></h2>
+
+			<!-- Add Plan Your Trip box -->
+			<div class="plan-your-trip-box">
+				<a class="button" id="booking-dropdown-trigger" href="#">PLAN YOUR TRIP</a>
+			</div>
 		</div>
 
-		<!-- Add Plan Your Trip box -->
-		<div class="plan-your-trip-box"><a class="button" href="#">PLAN YOUR TRIP</a></div>
+
+		<div class="homepage-booking-form">
+			<?php
+			if( function_exists('gravity_form') && $acf_fields['booking_form_id'] ) {
+				gravity_form( $acf_fields['booking_form_id'], false, false, false, '', false );
+			}
+			?>
+		</div>
 
 	</section>
 	<?php

@@ -2011,20 +2011,41 @@ p.entry-meta {
 .home.page .homepage-title-div {
   background-color: #B9C8BE;
   color: white;
-  padding-bottom: 50px;
   padding-top: 30px;
   text-align: center;
 }
 .home.page .homepage-title-div h2 {
   font-size: 3.5rem;
+  margin-bottom: 0;
 }
-.home.page .plan-your-trip-box {
-  top: -30px;
+.home.page .homepage-title-div .plan-your-trip-box {
+  bottom: -30px;
   position: relative;
   text-align: center;
 }
-.home.page .plan-your-trip-box button:hover {
+.home.page .homepage-title-div .plan-your-trip-box button:hover {
   background-color: #eeeeee;
+}
+.home.page .homepage-booking-form {
+  background-color: #152838;
+  margin-top: -20px;
+  padding: 60px 0;
+}
+.home.page .homepage-booking-form .gform_wrapper {
+  margin: auto;
+  max-width: 1100px;
+}
+@media screen and (max-width: 1150px) {
+  .home.page .homepage-booking-form .gform_wrapper {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+.home.page .homepage-booking-form label {
+  color: white;
+}
+.home.page .homepage-booking-form label .gfield_required {
+  display: none;
 }
 .home.page .homepage-page-image-boxes {
   display: flex;

@@ -28,7 +28,7 @@
             "label": "Above the fold heading",
             "name": "above_the_fold_heading",
             "type": "text",
-            "instructions": "SOUTHERN\/CENTRAL ROUTE\r\n\r\n7 nights of pure enjoyment. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum arcu eget velit auctor consequat. Maecenas ultrices, felis vitae varius interdum, lectus orci accumsan odio, quis egestas sapien ex sed leo. Etiam rutrum mi et velit ultricies, eu cursus nisi hendrerit. Aliquam quis odio nisi. Fusce mattis dolor a porta porta.",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -41,6 +41,27 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_59c022a68f75c",
+            "label": "Booking Form ID",
+            "name": "booking_form_id",
+            "type": "number",
+            "instructions": "Enter the number only of the Gravity Form you want to use.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": 999,
+            "step": ""
         },
         {
             "key": "field_594bdf95769c7",
@@ -885,5 +906,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1504310662
+    "modified": 1505764103
 }
