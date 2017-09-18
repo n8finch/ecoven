@@ -111,7 +111,7 @@
                     "key": "field_59a9dcad11e07",
                     "label": "Day Bullet Points",
                     "name": "day_bullet_points",
-                    "type": "textarea",
+                    "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -121,10 +121,10 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "placeholder": "",
-                    "maxlength": "",
-                    "rows": 8,
-                    "new_lines": "br"
+                    "tabs": "all",
+                    "toolbar": "basic",
+                    "media_upload": 1,
+                    "delay": 0
                 }
             ]
         },
@@ -519,5 +519,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1505703127
+    "modified": 1505705904
 }
