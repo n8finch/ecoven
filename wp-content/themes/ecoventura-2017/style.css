@@ -2206,7 +2206,7 @@ p.entry-meta {
 }
 @media screen and (max-width: 1150px) {
   .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap {
-    margin: 0 5%;
+    margin: 30px 5% 0;
   }
 }
 .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap ul {
@@ -3368,6 +3368,7 @@ p.entry-meta {
 .page-template-template-eco-itinerary-a-b .itenerary-popup .highlight-popup-flex .popup-facts,
 .page-template-template-eco-itinerary-a-b .iteneraries-popup .highlight-popup-flex .popup-facts,
 .page-template-template-eco-itinerary-a-b .itenerary-popup-image .highlight-popup-flex .popup-facts {
+  flex: 1;
   width: 35%;
   margin-bottom: 20px;
   margin-left: 30px;
@@ -3376,6 +3377,7 @@ p.entry-meta {
 .page-template-template-eco-itinerary-a-b .itenerary-popup .highlight-popup-flex .popup-image,
 .page-template-template-eco-itinerary-a-b .iteneraries-popup .highlight-popup-flex .popup-image,
 .page-template-template-eco-itinerary-a-b .itenerary-popup-image .highlight-popup-flex .popup-image {
+  flex: 1;
   margin-bottom: 20px;
   width: 55%;
 }
@@ -3703,14 +3705,16 @@ p.entry-meta {
 .page-template-template-eco-itinerary-single .itenerary-popup .highlight-popup-flex .popup-facts,
 .page-template-template-eco-itinerary-single .iteneraries-popup .highlight-popup-flex .popup-facts,
 .page-template-template-eco-itinerary-single .itenerary-popup-image .highlight-popup-flex .popup-facts {
-  width: 35%;
+  flex: 1;
   margin-bottom: 20px;
   margin-left: 30px;
   text-align: left;
+  width: 35%;
 }
 .page-template-template-eco-itinerary-single .itenerary-popup .highlight-popup-flex .popup-image,
 .page-template-template-eco-itinerary-single .iteneraries-popup .highlight-popup-flex .popup-image,
 .page-template-template-eco-itinerary-single .itenerary-popup-image .highlight-popup-flex .popup-image {
+  flex: 1;
   margin-bottom: 20px;
   width: 55%;
 }

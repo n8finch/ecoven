@@ -63,11 +63,13 @@ function eco_intinerary_a( $acf_fields ) {
 								<div class="highlight-popup-flex">
 									<div class="popup-facts"><?php echo wp_kses_post( $row['popup_facts'] ); ?></div>
 									<div class="popup-image">
-										<img src="<?php echo esc_attr( $row['popup_image'] );?>" />
+										<img src="<?php echo esc_attr( $row['popup_image']['sizes']['reason'] );?>" />
 									</div>
+									<?php if( $row['learn_more_button_link'] ) { ?>
 									<a class="highlight-popup-button" href="<?php echo esc_url( $row['learn_more_button_link'] );?>">
 										<div>LEARN MORE</div>
 									</a>
+									<?php } //end if ?>
 								</div>
 							</div>
 						</div>
@@ -127,7 +129,7 @@ function eco_intinerary_b( $acf_fields ) {
 								<div class="highlight-popup-flex">
 									<div class="popup-facts"><?php echo wp_kses_post( $row['popup_facts'] ); ?></div>
 									<div class="popup-image">
-										<img src="<?php echo esc_attr( $row['popup_image'] );?>" />
+										<img src="<?php echo esc_attr( $row['popup_image']['sizes']['reason'] );?>" />
 									</div>
 									<a class="highlight-popup-button" href="<?php echo esc_url( $row['learn_more_button_link'] );?>">
 										<div>LEARN MORE</div>
