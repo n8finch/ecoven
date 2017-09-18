@@ -2899,7 +2899,13 @@ p.entry-meta {
   }
 }
 .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap .table-container {
+  overflow: auto;
   position: relative;
+}
+@media screen and (max-width: 860px) {
+  .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap .table-container {
+    padding-top: 2px;
+  }
 }
 .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap table.charter-rates-table {
   font-size: 11px;
@@ -2965,7 +2971,7 @@ p.entry-meta {
 @media screen and (max-width: 860px) {
   .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap div.pinned {
     left: auto;
-    top: -2px;
+    top: 0;
     width: 150px;
   }
 }
@@ -2986,16 +2992,9 @@ p.entry-meta {
   top: 0;
   width: 100%;
 }
-@media screen and (max-width: 1115px) {
-  .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap div.scroll {
-    overflow: scroll;
-    overflow-y: hidden;
-  }
-}
 @media screen and (max-width: 860px) {
   .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap div.scroll {
     margin-left: 150px;
-    max-width: calc( 100% - 40% );
     top: -2px;
   }
 }
