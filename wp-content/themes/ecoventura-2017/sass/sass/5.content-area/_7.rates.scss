@@ -43,7 +43,12 @@
 			position: relative;
 
 			ul {
+				margin-left: 0;
 				position: relative;
+			}
+
+			li:before {
+				content: '';
 			}
 
 			li.rate-table-tabs {
