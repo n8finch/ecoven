@@ -85,15 +85,7 @@
             "type": "tab",
             "instructions": "",
             "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "",
-                        "operator": "==",
-                        "value": ""
-                    }
-                ]
-            ],
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "image_subtitle",
                 "class": "",
@@ -138,25 +130,6 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_59a87ff8732ed",
-                    "label": "Cruise Dates (copy)",
-                    "name": "Popup Image_copy",
-                    "type": "text",
-                    "instructions": "",
-                    "required": "popup_image",
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "popup_facts",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "url",
                     "maxlength": ""
                 },
                 {
@@ -484,5 +457,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1504215055
+    "modified": 1505373366
 }

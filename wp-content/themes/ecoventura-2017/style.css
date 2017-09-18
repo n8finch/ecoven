@@ -105,7 +105,7 @@ body > div {
 body {
   background-color: #eee;
   color: #333;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Arial', sans-serif;
   font-size: 20px;
   font-size: 2rem;
   -webkit-font-smoothing: antialiased;
@@ -687,6 +687,7 @@ input[type="search"]::-webkit-search-results-button {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  font-family: 'Raleway', sans-serif;
   line-height: 2;
   margin-bottom: 40px;
   width: 100%;
@@ -2205,7 +2206,7 @@ p.entry-meta {
 }
 @media screen and (max-width: 1150px) {
   .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap {
-    margin: 0 5%;
+    margin: 30px 5% 0;
   }
 }
 .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap ul {
@@ -2221,6 +2222,8 @@ p.entry-meta {
   color: #152838;
   cursor: pointer;
   float: left;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
   list-style: none;
   padding: 16px;
   position: relative;
@@ -2280,6 +2283,7 @@ p.entry-meta {
   height: 50px;
 }
 .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap table.departures-table .td-dot {
+  font-family: sans-serif;
   font-size: 100px;
   font-size: 10rem;
   line-height: 0.2;
@@ -2558,6 +2562,8 @@ p.entry-meta {
   border-right: none;
   color: #152838;
   cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
   float: left;
   list-style: none;
   padding: 16px;
@@ -2893,7 +2899,13 @@ p.entry-meta {
   }
 }
 .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap .table-container {
+  overflow: auto;
   position: relative;
+}
+@media screen and (max-width: 860px) {
+  .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap .table-container {
+    padding-top: 2px;
+  }
 }
 .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap table.charter-rates-table {
   font-size: 11px;
@@ -2959,7 +2971,7 @@ p.entry-meta {
 @media screen and (max-width: 860px) {
   .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap div.pinned {
     left: auto;
-    top: -2px;
+    top: 0;
     width: 150px;
   }
 }
@@ -2980,16 +2992,9 @@ p.entry-meta {
   top: 0;
   width: 100%;
 }
-@media screen and (max-width: 1115px) {
-  .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap div.scroll {
-    overflow: scroll;
-    overflow-y: hidden;
-  }
-}
 @media screen and (max-width: 860px) {
   .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap div.scroll {
     margin-left: 150px;
-    max-width: calc( 100% - 40% );
     top: -2px;
   }
 }
@@ -3363,6 +3368,7 @@ p.entry-meta {
 .page-template-template-eco-itinerary-a-b .itenerary-popup .highlight-popup-flex .popup-facts,
 .page-template-template-eco-itinerary-a-b .iteneraries-popup .highlight-popup-flex .popup-facts,
 .page-template-template-eco-itinerary-a-b .itenerary-popup-image .highlight-popup-flex .popup-facts {
+  flex: 1;
   width: 35%;
   margin-bottom: 20px;
   margin-left: 30px;
@@ -3371,6 +3377,7 @@ p.entry-meta {
 .page-template-template-eco-itinerary-a-b .itenerary-popup .highlight-popup-flex .popup-image,
 .page-template-template-eco-itinerary-a-b .iteneraries-popup .highlight-popup-flex .popup-image,
 .page-template-template-eco-itinerary-a-b .itenerary-popup-image .highlight-popup-flex .popup-image {
+  flex: 1;
   margin-bottom: 20px;
   width: 55%;
 }
@@ -3698,14 +3705,16 @@ p.entry-meta {
 .page-template-template-eco-itinerary-single .itenerary-popup .highlight-popup-flex .popup-facts,
 .page-template-template-eco-itinerary-single .iteneraries-popup .highlight-popup-flex .popup-facts,
 .page-template-template-eco-itinerary-single .itenerary-popup-image .highlight-popup-flex .popup-facts {
-  width: 35%;
+  flex: 1;
   margin-bottom: 20px;
   margin-left: 30px;
   text-align: left;
+  width: 35%;
 }
 .page-template-template-eco-itinerary-single .itenerary-popup .highlight-popup-flex .popup-image,
 .page-template-template-eco-itinerary-single .iteneraries-popup .highlight-popup-flex .popup-image,
 .page-template-template-eco-itinerary-single .itenerary-popup-image .highlight-popup-flex .popup-image {
+  flex: 1;
   margin-bottom: 20px;
   width: 55%;
 }

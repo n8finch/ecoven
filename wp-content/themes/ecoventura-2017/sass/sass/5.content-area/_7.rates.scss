@@ -55,6 +55,8 @@
 				border-right: none;
 				color: $color__dark_navy;
 				cursor: pointer;
+				font-family: 'Raleway', sans-serif;
+				font-weight: 600;
 				float: left;
 				list-style: none;
 				padding: 16px;
@@ -458,6 +460,11 @@
 			position: relative;
 
 			.table-container {
+				@media screen and (max-width: 860px) {
+					padding-top: 2px;
+				}
+
+				overflow: auto;
 				position: relative;
 			}
 
@@ -534,7 +541,7 @@
 
 				@media screen and (max-width: 860px) {
 					left: auto;
-					top: -2px;
+					top: 0;
 					width: 150px;
 				}
 
@@ -561,14 +568,11 @@
 
 			div.scroll {
 				@media screen and (max-width: 1115px) {
-					overflow: scroll;
-					overflow-y: hidden;
 				}
 
 
 				@media screen and (max-width: 860px) {
 					margin-left: 150px;
-					max-width: calc( 100% - 40% );
 					top: -2px;
 				}
 
