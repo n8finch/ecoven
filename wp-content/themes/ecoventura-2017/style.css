@@ -2226,7 +2226,11 @@ p.entry-meta {
   }
 }
 .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap ul {
+  margin-left: 0;
   position: relative;
+}
+.page-template-template-eco-departures .departures-dates .departure-dates-table-wrap li:before {
+  content: '';
 }
 .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap li.departure-table-tabs {
   background-color: white;
@@ -2567,7 +2571,11 @@ p.entry-meta {
   }
 }
 .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap ul {
+  margin-left: 0;
   position: relative;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap li:before {
+  content: '';
 }
 .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap li.rate-table-tabs {
   background-color: white;
