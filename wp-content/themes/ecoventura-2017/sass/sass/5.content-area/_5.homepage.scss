@@ -1,5 +1,9 @@
 .home.page {
 
+	// $color__dark_navy: #152838;
+	// $color__medium_blue_gray: #44596e;
+	// $color__light_blue_gray: #647a8c;
+
 	// Above the Fold
 	.site-inner {
 		max-width: 100%;
@@ -19,25 +23,58 @@
 	.homepage-title-div {
 		background-color: $eco_green;
 		color: white;
-		padding-bottom: 50px;
 		padding-top: 30px;
 		text-align: center;
 
 		h2 {
 			font-size: 3.5rem;
+			margin-bottom: 0;
+		}
+
+		.plan-your-trip-box {
+			bottom: -30px;
+			position: relative;
+			text-align: center;
+
+			button:hover {
+				background-color: #eeeeee;
+			}
 		}
 	}
 
-	.plan-your-trip-box {
-		top: -30px;
-	    position: relative;
-	    text-align: center;
+	// Booking Form
 
-		button:hover {
-			background-color: #eeeeee;
+	.homepage-booking-form {
+		background-color: $color__dark_navy;
+		margin-top: -20px;
+		padding: 60px 0;
+
+		.gform_wrapper {
+
+			@media screen and (max-width: 1150px) {
+				padding-left: 5%;
+				padding-right: 5%;
+			}
+
+			margin: auto;
+			max-width: 1100px;
+
+
+			ul {
+				li {
+
+				}
+			}
+		}
+
+		label {
+			color: white;
+
+			.gfield_required {
+				display: none;
+			}
 		}
 	}
-
 
 	// Page Image Boxes
 	.homepage-page-image-boxes {
