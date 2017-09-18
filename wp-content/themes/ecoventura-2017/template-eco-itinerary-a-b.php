@@ -131,9 +131,11 @@ function eco_intinerary_b( $acf_fields ) {
 									<div class="popup-image">
 										<img src="<?php echo esc_attr( $row['popup_image']['sizes']['reason'] );?>" />
 									</div>
+									<?php if( $row['learn_more_button_link'] ) { ?>
 									<a class="highlight-popup-button" href="<?php echo esc_url( $row['learn_more_button_link'] );?>">
 										<div>LEARN MORE</div>
 									</a>
+									<?php } //end if ?>
 								</div>
 							</div>
 						</div>
