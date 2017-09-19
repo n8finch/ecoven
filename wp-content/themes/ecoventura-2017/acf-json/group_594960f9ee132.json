@@ -64,6 +64,25 @@
             "step": ""
         },
         {
+            "key": "field_59c147bba4f1e",
+            "label": "Booking Button Text",
+            "name": "booking_button_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_594bdf95769c7",
             "label": "Image Box 1",
             "name": "",
@@ -906,5 +925,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1505764103
+    "modified": 1505839057
 }

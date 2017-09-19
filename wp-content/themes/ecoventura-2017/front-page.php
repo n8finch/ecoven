@@ -37,7 +37,7 @@ function eco_homepage_above_fold($acf_fields) {
 
 			<!-- Add Plan Your Trip box -->
 			<div class="plan-your-trip-box">
-				<a class="button" id="booking-dropdown-trigger" href="#">PLAN YOUR TRIP</a>
+				<a class="button" id="booking-dropdown-trigger" href="#"><?php echo esc_html( $acf_fields['booking_button_text'] ) ; ?></a>
 			</div>
 		</div>
 
