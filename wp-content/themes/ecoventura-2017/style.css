@@ -2005,6 +2005,12 @@ p.entry-meta {
     padding: 0;
   }
 }
+.home.page ul.soliloquy-wrap {
+  text-indent: 0;
+}
+.home.page ul.soliloquy-wrap li:before {
+  content: '';
+}
 .home.page .soliloquy-controls-direction {
   display: none;
 }
@@ -2040,6 +2046,32 @@ p.entry-meta {
     padding-left: 5%;
     padding-right: 5%;
   }
+}
+.home.page .homepage-booking-form .gform_wrapper ul.gform_fields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  text-indent: 0;
+}
+.home.page .homepage-booking-form .gform_wrapper ul.gform_fields li input[type="text"] {
+  width: 250px;
+}
+.home.page .homepage-booking-form .gform_wrapper ul.gform_fields li select {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+.home.page .homepage-booking-form .gform_wrapper ul.gform_fields li select.large.gfield_select {
+  height: 39px;
+  width: 260px;
+}
+.home.page .homepage-booking-form .gform_wrapper ul.gform_fields li.gfield.field-half select {
+  height: 39px;
+  width: 116px;
+}
+.home.page .homepage-booking-form .gform_wrapper ul.gform_fields textarea {
+  height: 39px;
+  width: 516px;
 }
 .home.page .homepage-booking-form label {
   color: white;
