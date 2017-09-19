@@ -6,7 +6,7 @@
 
 		$('#booking-dropdown-trigger').on('click', function(e) {
 			e.preventDefault();
-			$('.homepage-booking-form').slideToggle('slow');
+			$('.homepage-booking-form').slideToggle();
 		});
 
 		//*Recipe tabs
