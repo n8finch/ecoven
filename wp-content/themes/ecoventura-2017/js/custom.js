@@ -2,6 +2,31 @@
 
 	$(document).ready(function() {
 
+		//* Homepage Booking
+
+		function open(elem) {
+		    if (document.createEvent) {
+		        var e = document.createEvent("MouseEvents");
+		        e.initMouseEvent("mousedown", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+		        elem[0].dispatchEvent(e);
+		    } else if (element.fireEvent) {
+		        elem[0].fireEvent("onmousedown");
+		    }
+		}
+
+
+		$('#booking-dropdown-trigger').on('click', function(e) {
+			e.preventDefault();
+			$('.homepage-booking-form').slideToggle('slow');
+
+			$('.homepage-booking-form select').after('<span class="dashicons dashicons-arrow-down-alt2"></span>');
+
+			$('.homepage-booking-form span.dashicons.dashicons-arrow-down-alt2').on('click', function(e) {
+				open( $(this).prev() );
+			});
+
+		});
+
 		//*Recipe tabs
 		var do_recipe_tabs = function() {
 			var tabContent = $('.recipe-single');
