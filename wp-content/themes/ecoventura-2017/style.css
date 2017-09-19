@@ -2078,6 +2078,10 @@ p.entry-meta {
 .home.page .homepage-booking-form .gform_wrapper ul.gform_fields li select {
   -webkit-appearance: none;
   appearance: none;
+  background: #fff;
+  background-image: url(images/chevrondown.png);
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
   border-radius: 0;
 }
 .home.page .homepage-booking-form .gform_wrapper ul.gform_fields li select.large.gfield_select {
