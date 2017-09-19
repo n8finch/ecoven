@@ -2005,26 +2005,184 @@ p.entry-meta {
     padding: 0;
   }
 }
+.home.page ul.soliloquy-wrap {
+  text-indent: 0;
+}
+.home.page ul.soliloquy-wrap li:before {
+  content: '';
+}
 .home.page .soliloquy-controls-direction {
   display: none;
 }
 .home.page .homepage-title-div {
   background-color: #B9C8BE;
   color: white;
-  padding-bottom: 50px;
   padding-top: 30px;
   text-align: center;
 }
 .home.page .homepage-title-div h2 {
   font-size: 3.5rem;
+  margin-bottom: 0;
 }
-.home.page .plan-your-trip-box {
-  top: -30px;
+.home.page .homepage-title-div .plan-your-trip-box {
+  bottom: -25px;
   position: relative;
   text-align: center;
 }
-.home.page .plan-your-trip-box button:hover {
+.home.page .homepage-title-div .plan-your-trip-box button:hover {
   background-color: #eeeeee;
+}
+.home.page .homepage-booking-form {
+  background-color: #152838;
+  display: none;
+  margin-top: -20px;
+  padding: 60px 0;
+}
+.home.page .homepage-booking-form .gform_wrapper {
+  margin: auto;
+  max-width: 985px;
+}
+@media screen and (max-width: 1150px) {
+  .home.page .homepage-booking-form .gform_wrapper {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+.home.page .homepage-booking-form .gform_wrapper form {
+  position: relative;
+}
+.home.page .homepage-booking-form .gform_wrapper ul.gform_fields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  text-indent: 0;
+}
+@media screen and (max-width: 645px) {
+  .home.page .homepage-booking-form .gform_wrapper ul.gform_fields li {
+    width: 100%;
+  }
+}
+.home.page .homepage-booking-form .gform_wrapper ul.gform_fields li input[type="text"] {
+  width: 230px;
+}
+@media screen and (max-width: 1150px) {
+  .home.page .homepage-booking-form .gform_wrapper ul.gform_fields li input[type="text"] {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 645px) {
+  .home.page .homepage-booking-form .gform_wrapper ul.gform_fields li input[type="text"] {
+    width: 100%;
+  }
+}
+.home.page .homepage-booking-form .gform_wrapper ul.gform_fields li select {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #fff;
+  background-image: url(images/chevrondown.png);
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+  border-radius: 0;
+}
+.home.page .homepage-booking-form .gform_wrapper ul.gform_fields li select.large.gfield_select {
+  height: 39px;
+  width: 230px;
+}
+@media screen and (max-width: 1150px) {
+  .home.page .homepage-booking-form .gform_wrapper ul.gform_fields li select.large.gfield_select {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 645px) {
+  .home.page .homepage-booking-form .gform_wrapper ul.gform_fields li select.large.gfield_select {
+    width: 100%;
+  }
+}
+.home.page .homepage-booking-form .gform_wrapper ul.gform_fields li.gfield.field-half select {
+  height: 39px;
+  width: 106px;
+}
+@media screen and (max-width: 1150px) {
+  .home.page .homepage-booking-form .gform_wrapper ul.gform_fields li.gfield.field-half select {
+    width: 114px;
+  }
+}
+@media screen and (max-width: 645px) {
+  .home.page .homepage-booking-form .gform_wrapper ul.gform_fields li.gfield.field-half select {
+    width: 100%;
+  }
+}
+.home.page .homepage-booking-form .gform_wrapper ul.gform_fields textarea {
+  height: 39px;
+  width: 476px;
+}
+@media screen and (max-width: 1150px) {
+  .home.page .homepage-booking-form .gform_wrapper ul.gform_fields textarea {
+    width: 513px;
+  }
+}
+@media screen and (max-width: 645px) {
+  .home.page .homepage-booking-form .gform_wrapper ul.gform_fields textarea {
+    width: 100%;
+  }
+}
+.home.page .homepage-booking-form .gform_wrapper div.ginput_container {
+  position: relative;
+}
+.home.page .homepage-booking-form .gform_wrapper select + span.dashicons.dashicons-arrow-down-alt2 {
+  background-color: #fff;
+  color: #cccccc;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.home.page .homepage-booking-form label {
+  color: white;
+}
+.home.page .homepage-booking-form label .gfield_required {
+  display: none;
+}
+.home.page .homepage-booking-form .gform_wrapper .gform_footer {
+  padding: 0;
+  margin: 0;
+  clear: none;
+  width: auto;
+  float: right;
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+}
+@media screen and (max-width: 1150px) {
+  .home.page .homepage-booking-form .gform_wrapper .gform_footer {
+    right: 93px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .home.page .homepage-booking-form .gform_wrapper .gform_footer {
+    float: none;
+    padding: 16px 0 10px;
+    position: relative;
+    right: auto;
+  }
+}
+.home.page .homepage-booking-form .gform_wrapper .gform_footer input[type="submit"] {
+  border: 1px solid white;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  padding: 20px 58px;
+  font-size: 20px;
+  font-size: 2rem;
+}
+@media screen and (max-width: 1150px) {
+  .home.page .homepage-booking-form .gform_wrapper .gform_footer input[type="submit"] {
+    margin: 0;
+    padding: 20px 70px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .home.page .homepage-booking-form .gform_wrapper .gform_footer input[type="submit"] {
+    right: 93px;
+  }
 }
 .home.page .homepage-page-image-boxes {
   display: flex;
@@ -2034,7 +2192,7 @@ p.entry-meta {
   justify-content: space-around;
   margin: 0 auto;
   max-width: 1050px;
-  padding-top: 50px;
+  padding-top: 80px;
 }
 .home.page .homepage-page-image-boxes a {
   color: black;
@@ -2226,7 +2384,11 @@ p.entry-meta {
   }
 }
 .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap ul {
+  margin-left: 0;
   position: relative;
+}
+.page-template-template-eco-departures .departures-dates .departure-dates-table-wrap li:before {
+  content: '';
 }
 .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap li.departure-table-tabs {
   background-color: white;
@@ -2567,7 +2729,11 @@ p.entry-meta {
   }
 }
 .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap ul {
+  margin-left: 0;
   position: relative;
+}
+.page-template-template-eco-rates .rates-dates .rate-dates-table-wrap li:before {
+  content: '';
 }
 .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap li.rate-table-tabs {
   background-color: white;

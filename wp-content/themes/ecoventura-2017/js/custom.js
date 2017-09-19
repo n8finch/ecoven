@@ -2,6 +2,13 @@
 
 	$(document).ready(function() {
 
+		//* Homepage Booking
+
+		$('#booking-dropdown-trigger').on('click', function(e) {
+			e.preventDefault();
+			$('.homepage-booking-form').slideToggle();
+		});
+
 		//*Recipe tabs
 		var do_recipe_tabs = function() {
 			var tabContent = $('.recipe-single');
