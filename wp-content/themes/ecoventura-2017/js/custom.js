@@ -135,10 +135,10 @@
 
 		}
 
-		// Rates Page PopUp
+		// Page PopUps
 
 		$( function() {
-			$( ".td-rate-decks" ).on( 'click', function(e) {
+			$( ".rates-table .td-rate-decks" ).on( 'click', function(e) {
 				var divID = '#' + e.target.id.replace(' ', '-').toLowerCase();
 
 				doEcoPopUp(divID);
