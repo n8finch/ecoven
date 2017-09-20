@@ -155,7 +155,7 @@ function eco_rates_charter_rates( $acf_fields ) {
 							foreach ( $rows as $row ) {
 								$row_color_var = $counter % 2;
 								echo '<tr class="rate-table-row-' . esc_html( $row_color_var ) . '">';
-								echo '<td class="td-rate-decks" data-th="CRUISE DATES">' . esc_html( $row['season'] ) . '</td>';
+								echo '<td class="td-charter-rate" data-th="CRUISE DATES">' . esc_html( $row['season'] ) . '</td>';
 								echo '</tr>';
 								$counter ++;
 							}
