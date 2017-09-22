@@ -168,6 +168,13 @@ main.content li:before {
   margin-right: 4px;
 }
 
+ul.soliloquy-wrap {
+  text-indent: 0;
+}
+ul.soliloquy-wrap li:before {
+  content: none;
+}
+
 hr {
   border: 0;
   border-collapse: collapse;
@@ -2004,12 +2011,6 @@ p.entry-meta {
   .home.page .site-inner {
     padding: 0;
   }
-}
-.home.page ul.soliloquy-wrap {
-  text-indent: 0;
-}
-.home.page ul.soliloquy-wrap li:before {
-  content: '';
 }
 .home.page .soliloquy-controls-direction {
   display: none;
