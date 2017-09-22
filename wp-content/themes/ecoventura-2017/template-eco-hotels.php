@@ -38,49 +38,61 @@ function eco_hotels_main( $acf_fields ) {
 
 
 	<section class="hotels">
-		<div class="hotel-tabs">
-			<div class="hotel-tab" data-hotel-tab-id="hotels_in_guayaquil">
-				Hotels in Guayaquil
-			</div>
-			<div class="hotel-tab" data-hotel-tab-id="hotels_in_quito_city">
-				Hotels in Quito (City)
-			</div>
-			<div class="hotel-tab" data-hotel-tab-id="hotels_in_quito_airport">
-				Hotels in Quito (Airport)
-			</div>
-		</div>
-		<?php
-		$hotel_tabs = array( 'hotels_in_guayaquil', 'hotels_in_quito_city', 'hotels_in_quito_airport');
 
-		foreach( $hotel_tabs as $tab ) {
+		<div class="tabs">
+			<div class="tab-control">
+				<ul class="tab-list">
+					<li class="tab-item"><a href="#js-tab1">Hotels in Guayaquil</a></li>
+					<li class="tab-item"><a href="#js-tab2">Hotels in Quito (City)</a></li>
+					<li class="tab-item"><a href="#js-tab3">Hotels in Quito (Airport)</a></li>
+				</ul>
+			</div><!-- //.tab-control -->
 
-			$rows = $acf_fields[$tab];
-			?>
-			<div id="<?php echo $tab; ?>" class="hotel-wrapper">
-			<?php
-			if($rows) {
-				$hotel_counter = 1;
-				foreach( $rows as $row ) {
+			<div class="tab-group">
+
+				<?php
+				$hotel_tabs = array( 'hotels_in_guayaquil', 'hotels_in_quito_city', 'hotels_in_quito_airport');
+
+				$tab_counter = 1;
+
+				foreach( $hotel_tabs as $tab ) {
+					$rows = $acf_fields[$tab];
 					?>
-					<div id="hotel-for-<?php echo esc_html( $tab . $row['name'] ); ?>" class="hotel-items-wrapper hotel-<?php echo $hotel_counter ?>">
-						<div class="hotel-image">
-							<img src="<?php echo esc_attr( $row['image'] ); ?>" />
-						</div>
-						<div class="hotel-content">
-							<h2><?php echo esc_html( $row['name'] ); ?></h2>
-							<?php echo wp_kses_post( $row['description'] ); ?>
-						</div>
-					</div>
+					<div id="<?php echo 'js-tab' . $tab_counter; ?>" class="tab-content">
+						<?php
+						if($rows) {
+							$hotel_counter = 1;
+							foreach( $rows as $row ) {
+								?>
+								<div id="hotel-for-<?php echo esc_html( $tab . $row['name'] ); ?>" class="hotel-items-wrapper hotel-<?php echo $hotel_counter ?>">
+									<div class="hotel-image">
+										<img src="<?php echo esc_attr( $row['image'] ); ?>" />
+									</div>
+									<div class="hotel-content">
+										<h2><?php echo esc_html( $row['name'] ); ?></h2>
+										<?php echo wp_kses_post( $row['description'] ); ?>
+									</div>
+								</div>
+								<?php
+							$hotel_counter++;
+							}
+						}
+						?>
+					</div> <!-- end .tab-content div -->
 					<?php
-				$hotel_counter++;
+					$tab_counter++;
 				}
-			}
-			?>
-		</div> <!-- end hotel div -->
-			<?php
-		}
+				?>
 
-		?>
+
+			</div><!-- //.tab-group -->
+
+		</div><!-- //.tabs -->
+
+
+
+
+
 	</section>
 <?php
 }

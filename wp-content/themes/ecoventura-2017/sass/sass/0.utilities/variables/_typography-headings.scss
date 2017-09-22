@@ -77,12 +77,18 @@ main.content li:before {
     margin-right: 4px;
 }
 
+.hotel-tabs ul,
+.tab-control ul,
 ul.soliloquy-wrap {
 
 	text-indent: 0;
 
 	li:before {
 		content: none;
+	}
+
+	li {
+		text-indent: 12px;
 	}
 }
 
