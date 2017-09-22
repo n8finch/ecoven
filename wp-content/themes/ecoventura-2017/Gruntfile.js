@@ -60,8 +60,8 @@ module.exports = function (grunt) {
 						'style.css',
 						'*.php',
 						'*/*.php',
-            '*.js',
-            '*/*.js',
+			            '*.js',
+			            'js/*.js',
 					]
 				},
 				options: {

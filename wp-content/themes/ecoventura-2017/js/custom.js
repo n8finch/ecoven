@@ -2,6 +2,12 @@
 
 	$(document).ready(function() {
 
+		TenUp.tabs({
+			'target': '.tabs', // ID (or class) of the tab container
+		}, function() {
+			console.log('Amazing callback function!');
+		});
+
 		//* Homepage Booking
 
 		$('#booking-dropdown-trigger').on('click', function(e) {
@@ -66,17 +72,14 @@
 		//* Hotel Tabs
 
 		var do_hotel_tabs = function() {
-			var tabContent = $('.hotel-wrapper');
 
-			$('.hotel-tab').on('click', function(e) {
+			$('li.tab-item').on('click', function(e) {
 
 					var tabClicked = '#' + e.target.dataset.hotelTabId;
 					console.log(tabClicked);
 
-					$('.hotel-tab').css( 'background-color', '#eeeeee' );
+					$('li.tab-item').css( 'background-color', '#eeeeee' );
 					$(e.target).css( 'background-color', '#ffffff')
-					$(tabContent).hide();
-					$(tabClicked).show();
 			});
 		}
 
