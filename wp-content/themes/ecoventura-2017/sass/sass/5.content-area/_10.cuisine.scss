@@ -55,19 +55,27 @@
 
 				display: flex;
 				justify-content: flex-start;
+				margin-left: 0;
 
 				.menu-tab {
+				    text-indent: -5px;
+				}
+
+				.menu-tab a {
 					@media screen and (max-width: 768px) {
 						border-left: 1px solid black;
 					}
-					background-color: #eeeeee;
 					border: 1px solid black;
-					border-left: 0;
+					background-color: #eeeeee;
 					padding: 20px 40px;
 				}
 				.menu-tab:first-child {
+					text-indent: 0;
+				}
+				
+				.menu-tab:first-child a {
 					background-color: #ffffff;
-					border: 1px solid black;
+					border-left: 1px solid black;
 				}
 
 				.menu-tab:hover {
@@ -78,7 +86,6 @@
 
 			.menu-wrapper {
 				border: 1px solid black;
-				display: none;
 				padding: 20px 40px;
 			}
 
@@ -90,25 +97,33 @@
 
 				margin: 20px 0;
 
-				span {
+				li {
 					border-left: 1px solid black;
 					padding: 0 20px;
+					text-indent: 0;
+
+					a {
+						margin: 1px;
+					}
 				}
 
-				span:first-child {
+				li:first-child {
 					border-left: 0;
-					color: #CFAA42;
 					padding-left: 0;
+
+					a {
+						color: #CFAA42;
+					}
 				}
 
 			}
 
-			.menu-days-wrapper span:hover {
+			.menu-days-wrapper li a:hover {
 				color: #CFAA42 !important;
 			}
 
 			.menu-items-wrapper {
-				display: none;
+				display: flex;
 				flex-wrap: wrap;
 				justify-content: space-between;
 
@@ -219,10 +234,6 @@
 				border-left: 1px solid #000000;
 				padding-left: 5%;
 				width: 75%;
-
-				.recipe-single {
-					// display: none;
-				}
 
 				.recipe-single:first-child {
 					display: block;

@@ -36,7 +36,7 @@ $color-white: #fff !default;
 		text-decoration: none;
 
 		@media ( min-width: $bp-small ) {
-			padding: 10px 15px;
+			// padding: 10px 15px;
 		}
 
 	}
@@ -46,14 +46,12 @@ $color-white: #fff !default;
 			background: $color-white;
 			position: relative;
 			z-index: 1;
-			border-bottom-color: $color-white;
 		}
 	}
 
 } // .tab-item
 
 .tab-group {
-	border: 1px solid black;
 	margin-top: -1px;
 } // .tab-group
 

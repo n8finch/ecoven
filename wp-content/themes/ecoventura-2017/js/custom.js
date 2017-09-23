@@ -20,6 +20,7 @@
 			var tabContent = $('.recipe-single');
 
 			$('.recipe-links .recipe-title').on('click', function(e) {
+					e.preventDefault();
 					var tabClicked = '#' + e.target.dataset.recipeId;
 					$(tabContent).hide();
 					$(tabClicked).show();
@@ -33,18 +34,16 @@
 		var do_menu_main_tabs = function() {
 			var tabContent = $('.menu-wrapper');
 
-			$('.menu-tab').on('click', function(e) {
-					console.log(e);
-					var tabClicked = '#' + e.target.dataset.menuTabId;
+			$('.menu-tab a').on('click', function(e) {
+					e.preventDefault();
+					var tabClicked = e.target.attributes['href'].nodeValue;
 
-					var assocMenu = tabClicked + ' .menu-days-wrapper span:first-child';
+					var assocMenu = tabClicked + ' .menu-days-wrapper ul li:first-child a';
 
-					console.log(assocMenu);
-
-					$('.menu-tab').css( 'background-color', '#eeeeee' );
+					$('.menu-tab a').css( 'background-color', '#eeeeee' );
 					$(e.target).css( 'background-color', '#ffffff')
-					$(tabContent).hide();
-					$(tabClicked).show();
+					$(tabContent).attr('aria-hidden', 'true'); //hide
+					$(tabClicked).attr('aria-hidden', 'false'); //show
 					$(assocMenu).trigger('click');
 			});
 		}
@@ -56,13 +55,16 @@
 		var do_menu_day_tabs = function() {
 			var tabContent = $('.menu-items-wrapper');
 
-			$('.menu-days-wrapper span').on('click', function(e) {
-					var tabClicked = '#' + e.target.dataset.menuDayId;
-					$('.menu-days-wrapper span').css( 'color', 'black' );
-					$(e.target).css( 'color', '#CFAA42')
-					$(tabContent).hide();
-					$(tabClicked).css( 'display', 'flex' );
-					$(tabClicked).show();
+			$('.menu-days-wrapper a').on('click', function(e) {
+				e.preventDefault();
+				console.log(e);
+				var tabClicked = e.target.attributes['href'].nodeValue;
+				console.log(tabClicked);
+				$('.menu-days-wrapper a').css( 'color', 'black' );
+				$(e.target).css( 'color', '#CFAA42')
+				$(tabContent).hide();
+				$(tabClicked).css( 'display', 'flex' );
+				$(tabClicked).show();
 			});
 		}
 
