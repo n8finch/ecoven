@@ -49,21 +49,30 @@
 		.cuisine-our-menus {
 
 			.menu-tabs {
-				@media screen and (max-width: 768px) {
-					display: block;
-				}
 
 				display: flex;
 				justify-content: flex-start;
 				margin-left: 0;
 
+				ul.tab-list {
+					@media screen and (max-width: 768px) {
+						width: 100%
+					}
+				}
+
 				.menu-tab {
+					@media screen and (max-width: 768px) {
+						display: block;
+						text-indent: 0;
+					}
+
 				    text-indent: -5px;
 				}
 
 				.menu-tab a {
 					@media screen and (max-width: 768px) {
 						border-left: 1px solid black;
+						width: 100%;
 					}
 					border: 1px solid black;
 					background-color: #eeeeee;
@@ -72,8 +81,12 @@
 				.menu-tab:first-child {
 					text-indent: 0;
 				}
-				
+
 				.menu-tab:first-child a {
+					@media screen and (max-width: 768px) {
+						width: 100%;
+					}
+
 					background-color: #ffffff;
 					border-left: 1px solid black;
 				}
@@ -97,6 +110,13 @@
 
 				margin: 20px 0;
 
+				ul.tab-list {
+					@media screen and (max-width: 768px) {
+						display: flex;
+						flex-direction: column;
+					}
+				}
+
 				li {
 					border-left: 1px solid black;
 					padding: 0 20px;
@@ -108,6 +128,10 @@
 				}
 
 				li:first-child {
+					@media screen and (max-width: 768px) {
+						border-left: 1px solid black;
+						padding: 0 20px;
+					}
 					border-left: 0;
 					padding-left: 0;
 

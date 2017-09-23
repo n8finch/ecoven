@@ -4063,12 +4063,18 @@ p.entry-meta {
   margin-left: 0;
 }
 @media screen and (max-width: 768px) {
-  .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-tabs {
-    display: block;
+  .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-tabs ul.tab-list {
+    width: 100%;
   }
 }
 .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-tabs .menu-tab {
   text-indent: -5px;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-tabs .menu-tab {
+    display: block;
+    text-indent: 0;
+  }
 }
 .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-tabs .menu-tab a {
   border: 1px solid black;
@@ -4078,6 +4084,7 @@ p.entry-meta {
 @media screen and (max-width: 768px) {
   .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-tabs .menu-tab a {
     border-left: 1px solid black;
+    width: 100%;
   }
 }
 .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-tabs .menu-tab:first-child {
@@ -4086,6 +4093,11 @@ p.entry-meta {
 .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-tabs .menu-tab:first-child a {
   background-color: #ffffff;
   border-left: 1px solid black;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-tabs .menu-tab:first-child a {
+    width: 100%;
+  }
 }
 .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-tabs .menu-tab:hover {
   background-color: #ffffff !important;
@@ -4100,6 +4112,12 @@ p.entry-meta {
 .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-days-wrapper {
   margin: 20px 0;
 }
+@media screen and (max-width: 768px) {
+  .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-days-wrapper ul.tab-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-days-wrapper li {
   border-left: 1px solid black;
   padding: 0 20px;
@@ -4111,6 +4129,12 @@ p.entry-meta {
 .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-days-wrapper li:first-child {
   border-left: 0;
   padding-left: 0;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-days-wrapper li:first-child {
+    border-left: 1px solid black;
+    padding: 0 20px;
+  }
 }
 .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-days-wrapper li:first-child a {
   color: #CFAA42;
@@ -4280,7 +4304,8 @@ p.entry-meta {
 }
 @media screen and (max-width: 768px) {
   .page-template-template-eco-hotels section.hotels ul.tab-list {
-    display: block;
+    flex-direction: column;
+    width: 100%;
   }
 }
 .page-template-template-eco-hotels section.hotels ul.tab-list .tab-item {
@@ -4301,6 +4326,11 @@ p.entry-meta {
   border: 0;
   color: black;
   padding: 20px 40px;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-eco-hotels section.hotels ul.tab-list .tab-item > a {
+    width: 100%;
+  }
 }
 .page-template-template-eco-hotels section.hotels ul.tab-list .tab-item > a:hover {
   background-color: #ffffff !important;
