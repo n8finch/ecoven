@@ -57,9 +57,9 @@
 
 			$('.menu-days-wrapper a').on('click', function(e) {
 				e.preventDefault();
-				console.log(e);
+
 				var tabClicked = e.target.attributes['href'].nodeValue;
-				console.log(tabClicked);
+
 				$('.menu-days-wrapper a').css( 'color', 'black' );
 				$(e.target).css( 'color', '#CFAA42')
 				$(tabContent).hide();
@@ -105,15 +105,11 @@
 		//Do Eco Popup
 		var doEcoPopUp = function( divID ) {
 
-			console.log(divID);
-
 			var winHeight = window.innerHeight;
 			var winWidth = window.innerWidth;
 			var scrollY = window.scrollY;
 			var popupWidth = winWidth*.9;
 			var centeredWidth = winWidth/2 - popupWidth/2;
-
-			console.log(scrollY);
 
 			if( winWidth > 1000 ) {
 				centeredWidth = winWidth/2 - 450  ;
@@ -160,7 +156,7 @@
 				e.preventDefault();
 
 				var divID = '#' + e.target.dataset.popupId;
-				console.log(divID);
+
 				doEcoPopUp(divID);
 			});
 		});
