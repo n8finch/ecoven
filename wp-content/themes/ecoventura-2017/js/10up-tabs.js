@@ -63,7 +63,7 @@
 				function tabHandle( event ) {
 
 					event.preventDefault();
-
+					
 					// Handle opening and closing of the tabs on mobile devices
 					if ( tab.parentNode.classList.contains( 'is-active' ) ) {
 						tab.parentNode.parentNode.classList.toggle( 'm-is-active' );

@@ -1452,11 +1452,6 @@ img.alignright,
   display: inline-block;
   text-decoration: none;
 }
-@media (min-width: 40.625em) {
-  .tab-item > a {
-    padding: 10px 15px;
-  }
-}
 .tab-item.is-active a {
   background: #fff;
   position: relative;
@@ -4114,6 +4109,7 @@ p.entry-meta {
   color: #CFAA42 !important;
 }
 .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-items-wrapper {
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }

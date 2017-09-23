@@ -59,42 +59,51 @@ function eco_cuisine_header_slider( $acf_fields ) {
 
 					$rows = $acf_fields[$tab];
 					?>
-					<div id="<?php echo $tab; ?>" class="menu-wrapper tab-content">
+					<div id="<?php echo $tab; ?>" class="menu-wrapper tab-content tabs">
 					<?php
 					if($rows) {
-						//output the datys first
+						//output the days first
 						?>
-						<div class="menu-days-wrapper">
+						<div class="menu-days-wrapper tab-control">
+							<ul class="tab-list">
+								<?php
+								foreach( $rows as $row ) {
+									?>
+									<li class="tab-item">
+										<a href="#menu-for-<?php echo esc_html( $tab . $row['day'] ); ?>">
+											<?php echo esc_html( $row['day'] ); ?>
+										</a>
+									</li>
+									<?php
+								}
+								?>
+							</ul>
+						</div> <!-- end days wrapper, tab-control -->
+						<div class="tab-group">
 							<?php
+							$menu_counter = 1;
 							foreach( $rows as $row ) {
 								?>
-								<span data-menu-day-id="menu-for-<?php echo esc_html( $tab . $row['day'] ); ?>"><?php echo esc_html( $row['day'] ); ?></span>
+								<div id="menu-for-<?php echo esc_html( $tab . $row['day'] ); ?>" class="menu-items-wrapper tab-content menu-<?php echo $menu_counter ?>">
+									<div class="menu-breakfast">
+										<p><strong>BREAKFAST</strong></p>
+										<?php echo wp_kses_post( $row['breakfast'] ); ?>
+									</div>
+									<div class="menu-lunch">
+										<p><strong>LUNCH</strong></p>
+										<?php echo wp_kses_post( $row['lunch'] ); ?>
+									</div>
+									<div class="menu-dinner">
+										<p><strong>DINNER</strong></p>
+										<?php echo wp_kses_post( $row['dinner'] ); ?>
+									</div>
+								</div>
 								<?php
-							}
-							?>
-						</div> <!-- end days wrapper -->
+							$menu_counter++;
+						} //  ?>
+						</div> <!--end tab-group-->
 						<?php
-						$menu_counter = 1;
-						foreach( $rows as $row ) {
-							?>
-							<div id="menu-for-<?php echo esc_html( $tab . $row['day'] ); ?>" class="menu-items-wrapper menu-<?php echo $menu_counter ?>">
-								<div class="menu-breakfast">
-									<p><strong>BREAKFAST</strong></p>
-									<?php echo wp_kses_post( $row['breakfast'] ); ?>
-								</div>
-								<div class="menu-lunch">
-									<p><strong>LUNCH</strong></p>
-									<?php echo wp_kses_post( $row['lunch'] ); ?>
-								</div>
-								<div class="menu-dinner">
-									<p><strong>DINNER</strong></p>
-									<?php echo wp_kses_post( $row['dinner'] ); ?>
-								</div>
-							</div>
-							<?php
-						$menu_counter++;
-						}
-					}
+					} // end
 					?>
 				</div> <!-- end menu div -->
 					<?php
