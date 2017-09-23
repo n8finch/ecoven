@@ -55,10 +55,12 @@
 		var do_menu_day_tabs = function() {
 			var tabContent = $('.menu-items-wrapper');
 
-			$('.menu-days-wrapper span').on('click', function(e) {
+			$('.menu-days-wrapper a').on('click', function(e) {
 				e.preventDefault();
-				var tabClicked = '#' + e.target.dataset.menuDayId;
-				$('.menu-days-wrapper span').css( 'color', 'black' );
+				console.log(e);
+				var tabClicked = e.target.attributes['href'].nodeValue;
+				console.log(tabClicked);
+				$('.menu-days-wrapper a').css( 'color', 'black' );
 				$(e.target).css( 'color', '#CFAA42')
 				$(tabContent).hide();
 				$(tabClicked).css( 'display', 'flex' );

@@ -73,7 +73,7 @@ module.exports = function (grunt) {
 
     watch: {
       files: ['sass/css/*.css', 'js/*.js', 'sass/sass/**/*.scss'],
-      tasks: ['sass', 'concat']
+      tasks: ['sass']
     }
   });
 
@@ -87,7 +87,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-browser-sync');
 
-  grunt.registerTask('default', ['sass', 'concat', 'browserSync', 'watch']);
+  grunt.registerTask('default', ['sass', 'browserSync', 'watch']);
   grunt.registerTask('post', 'postcss');
 
 };
