@@ -43,8 +43,6 @@
 
 					$('.menu-tab').css( 'background-color', '#eeeeee' );
 					$(e.target).css( 'background-color', '#ffffff')
-					$(tabContent).hide();
-					$(tabClicked).show();
 					$(assocMenu).trigger('click');
 			});
 		}
@@ -60,9 +58,7 @@
 					var tabClicked = '#' + e.target.dataset.menuDayId;
 					$('.menu-days-wrapper span').css( 'color', 'black' );
 					$(e.target).css( 'color', '#CFAA42')
-					$(tabContent).hide();
 					$(tabClicked).css( 'display', 'flex' );
-					$(tabClicked).show();
 			});
 		}
 
