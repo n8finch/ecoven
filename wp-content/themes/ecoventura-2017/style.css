@@ -4093,7 +4093,6 @@ p.entry-meta {
 }
 .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-wrapper {
   border: 1px solid black;
-  display: none;
   padding: 20px 40px;
 }
 .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus #main_menu_day_and_menu {
@@ -4115,7 +4114,6 @@ p.entry-meta {
   color: #CFAA42 !important;
 }
 .page-template-template-eco-cuisine .cuisine-content .cuisine-our-menus .menu-items-wrapper {
-  display: none;
   flex-wrap: wrap;
   justify-content: space-between;
 }
