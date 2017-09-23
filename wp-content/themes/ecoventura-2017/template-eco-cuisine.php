@@ -122,32 +122,38 @@ function eco_cuisine_recipes ( $acf_fields ) {
 ?>
 	<section class="our-recipes">
 		<h2><?php echo esc_html( $acf_fields['cookbook_title'] ); ?></h2>
-		<div class="recipes-wrapper">
-			<div class="recipe-links">
-				<?php
-				$rows = $acf_fields['recipe_list'];
-				$title_counter = 1;
-				foreach( $rows as $row ) {
-					?>
-					<div data-recipe-id="recipe-content-<?php echo $title_counter; ?>" class="recipe-title"><?php echo esc_html( $row['recipe_title'] ); ?></div>
+		<div class="recipes-wrapper tabs">
+			<div class="recipe-links tab-control">
+				<ul class="tab-list">
 					<?php
-				$title_counter++;
-				}
-				?>
-			</div>
-			<div class="recipe-content">
+					$rows = $acf_fields['recipe_list'];
+					$title_counter = 1;
+					foreach( $rows as $row ) {
+						?>
+						<li class="recipe-title tab-item">
+							<a href="<?php echo '#recipe-tab' . $title_counter; ?>">
+								<?php echo esc_html( $row['recipe_title'] ); ?>
+							</a>
+						</li>
+						<?php
+					$title_counter++;
+					}
+					?>
+				</ul>
+			</div> <!-- tab-control -->
+			<div class="recipe-content tab-group">
 				<?php
 				$rows = $acf_fields['recipe_list'];
 				$content_counter = 1;
 				foreach( $rows as $row ) {
 					?>
-					<div id="recipe-content-<?php echo $content_counter; ?>" class="recipe-single"><?php echo wp_kses_post( $row['recipe_content'] ); ?></div>
+					<div id="recipe-tab<?php echo $content_counter; ?>" class="recipe-single tab-content"><?php echo wp_kses_post( $row['recipe_content'] ); ?></div>
 					<?php
 				$content_counter++;
 				}
 				?>
-			</div>
-		</div>
+			</div> <!-- .tab-group -->
+		</div> <!-- tabs -->
 	</section>
 <?php
 }

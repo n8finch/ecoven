@@ -10,6 +10,14 @@ $color-gray-light: #ccc !default;
 $color-white: #fff !default;
 
 // Component Sass
+
+.tab-control {
+	ul.tab-list {
+		margin-left: 0;
+		text-indent: 0;
+	}
+}
+
 .tab-list {
 	list-style: none;
 	margin: 0;
@@ -23,20 +31,14 @@ $color-white: #fff !default;
 	display: inline-block;
 
 	> a {
-		border: 1px solid $color-gray;
+		color: black;
 		display: inline-block;
-		padding: 10px 15px;
 		text-decoration: none;
-		padding: 5px 8px;
 
 		@media ( min-width: $bp-small ) {
 			padding: 10px 15px;
 		}
 
-		&:hover,
-		&:focus {
-			background: $color-gray-light;
-		}
 	}
 
 	&.is-active {
@@ -51,12 +53,11 @@ $color-white: #fff !default;
 } // .tab-item
 
 .tab-group {
-	border: 1px solid $color-gray;
+	border: 1px solid black;
 	margin-top: -1px;
 } // .tab-group
 
 .tab-content {
-	padding: 15px;
 
 	&[aria-hidden="true"] {
 		left: -999em;
