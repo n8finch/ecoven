@@ -1430,6 +1430,11 @@ img.alignright,
   margin: 0 0 28px;
 }
 
+.tab-control ul.tab-list {
+  margin-left: 0;
+  text-indent: 0;
+}
+
 .tab-list {
   list-style: none;
   margin: 0;
@@ -1443,19 +1448,14 @@ img.alignright,
   display: inline-block;
 }
 .tab-item > a {
-  border: 1px solid #777;
+  color: black;
   display: inline-block;
-  padding: 10px 15px;
   text-decoration: none;
-  padding: 5px 8px;
 }
 @media (min-width: 40.625em) {
   .tab-item > a {
     padding: 10px 15px;
   }
-}
-.tab-item > a:hover, .tab-item > a:focus {
-  background: #ccc;
 }
 .tab-item.is-active a {
   background: #fff;
@@ -1465,13 +1465,10 @@ img.alignright,
 }
 
 .tab-group {
-  border: 1px solid #777;
+  border: 1px solid black;
   margin-top: -1px;
 }
 
-.tab-content {
-  padding: 15px;
-}
 .tab-content[aria-hidden="true"] {
   left: -999em;
   position: absolute;
@@ -4196,16 +4193,22 @@ p.entry-meta {
 .page-template-template-eco-cuisine .our-recipes .recipes-wrapper .recipe-links {
   width: 25%;
 }
+.page-template-template-eco-cuisine .our-recipes .recipes-wrapper .recipe-links li.recipe-title.tab-item {
+  display: block;
+  margin: 1px;
+  text-indent: 0;
+}
+.page-template-template-eco-cuisine .our-recipes .recipes-wrapper .recipe-links li.recipe-title.tab-item a {
+  padding: 0;
+}
 .page-template-template-eco-cuisine .our-recipes .recipes-wrapper .recipe-links span {
   width: 100%;
 }
 .page-template-template-eco-cuisine .our-recipes .recipes-wrapper .recipe-content {
+  border: 0;
   border-left: 1px solid #000000;
   padding-left: 5%;
   width: 75%;
-}
-.page-template-template-eco-cuisine .our-recipes .recipes-wrapper .recipe-content .recipe-single {
-  display: none;
 }
 .page-template-template-eco-cuisine .our-recipes .recipes-wrapper .recipe-content .recipe-single:first-child {
   display: block;

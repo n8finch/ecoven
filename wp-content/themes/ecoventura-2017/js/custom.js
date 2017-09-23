@@ -5,7 +5,7 @@
 		TenUp.tabs({
 			'target': '.tabs', // ID (or class) of the tab container
 		}, function() {
-			console.log('Amazing callback function!');
+			// add callback here if desired...
 		});
 
 		//* Homepage Booking
@@ -26,7 +26,7 @@
 			});
 		}
 
-		do_recipe_tabs();
+		// do_recipe_tabs();
 
 		//* Our Menu Main Tabs
 
@@ -73,12 +73,9 @@
 
 		var do_hotel_tabs = function() {
 
-			$('li.tab-item').on('click', function(e) {
+			$('section.hotels li.tab-item a').on('click', function(e) {
 
-					var tabClicked = '#' + e.target.dataset.hotelTabId;
-					console.log(tabClicked);
-
-					$('li.tab-item').css( 'background-color', '#eeeeee' );
+					$('section.hotels li.tab-item a').css( 'background-color', '#eeeeee' );
 					$(e.target).css( 'background-color', '#ffffff')
 			});
 		}

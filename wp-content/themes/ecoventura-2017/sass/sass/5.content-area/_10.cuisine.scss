@@ -199,18 +199,29 @@
 			.recipe-links {
 				width: 25%;
 
+				li.recipe-title.tab-item {
+					display: block;
+					margin: 1px;
+					text-indent: 0;
+
+					a {
+						padding: 0;
+					}
+				}
+
 				span {
 					width: 100%;
 				}
 			}
 
 			.recipe-content {
+				border: 0;
 				border-left: 1px solid #000000;
 				padding-left: 5%;
 				width: 75%;
 
 				.recipe-single {
-					display: none;
+					// display: none;
 				}
 
 				.recipe-single:first-child {
