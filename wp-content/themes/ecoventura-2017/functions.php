@@ -549,7 +549,7 @@ function eco_footer_testimonials() {
 
 				echo "<p>{$post_content}...</p>";
 				echo "<p><em>{$post_meta}</em></p>";
-				echo '<a class="button" href="/guest-reviews/">MORE REVIEWS</a>';
+				echo '<a class="button" href="/guest-reviews/">More Reviews</a>';
 
 		    endforeach;
 		    wp_reset_postdata();
@@ -568,7 +568,7 @@ function eco_homepage_subscribe() {
 		<div id="mc_embed_signup">
 			<form action="//ecoventura.us7.list-manage.com/subscribe/post?u=ee26e36a40b22d13beee2602f&amp;id=0dc4307284" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
 			    <div id="mc_embed_signup_scroll">
-				<label for="mce-EMAIL"><h3>SUBSCRIBE TO OUR NEWSLETTER</h3></label>
+				<label for="mce-EMAIL"><h3>Subscribe to Our Newsletter</h3></label>
 				<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Address" required="">
 			    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 			    <div style="position: absolute; left: -5000px;"><input type="text" name="b_ee26e36a40b22d13beee2602f_0dc4307284" tabindex="-1" value=""></div>

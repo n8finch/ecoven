@@ -123,7 +123,7 @@ function eco_homepage_recent_blog_posts() {
 		<!-- Add Recent Blog Posts box -->
 
 		<section class="homepage-recent-blog-posts">
-			<h2>RECENT BLOG POSTS</h2>
+			<h2>Recent Blog Posts</h2>
 
 			<div class="recent-post-box-container">
 				<?php
@@ -183,7 +183,7 @@ function eco_homepage_page_as_seen_in_the_media($acf_fields) {
 	<section class="homepage-page-as-seen">
 		<div class="as-seen-layer-container ">
 			<div class="as-seen-logo-container">
-				<h2>AS SEEN IN THE MEDIA</h2>
+				<h2>As Seen in the Media</h2>
 
 				<a href="<?php echo esc_url( $acf_fields['media_logo_1_link'] ); ?>">
 					<img src="<?php echo esc_attr( $acf_fields['media_logo_1_image'] ); ?>" />
@@ -211,7 +211,7 @@ function eco_homepage_page_as_seen_in_the_media($acf_fields) {
 
 			</div>
 
-			<a class="button" href="/in-the-media/">READ ARTICLES</a>
+			<a class="button" href="/in-the-media/">Read Articles</a>
 
 		</div>
 

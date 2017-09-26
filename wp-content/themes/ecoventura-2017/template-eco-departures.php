@@ -40,7 +40,7 @@ function eco_departures_dates( $acf_fields, $depart_year ) {
 					<div class="pinned">
 						<table class="departures-table">
 							<tr>
-								<th class="th-dates">CRUISE DATES</th>
+								<th class="th-dates">Cruise Dates</th>
 							</tr>
 							<?php
 							$rows = $acf_fields['departure_table_values'];
@@ -61,14 +61,14 @@ function eco_departures_dates( $acf_fields, $depart_year ) {
 					<div class="scroll">
 						<table class="departures-table scroll">
 							<tr>
-								<th class="th-dots">ITINERARY</th>
-								<th class="th-dots">SEASONAL</th>
-								<th class="th-dots">PEAK</th>
-								<th class="th-dots">HOLIDAY</th>
-								<th class="th-dots">FAMILY</th>
-								<th>STATUS</th>
-								<th colspan="2">PROMOTION</th>
-								<th class="th-notes">NOTES</th>
+								<th class="th-dots">Itinerary</th>
+								<th class="th-dots">Seasonal</th>
+								<th class="th-dots">Peak</th>
+								<th class="th-dots">Holiday</th>
+								<th class="th-dots">Family</th>
+								<th>Status</th>
+								<th colspan="2">Promotion</th>
+								<th class="th-notes">Notes</th>
 							</tr>
 							<?php
 
@@ -80,11 +80,11 @@ function eco_departures_dates( $acf_fields, $depart_year ) {
 
 							function eco_promotion_button( $button_val ) {
 								if ( 'Sold Out' === $button_val ) {
-									return '<a class="button" href="https://www.origingalapagos.com/" target="_blank">INQUIRE FOR ORIGIN</a>';
+									return '<a class="button" href="https://www.origingalapagos.com/" target="_blank">Inquire for Origin</a>';
 								}
 
 								if ( 'Available' === $button_val ) {
-									return '<a class="button" href="#" target="_blank">INQUIRE</a>';
+									return '<a class="button" href="#" target="_blank">Inquire</a>';
 								}
 							}
 
@@ -94,15 +94,15 @@ function eco_departures_dates( $acf_fields, $depart_year ) {
 								foreach ( $rows as $row ) {
 									$row_color_var = $couter % 2;
 									echo '<tr class="departure-table-row-' . esc_html( $row_color_var ) . '">';
-									echo '<td data-th="ITINERARY">' . esc_html( $row['itinerary'] ) . '</td>';
-									echo '<td class="td-dot" data-th="SEASONAL">' . esc_html( eco_get_dot_if_true( $row['seasonal'] ) ) . '</td>';
-									echo '<td class="td-dot" data-th="PEAK">' . esc_html( eco_get_dot_if_true( $row['peak'] ) ) . '</td>';
-									echo '<td class="td-dot" data-th="HOLIDAY">' . esc_html( eco_get_dot_if_true( $row['holiday'] ) ) . '</td>';
-									echo '<td class="td-dot" data-th="FAMILY">' . esc_html( eco_get_dot_if_true( $row['family'] ) ) . '</td>';
+									echo '<td data-th="Itinerary">' . esc_html( $row['itinerary'] ) . '</td>';
+									echo '<td class="td-dot" data-th="Seasonal">' . esc_html( eco_get_dot_if_true( $row['seasonal'] ) ) . '</td>';
+									echo '<td class="td-dot" data-th="Peak">' . esc_html( eco_get_dot_if_true( $row['peak'] ) ) . '</td>';
+									echo '<td class="td-dot" data-th="Holiday">' . esc_html( eco_get_dot_if_true( $row['holiday'] ) ) . '</td>';
+									echo '<td class="td-dot" data-th="Family">' . esc_html( eco_get_dot_if_true( $row['family'] ) ) . '</td>';
 									echo '<td data-th="STATUS">' . esc_html( $row['status'] ) . '</td>';
-									echo '<td class="td-promotion" data-th="PROMOTION">' . esc_html( $row['promotion'] ) . '</td>';
-									echo '<td class="td-inquire" data-th="PROMOTION">' . eco_promotion_button( $row['status'] ) . '</td>';
-									echo '<td class="td-notes" data-th="NOTES">' . esc_html( $row['notes'] ) . '</td>';
+									echo '<td class="td-promotion" data-th="Promotion">' . esc_html( $row['promotion'] ) . '</td>';
+									echo '<td class="td-inquire" data-th="Promotion">' . eco_promotion_button( $row['status'] ) . '</td>';
+									echo '<td class="td-notes" data-th="Notes">' . esc_html( $row['notes'] ) . '</td>';
 									echo '</tr>';
 									$couter ++;
 								}
@@ -115,15 +115,15 @@ function eco_departures_dates( $acf_fields, $depart_year ) {
 
 			<div class="departure-view-iteneraries">
 				<a href="#">
-					<div id="view-itens">VIEW ITINERARIES</div>
+					<div id="view-itens">View Itineraries</div>
 					<div id="arrow-right"></div>
 				</a>
 				<a href="<?php echo esc_url( $acf_fields[ itinerary_a_link ] ); ?>">
 					<div id="arrow-from-right"></div>
-					<div id="iten-a">ITINERARY A</div>
+					<div id="iten-a">Itinerary A</div>
 				</a>
 				<a href="<?php echo esc_url( $acf_fields[ itinerary_b_link ] ); ?>">
-					<div id="iten-b">ITINERARY B</div>
+					<div id="iten-b">Itinerary B</div>
 				</a>
 			</div>
 	</section>
@@ -134,7 +134,7 @@ function eco_departures_expedition( $acf_fields ) {
 	?>
 	<section class="departures-expedition">
 		<div class="departure-title-div">
-			<h2>READY FOR THE ULTIMATE EXPEDITION?</h2>
+			<h2>Ready for the Ultimate Expedition?</h2>
 		</div>
 
 		<!-- Add Plan Your Trip box -->
