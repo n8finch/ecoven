@@ -2888,6 +2888,7 @@ p.entry-meta {
 }
 .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap table.rates-table .td-rate-decks {
   height: 45px;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap table.rates-table .td-dot {
   font-size: 100px;
@@ -3213,29 +3214,35 @@ p.entry-meta {
   font-weight: 400;
   margin-bottom: 30px;
   position: relative;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap h3 {
   font-size: 35px;
   font-size: 3.5rem;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap h5 {
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap .rate-charter-terms h2 {
   font-weight: 400;
   margin-bottom: 30px;
   position: relative;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap .rate-charter-terms h3 {
   font-size: 35px;
   font-size: 3.5rem;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap .rate-charter-terms h5 {
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .rates-popup {
   display: none;
