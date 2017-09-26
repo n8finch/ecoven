@@ -29,6 +29,30 @@ module.exports = function (grunt) {
       }
     },
 
+	concat: {
+		options: {
+			stripBanners: true,
+			banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
+			  '<%= grunt.template.today("yyyy-mm-dd") %> */',
+		},
+		dist: {
+			src: [ 'js/10up-tabs.js', 'js/custom.js' ],
+			dest: 'js/custom.min.js',
+		},
+	},
+
+	uglify: {
+		options: {
+			mangle: false
+		},
+		my_target: {
+			files: {
+				'js/custom.min.js': ['js/custom.min.js']
+			}
+		}
+	},
+
+
 	browserSync: {
 		dev: {
 				bsFiles: {
@@ -36,8 +60,8 @@ module.exports = function (grunt) {
 						'style.css',
 						'*.php',
 						'*/*.php',
-            '*.js',
-            '*/*.js',
+			            '*.js',
+			            'js/*.js',
 					]
 				},
 				options: {
@@ -48,7 +72,7 @@ module.exports = function (grunt) {
 	},
 
     watch: {
-      files: ['sass/css/*.css', 'sass/js/*.js', 'sass/sass/**/*.scss'],
+      files: ['sass/css/*.css', 'js/*.js', 'sass/sass/**/*.scss'],
       tasks: ['sass']
     }
   });
