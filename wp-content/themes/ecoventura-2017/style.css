@@ -1639,6 +1639,7 @@ img.alignright,
 .top-bar a {
   color: #999999;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .top-bar a:hover {
   color: #152838;
@@ -1661,6 +1662,7 @@ img.alignright,
 .top-bar .widget_search .widget-wrap h3 {
   font-size: 1.6rem;
   margin: 10px;
+  text-transform: uppercase;
 }
 .top-bar .widget_search .widget-wrap input {
   background-color: transparent;
@@ -2075,6 +2077,7 @@ p.entry-meta {
 .home.page .homepage-title-div h2 {
   font-size: 3.5rem;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 .home.page .homepage-title-div .plan-your-trip-box {
   bottom: -25px;
@@ -2276,6 +2279,7 @@ p.entry-meta {
   border: 1px solid #999999;
   padding: 15px;
   text-align: center;
+  text-transform: uppercase;
 }
 .home.page .homepage-recent-blog-posts {
   padding: 40px;
@@ -2284,6 +2288,7 @@ p.entry-meta {
 .home.page .homepage-recent-blog-posts h2 {
   margin: 20px auto 40px;
   font-size: 3rem;
+  text-transform: uppercase;
 }
 .home.page .homepage-recent-blog-posts .recent-post-box-container {
   padding-bottom: 20px;
@@ -2385,6 +2390,7 @@ p.entry-meta {
 }
 .home.page .homepage-page-as-seen h2 {
   margin: 20px 0;
+  text-transform: uppercase;
 }
 .home.page .homepage-page-as-seen .as-seen-layer-container {
   background-color: rgba(185, 200, 190, 0.7);
@@ -4528,7 +4534,7 @@ p.entry-meta {
 }
 
 .footer-widgets h4 {
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 /* # Site Footer
@@ -4556,6 +4562,7 @@ p.entry-meta {
   font-size: 1.5em;
   min-width: 50%;
   padding-top: 5px;
+  text-transform: uppercase;
 }
 .footer-subscribe #mc_embed_signup_scroll input#mce-EMAIL {
   height: 20px;
