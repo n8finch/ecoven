@@ -36,17 +36,17 @@ function eco_cuisine_header_slider( $acf_fields ) {
 				<ul class="tab-list">
 					<li class="menu-tab tab-item">
 						<a href="#main_menu_day_and_menu">
-							MAIN MENU
+							Main Menu
 						</a>
 					</li>
 					<li class="menu-tab tab-item">
 						<a href="#vegetarian_menu_day_and_menu">
-							VEGETARIAN MENU
+							Vegetarian Menu
 						</a>
 					</li>
 					<li class="menu-tab tab-item">
 						<a href="#kids_menu_day_and_menu">
-							KIDS MENU
+							Kids Menu
 						</a>
 					</li>
 				</ul> <!-- tab-list -->
@@ -59,7 +59,7 @@ function eco_cuisine_header_slider( $acf_fields ) {
 
 					$rows = $acf_fields[$tab];
 					?>
-					<div id="<?php echo $tab; ?>" class="menu-wrapper tab-content tabs">
+					<div id="<?php echo esc_attr( $tab ) ; ?>" class="menu-wrapper tab-content tabs">
 					<?php
 					if($rows) {
 						//output the days first
@@ -70,7 +70,7 @@ function eco_cuisine_header_slider( $acf_fields ) {
 								foreach( $rows as $row ) {
 									?>
 									<li class="tab-item">
-										<a href="#menu-for-<?php echo esc_html( $tab . $row['day'] ); ?>">
+										<a href="<?php echo esc_url( '#menu-for-' . $tab . $row['day'] ); ?>">
 											<?php echo esc_html( $row['day'] ); ?>
 										</a>
 									</li>
@@ -84,17 +84,17 @@ function eco_cuisine_header_slider( $acf_fields ) {
 							$menu_counter = 1;
 							foreach( $rows as $row ) {
 								?>
-								<div id="menu-for-<?php echo esc_html( $tab . $row['day'] ); ?>" class="menu-items-wrapper tab-content menu-<?php echo $menu_counter ?>">
+								<div id="menu-for-<?php echo esc_html( $tab . $row['day'] ); ?>" class="menu-items-wrapper tab-content menu-<?php echo absint ( $menu_counter ); ?>">
 									<div class="menu-breakfast">
-										<p><strong>BREAKFAST</strong></p>
+										<p class="meal-heading"><strong>Breakfast</strong></p>
 										<?php echo wp_kses_post( $row['breakfast'] ); ?>
 									</div>
 									<div class="menu-lunch">
-										<p><strong>LUNCH</strong></p>
+										<p class="meal-heading"><strong>Lunch</strong></p>
 										<?php echo wp_kses_post( $row['lunch'] ); ?>
 									</div>
 									<div class="menu-dinner">
-										<p><strong>DINNER</strong></p>
+										<p class="meal-heading"><strong>Dinner</strong></p>
 										<?php echo wp_kses_post( $row['dinner'] ); ?>
 									</div>
 								</div>
@@ -149,7 +149,7 @@ function eco_cuisine_recipes ( $acf_fields ) {
 					foreach( $rows as $row ) {
 						?>
 						<li class="recipe-title tab-item">
-							<a href="<?php echo '#recipe-tab' . $title_counter; ?>">
+							<a href="<?php echo esc_url ( '#recipe-tab' . absint ( $title_counter ) ); ?>">
 								<?php echo esc_html( $row['recipe_title'] ); ?>
 							</a>
 						</li>
