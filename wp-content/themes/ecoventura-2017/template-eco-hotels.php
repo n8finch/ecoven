@@ -58,13 +58,13 @@ function eco_hotels_main( $acf_fields ) {
 				foreach( $hotel_tabs as $tab ) {
 					$rows = $acf_fields[$tab];
 					?>
-					<div id="<?php echo 'js-tab' . $tab_counter; ?>" class="tab-content">
+					<div id="<?php echo 'js-tab' . absint ( $tab_counter ); ?>" class="tab-content">
 						<?php
 						if($rows) {
 							$hotel_counter = 1;
 							foreach( $rows as $row ) {
 								?>
-								<div id="hotel-for-<?php echo esc_html( $tab . $row['name'] ); ?>" class="hotel-items-wrapper hotel-<?php echo $hotel_counter ?>">
+								<div id="hotel-for-<?php echo esc_html( $tab . $row['name'] ); ?>" class="hotel-items-wrapper hotel-<?php echo absint( $hotel_counter ) ?>">
 									<div class="hotel-image">
 										<img src="<?php echo esc_attr( $row['image'] ); ?>" />
 									</div>
