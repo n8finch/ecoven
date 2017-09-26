@@ -25,6 +25,7 @@
 		h2 {
 			margin: auto;
 			max-width: 1100px;
+			text-transform: uppercase;
 		}
 	}
 
@@ -40,6 +41,7 @@
 
 		h2 {
 			font-weight: 400;
+			text-transform: uppercase;
 		}
 	}
 
@@ -55,6 +57,7 @@
 
 		h2 {
 			font-weight: 400;
+			text-transform: uppercase;
 		}
 
 		.itinerary-boxes {
@@ -79,6 +82,7 @@
 
 			h3 {
 				font-style: italic;
+				text-transform: uppercase;
 			}
 
 			h3:hover {
@@ -133,6 +137,7 @@
 
 		h2 {
 			font-weight: 400;
+			text-transform: uppercase;
 		}
 
 		.highlight-boxes {
@@ -216,12 +221,14 @@
 			font-size: 35px;
 			font-size: 3.5rem;
 			font-weight: normal;
+			text-transform: uppercase;
 		}
 
 		h5 {
 			font-family: 'Roboto', sans-serif;
 			font-weight: normal;
 			letter-spacing: 1px;
+			text-transform: uppercase;
 		}
 
 		.itinerary-term-condition {
