@@ -66,7 +66,7 @@ function eco_hotels_main( $acf_fields ) {
 								?>
 								<div id="hotel-for-<?php echo esc_html( $tab . $row['name'] ); ?>" class="hotel-items-wrapper hotel-<?php echo absint( $hotel_counter ) ?>">
 									<div class="hotel-image">
-										<img src="<?php echo esc_attr( $row['image'] ); ?>" />
+										<img src="<?php echo esc_url( $row['image'] ); ?>" />
 									</div>
 									<div class="hotel-content">
 										<h2><?php echo esc_html( $row['name'] ); ?></h2>
