@@ -2888,6 +2888,7 @@ p.entry-meta {
 }
 .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap table.rates-table .td-rate-decks {
   height: 45px;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap table.rates-table .td-dot {
   font-size: 100px;
