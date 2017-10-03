@@ -68,7 +68,7 @@ function eco_intinerary_single_highlights( $acf_fields ) {
 	<section class="itinerary-expedition">
 		<h2>ready for itineray a? check out the departure dates</h2>
 		<div class="book-now-box">
-			<a class="button" href="#" data-popup-id="view-dates-popup">VIEW DATES</a>
+			<a class="button" href="#" data-popup-id="view-dates-popup">View Dates</a>
 		</div>
 	</section>
 
@@ -77,7 +77,7 @@ function eco_intinerary_single_highlights( $acf_fields ) {
 	</div>
 	<section id="itinerary-highlights">
 		<div class="itinerary-highlights">
-			<h2>HIGHLIGHTS</h2>
+			<h2>Highlights</h2>
 			<div class="highlight-boxes">
 				<?php
 				$rows = $acf_fields['itinerary_highlights'];
@@ -102,7 +102,7 @@ function eco_intinerary_single_highlights( $acf_fields ) {
 									</div>
 									<?php if( $row['learn_more_button_link'] ) { ?>
 									<a class="highlight-popup-button" href="<?php echo esc_url( $row['learn_more_button_link'] );?>">
-										<div>LEARN MORE</div>
+										<div>Learn More</div>
 									</a>
 									<?php } //end if ?>
 								</div>

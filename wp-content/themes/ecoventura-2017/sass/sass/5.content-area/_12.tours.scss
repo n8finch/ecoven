@@ -24,6 +24,7 @@
 		h2 {
 			margin: auto;
 			max-width: 1100px;
+			text-transform: uppercase;
 		}
 	}
 
@@ -40,6 +41,7 @@
 
 		h2 {
 			font-weight: 400;
+			text-transform: uppercase;
 		}
 
 		.tours-learn-more-button {
@@ -56,6 +58,7 @@
 		h2 {
 			font-weight: 400;
 			text-align: center;
+			text-transform: uppercase;
 		}
 
 		.tours-content {
@@ -81,6 +84,7 @@
 				font-weight: 400;
 				margin: 60px 5% 20px;
 				text-align: left;
+				text-transform: uppercase;
 			}
 
 			& > p {
@@ -98,6 +102,7 @@
 
 		h2 {
 			color: white;
+			text-transform: uppercase;
 		}
 	}
 
@@ -106,12 +111,14 @@
 
 		h2 {
 			color: black;
+			text-transform: uppercase;
 		}
 	}
 
 	.tours-main-content {
 		h2 {
 			margin-bottom: 40px;
+			text-transform: uppercase;
 		}
 	}
 

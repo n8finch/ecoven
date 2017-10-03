@@ -30,19 +30,19 @@ function eco_intinerary_a( $acf_fields ) {
 		<img src="<?php echo esc_attr( $acf_fields['itinerary_a_image'] ); ?>" />
 		<div class="view-iteneraries">
 			<a href="#">
-				<div id="view-itens">VIEW ITINERARIES</div>
+				<div id="view-itens">View Itineraries</div>
 				<div id="arrow-right"></div>
 			</a>
 			<a href="<?php echo esc_url( $acf_fields[ 'itinerary_a_link' ] );?>">
 				<div id="arrow-from-right"></div>
-				<div id="iten-a">ITINERARY A</div>
+				<div id="iten-a">Itinerary A</div>
 			</a>
 		</div>
 		<div class="itinerary-content">
 			<?php echo wp_kses_post( $acf_fields['itinerary_a_content'] ); ?>
 		</div>
 		<div class="itinerary-highlights">
-			<h2>HIGHLIGHTS</h2>
+			<h2>Highlights</h2>
 			<div class="highlight-boxes">
 				<?php
 				$rows = $acf_fields['itinerary_a_highlights'];
@@ -67,7 +67,7 @@ function eco_intinerary_a( $acf_fields ) {
 									</div>
 									<?php if( $row['learn_more_button_link'] ) { ?>
 									<a class="highlight-popup-button" href="<?php echo esc_url( $row['learn_more_button_link'] );?>">
-										<div>LEARN MORE</div>
+										<div>Learn More</div>
 									</a>
 									<?php } //end if ?>
 								</div>
@@ -96,19 +96,19 @@ function eco_intinerary_b( $acf_fields ) {
 		<img src="<?php echo esc_attr( $acf_fields['itinerary_b_image'] ); ?>" />
 		<div class="view-iteneraries">
 			<a href="#">
-				<div id="view-itens">VIEW ITINERARIES</div>
+				<div id="view-itens">View Itineraries</div>
 				<div id="arrow-right"></div>
 			</a>
 			<a href="<?php echo esc_url( $acf_fields[ 'itinerary_b_link' ] );?>">
 				<div id="arrow-from-right-b"></div>
-				<div id="iten-b">ITINERARY B</div>
+				<div id="iten-b">Itinerary B</div>
 			</a>
 		</div>
 		<div class="itinerary-content">
 			<?php echo wp_kses_post( $acf_fields['itinerary_b_content'] ); ?>
 		</div>
 		<div class="itinerary-highlights">
-			<h2>HIGHLIGHTS</h2>
+			<h2>Highlights</h2>
 			<div class="highlight-boxes">
 				<?php
 				$rows = $acf_fields['itinerary_b_highlights'];

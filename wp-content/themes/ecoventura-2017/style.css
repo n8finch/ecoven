@@ -1639,6 +1639,7 @@ img.alignright,
 .top-bar a {
   color: #999999;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .top-bar a:hover {
   color: #152838;
@@ -1661,6 +1662,7 @@ img.alignright,
 .top-bar .widget_search .widget-wrap h3 {
   font-size: 1.6rem;
   margin: 10px;
+  text-transform: uppercase;
 }
 .top-bar .widget_search .widget-wrap input {
   background-color: transparent;
@@ -2075,6 +2077,7 @@ p.entry-meta {
 .home.page .homepage-title-div h2 {
   font-size: 3.5rem;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 .home.page .homepage-title-div .plan-your-trip-box {
   bottom: -25px;
@@ -2276,6 +2279,7 @@ p.entry-meta {
   border: 1px solid #999999;
   padding: 15px;
   text-align: center;
+  text-transform: uppercase;
 }
 .home.page .homepage-recent-blog-posts {
   padding: 40px;
@@ -2284,6 +2288,7 @@ p.entry-meta {
 .home.page .homepage-recent-blog-posts h2 {
   margin: 20px auto 40px;
   font-size: 3rem;
+  text-transform: uppercase;
 }
 .home.page .homepage-recent-blog-posts .recent-post-box-container {
   padding-bottom: 20px;
@@ -2385,6 +2390,7 @@ p.entry-meta {
 }
 .home.page .homepage-page-as-seen h2 {
   margin: 20px 0;
+  text-transform: uppercase;
 }
 .home.page .homepage-page-as-seen .as-seen-layer-container {
   background-color: rgba(185, 200, 190, 0.7);
@@ -2423,6 +2429,7 @@ p.entry-meta {
 .page-template-template-eco-departures .departures-dates .departure-dates-header h2 {
   margin: auto;
   max-width: 1100px;
+  text-transform: uppercase;
 }
 .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap {
   margin: 30px auto 0;
@@ -2493,6 +2500,7 @@ p.entry-meta {
   background-color: #B9C8BE;
   color: white;
   padding: 7px 0;
+  text-transform: uppercase;
 }
 .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap table.departures-table .th-dates {
   width: 166px;
@@ -2547,6 +2555,7 @@ p.entry-meta {
 .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap div.pinned td {
   line-height: 32px;
   line-height: 3.2rem;
+  text-transform: uppercase;
 }
 .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap div.scroll {
   position: relative;
@@ -2566,6 +2575,9 @@ p.entry-meta {
     top: -2px;
   }
 }
+.page-template-template-eco-departures .departures-dates .departure-dates-table-wrap div.scroll td {
+  text-transform: uppercase;
+}
 @media screen and (max-width: 1150px) {
   .page-template-template-eco-departures .departures-dates .departure-dates-table-wrap div.scroll table {
     width: 951px;
@@ -2578,6 +2590,7 @@ p.entry-meta {
   margin: auto;
   margin-bottom: 60px;
   justify-content: space-around;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 1020px) {
   .page-template-template-eco-departures .departures-dates .departure-view-iteneraries {
@@ -2668,6 +2681,7 @@ p.entry-meta {
 }
 .page-template-template-eco-departures .departure-title-div h2 {
   font-size: 3.5rem;
+  text-transform: uppercase;
 }
 .page-template-template-eco-departures .book-now-box {
   top: -30px;
@@ -2689,11 +2703,13 @@ p.entry-meta {
 .page-template-template-eco-departures .departure-expedition-content-wrap h3 {
   font-size: 35px;
   font-size: 3.5rem;
+  text-transform: uppercase;
 }
 .page-template-template-eco-departures .departure-expedition-content-wrap h5 {
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .page-template-template-eco-departures .departures-faqs-terms-conditions .departure-faq-image {
   background-size: cover;
@@ -2715,11 +2731,13 @@ p.entry-meta {
   font-size: 35px;
   font-size: 3.5rem;
   font-weight: normal;
+  text-transform: uppercase;
 }
 .page-template-template-eco-departures .departures-faqs-terms-conditions h5 {
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .page-template-template-eco-departures .departures-faqs-terms-conditions .departure-term-condition {
   border-top: 1px solid #333333;
@@ -2729,6 +2747,7 @@ p.entry-meta {
   border-bottom: 1px solid #333333;
   margin-bottom: 0;
   padding: 30px 60px;
+  text-transform: uppercase;
 }
 @media only screen and (max-width: 860px) {
   .page-template-template-eco-departures .departures-faqs-terms-conditions .departure-term-condition h5 {
@@ -2768,6 +2787,7 @@ p.entry-meta {
 .page-template-template-eco-rates .rates-dates .rate-dates-header h2 {
   margin: auto;
   max-width: 1100px;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap {
   margin: 30px auto 0;
@@ -2795,7 +2815,6 @@ p.entry-meta {
   border-bottom: none;
   border-right: none;
   color: #152838;
-  cursor: pointer;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   float: left;
@@ -2804,6 +2823,7 @@ p.entry-meta {
   position: relative;
   margin: 0;
   text-align: center;
+  text-transform: uppercase;
   top: 0;
   white-space: nowrap;
   width: 171px;
@@ -2849,6 +2869,7 @@ p.entry-meta {
   background-color: #B9C8BE;
   color: white;
   padding: 7px 0;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap table.rates-table .th-dates {
   width: 166px;
@@ -2867,6 +2888,7 @@ p.entry-meta {
 }
 .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap table.rates-table .td-rate-decks {
   height: 45px;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap table.rates-table .td-dot {
   font-size: 100px;
@@ -2950,6 +2972,7 @@ p.entry-meta {
 }
 .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.scroll th {
   width: 150px;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .rates-dates .rate-dates-table-wrap div.scroll td {
   line-height: 32px;
@@ -2981,69 +3004,6 @@ p.entry-meta {
   margin-bottom: 20px;
   padding: 11px 10px;
 }
-.page-template-template-eco-rates .rates-dates .rate-view-iteneraries #view-itens {
-  background-color: #152838;
-  float: left;
-  width: 90%;
-}
-@media screen and (max-width: 920px) {
-  .page-template-template-eco-rates .rates-dates .rate-view-iteneraries #view-itens {
-    margin-bottom: 0;
-    width: 100%;
-  }
-}
-.page-template-template-eco-rates .rates-dates .rate-view-iteneraries #iten-a {
-  background-color: #44596e;
-  float: left;
-  width: 90%;
-}
-@media screen and (max-width: 920px) {
-  .page-template-template-eco-rates .rates-dates .rate-view-iteneraries #iten-a {
-    width: 100%;
-  }
-}
-.page-template-template-eco-rates .rates-dates .rate-view-iteneraries #iten-b {
-  background-color: #647a8c;
-  width: 100%;
-}
-@media screen and (max-width: 920px) {
-  .page-template-template-eco-rates .rates-dates .rate-view-iteneraries #iten-b {
-    width: 100%;
-  }
-}
-.page-template-template-eco-rates .rates-dates .rate-view-iteneraries #arrow-right {
-  border-top: 28px solid transparent;
-  border-bottom: 29px solid transparent;
-  border-left: 30px solid #152838;
-  float: left;
-  height: 0;
-  margin-left: 0px;
-  padding: 0;
-  width: 0;
-}
-@media screen and (max-width: 920px) {
-  .page-template-template-eco-rates .rates-dates .rate-view-iteneraries #arrow-right {
-    border-left: 45vw solid transparent;
-    border-right: 45vw solid transparent;
-    border-top: 30px solid #152838;
-    margin-bottom: 0;
-    margin-top: -1px;
-  }
-}
-.page-template-template-eco-rates .rates-dates .rate-view-iteneraries #arrow-from-right {
-  border-top: 28px solid #44596e;
-  border-bottom: 29px solid #44596e;
-  border-left: 29px solid transparent;
-  float: left;
-  height: 0;
-  padding: 0;
-  width: 0;
-}
-@media screen and (max-width: 920px) {
-  .page-template-template-eco-rates .rates-dates .rate-view-iteneraries #arrow-from-right {
-    display: none;
-  }
-}
 .page-template-template-eco-rates .rates-expedition,
 .page-template-template-eco-rates .rates-sub-content,
 .page-template-template-eco-rates .rates-charter-content {
@@ -3058,6 +3018,7 @@ p.entry-meta {
 }
 .page-template-template-eco-rates .rate-title-div h2 {
   font-size: 3.5rem;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .book-now-box {
   top: -30px;
@@ -3078,15 +3039,18 @@ p.entry-meta {
 }
 .page-template-template-eco-rates .rate-expedition-content-wrap h2 {
   font-weight: 400;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .rate-expedition-content-wrap h3 {
   font-size: 35px;
   font-size: 3.5rem;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .rate-expedition-content-wrap h5 {
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .rate-main-image {
   background-size: cover;
@@ -3105,15 +3069,18 @@ p.entry-meta {
 }
 .page-template-template-eco-rates .rates-sub-content .rate-sub-content-wrap h2 {
   font-weight: 400;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .rates-sub-content .rate-sub-content-wrap h3 {
   font-size: 35px;
   font-size: 3.5rem;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .rates-sub-content .rate-sub-content-wrap h5 {
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .rates-sub-content .rate-sub-content-wrap .book-now-box {
   top: 0;
@@ -3155,6 +3122,7 @@ p.entry-meta {
   min-width: 220px;
   padding: 7px 0;
   width: 33%;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap table.charter-rates-table .th-dates {
   width: 166px;
@@ -3200,6 +3168,7 @@ p.entry-meta {
   position: absolute;
   left: 0;
   min-width: 150px;
+  text-transform: uppercase;
   width: 25%;
 }
 @media screen and (max-width: 860px) {
@@ -3245,29 +3214,35 @@ p.entry-meta {
   font-weight: 400;
   margin-bottom: 30px;
   position: relative;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap h3 {
   font-size: 35px;
   font-size: 3.5rem;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap h5 {
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap .rate-charter-terms h2 {
   font-weight: 400;
   margin-bottom: 30px;
   position: relative;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap .rate-charter-terms h3 {
   font-size: 35px;
   font-size: 3.5rem;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .rates-charter-content .rates-charter-content-wrap .rate-charter-terms h5 {
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .page-template-template-eco-rates .rates-popup {
   display: none;
@@ -3377,6 +3352,7 @@ p.entry-meta {
 .page-template-template-eco-itinerary-a-b .itinerary-header h2 {
   margin: auto;
   max-width: 1100px;
+  text-transform: uppercase;
 }
 .page-template-template-eco-itinerary-a-b .itinerary-content {
   margin: 0 auto;
@@ -3390,6 +3366,7 @@ p.entry-meta {
 }
 .page-template-template-eco-itinerary-a-b .itinerary-content h2 {
   font-weight: 400;
+  text-transform: uppercase;
 }
 .page-template-template-eco-itinerary-a-b .view-iteneraries {
   clear: both;
@@ -3414,6 +3391,7 @@ p.entry-meta {
 .page-template-template-eco-itinerary-a-b .view-iteneraries a {
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .page-template-template-eco-itinerary-a-b .view-iteneraries div {
   color: white;
@@ -3512,6 +3490,7 @@ p.entry-meta {
 }
 .page-template-template-eco-itinerary-a-b div.itinerary-highlights h2 {
   font-weight: 400;
+  text-transform: uppercase;
 }
 .page-template-template-eco-itinerary-a-b div.itinerary-highlights .highlight-boxes {
   display: flex;
@@ -3704,6 +3683,7 @@ p.entry-meta {
 .page-template-template-eco-itinerary-single .itinerary-header h2 {
   margin: auto;
   max-width: 1100px;
+  text-transform: uppercase;
 }
 .page-template-template-eco-itinerary-single .itinerary-content {
   margin: 0 auto;
@@ -3717,6 +3697,7 @@ p.entry-meta {
 }
 .page-template-template-eco-itinerary-single .itinerary-content h2 {
   font-weight: 400;
+  text-transform: uppercase;
 }
 .page-template-template-eco-itinerary-single div.itinerary-content {
   margin: 60px auto;
@@ -3730,6 +3711,7 @@ p.entry-meta {
 }
 .page-template-template-eco-itinerary-single div.itinerary-content h2 {
   font-weight: 400;
+  text-transform: uppercase;
 }
 .page-template-template-eco-itinerary-single div.itinerary-content .itinerary-boxes {
   display: flex;
@@ -3751,6 +3733,7 @@ p.entry-meta {
 }
 .page-template-template-eco-itinerary-single div.itinerary-content .itinerary-box h3 {
   font-style: italic;
+  text-transform: uppercase;
 }
 .page-template-template-eco-itinerary-single div.itinerary-content .itinerary-box h3:hover {
   color: #CFAA42;
@@ -3792,6 +3775,7 @@ p.entry-meta {
 }
 .page-template-template-eco-itinerary-single div.itinerary-highlights h2 {
   font-weight: 400;
+  text-transform: uppercase;
 }
 .page-template-template-eco-itinerary-single div.itinerary-highlights .highlight-boxes {
   display: flex;
@@ -3860,12 +3844,14 @@ p.entry-meta {
   font-size: 35px;
   font-size: 3.5rem;
   font-weight: normal;
+  text-transform: uppercase;
 }
 .page-template-template-eco-itinerary-single #itinerary-dropdowns h5,
 .page-template-template-eco-itinerary-single #itinerary-faqs h5 {
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .page-template-template-eco-itinerary-single #itinerary-dropdowns .itinerary-term-condition,
 .page-template-template-eco-itinerary-single #itinerary-faqs .itinerary-term-condition {
@@ -4410,6 +4396,7 @@ p.entry-meta {
 .page-template-template-eco-tours .tours-header h2 {
   margin: auto;
   max-width: 1100px;
+  text-transform: uppercase;
 }
 .page-template-template-eco-tours .tours-main-content {
   margin: 0 auto;
@@ -4424,6 +4411,7 @@ p.entry-meta {
 }
 .page-template-template-eco-tours .tours-main-content h2 {
   font-weight: 400;
+  text-transform: uppercase;
 }
 .page-template-template-eco-tours .tours-main-content .tours-learn-more-button {
   text-align: center;
@@ -4437,6 +4425,7 @@ p.entry-meta {
 .page-template-template-eco-tours .tours-list-guayaquil h2 {
   font-weight: 400;
   text-align: center;
+  text-transform: uppercase;
 }
 .page-template-template-eco-tours .tours-list-quito .tours-content,
 .page-template-template-eco-tours .tours-list-guayaquil .tours-content {
@@ -4462,6 +4451,7 @@ p.entry-meta {
   font-weight: 400;
   margin: 60px 5% 20px;
   text-align: left;
+  text-transform: uppercase;
 }
 .page-template-template-eco-tours .tours-list-quito .tours-content > p,
 .page-template-template-eco-tours .tours-list-guayaquil .tours-content > p {
@@ -4473,15 +4463,18 @@ p.entry-meta {
 }
 .page-template-template-eco-tours .tours-list-quito h2 {
   color: white;
+  text-transform: uppercase;
 }
 .page-template-template-eco-tours .tours-list-guayaquil {
   background-color: #B9C8BE;
 }
 .page-template-template-eco-tours .tours-list-guayaquil h2 {
   color: black;
+  text-transform: uppercase;
 }
 .page-template-template-eco-tours .tours-main-content h2 {
   margin-bottom: 40px;
+  text-transform: uppercase;
 }
 
 /* # Sidebars
@@ -4528,7 +4521,7 @@ p.entry-meta {
 }
 
 .footer-widgets h4 {
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 /* # Site Footer
@@ -4556,6 +4549,7 @@ p.entry-meta {
   font-size: 1.5em;
   min-width: 50%;
   padding-top: 5px;
+  text-transform: uppercase;
 }
 .footer-subscribe #mc_embed_signup_scroll input#mce-EMAIL {
   height: 20px;

@@ -34,7 +34,7 @@ function eco_rates_dates( $acf_fields, $depart_year ) {
 			<div id="tabs">
 				<ul>
 					<li class="rate-table-tabs"
-					    data-tab="#tabs-1">M/Y ERIC & LETTY</li>
+					    data-tab="#tabs-1">M/Y Eric & Letty</li>
 					<!-- <li class="rate-table-tabs" data-tab="#tabs-2">LETTY</li> -->
 				</ul>
 
@@ -42,7 +42,7 @@ function eco_rates_dates( $acf_fields, $depart_year ) {
 					<div class="pinned">
 						<table class="rates-table">
 							<tr>
-								<th class="">DECK</th>
+								<th class="">Deck</th>
 							</tr>
 							<?php
 							$rows = $acf_fields['rates_table_values'];
@@ -51,7 +51,7 @@ function eco_rates_dates( $acf_fields, $depart_year ) {
 								foreach ( $rows as $row ) {
 									$row_color_var = $counter % 2;
 									echo '<tr class="rate-table-row-' . esc_html( $row_color_var ) . '">';
-									echo '<td id="' . esc_html( $row['deck'] ) . '" class="td-rate-decks" data-th="DECK">' . esc_html( $row['deck'] ) . '</td>';
+									echo '<td id="' . esc_html( $row['deck'] ) . '" class="td-rate-decks" data-th="Deck">' . esc_html( $row['deck'] ) . '</td>';
 									echo '</tr>';
 									$counter ++;
 								}
@@ -63,9 +63,9 @@ function eco_rates_dates( $acf_fields, $depart_year ) {
 					<div class="scroll">
 						<table class="rates-table scroll">
 							<tr>
-								<th class="">DOUBLE</th>
-								<th class="">TRIPLE</th>
-								<th class="">SINGLE</th>
+								<th class="">Double</th>
+								<th class="">Triple</th>
+								<th class="">Single</th>
 							</tr>
 
 							<?php
@@ -97,12 +97,12 @@ function eco_rates_expedition( $acf_fields ) {
 	?>
 	<section class="rates-expedition">
 		<div class="rate-title-div">
-			<h2>READY FOR THE ULTIMATE EXPEDITION?</h2>
+			<h2>Ready for the Ultimate Expedition?</h2>
 		</div>
 
 		<!-- Add Plan Your Trip box -->
 		<div class="book-now-box">
-			<a class="button" href="<?php echo esc_url( $acf_fields[ 'book_now_link' ] );?>">PLAN YOUR TRIP</a>
+			<a class="button" href="<?php echo esc_url( $acf_fields[ 'book_now_link' ] );?>">Plan Your Trip</a>
 		</div>
 
 		<div class="rate-expedition-content-wrap">
@@ -128,7 +128,7 @@ function eco_rates_sub_content( $acf_fields ) {
 				<?php echo wp_kses_post( $acf_fields['rates_cruise_options'] ); ?>
 			</div>
 			<div class="book-now-box">
-				<a class="button" href="<?php echo esc_url( $acf_fields[ 'book_now_link' ] );?>">PLAN YOUR TRIP</a>
+				<a class="button" href="<?php echo esc_url( $acf_fields[ 'book_now_link' ] );?>">Plan Your Trip</a>
 			</div>
 		</div>
 	</section>
@@ -146,7 +146,7 @@ function eco_rates_charter_rates( $acf_fields ) {
 				<div class="pinned">
 					<table class="charter-rates-table">
 						<tr>
-							<th class="">SEASON</th>
+							<th class="">Season</th>
 						</tr>
 						<?php
 						$rows = $acf_fields['charter_rates_table'];
@@ -167,8 +167,8 @@ function eco_rates_charter_rates( $acf_fields ) {
 				<div class="scroll">
 					<table class="charter-rates-table scroll">
 						<tr>
-							<th class="">2017 RATE</th>
-							<th class="">2018 RATE</th>
+							<th class="">2017 Rate</th>
+							<th class="">2018 Rate</th>
 						</tr>
 
 						<?php

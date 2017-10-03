@@ -39,7 +39,7 @@ function eco_tours_main( $acf_fields ) {
 function eco_tours_list( $acf_fields ) {
 	?>
 	<section class="tours-list-quito">
-		<h2>TOURS FROM QUITO</h2>
+		<h2>Tours from Quito</h2>
 		<?php
 
 		$rows = $acf_fields['tours_from_quito'];
@@ -51,13 +51,13 @@ function eco_tours_list( $acf_fields ) {
 			</div>
 			<h2><?php echo esc_html( $row['title'] ) ?></h2>
 			<?php echo wp_kses_post( $row['content'] ); ?>
-			<a class="button" href="<?php echo esc_url( $row['book_bow_button_link'] );?>">BOOK NOW</a>
+			<a class="button" href="<?php echo esc_url( $row['book_bow_button_link'] );?>">Book Now</a>
 		</div>
 		<?php } //end foreach ?>
 	</section>
 
 	<section class="tours-list-guayaquil">
-		<h2>TOURS FROM GUAYQUIL</h2>
+		<h2>Tours from Guayaquil</h2>
 		<?php
 
 		$rows = $acf_fields['tours_from_guayaquil'];
@@ -69,7 +69,7 @@ function eco_tours_list( $acf_fields ) {
 			</div>
 			<h2><?php echo esc_html( $row['title'] ) ?></h2>
 			<?php echo wp_kses_post( $row['content'] ); ?>
-			<a class="button" href="<?php echo esc_url( $row['book_bow_button_link'] );?>">BOOK NOW</a>
+			<a class="button" href="<?php echo esc_url( $row['book_bow_button_link'] );?>">Book Now</a>
 		</div>
 		<?php } //end foreach ?>
 	</section>
@@ -81,7 +81,7 @@ function eco_tours_list( $acf_fields ) {
 function eco_tours_terms( $acf_fields ) {
 	?>
 	<section class="tours-main-content">
-		<h2>TERMS & CONDITIONS</h2>
+		<h2>Terms & Conditions</h2>
 		<?php echo wp_kses_post( $acf_fields['terms_and_conditions'] ); ?>
 	</section>
 	<?php

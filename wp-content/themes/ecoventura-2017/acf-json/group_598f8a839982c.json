@@ -292,7 +292,7 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": 45
+                    "maxlength": 33
                 }
             ]
         },
@@ -457,5 +457,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1505373366
+    "modified": 1506427058
 }
