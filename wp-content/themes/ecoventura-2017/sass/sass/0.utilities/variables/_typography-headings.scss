@@ -72,7 +72,7 @@ main.content ul {
     text-indent: -12px;
 }
 
-main.content li:before {
+main.content ul li:before {
     content: "+";
     margin-right: 4px;
 }
