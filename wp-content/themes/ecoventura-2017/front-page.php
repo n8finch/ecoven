@@ -99,7 +99,7 @@ function eco_homepage_video($acf_fields) {
 	?>
 	<section class="homepage-video">
 		<div>
-			<video width="100%" autoplay muted>
+			<video width="100%" autoplay muted loop>
 			  <source src="<?php echo esc_attr( $acf_fields['video_embed'] ); ?>" type="video/mp4">
 			  <source src="<?php echo esc_attr( $acf_fields['video_embed'] ); ?>" type="video/ogg">
 			Your browser does not support the video tag.

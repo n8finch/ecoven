@@ -163,7 +163,7 @@ main.content ul {
   text-indent: -12px;
 }
 
-main.content li:before {
+main.content ul li:before {
   content: "+";
   margin-right: 4px;
 }
@@ -1923,7 +1923,7 @@ body.archive .content-header h2 {
 }
 
 .entry-content ul > li {
-  list-style-type: disc;
+  list-style-type: none;
 }
 
 .entry-content ol ol,
