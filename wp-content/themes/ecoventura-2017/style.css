@@ -184,6 +184,11 @@ ul.soliloquy-wrap li {
   text-indent: 12px;
 }
 
+.soliloquy-viewport ul li:before,
+.tab-control > ul li:before {
+  display: none;
+}
+
 hr {
   border: 0;
   border-collapse: collapse;

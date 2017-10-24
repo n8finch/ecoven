@@ -92,6 +92,11 @@ ul.soliloquy-wrap {
 	}
 }
 
+.soliloquy-viewport ul li:before,
+.tab-control > ul li:before {
+	display: none;
+}
+
 hr {
 	border: 0;
 	border-collapse: collapse;
