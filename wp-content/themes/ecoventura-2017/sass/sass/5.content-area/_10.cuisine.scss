@@ -68,6 +68,10 @@
 					}
 
 				    text-indent: -5px;
+
+				    &.is-active a {
+				    	border-bottom-color: transparent;
+				    }
 				}
 
 				.menu-tab a {
@@ -75,7 +79,9 @@
 						border-left: 1px solid black;
 						width: 100%;
 					}
-					border: 1px solid black;
+					border-top: 1px solid black;
+					border-bottom: 1px solid black;
+					border-right: 1px solid black;
 					background-color: #eeeeee;
 					padding: 20px 40px;
 					text-transform: uppercase;
