@@ -137,17 +137,17 @@ function _eco_register_post_types() {
 		),
 		array(
 			'labels' => array(
-				'name'              => __( 'Gallery Type',          'ecoventura-2013' ),
-				'singular_name'     => __( 'Gallery Type',          'ecoventura-2013' ),
-				'search_items'      => __( 'Search Gallery Types', 'ecoventura-2013' ),
-				'all_items'         => __( 'All Gallery Types',    'ecoventura-2013' ),
-				'parent_item'       => __( 'Parent Gallery Type',   'ecoventura-2013' ),
-				'parent_item_colon' => __( 'Parent Gallery Type:',  'ecoventura-2013' ),
-				'edit_item'         => __( 'Edit Gallery Type',     'ecoventura-2013' ),
-				'update_item'       => __( 'Update Gallery Type',   'ecoventura-2013' ),
-				'add_new_item'      => __( 'Add New Gallery Type',  'ecoventura-2013' ),
-				'new_item_name'     => __( 'New Gallery Type Name', 'ecoventura-2013' ),
-				'menu_name'         => __( 'Gallery Types',        'ecoventura-2013' )
+				'name'              => __( 'Gallery Type',          'ecoventura-2017' ),
+				'singular_name'     => __( 'Gallery Type',          'ecoventura-2017' ),
+				'search_items'      => __( 'Search Gallery Types', 'ecoventura-2017' ),
+				'all_items'         => __( 'All Gallery Types',    'ecoventura-2017' ),
+				'parent_item'       => __( 'Parent Gallery Type',   'ecoventura-2017' ),
+				'parent_item_colon' => __( 'Parent Gallery Type:',  'ecoventura-2017' ),
+				'edit_item'         => __( 'Edit Gallery Type',     'ecoventura-2017' ),
+				'update_item'       => __( 'Update Gallery Type',   'ecoventura-2017' ),
+				'add_new_item'      => __( 'Add New Gallery Type',  'ecoventura-2017' ),
+				'new_item_name'     => __( 'New Gallery Type Name', 'ecoventura-2017' ),
+				'menu_name'         => __( 'Gallery Types',        'ecoventura-2017' )
 			),
 			'hierarchical'        => false,
 			'show_ui'             => true,

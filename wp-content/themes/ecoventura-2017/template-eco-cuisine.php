@@ -84,7 +84,7 @@ function eco_cuisine_header_slider( $acf_fields ) {
 							$menu_counter = 1;
 							foreach( $rows as $row ) {
 								?>
-								<div id="menu-for-<?php echo esc_html( $tab . $row['day'] ); ?>" class="menu-items-wrapper tab-content menu-<?php echo absint ( $menu_counter ); ?>">
+								<div id="menu-for-<?php echo esc_attr( $tab . $row['day'] ); ?>" class="menu-items-wrapper tab-content menu-<?php echo absint ( $menu_counter ); ?>">
 									<div class="menu-breakfast">
 										<p class="meal-heading"><strong>Breakfast</strong></p>
 										<?php echo wp_kses_post( $row['breakfast'] ); ?>
@@ -121,7 +121,7 @@ function eco_cuisine_cookbook( $acf_fields ) {
 	<section class="our-cookbook">
 		<div class="cookbook-wrapper">
 			<div class="cookbook-image">
-				<img src="<?php echo esc_attr( $acf_fields['cookbook_image'] ); ?>" />
+				<img src="<?php echo esc_url( $acf_fields['cookbook_image'] ); ?>" />
 			</div>
 			<div class="cookbook-content">
 				<h2><?php echo esc_html( $acf_fields['cookbook_title'] ); ?></h2>
@@ -149,7 +149,7 @@ function eco_cuisine_recipes ( $acf_fields ) {
 					foreach( $rows as $row ) {
 						?>
 						<li class="recipe-title tab-item">
-							<a href="<?php echo esc_url ( '#recipe-tab' . absint ( $title_counter ) ); ?>">
+							<a href="<?php echo esc_url( '#recipe-tab' . absint ( $title_counter ) ); ?>">
 								<?php echo esc_html( $row['recipe_title'] ); ?>
 							</a>
 						</li>
@@ -165,7 +165,7 @@ function eco_cuisine_recipes ( $acf_fields ) {
 				$content_counter = 1;
 				foreach( $rows as $row ) {
 					?>
-					<div id="recipe-tab<?php echo $content_counter; ?>" class="recipe-single tab-content"><?php echo wp_kses_post( $row['recipe_content'] ); ?></div>
+					<div id="recipe-tab<?php echo esc_attr( $content_counter ); ?>" class="recipe-single tab-content"><?php echo wp_kses_post( $row['recipe_content'] ); ?></div>
 					<?php
 				$content_counter++;
 				}

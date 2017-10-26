@@ -38,14 +38,13 @@ function child_theme_setup() {
 	include_once( get_stylesheet_directory() . '/lib/output.php' );
 
 	// Child theme (do not remove)
-	define( 'CHILD_THEME_NAME', 'Ecoventura 2013' );
+	define( 'CHILD_THEME_NAME', 'Ecoventura 2017' );
 	define( 'CHILD_THEME_URL', 'http://www.josheaton.org/' );
 	define( 'CHILD_THEME_VERSION', filemtime( get_stylesheet_directory() . '/style.css' ) );
 
 	// Includes
 	require_once( CHILD_DIR . '/inc/eco-functions.php' );
 	require_once( CHILD_DIR . '/inc/eco-types.php' );
-	require_once( CHILD_DIR . '/inc/eco-builds.php' );
 
 	// Admin
 	require_once( CHILD_DIR . '/inc/admin/admin.php' );
@@ -63,10 +62,6 @@ function child_theme_setup() {
 	// Move secondary menu to header
 	remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 	add_action( 'eco_top_bar', 'eco_do_top_bar' );
-
-	// Reposition the secondary navigation menu.
-	// remove_action( 'genesis_after_header', 'genesis_do_subnav' );
-	// add_action( 'genesis_footer', 'genesis_do_subnav', 5 );
 
 	// Reduce the secondary navigation menu to one level depth.
 	add_filter( 'wp_nav_menu_args', 'genesis_sample_secondary_menu_args' );
@@ -157,17 +152,11 @@ function child_theme_setup() {
 	// Add top bar
 	add_action( 'genesis_before_header', 'eco_do_top_bar', 3 );
 
-	// Add logo to the header
-	// add_filter( 'genesis_seo_title', 'eco_custom_header_logo', 10, 3 );
-
 	// Add support for custom background.
 	add_theme_support( 'custom-background' );
 
 	// Add support for after entry widget.
 	add_theme_support( 'genesis-after-entry-widget-area' );
-
-	// Rename primary and secondary navigation menus.
-	// add_theme_support( 'genesis-menus', array( 'primary' => __( 'After Header Menu', 'genesis-sample' ), 'secondary' => __( 'Footer Menu', 'genesis-sample' ) ) );
 
 	// Remove Genesis front-end features
 	// * Header *
@@ -192,7 +181,6 @@ function child_theme_setup() {
 	remove_action( 'genesis_footer', 'genesis_do_footer' );
 	remove_action( 'genesis_footer', 'genesis_footer_markup_open', 5 );
 	remove_action( 'genesis_footer', 'genesis_footer_markup_close', 15 );
-	// add_action( 'wp_footer', 'eco_do_footer', 5 );
 
 	// * Customize widget titles
 	add_filter( 'widget_title', 'eco_add_widget_title_spans' );
@@ -294,43 +282,6 @@ function eco_do_top_bar() { ?>
 	<?php
 }
 
-/**
- * Adds a custom header logo
- *
- * @since 1.0.0
- * @param  string $title  header title
- * @param  string $inside what to put inside the link
- * @param  string $wrap   the tag to wrap it in
- * @return string         new header title
- */
-function eco_custom_header_logo( $title, $inside, $wrap ) {
-	$inside = sprintf( '<a href="/" title="%s" class="header-logo">
-		%s
-	</a>', esc_attr( get_bloginfo( 'name' ) ),
-	'<img src="' . get_stylesheet_directory_uri() . '/images/ecoventura-logo-new.png" width="153" height="60">' );
-
-	$title = sprintf( '<%s class="title">%s
-		</%s>
-	', $wrap, $inside, $wrap );
-	$nav_toggle = '<div class="menu-toggle menu-icon">
-		<a href="#"><span>Site Menu</span></a>
-	</div>';
-
-	return $title . $nav_toggle;
-}
-
-function eco_slider_wrap_begin() {
-	echo '<div class="header-slider-wrap">';
-}
-
-function eco_slider_wrap_end() {
-	echo '</div>';
-}
-
-function eco_do_footer() {
-	get_template_part( 'inc/footer' );
-}
-
 function eco_add_widget_title_spans( $title ) {
 	if ( false === strpos( $title, '[span]' ) ) {
 		return $title;
@@ -355,36 +306,8 @@ function eco_search_text( $text ) {
  * Register nav menus
  */
 function eco_register_menus() {
-	register_nav_menu( 'social-media', _x( 'Social Media', 'nav menu location', 'ecoventura-2013' ) );
+	register_nav_menu( 'social-media', _x( 'Social Media', 'nav menu location', 'ecoventura-2017' ) );
 }
-
-
-add_filter( 'underscores_slider_slide_content_slides', 'eco_slide_filter', 10, 2 );
-
-function eco_slide_filter( $content, $args ) {
-	global $post;
-
-	// Only add caption for home slider
-	if ( isset($args['slide_page']) && 'home-slider' == $args['slide_page'] ) {
-		$caption = get_field( 'slide_caption', $post->ID );
-		if ( $caption ) {
-			$content .= '<div class="slide-caption">' . $caption . '</div>';
-		}
-	}
-
-	return $content;
-}
-
-
-/**
- * Redirect non-admins to the homepage after logging into the site.
- *
- * @since 	1.0
- */
-function soi_login_redirect( $redirect_to, $request, $user  ) {
-	return ( is_array( $user->roles ) && in_array( 'administrator', $user->roles ) ) ? admin_url() : site_url();
-} // end soi_login_redirect
-// add_filter( 'login_redirect', 'soi_login_redirect', 10, 3 );
 
 // add ie conditional html5 shim to header
 function add_ie_html5_shim () {
@@ -412,7 +335,7 @@ function eco_modify_queries( $query ) {
 }
 
 
-add_action( 'template_redirect',              'eco_hide_singular_cpts'                 );
+add_action( 'template_redirect', 'eco_hide_singular_cpts' );
 
 /**
  * Set redirect to hide single posts in certain CPTs.
@@ -540,12 +463,12 @@ function eco_footer_testimonials() {
 	if ( $guestreviews ) {
 		?>
 		<section class="footer-testimonials">
-			<h4>GUEST REVIEWS</h4>
+			<h4>Guest Reviews</h4>
 		<?php
 		    foreach ( $guestreviews as $post ) :
 
 				$post_content = substr( $post->post_content, 0, 200);
-				$post_meta = get_post_meta($post->ID)[_eco_guests_trip][0];
+				$post_meta = get_post_meta($post->ID)['_eco_guests_trip'][0];
 
 				echo "<p>{$post_content}...</p>";
 				echo "<p><em>{$post_meta}</em></p>";
@@ -560,7 +483,7 @@ function eco_footer_testimonials() {
 }
 
 
-//* Subscribe to our newsleter before footer
+//* Subscribe to our newsletter before footer
 add_action( 'genesis_before_footer', 'eco_homepage_subscribe', 1 );
 function eco_homepage_subscribe() {
 	?>

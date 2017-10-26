@@ -34,7 +34,7 @@ function eco_hotels_main( $acf_fields ) {
 		</div>
 	</section>
 
-	<img src="<?php echo esc_attr( $acf_fields['hotels_main_image'] ); ?>" />
+	<img src="<?php echo esc_url( $acf_fields['hotels_main_image'] ); ?>" />
 
 
 	<section class="hotels">
@@ -64,7 +64,7 @@ function eco_hotels_main( $acf_fields ) {
 							$hotel_counter = 1;
 							foreach( $rows as $row ) {
 								?>
-								<div id="hotel-for-<?php echo esc_html( $tab . $row['name'] ); ?>" class="hotel-items-wrapper hotel-<?php echo absint( $hotel_counter ) ?>">
+								<div id="hotel-for-<?php echo esc_attr( $tab . $row['name'] ); ?>" class="hotel-items-wrapper hotel-<?php echo absint( $hotel_counter ) ?>">
 									<div class="hotel-image">
 										<img src="<?php echo esc_url( $row['image'] ); ?>" />
 									</div>
@@ -88,10 +88,6 @@ function eco_hotels_main( $acf_fields ) {
 			</div><!-- //.tab-group -->
 
 		</div><!-- //.tabs -->
-
-
-
-
 
 	</section>
 <?php
