@@ -1,7 +1,7 @@
 <?php
 /**
  * Footer template
- * @package ecoventura-2013
+ * @package ecoventura-2017
  * @author Josh Eaton <josh@josheaton.org>
  */
 
@@ -14,22 +14,22 @@ $front = get_option( 'page_on_front' );
 		</div>
 		<div class="one-third footer-center">
 			<div class="footer-logos">
-			
+
 <!--
 <?php
 				if ( get_field( '_eco_footer_logos', $front ) ) :
-					while ( has_sub_field( 
+					while ( has_sub_field(
 
 '_eco_footer_logos', $front ) ) {
 						$image = get_sub_field( 'image' );
 						$link  = get_sub_field( 'link' );
 
-						$img = wp_get_attachment_image( 
+						$img = wp_get_attachment_image(
 
 $image, 'footer-logo', false, array( 'class' => 'footer-logo') );
 
 						if ( $link )
-							$img = '<a 
+							$img = '<a
 
 href="'.esc_url($link).'">' . $img . '</a>';
 						echo $img;

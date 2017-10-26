@@ -3,7 +3,7 @@
  * Admin functions
  *
  * @since        1.0.0
- * @package      ecoventura-2013
+ * @package      ecoventura-2017
  */
 
 /**

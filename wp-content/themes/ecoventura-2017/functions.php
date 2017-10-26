@@ -354,7 +354,7 @@ function eco_search_text( $text ) {
  * Register nav menus
  */
 function eco_register_menus() {
-	register_nav_menu( 'social-media', _x( 'Social Media', 'nav menu location', 'ecoventura-2013' ) );
+	register_nav_menu( 'social-media', _x( 'Social Media', 'nav menu location', 'ecoventura-2017' ) );
 }
 
 // add ie conditional html5 shim to header

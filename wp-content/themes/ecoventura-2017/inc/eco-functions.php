@@ -19,18 +19,6 @@ function eco_default_link_none() {
 }
 
 /**
- * Restrict latest news widget to only the 'news' category
- *
- * @param  [type] $args [description]
- * @return [type]       [description]
- */
-function eco_news_widget_args( $args ) {
-	$args['category_name'] = 'news';
-	return $args;
-}
-// add_filter( 'widget_posts_args', 'eco_news_widget_args' );
-
-/**
  * Lower priority of WordPress SEO metabox
  *
  * @param  [type] $priority [description]
@@ -41,28 +29,8 @@ function eco_wpseo_metabox_prio( $priority ) {
 }
 add_filter( 'wpseo_metabox_prio', 'eco_wpseo_metabox_prio' );
 
-
-/**
- * Utility function to get a post object from a page slug
- *
- * @param  [type] $page_slug [description]
- * @param  [type] $output    [description]
- * @param  string $post_type [description]
- * @return [type]            [description]
- */
-function get_page_by_slug( $page_slug, $output = OBJECT, $post_type = 'page' ) {
-	global $wpdb;
-
-	$page = $wpdb->get_var( $wpdb->prepare( "SELECT ID FROM $wpdb->posts WHERE post_name = %s AND post_type= %s AND post_status = 'publish'", $page_slug, $post_type ) );
-
-	 if ( $page )
-		return get_post($page, $output);
-
-	return null;
-}
-
 function eco_jetpack_gallery_types( $types ) {
-	$types['slideshow'] = __( 'Slideshow', 'ecoventura-2013' );
+	$types['slideshow'] = __( 'Slideshow', 'ecoventura-2017' );
 
 	return $types;
 }
