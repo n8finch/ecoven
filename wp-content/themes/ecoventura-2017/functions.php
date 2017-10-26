@@ -63,10 +63,6 @@ function child_theme_setup() {
 	remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 	add_action( 'eco_top_bar', 'eco_do_top_bar' );
 
-	// Reposition the secondary navigation menu.
-	// remove_action( 'genesis_after_header', 'genesis_do_subnav' );
-	// add_action( 'genesis_footer', 'genesis_do_subnav', 5 );
-
 	// Reduce the secondary navigation menu to one level depth.
 	add_filter( 'wp_nav_menu_args', 'genesis_sample_secondary_menu_args' );
 	function genesis_sample_secondary_menu_args( $args ) {
@@ -165,9 +161,6 @@ function child_theme_setup() {
 	// Add support for after entry widget.
 	add_theme_support( 'genesis-after-entry-widget-area' );
 
-	// Rename primary and secondary navigation menus.
-	// add_theme_support( 'genesis-menus', array( 'primary' => __( 'After Header Menu', 'genesis-sample' ), 'secondary' => __( 'Footer Menu', 'genesis-sample' ) ) );
-
 	// Remove Genesis front-end features
 	// * Header *
 	remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
@@ -191,7 +184,6 @@ function child_theme_setup() {
 	remove_action( 'genesis_footer', 'genesis_do_footer' );
 	remove_action( 'genesis_footer', 'genesis_footer_markup_open', 5 );
 	remove_action( 'genesis_footer', 'genesis_footer_markup_close', 15 );
-	// add_action( 'wp_footer', 'eco_do_footer', 5 );
 
 	// * Customize widget titles
 	add_filter( 'widget_title', 'eco_add_widget_title_spans' );
@@ -324,10 +316,6 @@ function eco_slider_wrap_begin() {
 
 function eco_slider_wrap_end() {
 	echo '</div>';
-}
-
-function eco_do_footer() {
-	get_template_part( 'inc/footer' );
 }
 
 function eco_add_widget_title_spans( $title ) {
@@ -531,7 +519,7 @@ function eco_footer_testimonials() {
 }
 
 
-//* Subscribe to our newsleter before footer
+//* Subscribe to our newsletter before footer
 add_action( 'genesis_before_footer', 'eco_homepage_subscribe', 1 );
 function eco_homepage_subscribe() {
 	?>
