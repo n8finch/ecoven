@@ -545,7 +545,7 @@ function eco_footer_testimonials() {
 		    foreach ( $guestreviews as $post ) :
 
 				$post_content = substr( $post->post_content, 0, 200);
-				$post_meta = get_post_meta($post->ID)[_eco_guests_trip][0];
+				$post_meta = get_post_meta($post->ID)['_eco_guests_trip'][0];
 
 				echo "<p>{$post_content}...</p>";
 				echo "<p><em>{$post_meta}</em></p>";
