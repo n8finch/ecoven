@@ -3,9 +3,7 @@
 	$(document).ready(function() {
 
 		TenUp.tabs({
-			'target': '.tabs', // ID (or class) of the tab container
-		}, function() {
-			// add callback here if desired...
+			'target': '.tabs',
 		});
 
 		//* Homepage Booking
@@ -25,7 +23,7 @@
 					$(tabContent).hide();
 					$(tabClicked).show();
 			});
-		}
+		};
 
 		// do_recipe_tabs();
 
@@ -36,17 +34,17 @@
 
 			$('.menu-tab a').on('click', function(e) {
 					e.preventDefault();
-					var tabClicked = e.target.attributes['href'].nodeValue;
+					var tabClicked = e.target.href.nodeValue;
 
 					var assocMenu = tabClicked + ' .menu-days-wrapper ul li:first-child a';
 
 					$('.menu-tab a').css( 'background-color', '#eeeeee' );
-					$(e.target).css( 'background-color', '#ffffff')
+					$(e.target).css( 'background-color', '#ffffff');
 					$(tabContent).attr('aria-hidden', 'true'); //hide
 					$(tabClicked).attr('aria-hidden', 'false'); //show
 					$(assocMenu).trigger('click');
 			});
-		}
+		};
 
 		do_menu_main_tabs();
 
@@ -58,15 +56,15 @@
 			$('.menu-days-wrapper a').on('click', function(e) {
 				e.preventDefault();
 
-				var tabClicked = e.target.attributes['href'].nodeValue;
+				var tabClicked = e.target.href.nodeValue;
 
 				$('.menu-days-wrapper a').css( 'color', 'black' );
-				$(e.target).css( 'color', '#CFAA42')
+				$(e.target).css( 'color', '#CFAA42');
 				$(tabContent).hide();
 				$(tabClicked).css( 'display', 'flex' );
 				$(tabClicked).show();
 			});
-		}
+		};
 
 		do_menu_day_tabs();
 
@@ -78,9 +76,9 @@
 			$('section.hotels li.tab-item a').on('click', function(e) {
 
 					$('section.hotels li.tab-item a').css( 'background-color', '#eeeeee' );
-					$(e.target).css( 'background-color', '#ffffff')
+					$(e.target).css( 'background-color', '#ffffff');
 			});
-		}
+		};
 
 		do_hotel_tabs();
 
@@ -98,7 +96,7 @@
 
 			});
 
-		}
+		};
 
 		do_eco_toggles();
 
@@ -108,11 +106,11 @@
 			var winHeight = window.innerHeight;
 			var winWidth = window.innerWidth;
 			var scrollY = window.scrollY;
-			var popupWidth = winWidth*.9;
-			var centeredWidth = winWidth/2 - popupWidth/2;
+			var popupWidth = winWidth * 0.9;
+			var centeredWidth = winWidth / 2 - popupWidth / 2;
 
 			if( winWidth > 1000 ) {
-				centeredWidth = winWidth/2 - 450  ;
+				centeredWidth = winWidth / 2 - 450;
 			}
 
 			$('.ui-widget-overlay').show();
@@ -131,7 +129,7 @@
 				$('.ui-widget-overlay').hide();
 			});
 
-		}
+		};
 
 		// Page PopUps
 
