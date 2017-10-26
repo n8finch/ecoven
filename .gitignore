@@ -23,3 +23,4 @@ wp-content/themes/*
 # Ignore everything in the "plugins" directory, except the plugins you
 # specify (see the commented-out example for a hint on how to do this.)
 wp-content/plugins/*
+node_modules
