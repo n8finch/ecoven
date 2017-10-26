@@ -8,21 +8,21 @@ add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
 remove_action( 'genesis_loop', 'genesis_do_loop' );
 
 // Add custom departues content
-add_action( 'genesis_loop', 'eco_departues_content' );
+add_action( 'genesis_loop', 'eco_departures_content' );
 
-function eco_departues_content() {
+function eco_departures_content() {
 
 	global $post;
 	$acf_fields = get_fields( $post->ID );
 
 	//* Add in the sections
-	eco_departures_dates( $acf_fields, $depart_year );
+	eco_departures_dates( $acf_fields );
 	eco_departures_expedition( $acf_fields );
 	eco_departures_faqs_terms_conditions( $acf_fields );
 
 }
 
-function eco_departures_dates( $acf_fields, $depart_year ) {
+function eco_departures_dates( $acf_fields ) {
 	?>
 	<section class="departures-dates">
 		<div class="departure-dates-header">
@@ -92,7 +92,7 @@ function eco_departures_dates( $acf_fields, $depart_year ) {
 							if ( $rows ) {
 								$counter = 0;
 								foreach ( $rows as $row ) {
-									$row_color_var = $couter % 2;
+									$row_color_var = $counter % 2;
 									echo '<tr class="departure-table-row-' . esc_attr( $row_color_var ) . '">';
 									echo '<td data-th="Itinerary">' . esc_html( $row['itinerary'] ) . '</td>';
 									echo '<td class="td-dot" data-th="Seasonal">' . esc_html( eco_get_dot_if_true( $row['seasonal'] ) ) . '</td>';
@@ -104,7 +104,7 @@ function eco_departures_dates( $acf_fields, $depart_year ) {
 									echo '<td class="td-inquire" data-th="Promotion">' . eco_promotion_button( $row['status'] ) . '</td>';
 									echo '<td class="td-notes" data-th="Notes">' . esc_html( $row['notes'] ) . '</td>';
 									echo '</tr>';
-									$couter ++;
+									$counter++;
 								}
 							}
 							?>
@@ -118,11 +118,11 @@ function eco_departures_dates( $acf_fields, $depart_year ) {
 					<div id="view-itens">View Itineraries</div>
 					<div id="arrow-right"></div>
 				</a>
-				<a href="<?php echo esc_url( $acf_fields[ itinerary_a_link ] ); ?>">
+				<a href="<?php echo esc_url( $acf_fields[ 'itinerary_a_link' ] ); ?>">
 					<div id="arrow-from-right"></div>
 					<div id="iten-a">Itinerary A</div>
 				</a>
-				<a href="<?php echo esc_url( $acf_fields[ itinerary_b_link ] ); ?>">
+				<a href="<?php echo esc_url( $acf_fields[ 'itinerary_b_link' ] ); ?>">
 					<div id="iten-b">Itinerary B</div>
 				</a>
 			</div>
