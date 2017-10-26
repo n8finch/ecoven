@@ -45,7 +45,6 @@ function child_theme_setup() {
 	// Includes
 	require_once( CHILD_DIR . '/inc/eco-functions.php' );
 	require_once( CHILD_DIR . '/inc/eco-types.php' );
-	require_once( CHILD_DIR . '/inc/eco-builds.php' );
 
 	// Admin
 	require_once( CHILD_DIR . '/inc/admin/admin.php' );
