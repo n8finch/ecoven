@@ -38,7 +38,7 @@ function child_theme_setup() {
 	include_once( get_stylesheet_directory() . '/lib/output.php' );
 
 	// Child theme (do not remove)
-	define( 'CHILD_THEME_NAME', 'Ecoventura 2013' );
+	define( 'CHILD_THEME_NAME', 'Ecoventura 2017' );
 	define( 'CHILD_THEME_URL', 'http://www.josheaton.org/' );
 	define( 'CHILD_THEME_VERSION', filemtime( get_stylesheet_directory() . '/style.css' ) );
 
@@ -307,7 +307,7 @@ function eco_custom_header_logo( $title, $inside, $wrap ) {
 	$inside = sprintf( '<a href="/" title="%s" class="header-logo">
 		%s
 	</a>', esc_attr( get_bloginfo( 'name' ) ),
-	'<img src="' . get_stylesheet_directory_uri() . '/images/ecoventura-logo-new.png" width="153" height="60">' );
+	'<img src="' . esc_url( get_stylesheet_directory_uri() . '/images/ecoventura-logo-new.png' ) . '" width="153" height="60">' );
 
 	$title = sprintf( '<%s class="title">%s
 		</%s>
@@ -358,34 +358,6 @@ function eco_register_menus() {
 	register_nav_menu( 'social-media', _x( 'Social Media', 'nav menu location', 'ecoventura-2013' ) );
 }
 
-
-add_filter( 'underscores_slider_slide_content_slides', 'eco_slide_filter', 10, 2 );
-
-function eco_slide_filter( $content, $args ) {
-	global $post;
-
-	// Only add caption for home slider
-	if ( isset($args['slide_page']) && 'home-slider' == $args['slide_page'] ) {
-		$caption = get_field( 'slide_caption', $post->ID );
-		if ( $caption ) {
-			$content .= '<div class="slide-caption">' . $caption . '</div>';
-		}
-	}
-
-	return $content;
-}
-
-
-/**
- * Redirect non-admins to the homepage after logging into the site.
- *
- * @since 	1.0
- */
-function soi_login_redirect( $redirect_to, $request, $user  ) {
-	return ( is_array( $user->roles ) && in_array( 'administrator', $user->roles ) ) ? admin_url() : site_url();
-} // end soi_login_redirect
-// add_filter( 'login_redirect', 'soi_login_redirect', 10, 3 );
-
 // add ie conditional html5 shim to header
 function add_ie_html5_shim () {
 	echo '<!--[if lt IE 9]>';
@@ -412,7 +384,7 @@ function eco_modify_queries( $query ) {
 }
 
 
-add_action( 'template_redirect',              'eco_hide_singular_cpts'                 );
+add_action( 'template_redirect', 'eco_hide_singular_cpts' );
 
 /**
  * Set redirect to hide single posts in certain CPTs.
@@ -540,7 +512,7 @@ function eco_footer_testimonials() {
 	if ( $guestreviews ) {
 		?>
 		<section class="footer-testimonials">
-			<h4>GUEST REVIEWS</h4>
+			<h4>Guest Reviews</h4>
 		<?php
 		    foreach ( $guestreviews as $post ) :
 
