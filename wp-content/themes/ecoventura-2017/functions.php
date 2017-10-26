@@ -28,15 +28,6 @@ function child_theme_setup() {
 	// Start the engine
 	require_once( get_template_directory() . '/lib/init.php' );
 
-	// Add the helper functions.
-	include_once( get_stylesheet_directory() . '/lib/helper-functions.php' );
-
-	// Add Image upload and Color select to WordPress Theme Customizer.
-	require_once( get_stylesheet_directory() . '/lib/customize.php' );
-
-	// Include Customizer CSS.
-	include_once( get_stylesheet_directory() . '/lib/output.php' );
-
 	// Child theme (do not remove)
 	define( 'CHILD_THEME_NAME', 'Ecoventura 2017' );
 	define( 'CHILD_THEME_URL', 'http://www.josheaton.org/' );

@@ -155,7 +155,7 @@ function eco_departures_faqs_terms_conditions( $acf_fields ) {
 	?>
 	<section class="departures-faqs-terms-conditions">
 		<div class="departure-faq-image"
-		     style="background-image: url(http://ecoven.dev/wp-content/uploads/2017/07/Kicker-Rock-Sunset.jpg);"/>
+		     style="background-image: url(<?php echo esc_url($acf_fields['departure_image']); ?>);"/>
 		</div>
 
 		<div class="departure-terms-conditions">
