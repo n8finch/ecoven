@@ -332,6 +332,30 @@
             "delay": 0
         },
         {
+            "key": "field_59f1d4266b65c",
+            "label": "Departure Image",
+            "name": "departure_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_598f9634cac05",
             "label": "Terms & Conditions",
             "name": "",
@@ -457,5 +481,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1506427058
+    "modified": 1509020738
 }
