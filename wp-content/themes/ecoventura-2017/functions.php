@@ -152,9 +152,6 @@ function child_theme_setup() {
 	// Add top bar
 	add_action( 'genesis_before_header', 'eco_do_top_bar', 3 );
 
-	// Add logo to the header
-	// add_filter( 'genesis_seo_title', 'eco_custom_header_logo', 10, 3 );
-
 	// Add support for custom background.
 	add_theme_support( 'custom-background' );
 
@@ -283,39 +280,6 @@ function eco_do_top_bar() { ?>
 		?>
 	</div>
 	<?php
-}
-
-/**
- * Adds a custom header logo
- *
- * @since 1.0.0
- * @param  string $title  header title
- * @param  string $inside what to put inside the link
- * @param  string $wrap   the tag to wrap it in
- * @return string         new header title
- */
-function eco_custom_header_logo( $title, $inside, $wrap ) {
-	$inside = sprintf( '<a href="/" title="%s" class="header-logo">
-		%s
-	</a>', esc_attr( get_bloginfo( 'name' ) ),
-	'<img src="' . esc_url( get_stylesheet_directory_uri() . '/images/ecoventura-logo-new.png' ) . '" width="153" height="60">' );
-
-	$title = sprintf( '<%s class="title">%s
-		</%s>
-	', $wrap, $inside, $wrap );
-	$nav_toggle = '<div class="menu-toggle menu-icon">
-		<a href="#"><span>Site Menu</span></a>
-	</div>';
-
-	return $title . $nav_toggle;
-}
-
-function eco_slider_wrap_begin() {
-	echo '<div class="header-slider-wrap">';
-}
-
-function eco_slider_wrap_end() {
-	echo '</div>';
 }
 
 function eco_add_widget_title_spans( $title ) {
