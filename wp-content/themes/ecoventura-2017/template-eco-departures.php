@@ -84,7 +84,7 @@ function eco_departures_dates( $acf_fields, $depart_year ) {
 								}
 
 								if ( 'Available' === $button_val ) {
-									return '<a class="button" href="#" target="_blank">Inquire</a>';
+									return '<a class="button" href="' . esc_url( home_url( '/book-now/' ) ) . '" target="_blank">Inquire</a>';
 								}
 							}
 
@@ -93,7 +93,7 @@ function eco_departures_dates( $acf_fields, $depart_year ) {
 								$counter = 0;
 								foreach ( $rows as $row ) {
 									$row_color_var = $couter % 2;
-									echo '<tr class="departure-table-row-' . esc_html( $row_color_var ) . '">';
+									echo '<tr class="departure-table-row-' . esc_attr( $row_color_var ) . '">';
 									echo '<td data-th="Itinerary">' . esc_html( $row['itinerary'] ) . '</td>';
 									echo '<td class="td-dot" data-th="Seasonal">' . esc_html( eco_get_dot_if_true( $row['seasonal'] ) ) . '</td>';
 									echo '<td class="td-dot" data-th="Peak">' . esc_html( eco_get_dot_if_true( $row['peak'] ) ) . '</td>';
@@ -139,7 +139,7 @@ function eco_departures_expedition( $acf_fields ) {
 
 		<!-- Add Plan Your Trip box -->
 		<div class="book-now-box">
-			<a class="button" href="<?php echo esc_url( $acf_fields[ 'book_now_link' ] );?>">PLAN YOUR TRIP</a>
+			<a class="button" href="<?php echo esc_url( $acf_fields[ 'book_now_link' ] );?>">Plan Your Trip</a>
 		</div>
 
 		<div class="departure-expedition-content-wrap">
