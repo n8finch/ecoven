@@ -148,6 +148,60 @@
             "delay": 0
         },
         {
+            "key": "field_59f28489cdf46",
+            "label": "Itinerary CTA Title",
+            "name": "itinerary_cta_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59f28782cdf47",
+            "label": "Itinerary CTA Button Text",
+            "name": "itinerary_cta_button_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59f287e1cdf48",
+            "label": "Itinerary CTA Button URL",
+            "name": "itinerary_cta_button_url",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
             "key": "field_59aa0828f8e53",
             "label": "Itinerary Cruise Route Popup",
             "name": "itinerary_cruise_route_popup",
@@ -275,25 +329,6 @@
                     "toolbar": "basic",
                     "media_upload": 1,
                     "delay": 0
-                },
-                {
-                    "key": "field_59af5625c2104",
-                    "label": "Learn More Button Link",
-                    "name": "learn_more_button_link",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
                 },
                 {
                     "key": "field_59af5625c2104",
@@ -519,5 +554,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1505705904
+    "modified": 1509070146
 }
