@@ -66,9 +66,9 @@ function eco_intinerary_single( $acf_fields ) {
 function eco_intinerary_single_highlights( $acf_fields ) {
 	?>
 	<section class="itinerary-expedition">
-		<h2>ready for itineray a? check out the departure dates</h2>
+		<h2><?php echo esc_html( $acf_fields['itinerary_cta_title'] ); ?></h2>
 		<div class="book-now-box">
-			<a class="button" href="#" data-popup-id="view-dates-popup">View Dates</a>
+			<a class="button" href="<?php echo esc_url( $acf_fields['itinerary_cta_button_url'] ); ?>"><?php echo esc_html( $acf_fields['itinerary_cta_button_text'] ); ?></a>
 		</div>
 	</section>
 
