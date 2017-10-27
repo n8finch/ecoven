@@ -35,7 +35,9 @@ function eco_departures_dates( $acf_fields ) {
 				<ul>
 					<li class="departure-table-tabs"
 					    data-tab="#tabs-1"><?php echo esc_html( $acf_fields['date_field'] ); ?></li>
-					<!-- <li class="departure-table-tabs" data-tab="#tabs-2">LETTY</li> -->
+					<?php if ( ! empty( $acf_fields['next_year_date'] ) ) : ?>
+						<li class="departure-table-tabs"><a href="<?php echo esc_url( $acf_fields['next_year_date_link'] ); ?>"><?php echo esc_html( $acf_fields['next_year_date'] ); ?></a></li>
+					<?php endif; ?>
 				</ul>
 
 				<div class="departure-table-tab-content tab-open" id="tabs-1">

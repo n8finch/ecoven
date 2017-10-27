@@ -4,10 +4,48 @@
     "fields": [
         {
             "key": "field_598f90a047757",
-            "label": "Date Field",
+            "label": "This Year's Date Tab",
             "name": "date_field",
             "type": "text",
-            "instructions": "",
+            "instructions": "Use the current year for departures.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59f29746674e7",
+            "label": "Next Year's Date",
+            "name": "next_year_date",
+            "type": "text",
+            "instructions": "Use the next year for departures.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59f29757674e8",
+            "label": "Next Year Tab Link",
+            "name": "next_year_date_link",
+            "type": "text",
+            "instructions": "Link this to next year's departures page.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -481,5 +519,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1509068229
+    "modified": 1509070744
 }
