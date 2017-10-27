@@ -27,6 +27,21 @@
   padding: 32px 10px;
   font-size: 15px;
   letter-spacing: 1px;
+  position: relative;
+
+  .menu-sub-title {
+    font-size: 11px;
+    color: #999;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 10px;
+    @media only screen and (max-width: 1023px) {
+      position: static;
+    }
+  }
 }
 
 .genesis-nav-menu a:focus,
