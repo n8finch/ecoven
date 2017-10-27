@@ -29,7 +29,7 @@ function eco_tours_main( $acf_fields ) {
 	<header class="tours-header">
 		<h2><?php echo esc_html( get_the_title() ); ?></h2>
 	</header>
-	<img src="<?php echo esc_attr( $acf_fields['tours_main_image'] ); ?>" />
+	<img src="<?php echo esc_url( $acf_fields['tours_main_image'] ); ?>" />
 	<section class="tours-main-content">
 		<?php echo wp_kses_post( $acf_fields['tours_main_content'] ); ?>
 	</section>
@@ -67,7 +67,7 @@ function eco_tours_list( $acf_fields ) {
 		?>
 		<div class="tours-content">
 			<div class="tour-image">
-				<img src="<?php echo esc_attr( $row['image'] ); ?>" />
+				<img src="<?php echo esc_url( $row['image'] ); ?>" />
 			</div>
 			<h2><?php echo esc_html( $row['title'] ) ?></h2>
 			<?php echo wp_kses_post( $row['content'] ); ?>

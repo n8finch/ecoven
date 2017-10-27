@@ -18,7 +18,7 @@ function eco_rates_content() {
 	$acf_fields = get_fields( $post->ID );
 
 	//* Add in the sections
-	eco_rates_dates( $acf_fields, $depart_year );
+	eco_rates_dates( $acf_fields );
 	eco_rates_expedition( $acf_fields );
 	eco_rates_sub_content( $acf_fields );
 	eco_rates_charter_rates( $acf_fields );
@@ -26,7 +26,7 @@ function eco_rates_content() {
 
 }
 
-function eco_rates_dates( $acf_fields, $depart_year ) {
+function eco_rates_dates( $acf_fields ) {
 	?>
 	<section class="rates-dates">
 		<div class="rate-dates-header">
@@ -37,14 +37,13 @@ function eco_rates_dates( $acf_fields, $depart_year ) {
 				<ul>
 					<li class="rate-table-tabs"
 					    data-tab="#tabs-1">M/Y Eric & Letty</li>
-					<!-- <li class="rate-table-tabs" data-tab="#tabs-2">LETTY</li> -->
 				</ul>
 
 				<div class="rate-table-tab-content tab-open" id="tabs-1">
 					<div class="pinned">
 						<table class="rates-table">
 							<tr>
-								<th class="">Deck</th>
+								<th>Deck</th>
 							</tr>
 							<?php
 							$rows = $acf_fields['rates_table_values'];
@@ -52,10 +51,10 @@ function eco_rates_dates( $acf_fields, $depart_year ) {
 								$counter = 0;
 								foreach ( $rows as $row ) {
 									$row_color_var = $counter % 2;
-									echo '<tr class="rate-table-row-' . esc_html( $row_color_var ) . '">';
-									echo '<td id="' . esc_html( $row['deck'] ) . '" class="td-rate-decks" data-th="Deck">' . esc_html( $row['deck'] ) . '</td>';
+									echo '<tr class="rate-table-row-' . esc_attr( $row_color_var ) . '">';
+									echo '<td id="' . esc_attr( $row['deck'] ) . '" class="td-rate-decks" data-th="Deck">' . esc_html( $row['deck'] ) . '</td>';
 									echo '</tr>';
-									$counter ++;
+									$counter++;
 								}
 							}
 							?>
@@ -65,9 +64,9 @@ function eco_rates_dates( $acf_fields, $depart_year ) {
 					<div class="scroll">
 						<table class="rates-table scroll">
 							<tr>
-								<th class="">Double</th>
-								<th class="">Triple</th>
-								<th class="">Single</th>
+								<th>Double</th>
+								<th>Triple</th>
+								<th>Single</th>
 							</tr>
 
 							<?php
@@ -76,13 +75,13 @@ function eco_rates_dates( $acf_fields, $depart_year ) {
 							if ( $rows ) {
 								$counter = 0;
 								foreach ( $rows as $row ) {
-									$row_color_var = $couter % 2;
-									echo '<tr class="rate-table-row-' . esc_html( $row_color_var ) . '">';
+									$row_color_var = $counter % 2;
+									echo '<tr class="rate-table-row-' . esc_attr( $row_color_var ) . '">';
 									echo '<td>' . esc_html( $row['double'] ) . '</td>';
 									echo '<td>' . esc_html( $row['triple'] ) . '</td>';
 									echo '<td>' . esc_html( $row['single'] ) . '</td>';
 									echo '</tr>';
-									$couter ++;
+									$counter ++;
 								}
 							}
 							?>
@@ -120,7 +119,7 @@ function eco_rates_sub_content( $acf_fields ) {
 	?>
 	<section class="rates-sub-content">
 		<div class="rate-main-image"
-			 style="background-image: url(<?php echo esc_html( $acf_fields[ 'rates_main_image' ] ); ?>);"/>
+			 style="background-image: url(<?php echo esc_url( $acf_fields[ 'rates_main_image' ] ); ?>);"/>
 		</div>
 		<div class="rate-sub-content-wrap">
 			<div class="rate-sub-content">
@@ -156,7 +155,7 @@ function eco_rates_charter_rates( $acf_fields ) {
 							$counter = 0;
 							foreach ( $rows as $row ) {
 								$row_color_var = $counter % 2;
-								echo '<tr class="rate-table-row-' . esc_html( $row_color_var ) . '">';
+								echo '<tr class="rate-table-row-' . esc_attr( $row_color_var ) . '">';
 								echo '<td class="td-charter-rate" data-th="CRUISE DATES">' . esc_html( $row['season'] ) . '</td>';
 								echo '</tr>';
 								$counter ++;
@@ -179,12 +178,12 @@ function eco_rates_charter_rates( $acf_fields ) {
 						if ( $rows ) {
 							$counter = 0;
 							foreach ( $rows as $row ) {
-								$row_color_var = $couter % 2;
-								echo '<tr class="rate-table-row-' . esc_html( $row_color_var ) . '">';
+								$row_color_var = $counter % 2;
+								echo '<tr class="rate-table-row-' . esc_attr( $row_color_var ) . '">';
 								echo '<td>' . esc_html( $row['2017_rate'] ) . '</td>';
 								echo '<td>' . esc_html( $row['2018_rate'] ) . '</td>';
 								echo '</tr>';
-								$couter ++;
+								$counter++;
 							}
 						}
 						?>
@@ -217,9 +216,9 @@ function eco_rates_popup( $acf_fields ) {
 
 			$deck_id = strtolower( str_replace( ' ', '-', $row['deck'] ) );
 			?>
-			<div id="<?php echo esc_html( $deck_id ); ?>" visibility="hidden" class="rates-popup">
+			<div id="<?php echo esc_attr( $deck_id ); ?>" visibility="hidden" class="rates-popup">
 				<h2><?php echo wp_kses_post( $row['deck'] ); ?></h2>
-				<img src="<?php echo esc_attr( $row['deck_image'] );?>" />
+				<img src="<?php echo esc_url( $row['deck_image'] );?>" />
 				<p><?php echo esc_html( $row['deck_bullet_description'] ); ?></p>
 			</div>
 			<?php
