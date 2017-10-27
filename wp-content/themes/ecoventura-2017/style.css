@@ -2335,9 +2335,11 @@ p.entry-meta {
   }
 }
 .home.page .homepage-recent-blog-posts .recent-post-box .recent-post-box-content {
+  float: right;
   height: 100%;
   min-height: 284px;
   position: relative;
+  width: 49%;
 }
 @media screen and (max-width: 860px) {
   .home.page .homepage-recent-blog-posts .recent-post-box .recent-post-box-content {
@@ -2387,7 +2389,7 @@ p.entry-meta {
   margin-right: 30px;
   width: 425px;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 990px) {
   .home.page .homepage-recent-blog-posts img {
     width: 45%;
   }
