@@ -177,12 +177,12 @@ function eco_rates_charter_rates( $acf_fields ) {
 						if ( $rows ) {
 							$counter = 0;
 							foreach ( $rows as $row ) {
-								$row_color_var = $couter % 2;
+								$row_color_var = $counter % 2;
 								echo '<tr class="rate-table-row-' . esc_html( $row_color_var ) . '">';
 								echo '<td>' . esc_html( $row['first_year_column'] ) . '</td>';
 								echo '<td>' . esc_html( $row['second_year_column'] ) . '</td>';
 								echo '</tr>';
-								$couter ++;
+								$counter ++;
 							}
 						}
 						?>
