@@ -1,6 +1,8 @@
 <?php
+/**
+ * Template Name: Home
+ */
 
-//* Template Name: Ecoventura Home
 //* Force full width content layout
 add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
 

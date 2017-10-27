@@ -1,6 +1,8 @@
 <?php
+/**
+ * Template Name: Tours
+ */
 
-//* Template Name: Ecoventura Tours
 //* Force full width content layout
 add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
 

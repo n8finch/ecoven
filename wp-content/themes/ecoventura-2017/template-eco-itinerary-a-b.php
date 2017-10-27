@@ -1,6 +1,8 @@
 <?php
+/**
+ * Template Name: Itineraries Combined
+ */
 
-//* Template Name: Ecoventura Itinerary A/B
 //* Force full width content layout
 add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
 
