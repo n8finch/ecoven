@@ -1,6 +1,8 @@
 <?php
+/**
+ * Template Name: Itinerary Single
+ */
 
-//* Template Name: Ecoventura Itinerary Single
 //* Force full width content layout
 add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
 
@@ -16,19 +18,19 @@ function eco_rates_content() {
 	$acf_fields = get_fields( $post->ID );
 
 	//* Add in the sections
-	eco_intinerary_single( $acf_fields);
-	eco_intinerary_single_highlights( $acf_fields);
-	eco_intinerary_single_movie_faqs( $acf_fields);
+	eco_itinerary_single( $acf_fields);
+	eco_itinerary_single_highlights( $acf_fields);
+	eco_itinerary_single_movie_faqs( $acf_fields);
 
 }
 
-function eco_intinerary_single( $acf_fields ) {
+function eco_itinerary_single( $acf_fields ) {
 	?>
 	<header class="itinerary-header">
 		<h2><?php echo esc_html( get_the_title() ); ?></h2>
 	</header>
 	<section class="itinerary-section">
-		<img src="<?php echo esc_attr( $acf_fields['itinerary_image'] ); ?>" />
+		<img src="<?php echo esc_url( $acf_fields['itinerary_image'] ); ?>" />
 		<div class="itinerary-content">
 			<h2><?php echo esc_html( $acf_fields['itinerary_title'] ); ?></h2>
 			<div class="itinerary-boxes">
@@ -43,10 +45,10 @@ function eco_intinerary_single( $acf_fields ) {
 							<h3 class="itinerary-day" data-popup-id="<?php echo esc_html( $pop_id ); ?>"><?php echo esc_html( $row['day'] ); ?></h3>
 							<div class="itin-hr-blue"></div>
 							<p class="itinerary-descritpion">
-								<?php echo $row['day_bullet_points']; ?>
+								<?php echo wp_kses_post( $row['day_bullet_points'] ); ?>
 							</p>
-							<div id="<?php echo esc_html( $pop_id ); ?>" visibility="hidden" class="itenerary-popup-image">
-								<img src="<?php echo esc_attr( $acf_fields['itinerary_popup_image'] );?>" />
+							<div id="<?php echo esc_attr( $pop_id ); ?>" visibility="hidden" class="itenerary-popup-image">
+								<img src="<?php echo esc_url( $acf_fields['itinerary_popup_image'] );?>" />
 							</div>
 						</div>
 					<?php
@@ -63,7 +65,7 @@ function eco_intinerary_single( $acf_fields ) {
 	<?php
 }
 
-function eco_intinerary_single_highlights( $acf_fields ) {
+function eco_itinerary_single_highlights( $acf_fields ) {
 	?>
 	<section class="itinerary-expedition">
 		<h2><?php echo esc_html( $acf_fields['itinerary_cta_title'] ); ?></h2>
@@ -73,7 +75,7 @@ function eco_intinerary_single_highlights( $acf_fields ) {
 	</section>
 
 	<div id="view-dates-popup" visibility="hidden" class="itenerary-popup-image">
-		<img src="<?php echo esc_attr( $acf_fields['itinerary_cruise_route_popup'] );?>" />
+		<img src="<?php echo esc_url( $acf_fields['itinerary_cruise_route_popup'] );?>" />
 	</div>
 	<section id="itinerary-highlights">
 		<div class="itinerary-highlights">
@@ -88,17 +90,17 @@ function eco_intinerary_single_highlights( $acf_fields ) {
 					?>
 						<div class="highlight-box">
 							<div class="image-container" data-popup-id="<?php echo esc_html( $pop_id ); ?>">
-								<img src="<?php echo esc_attr( $row['image'] ); ?>" data-popup-id="<?php echo esc_html( $pop_id ); ?>"/>
+								<img src="<?php echo esc_url( $row['image'] ); ?>" data-popup-id="<?php echo esc_attr( $pop_id ); ?>"/>
 							</div>
 							<div class="hr-blue"></div>
 							<p class="image-subtitle"><?php echo wp_kses_post( $row['image_subtitle'] ); ?></p>
 
-							<div id="<?php echo esc_html( $pop_id ); ?>" visibility="hidden" class="iteneraries-popup">
+							<div id="<?php echo esc_attr( $pop_id ); ?>" visibility="hidden" class="iteneraries-popup">
 								<h2><?php echo wp_kses_post( $row['image_subtitle'] ); ?></h2>
 								<div class="highlight-popup-flex">
 									<div class="popup-facts"><?php echo wp_kses_post( $row['popup_facts'] ); ?></div>
 									<div class="popup-image">
-										<img src="<?php echo esc_attr( $row['popup_image']['sizes']['reason'] );?>" />
+										<img src="<?php echo esc_url( $row['popup_image']['sizes']['reason'] );?>" />
 									</div>
 									<?php if( $row['learn_more_button_link'] ) { ?>
 									<a class="highlight-popup-button" href="<?php echo esc_url( $row['learn_more_button_link'] );?>">
@@ -131,10 +133,10 @@ function eco_intinerary_single_highlights( $acf_fields ) {
 							<b><?php echo esc_html( $row['subheader'] );?></b>
 						</p>
 						<p>
-							<?php echo wp_kses_post ( $row['content'] ); ?>
+							<?php echo wp_kses_post( $row['content'] ); ?>
 						</p>
 
-					</div>	<?php
+					</div><?php
 				}
 				?>
 			<?php } //end if( $rows ) ?>
@@ -145,13 +147,13 @@ function eco_intinerary_single_highlights( $acf_fields ) {
 	<?php
 }
 
-function eco_intinerary_single_movie_faqs( $acf_fields ) {
+function eco_itinerary_single_movie_faqs( $acf_fields ) {
 	?>
 	<section id="itinerary-movie">
 		<div>
 			<video width="100%" autoplay muted>
-			  <source src="<?php echo esc_attr( $acf_fields['itinerary_movie_url'] ); ?>" type="video/mp4">
-			  <source src="<?php echo esc_attr( $acf_fields['itinerary_movie_url'] ); ?>" type="video/ogg">
+			  <source src="<?php echo esc_url( $acf_fields['itinerary_movie_url'] ); ?>" type="video/mp4">
+			  <source src="<?php echo esc_url( $acf_fields['itinerary_movie_url'] ); ?>" type="video/ogg">
 			Your browser does not support the video tag.
 			</video>
 		</div>
@@ -169,10 +171,10 @@ function eco_intinerary_single_movie_faqs( $acf_fields ) {
 							<b><?php echo esc_html( $row['subheader'] );?></b>
 						</p>
 						<p>
-							<?php echo wp_kses_post ( $row['content'] ); ?>
+							<?php echo wp_kses_post( $row['content'] ); ?>
 						</p>
 
-					</div>	<?php
+					</div><?php
 				}
 				?>
 			<?php } //end if( $rows ) ?>
