@@ -88,6 +88,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-browser-sync');
 
   grunt.registerTask('default', ['sass', 'browserSync', 'watch']);
+  grunt.registerTask('build', ['sass', 'postcss', 'concat', 'uglify']);
   grunt.registerTask('post', 'postcss');
 
 };

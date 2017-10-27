@@ -1,6 +1,8 @@
 <?php
+/**
+ * Template Name: Itineraries Combined
+ */
 
-//* Template Name: Ecoventura Itinerary A/B
 //* Force full width content layout
 add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
 
@@ -27,7 +29,7 @@ function eco_intinerary_a( $acf_fields ) {
 		<h2><?php echo esc_html( get_the_title() ); ?></h2>
 	</header>
 	<section class="itinerary-section">
-		<img src="<?php echo esc_attr( $acf_fields['itinerary_a_image'] ); ?>" />
+		<img src="<?php echo esc_url( $acf_fields['itinerary_a_image'] ); ?>" />
 		<div class="view-iteneraries">
 			<a href="#">
 				<div id="view-itens">View Itineraries</div>
@@ -52,18 +54,18 @@ function eco_intinerary_a( $acf_fields ) {
 						$pop_id = 'iten-a-popup-' . $counter;
 					?>
 						<div class="highlight-box">
-							<div class="image-container" data-popup-id="<?php echo esc_html( $pop_id ); ?>">
-								<img src="<?php echo esc_attr( $row['image'] ); ?>" data-popup-id="<?php echo esc_html( $pop_id ); ?>"/>
+							<div class="image-container" data-popup-id="<?php echo esc_attr( $pop_id ); ?>">
+								<img src="<?php echo esc_url( $row['image'] ); ?>" data-popup-id="<?php echo esc_attr( $pop_id ); ?>"/>
 							</div>
 							<div class="hr-blue"></div>
 							<p class="image-subtitle"><?php echo wp_kses_post( $row['image_subtitle'] ); ?></p>
 
-							<div id="<?php echo esc_html( $pop_id ); ?>" visibility="hidden" class="iteneraries-popup">
+							<div id="<?php echo esc_attr( $pop_id ); ?>" visibility="hidden" class="iteneraries-popup">
 								<h2><?php echo wp_kses_post( $row['image_subtitle'] ); ?></h2>
 								<div class="highlight-popup-flex">
 									<div class="popup-facts"><?php echo wp_kses_post( $row['popup_facts'] ); ?></div>
 									<div class="popup-image">
-										<img src="<?php echo esc_attr( $row['popup_image']['sizes']['reason'] );?>" />
+										<img src="<?php echo esc_url( $row['popup_image']['sizes']['reason'] );?>" />
 									</div>
 									<?php if( $row['learn_more_button_link'] ) { ?>
 									<a class="highlight-popup-button" href="<?php echo esc_url( $row['learn_more_button_link'] );?>">
@@ -93,7 +95,7 @@ function eco_intinerary_a( $acf_fields ) {
 function eco_intinerary_b( $acf_fields ) {
 	?>
 	<section class="itinerary-section">
-		<img src="<?php echo esc_attr( $acf_fields['itinerary_b_image'] ); ?>" />
+		<img src="<?php echo esc_url( $acf_fields['itinerary_b_image'] ); ?>" />
 		<div class="view-iteneraries">
 			<a href="#">
 				<div id="view-itens">View Itineraries</div>
@@ -118,22 +120,22 @@ function eco_intinerary_b( $acf_fields ) {
 						$pop_id = 'iten-b-popup-' . $counter;
 					?>
 						<div class="highlight-box">
-							<div class="image-container" data-popup-id="<?php echo esc_html( $pop_id ); ?>">
-								<img src="<?php echo esc_attr( $row['image'] ); ?>" data-popup-id="<?php echo esc_html( $pop_id ); ?>"/>
+							<div class="image-container" data-popup-id="<?php echo esc_attr( $pop_id ); ?>">
+								<img src="<?php echo esc_url( $row['image'] ); ?>" data-popup-id="<?php echo esc_attr( $pop_id ); ?>"/>
 							</div>
 							<div class="hr-blue"></div>
 							<p class="image-subtitle"><?php echo wp_kses_post( $row['image_subtitle'] ); ?></p>
 
-							<div id="<?php echo esc_html( $pop_id ); ?>" visibility="hidden" class="iteneraries-popup">
+							<div id="<?php echo esc_attr( $pop_id ); ?>" visibility="hidden" class="iteneraries-popup">
 								<h2><?php echo wp_kses_post( $row['image_subtitle'] ); ?></h2>
 								<div class="highlight-popup-flex">
 									<div class="popup-facts"><?php echo wp_kses_post( $row['popup_facts'] ); ?></div>
 									<div class="popup-image">
-										<img src="<?php echo esc_attr( $row['popup_image']['sizes']['reason'] );?>" />
+										<img src="<?php echo esc_url( $row['popup_image']['sizes']['reason'] );?>" />
 									</div>
 									<?php if( $row['learn_more_button_link'] ) { ?>
 									<a class="highlight-popup-button" href="<?php echo esc_url( $row['learn_more_button_link'] );?>">
-										<div>LEARN MORE</div>
+										<div>Learn More</div>
 									</a>
 									<?php } //end if ?>
 								</div>

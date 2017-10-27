@@ -1,6 +1,8 @@
 <?php
+/**
+ * Template Name: Departures
+ */
 
-//* Template Name: Ecoventura Departure
 //* Force full width content layout
 add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
 

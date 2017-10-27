@@ -150,13 +150,6 @@
 
 				doEcoPopUp(divID);
 			});
-			$( ".itinerary-expedition .book-now-box" ).on( 'click', function(e) {
-				e.preventDefault();
-
-				var divID = '#' + e.target.dataset.popupId;
-
-				doEcoPopUp(divID);
-			});
 		});
 
 	}); //end document.ready
