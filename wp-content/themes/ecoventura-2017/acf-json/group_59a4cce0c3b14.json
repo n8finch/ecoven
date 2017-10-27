@@ -19,7 +19,7 @@
             "placeholder": "",
             "prepend": "",
             "append": "",
-            "maxlength": ""
+            "maxlength": 4
         },
         {
             "key": "field_59a4cce0c65a6",
@@ -38,7 +38,7 @@
             "placeholder": "",
             "prepend": "",
             "append": "",
-            "maxlength": ""
+            "maxlength": 4
         },
         {
             "key": "field_59a4cce0c674e",
@@ -327,8 +327,8 @@
         },
         {
             "key": "field_59f2979098841",
-            "label": "First Year Column Title",
-            "name": "first_year_column_title",
+            "label": "First Year Rate",
+            "name": "first_year_rate",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -346,8 +346,8 @@
         },
         {
             "key": "field_59f297d598842",
-            "label": "Second Year Column Title",
-            "name": "second_year_column_title",
+            "label": "Second Year Rate",
+            "name": "second_year_rate",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -403,8 +403,8 @@
                 },
                 {
                     "key": "field_59a4d18aada44",
-                    "label": "First Year Column",
-                    "name": "first_year_column",
+                    "label": "First Year Rate",
+                    "name": "first_year_rate",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -422,8 +422,8 @@
                 },
                 {
                     "key": "field_59a4d194ada45",
-                    "label": "Second Year Column",
-                    "name": "second_year_column",
+                    "label": "Second Year Rate",
+                    "name": "second_year_rate",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -511,5 +511,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1509070892
+    "modified": 1509073067
 }
