@@ -167,8 +167,8 @@ function eco_rates_charter_rates( $acf_fields ) {
 				<div class="scroll">
 					<table class="charter-rates-table scroll">
 						<tr>
-							<th class="">2017 Rate</th>
-							<th class="">2018 Rate</th>
+							<th class="rates-table-header"><?php echo esc_html( $acf_fields['first_year_column_title']); ?></th>
+							<th class="rates-table-header"><?php echo esc_html( $acf_fields['first_year_column_title']); ?></th>
 						</tr>
 
 						<?php
@@ -179,8 +179,8 @@ function eco_rates_charter_rates( $acf_fields ) {
 							foreach ( $rows as $row ) {
 								$row_color_var = $couter % 2;
 								echo '<tr class="rate-table-row-' . esc_html( $row_color_var ) . '">';
-								echo '<td>' . esc_html( $row['2017_rate'] ) . '</td>';
-								echo '<td>' . esc_html( $row['2018_rate'] ) . '</td>';
+								echo '<td>' . esc_html( $row['first_year_column'] ) . '</td>';
+								echo '<td>' . esc_html( $row['second_year_column'] ) . '</td>';
 								echo '</tr>';
 								$couter ++;
 							}

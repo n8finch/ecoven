@@ -326,6 +326,44 @@
             "endpoint": 1
         },
         {
+            "key": "field_59f2979098841",
+            "label": "First Year Column Title",
+            "name": "first_year_column_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59f297d598842",
+            "label": "Second Year Column Title",
+            "name": "second_year_column_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_59a4cfb7e53eb",
             "label": "Charter Rates Table",
             "name": "charter_rates_table",
@@ -365,8 +403,8 @@
                 },
                 {
                     "key": "field_59a4d18aada44",
-                    "label": "2017 Rate",
-                    "name": "2017_rate",
+                    "label": "First Year Column",
+                    "name": "first_year_column",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -384,8 +422,8 @@
                 },
                 {
                     "key": "field_59a4d194ada45",
-                    "label": "2018 Rate",
-                    "name": "2018_rate",
+                    "label": "Second Year Column",
+                    "name": "second_year_column",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -473,5 +511,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1504212209
+    "modified": 1509070892
 }
