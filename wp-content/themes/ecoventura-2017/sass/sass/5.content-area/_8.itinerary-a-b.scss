@@ -209,6 +209,12 @@
 				margin: auto;
 				text-align: center;
 				width: 150px;
+				cursor: pointer;
+				transition: border-color 0.2s ease-in;
+
+				&:hover, &:focus {
+					border-color: $color__primary_button;
+				}
 
 				img {
 					max-height: 75px;

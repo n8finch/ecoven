@@ -3545,6 +3545,11 @@ p.entry-meta {
   margin: auto;
   text-align: center;
   width: 150px;
+  cursor: pointer;
+  transition: border-color 0.2s ease-in;
+}
+.page-template-template-eco-itinerary-a-b div.itinerary-highlights .highlight-box .image-container:hover, .page-template-template-eco-itinerary-a-b div.itinerary-highlights .highlight-box .image-container:focus {
+  border-color: #CFAA42;
 }
 .page-template-template-eco-itinerary-a-b div.itinerary-highlights .highlight-box .image-container img {
   max-height: 75px;
