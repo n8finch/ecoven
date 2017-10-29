@@ -69,7 +69,7 @@ function eco_departures_dates( $acf_fields ) {
 								<th class="th-dots">Seasonal</th>
 								<th class="th-dots">Peak</th>
 								<th class="th-dots">Holiday</th>
-								<th class="th-dots">Family</th>
+								<th class="th-dots">Specialty</th>
 								<th>Status</th>
 								<th colspan="2">Promotion</th>
 								<th class="th-notes">Notes</th>
@@ -102,7 +102,7 @@ function eco_departures_dates( $acf_fields ) {
 									echo '<td class="td-dot" data-th="Seasonal">' . esc_html( eco_get_dot_if_true( $row['seasonal'] ) ) . '</td>';
 									echo '<td class="td-dot" data-th="Peak">' . esc_html( eco_get_dot_if_true( $row['peak'] ) ) . '</td>';
 									echo '<td class="td-dot" data-th="Holiday">' . esc_html( eco_get_dot_if_true( $row['holiday'] ) ) . '</td>';
-									echo '<td class="td-dot" data-th="Family">' . esc_html( eco_get_dot_if_true( $row['family'] ) ) . '</td>';
+									echo '<td class="td-specialty" data-th="Specialty">' . esc_html( $row['specialty'] ) . '</td>';
 									echo '<td data-th="STATUS">' . esc_html( $row['status'] ) . '</td>';
 									echo '<td class="td-promotion" data-th="Promotion">' . esc_html( $row['promotion'] ) . '</td>';
 									echo '<td class="td-inquire" data-th="Promotion">' . eco_promotion_button( $row['status'] ) . '</td>';
