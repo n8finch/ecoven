@@ -4564,6 +4564,12 @@ p.entry-meta {
   clear: both;
   padding: 60px 0;
 }
+@media screen and (max-width: 1023px) {
+  .footer-widgets .button {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 .footer-widgets-1,
 .footer-widgets-2,
