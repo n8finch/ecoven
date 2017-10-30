@@ -71,6 +71,11 @@ body.guest-reviews {
 
 .type-guest-review.entry {
 	margin-bottom: 2em;
+	padding: 0;
+	@media screen and (max-width: 1023px) {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
 }
 
 .review-content {

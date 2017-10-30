@@ -150,6 +150,14 @@
 
 				doEcoPopUp(divID);
 			});
+			$( '.js-departure-date-popup' ).on( 'click', function(e) {
+				e.preventDefault();
+				var $this = $(this);
+
+				if ( $this.data( 'itinerary' ) ) {
+					doEcoPopUp('#itinerary-' + $this.data( 'itinerary' ) + '-popup');
+				}
+			});
 		});
 
 	}); //end document.ready

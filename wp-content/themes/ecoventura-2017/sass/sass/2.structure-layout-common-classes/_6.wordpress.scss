@@ -79,9 +79,40 @@ img.alignright,
   right: 3px;
   top: 3px;
   cursor: pointer;
+  text-align: center;
 }
 
 .popup-close-button:hover {
   background: $color__medium_blue_gray;
   color: white;
+}
+
+.ui-widget-overlay {
+  display: none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,.7);
+  text-align:center;
+  z-index: 1000;
+}
+
+.eco-popup {
+  border: 5px solid white;
+  background-color: $color__medium_blue_gray;
+  color: white;
+  display: none;
+  clear: both;
+
+  h2 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .popup-image > img {
+    display: block;
+    width: 100%;
+  }
 }
