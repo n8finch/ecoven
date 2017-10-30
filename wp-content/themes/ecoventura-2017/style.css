@@ -1959,6 +1959,35 @@ body.archive .content-header h2 {
   color: #eee;
 }
 
+body.guest-reviews .content {
+  padding: 0 160px;
+}
+@media screen and (max-width: 1023px) {
+  body.guest-reviews .content {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+.type-guest-review.entry {
+  margin-bottom: 2em;
+}
+
+.review-content tbody, .review-content td {
+  border: none;
+}
+
+.review-name {
+  font-weight: bold;
+  display: block;
+  text-align: right;
+}
+
+.review-trip {
+  display: block;
+  text-align: right;
+}
+
 /* ## Entry Meta
 --------------------------------------------- */
 p.entry-meta {
