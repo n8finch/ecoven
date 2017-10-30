@@ -692,20 +692,4 @@
 	#itin-agenda-popup.itenerary-popup-image > img {
 		width: 100%;
 	}
-
-	.popup-close-button {
-		background: white;
-		color: black;
-		position: absolute;
-	    padding: 0px 5px;
-	    right: 0;
-	    top: 0;
-	}
-
-	.popup-close-button:hover {
-		background: $color__medium_blue_gray;
-		color: white;
-	}
-
-
 }

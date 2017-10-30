@@ -122,9 +122,9 @@
 				'position': 'absolute',
 				'top': scrollY + 100,
 				'left': centeredWidth
-			}).append('<span class="popup-close-button">X</span>');
+			}).append('<span class="popup-close-button">&times;</span>');
 
-			$('.popup-close-button').on('click', function(e) {
+			$('.popup-close-button, .ui-widget-overlay').on('click', function(e) {
 				$(divID).hide();
 				$('.ui-widget-overlay').hide();
 			});

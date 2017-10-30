@@ -66,3 +66,22 @@ img.alignright,
 .entry-content .wp-video {
   margin: 0 0 28px;
 }
+
+.popup-close-button {
+  background: white;
+  color: black;
+  position: absolute;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 22px;
+  line-height: 1;
+  right: 3px;
+  top: 3px;
+  cursor: pointer;
+}
+
+.popup-close-button:hover {
+  background: $color__medium_blue_gray;
+  color: white;
+}
