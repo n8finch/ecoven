@@ -66,13 +66,13 @@ module.exports = function (grunt) {
 				},
 				options: {
 					watchTask: true,
-					proxy: 'ecoven.dev'
+					proxy: 'ecoventura.app'
 				}
 		}
 	},
 
     watch: {
-      files: ['sass/css/*.css', 'js/*.js', 'sass/sass/**/*.scss'],
+      files: ['sass/css/*.css', 'js/**/*.js', 'sass/sass/**/*.scss'],
       tasks: ['build']
     }
   });
