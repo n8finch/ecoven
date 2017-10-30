@@ -122,9 +122,9 @@
 				'position': 'absolute',
 				'top': scrollY + 100,
 				'left': centeredWidth
-			}).append('<span class="popup-close-button">X</span>');
+			}).append('<span class="popup-close-button">&times;</span>');
 
-			$('.popup-close-button').on('click', function(e) {
+			$('.popup-close-button, .ui-widget-overlay').on('click', function(e) {
 				$(divID).hide();
 				$('.ui-widget-overlay').hide();
 			});
@@ -149,6 +149,14 @@
 				var divID = '#' + e.target.dataset.popupId;
 
 				doEcoPopUp(divID);
+			});
+			$( '.js-departure-date-popup' ).on( 'click', function(e) {
+				e.preventDefault();
+				var $this = $(this);
+
+				if ( $this.data( 'itinerary' ) ) {
+					doEcoPopUp('#itinerary-' + $this.data( 'itinerary' ) + '-popup');
+				}
 			});
 		});
 

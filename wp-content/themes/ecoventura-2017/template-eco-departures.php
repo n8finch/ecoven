@@ -53,7 +53,7 @@ function eco_departures_dates( $acf_fields ) {
 								foreach ( $rows as $row ) {
 									$row_color_var = $counter % 2;
 									echo '<tr class="departure-table-row-' . esc_html( $row_color_var ) . '">';
-									echo '<td class="td-departure-dates" data-th="CRUISE DATES">' . esc_html( $row['cruise_dates'] ) . '</td>';
+									echo '<td class="td-departure-dates" data-th="CRUISE DATES"><a href="#" class="js-departure-date-popup" data-itinerary="' . esc_attr( strtolower( $row['itinerary'] ) ) . '">' . esc_html( $row['cruise_dates'] ) . '</a></td>';
 									echo '</tr>';
 									$counter ++;
 								}
@@ -69,7 +69,7 @@ function eco_departures_dates( $acf_fields ) {
 								<th class="th-dots">Seasonal</th>
 								<th class="th-dots">Peak</th>
 								<th class="th-dots">Holiday</th>
-								<th class="th-dots">Family</th>
+								<th class="th-dots">Specialty</th>
 								<th>Status</th>
 								<th colspan="2">Promotion</th>
 								<th class="th-notes">Notes</th>
@@ -98,11 +98,11 @@ function eco_departures_dates( $acf_fields ) {
 								foreach ( $rows as $row ) {
 									$row_color_var = $counter % 2;
 									echo '<tr class="departure-table-row-' . esc_attr( $row_color_var ) . '">';
-									echo '<td data-th="Itinerary">' . esc_html( $row['itinerary'] ) . '</td>';
+									echo '<td class="departure-table-itinerary" data-th="Itinerary">' . esc_html( $row['itinerary'] ) . '</td>';
 									echo '<td class="td-dot" data-th="Seasonal">' . esc_html( eco_get_dot_if_true( $row['seasonal'] ) ) . '</td>';
 									echo '<td class="td-dot" data-th="Peak">' . esc_html( eco_get_dot_if_true( $row['peak'] ) ) . '</td>';
 									echo '<td class="td-dot" data-th="Holiday">' . esc_html( eco_get_dot_if_true( $row['holiday'] ) ) . '</td>';
-									echo '<td class="td-dot" data-th="Family">' . esc_html( eco_get_dot_if_true( $row['family'] ) ) . '</td>';
+									echo '<td class="td-specialty" data-th="Specialty">' . esc_html( $row['specialty'] ) . '</td>';
 									echo '<td data-th="STATUS">' . esc_html( $row['status'] ) . '</td>';
 									echo '<td class="td-promotion" data-th="Promotion">' . esc_html( $row['promotion'] ) . '</td>';
 									echo '<td class="td-inquire" data-th="Promotion">' . eco_promotion_button( $row['status'] ) . '</td>';
@@ -132,6 +132,27 @@ function eco_departures_dates( $acf_fields ) {
 			</div>
 	</section>
 	<?php
+}
+
+add_action( 'wp_footer', 'eco_departures_popups' );
+function eco_departures_popups() {
+	$itineraries_page = get_page_by_path( 'galapagos-yachts/itineraries' );
+	$itinerary_a_image = get_field( 'itinerary_a_image', $itineraries_page->ID );
+	$itinerary_b_image = get_field( 'itinerary_b_image', $itineraries_page->ID );
+	?>
+	<div id="itinerary-a-popup" visibility="hidden" class="eco-popup">
+		<h2>Itinerary A</h2>
+		<div class="popup-image">
+			<img src="<?php echo esc_url( $itinerary_a_image );?>" />
+		</div>
+	</div>
+	<div id="itinerary-b-popup" visibility="hidden" class="eco-popup">
+		<h2>Itinerary B</h2>
+		<div class="popup-image">
+			<img src="<?php echo esc_url( $itinerary_b_image );?>" />
+		</div>
+	</div>
+	<div class="ui-widget-overlay"></div><?php
 }
 
 function eco_departures_expedition( $acf_fields ) {

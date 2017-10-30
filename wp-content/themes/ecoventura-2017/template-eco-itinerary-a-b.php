@@ -18,12 +18,12 @@ function eco_rates_content() {
 	$acf_fields = get_fields( $post->ID );
 
 	//* Add in the sections
-	eco_intinerary_a( $acf_fields);
-	eco_intinerary_b( $acf_fields);
+	eco_itinerary_a( $acf_fields);
+	eco_itinerary_b( $acf_fields);
 
 }
 
-function eco_intinerary_a( $acf_fields ) {
+function eco_itinerary_a( $acf_fields ) {
 	?>
 	<header class="itinerary-header">
 		<h2><?php echo esc_html( get_the_title() ); ?></h2>
@@ -92,7 +92,7 @@ function eco_intinerary_a( $acf_fields ) {
 	<?php
 }
 
-function eco_intinerary_b( $acf_fields ) {
+function eco_itinerary_b( $acf_fields ) {
 	?>
 	<section class="itinerary-section">
 		<img src="<?php echo esc_url( $acf_fields['itinerary_b_image'] ); ?>" />

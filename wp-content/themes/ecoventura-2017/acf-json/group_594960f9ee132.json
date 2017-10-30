@@ -145,7 +145,7 @@
             "key": "field_594bdfe9769ca",
             "label": "Image Box 1 Link",
             "name": "image_box_1_link",
-            "type": "page_link",
+            "type": "url",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -154,11 +154,8 @@
                 "class": "",
                 "id": ""
             },
-            "post_type": [],
-            "taxonomy": [],
-            "allow_null": 0,
-            "allow_archives": 1,
-            "multiple": 0
+            "default_value": "",
+            "placeholder": ""
         },
         {
             "key": "field_594be09206af3",
@@ -223,7 +220,7 @@
             "key": "field_594be0f906afd",
             "label": "Image Box 2 Link",
             "name": "image_box_2_link",
-            "type": "page_link",
+            "type": "url",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -232,11 +229,8 @@
                 "class": "",
                 "id": ""
             },
-            "post_type": [],
-            "taxonomy": [],
-            "allow_null": 0,
-            "allow_archives": 1,
-            "multiple": 0
+            "default_value": "",
+            "placeholder": ""
         },
         {
             "key": "field_594be09b06af4",
@@ -301,7 +295,7 @@
             "key": "field_594be0f106afc",
             "label": "Image Box 3 Link",
             "name": "image_box_3_link",
-            "type": "page_link",
+            "type": "url",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -310,11 +304,8 @@
                 "class": "",
                 "id": ""
             },
-            "post_type": [],
-            "taxonomy": [],
-            "allow_null": 0,
-            "allow_archives": 1,
-            "multiple": 0
+            "default_value": "",
+            "placeholder": ""
         },
         {
             "key": "field_594be09d06af5",
@@ -379,7 +370,7 @@
             "key": "field_594be0fa06afe",
             "label": "Image Box 4 Link",
             "name": "image_box_4_link",
-            "type": "page_link",
+            "type": "url",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -388,11 +379,8 @@
                 "class": "",
                 "id": ""
             },
-            "post_type": [],
-            "taxonomy": [],
-            "allow_null": 0,
-            "allow_archives": 1,
-            "multiple": 0
+            "default_value": "",
+            "placeholder": ""
         },
         {
             "key": "field_59a9f4e9f954f",
@@ -820,5 +808,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1509020265
+    "modified": 1509331604
 }

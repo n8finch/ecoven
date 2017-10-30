@@ -258,6 +258,10 @@
 					a {
 						padding: 0;
 						text-transform: uppercase;
+
+						&:hover, &:focus {
+							color: $color__primary_button;
+						}
 					}
 				}
 

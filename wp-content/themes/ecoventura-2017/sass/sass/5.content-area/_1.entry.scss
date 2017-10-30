@@ -58,3 +58,39 @@ body.archive {
   background-color: #333;
   color: #eee;
 }
+
+body.guest-reviews {
+	.content {
+		padding: 0 160px;
+		@media screen and (max-width: 1023px) {
+			padding-left: 2em;
+			padding-right: 2em;
+		}
+	}
+}
+
+.type-guest-review.entry {
+	margin-bottom: 2em;
+	padding: 0;
+	@media screen and (max-width: 1023px) {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+}
+
+.review-content {
+	tbody, td {
+		border: none;
+	}
+}
+
+.review-name {
+	font-weight: bold;
+	display: block;
+	text-align: right;
+}
+
+.review-trip {
+	display: block;
+	text-align: right;
+}
