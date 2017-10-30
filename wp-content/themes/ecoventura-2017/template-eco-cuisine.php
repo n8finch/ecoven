@@ -138,7 +138,7 @@ function eco_cuisine_cookbook( $acf_fields ) {
 <?php
 }
 
-function eco_cuisine_recipes ( $acf_fields ) {
+function eco_cuisine_recipes( $acf_fields ) {
 ?>
 	<section class="our-recipes">
 		<h2><?php echo esc_html( $acf_fields['cookbook_title'] ); ?></h2>
