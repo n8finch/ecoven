@@ -4263,6 +4263,9 @@ p.entry-meta {
 .page-template-template-eco-cuisine .our-recipes .recipes-wrapper .recipe-links {
   width: 25%;
 }
+.page-template-template-eco-cuisine .our-recipes .recipes-wrapper .recipe-links ul.tab-list {
+  white-space: normal;
+}
 .page-template-template-eco-cuisine .our-recipes .recipes-wrapper .recipe-links li.recipe-title.tab-item {
   display: block;
   margin: 1px;

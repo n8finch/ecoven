@@ -250,6 +250,10 @@
 			.recipe-links {
 				width: 25%;
 
+				ul.tab-list {
+					white-space: normal;
+				}
+
 				li.recipe-title.tab-item {
 					display: block;
 					margin: 1px;
