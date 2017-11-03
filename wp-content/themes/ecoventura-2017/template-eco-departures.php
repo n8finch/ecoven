@@ -179,9 +179,11 @@ function eco_departures_expedition( $acf_fields ) {
 function eco_departures_faqs_terms_conditions( $acf_fields ) {
 	?>
 	<section class="departures-faqs-terms-conditions">
+		<?php if ( ! empty( $acf_fields['departure_image'] ) ) : ?>
 		<div class="departure-faq-image"
 		     style="background-image: url(<?php echo esc_url($acf_fields['departure_image']); ?>);"/>
 		</div>
+		<?php endif; ?>
 
 		<div class="departure-terms-conditions">
 			<?php
