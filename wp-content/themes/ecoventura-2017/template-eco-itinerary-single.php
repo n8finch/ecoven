@@ -151,7 +151,7 @@ function eco_itinerary_single_movie_faqs( $acf_fields ) {
 	?>
 	<section id="itinerary-movie">
 		<div>
-			<video width="100%" autoplay muted>
+			<video width="100%" autoplay muted loop>
 			  <source src="<?php echo esc_url( $acf_fields['itinerary_movie_url'] ); ?>" type="video/mp4">
 			  <source src="<?php echo esc_url( $acf_fields['itinerary_movie_url'] ); ?>" type="video/ogg">
 			Your browser does not support the video tag.
