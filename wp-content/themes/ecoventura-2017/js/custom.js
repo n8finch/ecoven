@@ -34,7 +34,7 @@
 
 			$('.menu-tab a').on('click', function(e) {
 					e.preventDefault();
-					var tabClicked = e.target.href.nodeValue;
+					var tabClicked = e.target.attributes.href.nodeValue;
 
 					var assocMenu = tabClicked + ' .menu-days-wrapper ul li:first-child a';
 
@@ -56,7 +56,7 @@
 			$('.menu-days-wrapper a').on('click', function(e) {
 				e.preventDefault();
 
-				var tabClicked = e.target.href.nodeValue;
+				var tabClicked = e.target.attributes.href.nodeValue;
 
 				$('.menu-days-wrapper a').css( 'color', 'black' );
 				$(e.target).css( 'color', '#CFAA42');
