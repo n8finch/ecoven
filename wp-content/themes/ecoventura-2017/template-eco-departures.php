@@ -69,7 +69,7 @@ function eco_departures_dates( $acf_fields ) {
 								<th class="th-dots">Seasonal</th>
 								<th class="th-dots">Peak</th>
 								<th class="th-dots">Holiday</th>
-								<th class="th-dots">Specialty</th>
+								<th class="th-specialty">Specialty</th>
 								<th>Status</th>
 								<th colspan="2">Promotion</th>
 								<th class="th-notes">Notes</th>
