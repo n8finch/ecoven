@@ -28,11 +28,6 @@
 	}
 
 	.top-bar-flex {
-
-		@media screen and (min-width: 1023px) {
-			border-bottom: 1px solid #dddddd;
-		}
-
 		@media screen and (max-width: 860px) {
 			border-bottom: none;
 			flex-wrap: wrap;
