@@ -10,3 +10,53 @@
 @import "10.cuisine";
 @import "11.hotels";
 @import "12.tours";
+
+.in-the-media {
+	.press {
+		width: 50%;
+		float: left;
+		margin-bottom: 16px;
+		min-height: 75px;
+
+		.entry-content {
+			padding-right: 10px;
+		}
+
+		@media screen and (max-width: 823px) {
+			width: 100%;
+			float: none;
+		}
+	}
+
+	.press-thumb {
+		float: left;
+		vertical-align: middle;
+		margin-right: 10px;
+	}
+	.press-content {
+		.press-link {
+			text-decoration: none;
+		}
+		.press-title {
+			font-weight: bold;
+		}
+		.press-tagline {
+			display: block;
+			font-style: italic;
+		}
+		.press-download {
+			font-size: 12px;
+			img.attachment-thumbnail {
+				width: 13px;
+				height: auto;
+				position: relative;
+				top: 6px;
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+.archive-pagination.pagination {
+	clear: both;
+}
