@@ -149,6 +149,7 @@ function eco_itinerary_single_highlights( $acf_fields ) {
 
 function eco_itinerary_single_movie_faqs( $acf_fields ) {
 	?>
+	<?php if ( ! empty( $acf_fields['itinerary_movie_url'] ) ) : ?>
 	<section id="itinerary-movie">
 		<div>
 			<video width="100%" autoplay muted loop>
@@ -158,6 +159,7 @@ function eco_itinerary_single_movie_faqs( $acf_fields ) {
 			</video>
 		</div>
 	</section>
+	<?php endif; ?>
 	<section id="itinerary-faqs">
 		<div class="itinerary-terms-conditions">
 			<?php
