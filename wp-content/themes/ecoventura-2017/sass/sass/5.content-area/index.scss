@@ -17,6 +17,9 @@
 		float: left;
 		margin-bottom: 16px;
 		min-height: 75px;
+		&:nth-child(odd) {
+			clear:left;
+		}
 
 		.entry-content {
 			padding-right: 10px;
