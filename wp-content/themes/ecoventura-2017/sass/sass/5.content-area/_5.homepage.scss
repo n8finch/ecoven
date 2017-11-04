@@ -1,0 +1,418 @@
+.home.page {
+
+	// $color__dark_navy: #152838;
+	// $color__medium_blue_gray: #44596e;
+	// $color__light_blue_gray: #647a8c;
+
+	// Above the Fold
+	.site-inner {
+		max-width: 100%;
+		padding-top: 0;
+	}
+
+	@media only screen and (max-width: 860px) {
+		.site-inner {
+		    padding: 0;
+		}
+	}
+
+	.soliloquy-controls-direction {
+	    display: none;
+	}
+
+	.homepage-title-div {
+		background-color: $eco_green;
+		color: white;
+		padding-top: 30px;
+		text-align: center;
+
+		h2 {
+			font-size: 3.5rem;
+			margin-bottom: 0;
+			text-transform: uppercase;
+		}
+
+		.plan-your-trip-box {
+			bottom: -25px;
+			position: relative;
+			text-align: center;
+
+			button:hover {
+				background-color: #eeeeee;
+			}
+		}
+	}
+
+	// Booking Form
+
+	.homepage-booking-form {
+		background-color: $color__dark_navy;
+		display: none;
+		margin-top: -20px;
+		padding: 60px 0;
+
+		.gform_wrapper {
+
+			@media screen and (max-width: 1150px) {
+				padding-left: 5%;
+				padding-right: 5%;
+			}
+
+			margin: auto;
+			max-width: 985px;
+
+			form {
+				position: relative;
+			}
+
+
+			ul.gform_fields {
+
+				display: flex;
+			    flex-wrap: wrap;
+				justify-content: flex-start;
+				text-indent: 0;
+
+				li {
+
+					@media screen and (max-width: 645px) {
+						width: 100%;
+					}
+
+					input[type="text"] {
+						@media screen and (max-width: 1150px) {
+							width: 250px;
+						}
+
+						@media screen and (max-width: 645px) {
+							width: 100%;
+						}
+
+						width: 230px;
+					}
+
+					select {
+						-webkit-appearance: none;
+						appearance: none;
+						background: #fff;
+						background-image: url(images/chevrondown.png);
+						background-position: 95% 50%;
+						background-repeat: no-repeat;
+						border-radius: 0
+					}
+
+					select.large.gfield_select {
+						@media screen and (max-width: 1150px) {
+							width: 250px;
+						}
+
+						@media screen and (max-width: 645px) {
+							width: 100%;
+						}
+
+						height: 39px;
+						width: 230px;
+					}
+
+				}
+
+				li.gfield.field-half{
+
+					select {
+						@media screen and (max-width: 1150px) {
+							width: 114px;
+						}
+
+						@media screen and (max-width: 645px) {
+							width: 100%;
+						}
+
+						height: 39px;
+						width: 106px;
+					}
+				}
+
+				textarea {
+					@media screen and (max-width: 1150px) {
+						width: 513px;
+					}
+
+					@media screen and (max-width: 645px) {
+						width: 100%;
+					}
+
+					height: 39px;
+    				width: 476px;
+				}
+
+			}
+
+			div.ginput_container {
+				position: relative;
+			}
+
+			select + span.dashicons.dashicons-arrow-down-alt2 {
+				background-color: #fff;
+				color: #cccccc;
+				position: absolute;
+				right: 10px;
+				top: 10px;
+			}
+		}
+
+		label {
+			color: white;
+
+			.gfield_required {
+				display: none;
+			}
+		}
+
+		.gform_wrapper .gform_footer {
+			@media screen and (max-width: 1150px) {
+				right: 93px;
+			}
+
+			@media screen and (max-width: 1000px) {
+				float: none;
+				padding: 16px 0 10px;
+				position: relative;
+				right: auto;
+			}
+
+			padding: 0;
+		    margin: 0;
+		    clear: none;
+		    width: auto;
+		    float: right;
+		    position: absolute;
+		    right: 0;
+			bottom: -10px;
+
+			input[type="submit"] {
+				@media screen and (max-width: 1150px) {
+					margin: 0;
+					padding: 20px 70px;
+				}
+
+				@media screen and (max-width: 1000px) {
+					right: 93px;
+				}
+
+				border: 1px solid white;
+				text-transform: uppercase;
+				font-family: 'Raleway', sans-serif;
+				padding: 20px 58px;
+				font-size: 20px;
+				font-size: 2rem;
+			}
+		}
+	}
+
+	// Page Image Boxes
+	.homepage-page-image-boxes {
+
+		display: flex;
+		color: #999999;
+		flex-wrap: wrap;
+		font-family: 'Playfair Display', serif;
+		justify-content: space-around;
+	    margin: 0 auto;
+		max-width: 1050px;
+		padding-top: 80px;
+
+		a {
+			color: black;
+			text-decoration: none;
+		}
+
+		.homepage-page-image-box {
+
+			@media screen and (max-width: 860px) {
+				max-width: 400px;
+				width: 100%;
+			}
+
+			display: flex;
+    		flex-direction: column;
+			margin-bottom: 40px;
+			width: 400px;
+
+			@media screen and (min-width: 1023px) {
+				width: 460px;
+			}
+
+
+			img {
+				border: 1px solid $border__color;
+				border-bottom: 0;
+			}
+
+			div {
+				background-color: white;
+				border: 1px solid $border__color;
+				padding: 15px;
+				text-align: center;
+				text-transform: uppercase;
+			}
+
+		}
+	}
+
+	// Homepage Video
+	.homepage-video {
+		// background-color: white;
+		// padding: 60px 0 60px;
+
+		div {
+			// margin: 0 auto;
+			// max-width: 900px;
+		}
+	}
+
+	//Homepage Recent Blog Posts
+	.homepage-recent-blog-posts {
+		padding: 40px;
+		text-align: center;
+
+		h2 {
+			margin: 20px auto 40px;
+			font-size: 3rem;
+			text-transform: uppercase;
+		}
+
+		.recent-post-box-container {
+		    padding-bottom: 20px;
+		}
+
+		.recent-post-box {
+
+			@media screen and (max-width: 860px) {
+				min-height: 310px;
+			}
+
+			@media screen and (max-width: 700px) {
+				min-height: 284px;
+				text-align: center;
+			}
+
+    		clear: both;
+			margin: 40px auto;
+			max-width: 900px;
+			min-height: 284px;
+			text-align: left;
+
+			.recent-post-box-content {
+
+				@media screen and (max-width: 860px) {
+					float:right;
+					width: 50%;
+				}
+
+				@media screen and (max-width: 700px) {
+					float: none;
+					width: 100%;
+				}
+
+			    float: right;
+				height: 100%;
+			    min-height: 284px;
+				position: relative;
+				width: 49%;
+
+				h3 {
+					color: #152838;
+				}
+
+				p {
+					@media screen and (min-width: 860px) {
+						max-height: 108px;
+					    overflow: hidden;
+						text-overflow: ellipsis;
+					}
+
+				    margin: 0 0 15px;
+				}
+
+				button {
+
+					@media screen and (max-width: 860px) {
+						position: relative;
+					}
+
+					background-color: #CFAA42;
+					bottom: 0;
+					border: 1px solid #333;
+					color: white;
+					position: absolute;
+				}
+
+				button:hover {
+					background-color: transparent;
+					border: 1px solid #333;
+					color: #333;
+				}
+			}
+		}
+
+		img {
+
+			@media screen and (max-width: 990px) {
+				width: 45%;
+			}
+			@media screen and (max-width: 700px) {
+				float: none;
+				margin-right: 0;
+				width: 325px;
+			}
+
+			border: 1px solid $border__color;
+			float: left;
+			margin-right: 30px;
+			width: 425px;
+		}
+
+		a.button {
+			color: #ffffff;
+			text-decoration: none;
+		}
+
+		a.button:hover {
+			color: #333333;
+			text-decoration: none;
+		}
+	}
+
+
+	//As Seen Section
+	.homepage-page-as-seen {
+		background-color: $eco_green;
+		text-align: center;
+
+		h2 {
+			margin: 20px 0;
+			text-transform: uppercase;
+		}
+
+		.as-seen-layer-container {
+			background-color: rgba(185,200,190,.7);
+			padding: 30px 0;
+
+		}
+
+		.as-seen-logo-container {
+			margin: 20px auto;
+			max-width: 1100px;
+
+			img {
+				margin: 20px 40px;
+				width: 230px;
+			}
+		}
+
+		a {
+			text-decoration: none;
+		}
+	}
+
+}

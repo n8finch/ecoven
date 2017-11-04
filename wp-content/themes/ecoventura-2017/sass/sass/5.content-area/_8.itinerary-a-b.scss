@@ -1,0 +1,350 @@
+.page-template-template-eco-itinerary-a-b {
+
+	// $color__dark_navy: #152838;
+	// $color__medium_blue_gray: #44596e;
+	// $color__light_blue_gray: #647a8c;
+
+
+	.site-inner {
+
+		@media only screen and (max-width: 860px) {
+		    padding: 0;
+		}
+
+		background-color: white;
+		max-width: 100%;
+		padding-top: 0;
+	}
+
+	.itinerary-header {
+		background-color: $color__medium_blue_gray;
+		color: white;
+		padding: 30px;
+		width: 100%;
+
+		h2 {
+			margin: auto;
+			max-width: 1100px;
+			text-transform: uppercase;
+		}
+	}
+
+	.itinerary-content {
+
+		@media only screen and (max-width: 1150px) {
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+
+		margin: 0 auto;
+		max-width: 1100px;
+
+		h2 {
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+	}
+
+	.view-iteneraries {
+
+		@media screen and (max-width: 1150px) {
+			padding: 5% 5% 0;
+		}
+
+		@media screen and (max-width: 920px) {
+			flex-direction: column;
+			padding: 5% 5% 0;
+		}
+
+		clear: both;
+		display: flex;
+		max-width: 1100px;
+		margin: auto;
+		margin-bottom: 60px;
+		margin-top: 60px;
+		justify-content: flex-start;
+
+		a {
+			text-align: center;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+		div {
+			color: white;
+			font-size: 22px;
+			font-size: 2.2rem;
+			margin-bottom: 20px;
+			padding: 11px 10px;
+		}
+
+		#view-itens {
+
+			@media screen and (max-width: 920px) {
+				margin-bottom: 0;
+				width: 100%;
+			}
+
+			background-color: $color__dark_navy;
+			float: left;
+			width: 300px
+		}
+
+		#iten-a {
+
+			@media screen and (max-width: 920px) {
+				width: 100%;
+			}
+
+			background-color: $color__medium_blue_gray;
+			float: left;
+			width: 300px
+		}
+
+		#iten-b {
+
+			@media screen and (max-width: 920px) {
+				width: 100%;
+			}
+
+			background-color: $color__light_blue_gray;
+			float: left;
+			width: 300px
+		}
+
+
+		#arrow-right {
+
+			@media screen and (max-width: 920px) {
+				border-left: 45vw solid transparent;
+				border-right: 45vw solid transparent;
+				border-top: 30px solid #152838;
+				margin-bottom: 0;
+				margin-top: -1px;
+			}
+
+			border-top: 28px solid transparent;
+			border-bottom: 29px solid transparent;
+			border-left: 30px solid $color__dark_navy;
+			float: left;
+			height: 0;
+			margin-left: 0px;
+			padding: 0;
+			width: 0;
+		}
+
+		#arrow-from-right {
+
+			@media screen and (max-width: 920px) {
+				display: none;
+			}
+
+			border-top: 28px solid $color__medium_blue_gray;
+			border-bottom: 29px solid $color__medium_blue_gray;
+			border-left: 29px solid transparent;
+			float: left;
+			height: 0;
+			padding: 0;
+			width: 0;
+		}
+
+		#arrow-from-right-b {
+
+			@media screen and (max-width: 920px) {
+				display: none;
+			}
+
+			border-top: 28px solid $color__light_blue_gray;
+			border-bottom: 29px solid $color__light_blue_gray;
+			border-left: 29px solid transparent;
+			float: left;
+			height: 0;
+			padding: 0;
+			width: 0;
+		}
+	}
+
+	div.itinerary-highlights {
+
+		@media only screen and (max-width: 1150px) {
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+
+		margin: 0 auto;
+		max-width: 1100px;
+
+		h2 {
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+
+		.highlight-boxes {
+
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-top: 60px;
+		}
+
+		.highlight-box {
+
+			@media only screen and (max-width: 860px) {
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			max-width: 250px;
+			margin-bottom: 40px;
+			text-align: center;
+			width: 250px;
+
+			.image-container {
+				align-items: center;
+				border: 3px solid $color__light_blue_gray;
+				border-radius: 150px;
+				display: flex;
+				height: 150px;
+				justify-content: center;
+				margin: auto;
+				text-align: center;
+				width: 150px;
+				cursor: pointer;
+				transition: border-color 0.2s ease-in;
+
+				&:hover, &:focus {
+					border-color: $color__primary_button;
+				}
+
+				img {
+					max-height: 75px;
+					max-width: 75px;
+				}
+			}
+
+			.hr-blue {
+				border-top: 1px solid $color__light_blue_gray;
+				margin: 20px auto;
+				width: 150px;
+			}
+
+			.image-subtitle {
+				margin: auto;
+				max-width: 200px;
+				text-transform: uppercase;
+			}
+
+		}
+
+		.book-now-box {
+			top: -30px;
+		    position: relative;
+		    text-align: center;
+
+			button:hover {
+				background-color: #eeeeee;
+			}
+		}
+
+	}
+
+
+
+
+	.itenerary-popup,
+	.iteneraries-popup,
+	.itenerary-popup-image {
+		border: 5px solid white;
+		background-color: $color__medium_blue_gray;
+		color: white;
+		display: none;
+
+		h2 {
+			margin: 20px auto;
+			text-align: center;
+			width: 100%;
+		}
+
+		.highlight-popup-flex {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+
+			div {
+
+				@media screen and (max-width: 800px) {
+					width: 100% !important;
+				}
+
+				li {
+					font-size: 14px;
+				}
+			}
+
+			.popup-facts {
+				flex: 1;
+				width: 35%;
+				margin-bottom: 20px;
+				margin-left: 30px;
+				text-align: left;
+			}
+
+			.popup-image {
+				flex: 1;
+				margin-bottom: 20px;
+				width: 55%;
+
+				img {
+					height: 250px;
+				}
+			}
+
+			div:last-child {
+				padding-bottom: 0;
+				width: 100%
+			}
+
+		}
+
+		.highlight-popup-button {
+			flex-grow: 2;
+			background-color: $eco_green;
+			border-color: $eco_green;
+			border-top: 0;
+			color: $color__medium_blue_gray;
+			padding: 20px;
+			text-decoration: none;
+			text-transform: uppercase;
+			width: 100%;
+		}
+
+	}
+
+	.ui-dialog {
+		background-color: transparent;
+		border-radius: 5px;
+		padding: 20px;
+		z-index: 5;
+
+		button {
+			background-color: white;
+			color: black;
+			float: right;
+		    height: 20px;
+		    padding: 10px;
+		    line-height: 0;
+
+			.ui-button-text {
+				font-weight: bold;
+			}
+		}
+
+		.no-close .ui-dialog-titlebar-close {
+		  display: none;
+		}
+	}
+
+	#itin-agenda-popup.itenerary-popup-image > img {
+		width: 100%;
+	}
+}

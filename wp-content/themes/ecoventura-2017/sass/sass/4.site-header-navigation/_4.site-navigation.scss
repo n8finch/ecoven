@@ -1,0 +1,125 @@
+/* # Site Navigation
+---------------------------------------------------------------------------------------------------- */
+
+.genesis-nav-menu {
+  clear: both;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  width: 100%;
+}
+
+.genesis-nav-menu .menu-item {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: left;
+}
+
+.genesis-nav-menu a {
+  color: #555555;
+  font-family: 'Playfair Display', serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 32px 10px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  position: relative;
+
+  .menu-sub-title {
+    font-size: 11px;
+    color: #999;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 10px;
+    @media only screen and (max-width: 1023px) {
+      position: static;
+    }
+  }
+}
+
+.genesis-nav-menu a:focus,
+.genesis-nav-menu a:hover,
+.genesis-nav-menu .current-menu-item > a,
+.genesis-nav-menu .sub-menu .current-menu-item > a:focus,
+.genesis-nav-menu .sub-menu .current-menu-item > a:hover  {
+	color: #152838;
+	text-decoration: none;
+}
+
+.genesis-nav-menu .sub-menu {
+	border-top: 1px solid #eee;
+	left: -9999px;
+	opacity: 0;
+	position: absolute;
+	-webkit-transition: opacity .4s ease-in-out;
+	-moz-transition:    opacity .4s ease-in-out;
+	-ms-transition:     opacity .4s ease-in-out;
+	-o-transition:      opacity .4s ease-in-out;
+	transition:         opacity .4s ease-in-out;
+	width: 200px;
+	z-index: 99;
+}
+
+.genesis-nav-menu .sub-menu a {
+	background-color: #fff;
+	border: 1px solid #eee;
+	border-top: 0;
+	font-size: 14px;
+	font-size: 1.4rem;
+	padding: 20px;
+	position: relative;
+	width: 200px;
+	word-wrap: break-word;
+}
+
+.genesis-nav-menu .sub-menu .sub-menu {
+  margin: -56px 0 0 199px;
+}
+
+.genesis-nav-menu .menu-item:hover {
+  position: static;
+}
+
+.genesis-nav-menu .menu-item:hover > .sub-menu {
+  left: auto;
+  opacity: 1;
+}
+
+.genesis-nav-menu > .first > a {
+  padding-left: 0;
+}
+
+.genesis-nav-menu > .last > a {
+  padding-right: 0;
+}
+
+.genesis-nav-menu > .right {
+  float: right;
+}
+
+// @media only screen and (max-width: 1023px) {
+//
+// 	.nav-primary.genesis-responsive-menu {
+// 		display: none;
+// 	}
+//
+// 	.site-header .menu-toggle {
+// 		color: #999999;
+// 	}
+//
+// 	.site-header .menu-toggle:hover {
+// 		color: #999999;
+// 		background-color: white;
+// 	}
+//
+// 	.genesis-nav-menu a {
+// 		width: 85%;
+// 	}
+// }

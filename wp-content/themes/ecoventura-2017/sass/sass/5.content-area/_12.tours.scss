@@ -1,0 +1,127 @@
+.page-template-template-eco-tours {
+
+	// $color__dark_navy: #152838;
+	// $color__medium_blue_gray: #44596e;
+	// $color__light_blue_gray: #647a8c;
+
+	.site-inner {
+
+		@media only screen and (max-width: 860px) {
+		    padding: 0;
+		}
+
+		background-color: white;
+		max-width: 100%;
+		padding-top: 0;
+	}
+
+	.tours-header {
+		background-color: $color__medium_blue_gray;
+		color: white;
+		padding: 30px;
+		width: 100%;
+
+		h2 {
+			margin: auto;
+			max-width: 1100px;
+			text-transform: uppercase;
+		}
+	}
+
+	.tours-main-content {
+
+		@media only screen and (max-width: 1150px) {
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+
+		margin: 0 auto;
+		max-width: 1100px;
+		padding: 60px 0;
+
+		h2 {
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+
+		.tours-learn-more-button {
+			text-align: center;
+		}
+	}
+
+	.tours-list-quito,
+	.tours-list-guayaquil {
+
+		padding: 60px 0;
+		width: 100%;
+
+		h2 {
+			font-weight: 400;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		.tours-content {
+
+			background-color: white;
+			border: 1px solid black;
+			margin: 40px auto;
+			max-width: 1100px;
+			padding-bottom: 60px;
+			text-align: center;
+
+			.tour-image {
+				max-height: 350px;
+				overflow: hidden;
+
+				img {
+					width: 100%;
+				}
+			}
+
+			h2 {
+				color: black;
+				font-weight: 400;
+				margin: 60px 5% 20px;
+				text-align: left;
+				text-transform: uppercase;
+			}
+
+			& > p {
+				margin: 20px 5% 40px;
+				text-align: left;
+			}
+
+		}
+
+
+	}
+
+	.tours-list-quito {
+		background-color: $color__dark_navy;
+
+		h2 {
+			color: white;
+			text-transform: uppercase;
+		}
+	}
+
+	.tours-list-guayaquil {
+		background-color: $eco_green;
+
+		h2 {
+			color: black;
+			text-transform: uppercase;
+		}
+	}
+
+	.tours-main-content {
+		h2 {
+			margin-bottom: 40px;
+			text-transform: uppercase;
+		}
+	}
+
+
+
+}
