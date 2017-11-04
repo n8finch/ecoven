@@ -40,6 +40,8 @@ function child_theme_setup() {
 	// Admin
 	require_once( CHILD_DIR . '/inc/admin/admin.php' );
 
+	require_once( CHILD_DIR . '/inc/post-meta-importer.php' );
+
 	// * Backend *
 
 	// Enable shortcodes in widgets
