@@ -40,8 +40,9 @@ function child_theme_setup() {
 	// Admin
 	require_once( CHILD_DIR . '/inc/admin/admin.php' );
 
-	require_once( CHILD_DIR . '/inc/shortcodes/world-nomads.php' );
+	require_once( CHILD_DIR . '/inc/shortcodes/div-shortcode.php' );
 	require_once( CHILD_DIR . '/inc/shortcodes/eco-shortcodes.php' );
+	require_once( CHILD_DIR . '/inc/shortcodes/world-nomads.php' );
 
 	require_once( CHILD_DIR . '/inc/post-meta-importer.php' );
 
