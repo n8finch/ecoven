@@ -5,3 +5,15 @@
 @import "5.titles";
 @import "6.wordpress";
 @import "7.10up-tabs";
+
+.section-title {
+	cursor: pointer;
+}
+
+.section-content {
+	display: none;
+
+	&.expanded {
+		display: block;
+	}
+}

@@ -160,6 +160,18 @@
 			});
 		});
 
+		// ********************************************************
+		// Expandable sections
+		// ********************************************************
+		$('.section-title').on('click', function(evt){
+			evt.preventDefault();
+
+			var $this = $(this);
+			$this.nextAll('.section-content:first').slideToggle( 'fast', 'swing', function(){
+				$this.toggleClass('expanded');
+			});
+		});
+
 	}); //end document.ready
 
 })(jQuery);
