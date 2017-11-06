@@ -1,0 +1,87 @@
+{
+    "ID": 0,
+    "key": "group_acf_guest-reviews",
+    "title": "Guest Reviews",
+    "fields": [
+        {
+            "ID": 0,
+            "key": "field_52193cb78adef",
+            "label": "Guest's Trip",
+            "name": "_eco_guests_trip",
+            "prefix": "acf",
+            "type": "text",
+            "value": null,
+            "menu_order": 0,
+            "instructions": "The yacht and date of the guest's trip",
+            "required": 0,
+            "id": "",
+            "class": "",
+            "conditional_logic": 0,
+            "parent": "group_acf_guest-reviews",
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "_name": "_eco_guests_trip",
+            "_prepare": 0,
+            "_valid": 1,
+            "default_value": "",
+            "placeholder": "e.g. M\/Y Eric January 2013",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": ""
+        },
+        {
+            "ID": 0,
+            "key": "field_52194cfb35a8e",
+            "label": "Show on Home Page",
+            "name": "_eco_show_on_home",
+            "prefix": "acf",
+            "type": "true_false",
+            "value": null,
+            "menu_order": 1,
+            "instructions": "Check this to show this review on the homepage (maximum of 2)",
+            "required": 0,
+            "id": "",
+            "class": "",
+            "conditional_logic": 0,
+            "parent": "group_acf_guest-reviews",
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "_name": "_eco_show_on_home",
+            "_prepare": 0,
+            "_valid": 1,
+            "message": "Show on Home page?",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "guest-review",
+                "order_no": 0,
+                "group_no": 0
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [],
+    "active": 1,
+    "description": "",
+    "id": "acf_guest-reviews",
+    "local": "json"
+}

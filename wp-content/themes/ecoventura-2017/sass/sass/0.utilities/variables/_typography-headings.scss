@@ -65,16 +65,31 @@ li {
 	list-style-type: none;
 }
 
-main.content ul {
+.content ul {
 	list-style: none;
     margin-left: 10px;
     padding-left: 0;
     text-indent: -12px;
+
+    li:before {
+        content: "+";
+        margin-right: 4px;
+    }
 }
 
-main.content ul li:before {
-    content: "+";
-    margin-right: 4px;
+.content .sharedaddy {
+	ul {
+		list-style: none;
+	    margin-left: inherit;
+	    padding-left: inherit;
+	    text-indent: inherit;
+
+	    li:before {
+	    	display: none;
+	        // content: "";
+	        // margin-right: 0;
+	    }
+	}
 }
 
 .hotel-tabs ul,

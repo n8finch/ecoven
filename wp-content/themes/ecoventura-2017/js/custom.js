@@ -160,6 +160,44 @@
 			});
 		});
 
+		// ********************************************************
+		// Expandable sections
+		// ********************************************************
+		$('.section-title').on('click', function(evt){
+			evt.preventDefault();
+
+			var $this = $(this);
+			$this.nextAll('.section-content:first').slideToggle( 'fast', 'swing', function(){
+				$this.toggleClass('expanded');
+			});
+		});
+
+		// ********************************************************
+		// World Nomads
+		// ********************************************************
+		$('#world-nomads').on('click', function(evt){
+			evt.preventDefault();
+			var $calculator = $('#wn_calculator');
+			var $overlay    = $('#wn-overlay');
+
+			// Show overlay, and add click handler to hide dialog
+			$overlay.show()
+							.on('click', function(){
+								$calculator.dialog('close');
+							});
+			// Show dialog
+			$calculator.dialog({
+				width: 550,
+				draggable: false,
+				closeOnEscape: true,
+				closeText: 'X',
+
+				close: function(){
+					$overlay.hide();
+				}
+			});
+		});
+
 	}); //end document.ready
 
 })(jQuery);
