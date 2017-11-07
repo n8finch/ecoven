@@ -175,3 +175,78 @@ function get_page_by_slug( $page_slug, $output = OBJECT, $post_type = 'page' ) {
 
 	return null;
 }
+
+/**
+ * Output a yacht slideshow
+ *
+ * @param  string $deck [should be 'dolphin', 'booby' or 'iguana']
+ * @return [type]            [description]
+ */
+function eco_yacht_slideshow( $deck = 'dolphin' ) {
+
+	// TODO: If page path changes, change here!
+	$page  = get_page_by_slug( 'galapagos-yachts' );
+
+	if ( ! $page )
+		return;
+
+	$key    = '_eco_' . $deck . '_deck_images';
+	$id     = $deck . '-deck-slider';
+	$output = '';
+
+	$deck_overlays = array(
+		'booby-deck-b-cabin-bathrooms'    => 'booby-deck-b-cabin.png',
+		'booby-deck-b-cabin'              => 'booby-deck-b-cabin-bathrooms.png',
+		'booby-deck-bar'                  => 'booby-deck-bar.png',
+		'booby-deck-conference-room'      => 'booby-deck-conference-room.png',
+		'booby-deck-dining-room'          => 'booby-deck-dining-room.png',
+		'booby-deck-galley'               => 'booby-deck-galley.png',
+		'dolphin-deck-bridge'             => 'dolphin-deck-bridge.png',
+		'dolphin-deck-d1'                 => 'dolphin-deck-d1.png',
+		'dolphin-deck-d2'                 => 'dolphin-deck-d2.png',
+		'dolphin-deck-d3'                 => 'dolphin-deck-d3.png',
+		'dolphin-deck-d4'                 => 'dolphin-deck-d4.png',
+		'dolphin-deck-observation-deck'   => 'dolphin-deck-observation-deck.png',
+		'dolphin-deck-observation-deck-2' => 'dolphin-deck-observation-deck-2.png',
+		'iguana-deck-cabin-17-18'         => 'iguana-deck-cabin-17-18.png',
+		'iguana-deck-cabin-19-20'         => 'iguana-deck-cabin-19-20.png',
+	);
+	$deck_overlay_uri = get_stylesheet_directory_uri() . '/images/deck-images/';
+
+	// Slideshow
+	if( get_field( $key, $page->ID) ):
+		$output .= '<div class="underscores_slider yacht-slider" id="'.$id.'">';
+			$output .= '<ul class="slides">';
+			while ( has_sub_field( $key ) ) {
+				$deck_photo    = get_sub_field( 'deck_photo' );
+				$deck_overlay  = get_sub_field( 'deck_image_overlay' );
+				$deck_title    = get_sub_field( 'photo_title' );
+				// $photo_caption = get_sub_field( 'photo_caption' );
+				$output .= '<li>';
+					$output .= '<img src="' . $deck_photo['sizes']['cuisine-gallery'] . '" alt="' . $deck_photo['alt'] . '" title="' . $deck_photo['title'] . '">';
+					$output .= '<div class="deck-overlay ' . $deck_overlay . '">';
+						$output .= '<div class="deck-photo-title"><span>' . $deck_title . '</span></div>';
+					$output .= '</div>';
+					// if ( $photo_caption ) {
+					// 	$output .= '<div class="slide-caption">' . $photo_caption . '</div>';
+					// }
+					// $output .= '<img src="' . $deck_overlay_uri . $deck_overlays[$deck_overlay] . '" alt="" class="deck-overlay">';
+				$output .= '</li>';
+			}
+			$output .= '</ul>';
+		$output .= '</div>';
+		// Carousel navigation
+		$output .= '<div class="underscores_slider yacht-slider-nav" id="'.$id.'-nav">';
+			$output .= '<ul class="slides">';
+			while ( has_sub_field( $key ) ) {
+				$deck_photo   = get_sub_field( 'deck_photo' );
+				$output .= '<li>';
+					$output .= '<img src="' . $deck_photo['sizes']['thumbnail'] . '" alt="' . $deck_photo['title'] . '">';
+				$output .= '</li>';
+			}
+			$output .= '</ul>';
+		$output .= '</div>';
+	endif;
+
+	return $output;
+}
