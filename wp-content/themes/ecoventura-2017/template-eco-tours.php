@@ -53,7 +53,6 @@ function eco_tours_list( $acf_fields ) {
 			</div>
 			<h2><?php echo esc_html( $row['title'] ) ?></h2>
 			<?php echo wp_kses_post( $row['content'] ); ?>
-			<a class="button" href="<?php echo esc_url( $row['book_bow_button_link'] );?>">Book Now</a>
 		</div>
 		<?php } //end foreach ?>
 	</section>
@@ -71,7 +70,6 @@ function eco_tours_list( $acf_fields ) {
 			</div>
 			<h2><?php echo esc_html( $row['title'] ) ?></h2>
 			<?php echo wp_kses_post( $row['content'] ); ?>
-			<a class="button" href="<?php echo esc_url( $row['book_bow_button_link'] );?>">Book Now</a>
 		</div>
 		<?php } //end foreach ?>
 	</section>

@@ -32,6 +32,7 @@ module.exports = function (grunt) {
 	concat: {
 		options: {
 			stripBanners: true,
+      sourceMap: true,
 			banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
 			  '<%= grunt.template.today("yyyy-mm-dd") %> */',
 		},
@@ -43,7 +44,10 @@ module.exports = function (grunt) {
 
 	uglify: {
 		options: {
-			mangle: false
+			mangle: false,
+      sourceMap: true,
+      sourceMapIncludeSources: true,
+      sourceMapIn: 'js/custom.min.js.map'
 		},
 		my_target: {
 			files: {
