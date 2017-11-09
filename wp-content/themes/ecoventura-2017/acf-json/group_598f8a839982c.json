@@ -125,7 +125,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "image_subtitle",
+                "width": "",
                 "class": "",
                 "id": ""
             },
@@ -196,65 +196,8 @@
                 },
                 {
                     "key": "field_598f93944775e",
-                    "label": "Seasonal",
-                    "name": "seasonal",
-                    "type": "true_false",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "message": "",
-                    "default_value": 0,
-                    "ui": 0,
-                    "ui_on_text": "",
-                    "ui_off_text": ""
-                },
-                {
-                    "key": "field_598f9444599f4",
-                    "label": "Peak",
-                    "name": "peak",
-                    "type": "true_false",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "message": "",
-                    "default_value": 0,
-                    "ui": 0,
-                    "ui_on_text": "",
-                    "ui_off_text": ""
-                },
-                {
-                    "key": "field_598f948a19650",
-                    "label": "Holiday",
-                    "name": "holiday",
-                    "type": "true_false",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "message": "",
-                    "default_value": 0,
-                    "ui": 0,
-                    "ui_on_text": "",
-                    "ui_off_text": ""
-                },
-                {
-                    "key": "field_598f949d19651",
-                    "label": "Specialty",
-                    "name": "specialty",
+                    "label": "Season",
+                    "name": "season",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -272,7 +215,7 @@
                 },
                 {
                     "key": "field_598f94a919652",
-                    "label": "Status",
+                    "label": "Status - Eric",
                     "name": "status",
                     "type": "radio",
                     "instructions": "",
@@ -295,8 +238,51 @@
                     "return_format": "value"
                 },
                 {
+                    "key": "field_5a03bcd141a8f",
+                    "label": "Status - Letty",
+                    "name": "status_letty",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Available": "Available",
+                        "Sold Out": "Sold Out"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "save_other_choice": 0,
+                    "default_value": "",
+                    "layout": "vertical",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_598f949d19651",
+                    "label": "Family",
+                    "name": "family",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
                     "key": "field_598f94db19653",
-                    "label": "Promotion",
+                    "label": "Promotion \/ Notes",
                     "name": "promotion",
                     "type": "text",
                     "instructions": "",
@@ -312,25 +298,6 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
-                },
-                {
-                    "key": "field_598f94e719654",
-                    "label": "Notes",
-                    "name": "notes",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": 33
                 }
             ]
         },
@@ -519,5 +486,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1509320502
+    "modified": 1510194453
 }

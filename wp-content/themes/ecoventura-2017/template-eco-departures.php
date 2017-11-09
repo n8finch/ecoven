@@ -66,13 +66,12 @@ function eco_departures_dates( $acf_fields ) {
 						<table class="departures-table scroll">
 							<tr>
 								<th class="th-dots">Itinerary</th>
-								<th class="th-dots">Seasonal</th>
-								<th class="th-dots">Peak</th>
-								<th class="th-dots">Holiday</th>
+								<th class="th-dots">Season</th>
 								<th class="th-specialty">Specialty</th>
-								<th>Status</th>
-								<th colspan="2">Promotion</th>
-								<th class="th-notes">Notes</th>
+								<th>Status - Eric</th>
+								<th>Status - Letty</th>
+								<th class="th-notes">Promotion / Notes</th>
+								<th>&nbsp;</th>
 							</tr>
 							<?php
 
@@ -99,14 +98,12 @@ function eco_departures_dates( $acf_fields ) {
 									$row_color_var = $counter % 2;
 									echo '<tr class="departure-table-row-' . esc_attr( $row_color_var ) . '">';
 									echo '<td class="departure-table-itinerary" data-th="Itinerary">' . esc_html( $row['itinerary'] ) . '</td>';
-									echo '<td class="td-dot" data-th="Seasonal">' . esc_html( eco_get_dot_if_true( $row['seasonal'] ) ) . '</td>';
-									echo '<td class="td-dot" data-th="Peak">' . esc_html( eco_get_dot_if_true( $row['peak'] ) ) . '</td>';
-									echo '<td class="td-dot" data-th="Holiday">' . esc_html( eco_get_dot_if_true( $row['holiday'] ) ) . '</td>';
+									echo '<td class="td-season" data-th="Season">' . esc_html( $row['season'] ) . '</td>';
 									echo '<td class="td-specialty" data-th="Specialty">' . esc_html( $row['specialty'] ) . '</td>';
 									echo '<td data-th="STATUS">' . esc_html( $row['status'] ) . '</td>';
-									echo '<td class="td-promotion" data-th="Promotion">' . esc_html( $row['promotion'] ) . '</td>';
+									echo '<td data-th="STATUS">' . esc_html( $row['status_letty'] ) . '</td>';
+									echo '<td class="td-notes" data-th="Promotion">' . esc_html( $row['promotion'] ) . '</td>';
 									echo '<td class="td-inquire" data-th="Promotion">' . eco_promotion_button( $row['status'] ) . '</td>';
-									echo '<td class="td-notes" data-th="Notes">' . esc_html( $row['notes'] ) . '</td>';
 									echo '</tr>';
 									$counter++;
 								}
