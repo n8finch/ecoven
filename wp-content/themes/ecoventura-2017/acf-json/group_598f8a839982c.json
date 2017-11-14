@@ -285,6 +285,82 @@
             "maxlength": ""
         },
         {
+            "key": "field_5a0a3ef3ab838",
+            "label": "Inquire Button Text",
+            "name": "inquire_button_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a0a3f608dfb7",
+            "label": "Inquire Button Link",
+            "name": "inquire_button_link",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a0a3efcab839",
+            "label": "Inquire for Origin Button Text",
+            "name": "inquire_for_origin_button_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a0a3f718dfb8",
+            "label": "Inquire For Origin Button Link",
+            "name": "inquire_for_origin_button_link",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_598f931a4775b",
             "label": "Departure Table Values",
             "name": "departure_table_values",
@@ -619,5 +695,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1510620570
+    "modified": 1510621067
 }
