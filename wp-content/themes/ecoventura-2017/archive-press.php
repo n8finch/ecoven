@@ -83,11 +83,11 @@ function eco_press_archive_content() {
 
 	if ( $url ) {
 		echo '<a href="' . esc_url( $url ) . '" target="_blank">';
-			echo get_the_post_thumbnail( $post->ID, 'media-thumb', array( 'class' => 'press-thumb' ) );
+			echo get_the_post_thumbnail( $post->ID, 'gallery-cropped', array( 'class' => 'press-thumb' ) );
 		echo '</a>';
 		# code...
 	} else {
-		echo get_the_post_thumbnail( $post->ID, 'media-thumb', array( 'class' => 'press-thumb' ) );
+		echo get_the_post_thumbnail( $post->ID, 'gallery-cropped', array( 'class' => 'press-thumb' ) );
 	}
 	echo '<div class="press-content">';
 		if ( $url ) {
