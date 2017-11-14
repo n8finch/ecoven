@@ -112,19 +112,19 @@
 				th {
 					background-color: $eco_green;
 					color: white;
-					padding: 7px 0;
+					padding: 7px 7px;
 					text-transform: uppercase;
 				}
 
 				.th-dates {
-					width: 166px;
+					// width: 166px;
 				}
 				.th-dots {
-					width: 80px;
+					// width: 80px;
 				}
 
 				.th-notes {
-					width: 130px;
+					max-width: 200px;
 				}
 
 				tr.departure-table-row-0 {
@@ -156,8 +156,7 @@
 
 				.td-notes {
 					height: 50px;
-					padding: 0;
-					width: 130px;
+					max-width: 200px;
 				}
 
 				a {
