@@ -44,7 +44,7 @@ function eco_departures_dates( $acf_fields ) {
 					<div class="pinned">
 						<table class="departures-table">
 							<tr>
-								<th class="th-dates">Cruise Dates</th>
+								<th class="th-dates"><?php echo $acf_fields['column_heading_cruise_dates']; ?></th>
 							</tr>
 							<?php
 							$rows = $acf_fields['departure_table_values'];
@@ -65,13 +65,13 @@ function eco_departures_dates( $acf_fields ) {
 					<div class="scroll">
 						<table class="departures-table scroll">
 							<tr>
-								<th class="th-dots">Itinerary</th>
-								<th class="th-dots">Season</th>
-								<th class="th-specialty">Specialty</th>
-								<th>Status - Eric</th>
-								<th>Status - Letty</th>
-								<th class="th-notes">Promotion / Notes</th>
-								<th>&nbsp;</th>
+								<th class="th-dots"><?php echo $acf_fields['column_heading_itinerary']; ?></th>
+								<th class="th-dots"><?php echo $acf_fields['column_heading_season']; ?></th>
+								<th class="th-specialty"><?php echo $acf_fields['column_heading_specialty']; ?></th>
+								<th><?php echo $acf_fields['column_heading_eric_status']; ?></th>
+								<th><?php echo $acf_fields['column_heading_letty_status']; ?></th>
+								<th class="th-notes"><?php echo $acf_fields['column_heading_promotion']; ?></th>
+								<th><?php echo $acf_fields['column_heading_inquire']; ?></th>
 							</tr>
 							<?php
 
