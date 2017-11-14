@@ -81,12 +81,10 @@ function eco_departures_dates( $acf_fields ) {
 								return $dot_val;
 							}
 
-							function eco_promotion_button( $button_val, $acf_fields ) {
-								if ( 'Sold Out' === $button_val ) {
+							function eco_promotion_button( $eric_status, $letty_status, $acf_fields ) {
+								if ( 'Sold Out' === $eric_status && 'Sold Out' === $letty_status ) {
 									return '<a class="button" href="' . $acf_fields['inquire_for_origin_button_link'] . '" target="_blank">' . $acf_fields['inquire_for_origin_button_text'] . '</a>';
-								}
-
-								if ( 'Available' === $button_val ) {
+								} else {
 									return '<a class="button" href="' . esc_url( $acf_fields['inquire_button_link'] ) . '" target="_blank">' . $acf_fields['inquire_button_text'] . '</a>';
 								}
 							}
@@ -103,7 +101,7 @@ function eco_departures_dates( $acf_fields ) {
 									echo '<td data-th="STATUS">' . esc_html( $row['status'] ) . '</td>';
 									echo '<td data-th="STATUS">' . esc_html( $row['status_letty'] ) . '</td>';
 									echo '<td class="td-notes" data-th="Promotion">' . esc_html( $row['promotion'] ) . '</td>';
-									echo '<td class="td-inquire" data-th="Promotion">' . eco_promotion_button( $row['status'], $acf_fields ) . '</td>';
+									echo '<td class="td-inquire" data-th="Promotion">' . eco_promotion_button( $row['status'], $row['status_letty'], $acf_fields ) . '</td>';
 									echo '</tr>';
 									$counter++;
 								}
