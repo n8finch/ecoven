@@ -52,6 +52,11 @@
 			}
 
 			li.departure-table-tabs {
+
+				@media screen and (max-width: 374px) {
+					border-right: 1px solid;
+				}
+
 				background-color: white;
 				border: 1px solid;
 				border-bottom-width: 0;
@@ -112,19 +117,21 @@
 				th {
 					background-color: $eco_green;
 					color: white;
+					min-width: 150px;
 					padding: 7px 7px;
 					text-transform: uppercase;
 				}
 
 				.th-dates {
-					// width: 166px;
+					width: 166px;
 				}
 				.th-dots {
-					// width: 80px;
+					min-width: 84px;
 				}
 
 				.th-notes {
 					max-width: 200px;
+					min-width: 150px;
 				}
 
 				tr.departure-table-row-0 {
@@ -168,13 +175,19 @@
 			}
 
 			div.pinned {
-				position: absolute;
-			    left: 0;
-			    top: 60px;
-				width: 166px;
+
+				@media screen and (max-width: 1150px) {
+					overflow: scroll;
+					overflow-y: hidden;
+				}
+
+				position: relative;
+			    // left: 0;
+			    // top: 60px;
+				// width: 166px;
 
 				table {
-					width: 166px;
+					// width: 166px;
 				}
 
 				td {
@@ -185,11 +198,6 @@
 			}
 
 			div.scroll {
-				@media screen and (max-width: 1150px) {
-					overflow: scroll;
-	    			overflow-y: hidden;
-				}
-
 
 				@media screen and (max-width: 860px) {
 					top: -2px;

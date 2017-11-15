@@ -45,26 +45,6 @@ function eco_departures_dates( $acf_fields ) {
 						<table class="departures-table">
 							<tr>
 								<th class="th-dates"><?php echo $acf_fields['column_heading_cruise_dates']; ?></th>
-							</tr>
-							<?php
-							$rows = $acf_fields['departure_table_values'];
-							if ( $rows ) {
-								$counter = 0;
-								foreach ( $rows as $row ) {
-									$row_color_var = $counter % 2;
-									echo '<tr class="departure-table-row-' . esc_html( $row_color_var ) . '">';
-									echo '<td class="td-departure-dates" data-th="CRUISE DATES"><a href="#" class="js-departure-date-popup" data-itinerary="' . esc_attr( strtolower( $row['itinerary'] ) ) . '">' . esc_html( $row['cruise_dates'] ) . '</a></td>';
-									echo '</tr>';
-									$counter ++;
-								}
-							}
-							?>
-						</table>
-					</div> <!--end pinned class div -->
-
-					<div class="scroll">
-						<table class="departures-table scroll">
-							<tr>
 								<th class="th-dots"><?php echo $acf_fields['column_heading_itinerary']; ?></th>
 								<th class="th-dots"><?php echo $acf_fields['column_heading_season']; ?></th>
 								<th class="th-specialty"><?php echo $acf_fields['column_heading_specialty']; ?></th>
@@ -94,7 +74,8 @@ function eco_departures_dates( $acf_fields ) {
 								$counter = 0;
 								foreach ( $rows as $row ) {
 									$row_color_var = $counter % 2;
-									echo '<tr class="departure-table-row-' . esc_attr( $row_color_var ) . '">';
+									echo '<tr class="departure-table-row-' . esc_html( $row_color_var ) . '">';
+									echo '<td class="td-departure-dates" data-th="CRUISE DATES"><a href="#" class="js-departure-date-popup" data-itinerary="' . esc_attr( strtolower( $row['itinerary'] ) ) . '">' . esc_html( $row['cruise_dates'] ) . '</a></td>';
 									echo '<td class="departure-table-itinerary" data-th="Itinerary">' . esc_html( $row['itinerary'] ) . '</td>';
 									echo '<td class="td-season" data-th="Season">' . esc_html( $row['season'] ) . '</td>';
 									echo '<td class="td-specialty" data-th="Specialty">' . esc_html( $row['specialty'] ) . '</td>';
@@ -103,12 +84,12 @@ function eco_departures_dates( $acf_fields ) {
 									echo '<td class="td-notes" data-th="Promotion">' . esc_html( $row['promotion'] ) . '</td>';
 									echo '<td class="td-inquire" data-th="Promotion">' . eco_promotion_button( $row['status'], $row['status_letty'], $acf_fields ) . '</td>';
 									echo '</tr>';
-									$counter++;
+									$counter ++;
 								}
 							}
 							?>
 						</table>
-					</div> <!--end scroll class div -->
+					</div> <!--end pinned class div -->
 				</div> <!--end tab div -->
 			</div> <!-- end table wrap -->
 
