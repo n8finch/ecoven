@@ -44,6 +44,9 @@ function eco_rates_dates( $acf_fields ) {
 						<table class="rates-table">
 							<tr>
 								<th>Deck</th>
+								<th>Double</th>
+								<th>Triple</th>
+								<th>Single</th>
 							</tr>
 							<?php
 							$rows = $acf_fields['rates_table_values'];
@@ -53,6 +56,9 @@ function eco_rates_dates( $acf_fields ) {
 									$row_color_var = $counter % 2;
 									echo '<tr class="rate-table-row-' . esc_attr( $row_color_var ) . '">';
 									echo '<td id="' . esc_attr( $row['deck'] ) . '" class="td-rate-decks" data-th="Deck">' . esc_html( $row['deck'] ) . '</td>';
+									echo '<td>' . esc_html( $row['double'] ) . '</td>';
+									echo '<td>' . esc_html( $row['triple'] ) . '</td>';
+									echo '<td>' . esc_html( $row['single'] ) . '</td>';
 									echo '</tr>';
 									$counter++;
 								}
@@ -60,33 +66,6 @@ function eco_rates_dates( $acf_fields ) {
 							?>
 						</table>
 					</div> <!--end pinned class div -->
-
-					<div class="scroll">
-						<table class="rates-table scroll">
-							<tr>
-								<th>Double</th>
-								<th>Triple</th>
-								<th>Single</th>
-							</tr>
-
-							<?php
-
-							$rows = $acf_fields['rates_table_values'];
-							if ( $rows ) {
-								$counter = 0;
-								foreach ( $rows as $row ) {
-									$row_color_var = $counter % 2;
-									echo '<tr class="rate-table-row-' . esc_attr( $row_color_var ) . '">';
-									echo '<td>' . esc_html( $row['double'] ) . '</td>';
-									echo '<td>' . esc_html( $row['triple'] ) . '</td>';
-									echo '<td>' . esc_html( $row['single'] ) . '</td>';
-									echo '</tr>';
-									$counter ++;
-								}
-							}
-							?>
-						</table>
-					</div> <!--end scroll class div -->
 				</div> <!--end tab div -->
 			</div> <!-- end table wrap -->
 
@@ -148,6 +127,8 @@ function eco_rates_charter_rates( $acf_fields ) {
 					<table class="charter-rates-table">
 						<tr>
 							<th class="">Season</th>
+							<th class="rates-table-header"><?php echo esc_html( $acf_fields['first_year_rate']); ?></th>
+							<th class="rates-table-header"><?php echo esc_html( $acf_fields['second_year_rate']); ?></th>
 						</tr>
 						<?php
 						$rows = $acf_fields['charter_rates_table'];
@@ -157,6 +138,8 @@ function eco_rates_charter_rates( $acf_fields ) {
 								$row_color_var = $counter % 2;
 								echo '<tr class="rate-table-row-' . esc_attr( $row_color_var ) . '">';
 								echo '<td class="td-charter-rate" data-th="CRUISE DATES">' . esc_html( $row['season'] ) . '</td>';
+								echo '<td>' . esc_html( $row['first_year_rate'] ) . '</td>';
+								echo '<td>' . esc_html( $row['second_year_rate'] ) . '</td>';
 								echo '</tr>';
 								$counter ++;
 							}
@@ -164,31 +147,6 @@ function eco_rates_charter_rates( $acf_fields ) {
 						?>
 					</table>
 				</div> <!--end pinned class div -->
-
-				<div class="scroll">
-					<table class="charter-rates-table scroll">
-						<tr>
-							<th class="rates-table-header"><?php echo esc_html( $acf_fields['first_year_rate']); ?></th>
-							<th class="rates-table-header"><?php echo esc_html( $acf_fields['second_year_rate']); ?></th>
-						</tr>
-
-						<?php
-
-						$rows = $acf_fields['charter_rates_table'];
-						if ( $rows ) {
-							$counter = 0;
-							foreach ( $rows as $row ) {
-								$row_color_var = $counter % 2;
-								echo '<tr class="rate-table-row-' . esc_html( $row_color_var ) . '">';
-								echo '<td>' . esc_html( $row['first_year_rate'] ) . '</td>';
-								echo '<td>' . esc_html( $row['second_year_rate'] ) . '</td>';
-								echo '</tr>';
-								$counter++;
-							}
-						}
-						?>
-					</table>
-				</div> <!--end scroll class div -->
 			</div>
 
 			<p><em><?php echo esc_html( $acf_fields['charter_below_table_text'] )?></em></p>

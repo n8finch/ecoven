@@ -95,13 +95,13 @@
 				display: none;
 				position: relative;
 
-				.pinned .rate-table-row-0:hover {
+				.pinned .td-rate-decks:hover {
 					background-color: $eco_green;
 					color: white;
 					cursor: pointer;
 				}
 
-				.pinned .rate-table-row-1:hover {
+				.pinned .td-rate-decks:hover {
 					background-color: $eco_green;
 					color: white;
 					cursor: pointer;
@@ -152,6 +152,8 @@
 				.td-rate-decks {
 					height: 45px;
 					text-transform: uppercase;
+					min-width: 274px;
+					width: 25%;
 				}
 
 				.td-dot {
@@ -184,16 +186,12 @@
 
 			div.pinned {
 
-				@media screen and (max-width: 860px) {
-					left: auto;
-					top: -2px;
-					width: 150px;
+				@media screen and (max-width: 1115px) {
+					overflow: scroll;
+					overflow-y: hidden;
 				}
 
-				position: absolute;
-				left: 0;
-				min-width: 150px;
-				width: 25%;
+				position: relative;
 
 				table {
 					// width: 166px;
@@ -494,20 +492,10 @@
 					width: 150px;
 				}
 
-				position: absolute;
-				left: 0;
-				min-width: 150px;
-				text-transform: uppercase;
-				width: 25%;
+				position: relative;
 
 				table {
 					// width: 166px;
-				}
-
-				th {
-					@media screen and (max-width: 860px) {
-						min-width: 150px;
-					}
 				}
 
 				td {
